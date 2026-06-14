@@ -1,5 +1,7 @@
 {
   "park": "La Recre des 3 Cures",
+  "logo": "assets/logos/la-recre-des-3-cures.svg",
+  "icon": "assets/icons/la-recre-des-3-cures.png",
   "meta": {
     "country": "FR",
     "site": "https://www.larecredes3cures.com",

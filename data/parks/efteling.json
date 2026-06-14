@@ -1,5 +1,7 @@
 {
   "park": "Efteling",
+  "logo": "assets/logos/efteling.svg",
+  "icon": "assets/icons/efteling.png",
   "meta": {
     "country": "NL",
     "site": "https://www.efteling.com",
@@ -20,7 +22,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/efteling/baron-1898.webp",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Steven Lek, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Baron_1898_Efteling_rollercoaster_2018_9.jpg"
+      }
     },
     {
       "att": "Vliegende Hollander",
@@ -34,7 +42,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/efteling/vliegende-hollander.webp",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Steven Lek, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:De_Vliegende_Hollander_rollercoaster_Efteling_2018.jpg"
+      }
     },
     {
       "att": "Python",
@@ -49,7 +63,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/efteling/python.webp",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Steven Lek, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Python_Efteling_rollercoaster_2018.jpg"
+      }
     },
     {
       "att": "Vogel Rok",
@@ -66,7 +86,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/efteling/vogel-rok.webp",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Steven Lek, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Vogel_Rok_Efteling.jpg"
+      }
     },
     {
       "att": "Joris en de Draak",
@@ -81,7 +107,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/efteling/joris-en-de-draak.webp",
+        "license": "CC-BY-SA-3.0",
+        "attribution": "Foto door Freddo, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Joris_en_de_Draak_-_Dragon.JPG"
+      }
     },
     {
       "att": "Max & Moritz",
@@ -96,7 +128,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/efteling/max-en-moritz.webp",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Laurensvanheerde, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Efteling_Max_%26_Moritz_ingangspoort_en_station.jpg"
+      }
     },
     {
       "att": "Halve Maen",
@@ -110,7 +148,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/efteling/halve-maen.webp",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Eliedion, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Halve_Maen_Efteling.jpg"
+      }
     },
     {
       "att": "Pirana",
@@ -124,7 +168,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/efteling/pirana.webp",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Steven Lek, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pirana_Efteling_2018.jpg"
+      }
     },
     {
       "att": "Sirocco",
@@ -139,7 +189,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/efteling/sirocco.webp",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Laurensvanheerde, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Efteling_Sirocco.jpg"
+      }
     }
   ]
 }

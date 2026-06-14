@@ -1,5 +1,7 @@
 {
   "park": "Plopsaland",
+  "logo": "assets/logos/plopsaland.svg",
+  "icon": "assets/icons/plopsaland.svg",
   "meta": {
     "country": "BE",
     "site": "https://www.plopsalanddepanne.be",

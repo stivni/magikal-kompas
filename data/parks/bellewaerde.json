@@ -1,5 +1,7 @@
 {
   "park": "Bellewaerde",
+  "logo": "assets/logos/bellewaerde.svg",
+  "icon": "assets/icons/bellewaerde.svg",
   "meta": {
     "country": "BE",
     "site": "https://www.bellewaerde.be",

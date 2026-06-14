@@ -1,5 +1,7 @@
 {
   "park": "Bobbejaanland",
+  "logo": "assets/logos/bobbejaanland.png",
+  "icon": "assets/icons/bobbejaanland.png",
   "meta": {
     "country": "BE",
     "site": "https://www.bobbejaanland.be",

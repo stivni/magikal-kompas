@@ -4,42 +4,153 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Magikal Kompas</title>
+<link rel="icon" type="image/png" href="assets/brand/icon.png">
+<link rel="apple-touch-icon" href="assets/brand/icon.png">
+<meta property="og:title" content="Magikal Kompas">
+<meta property="og:image" content="assets/brand/logo-stacked.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="wrap">
-  <header><h1>Magikal Kompas</h1>
-    <div class="tag">Lengtes zetten, voorkeuren ingeven, en zien waar iedereen het meest aan zijn trekken komt.</div></header>
-  <div class="sec party-sec">
-    <div class="party-head" id="partyhead"></div>
-    <div class="people" id="people"></div>
+
+<header class="appbar">
+  <div class="appbar-inner">
+    <a class="brand" href="#" aria-label="Magikal Kompas">
+      <img src="assets/brand/logo.png" alt="Magikal Kompas" class="brand-logo">
+    </a>
+    <nav class="modes-mob" id="modes-mob">
+      <button class="mode on" data-m="parken">Welk park?</button>
+      <button class="mode" data-m="volgorde">Wat eerst?</button>
+    </nav>
+    <div class="spacer"></div>
+    <select class="lang-pill" id="lang-pill-mob" title="Taal" aria-label="Taal">
+      <option value="nl">NL</option>
+      <option value="fr" disabled>FR (binnenkort)</option>
+      <option value="en" disabled>EN (binnenkort)</option>
+    </select>
+    <button class="party-pill" id="partypill" title="Gezelschap">
+      <span class="ico">👥</span><span class="names" id="partypill-names">0</span>
+    </button>
+    <button class="cogbtn" id="cogbtn" title="Instellingen">⚙</button>
   </div>
-  <div class="tabs">
-    <div class="tab on" data-tab="parken">Welk park?</div>
-    <div class="tab" data-tab="kind">Per lid</div>
-  </div>
-  <div class="lensrow" id="lensrow"><div class="pills" id="lens">
-    <div class="pill on" data-l="weak">Zwakste schakel</div>
-    <div class="pill" data-l="avg">Gemiddeld plezier</div>
-  </div></div>
-  <div id="view-parken" class="sec"></div>
-  <div id="view-kind" class="sec" style="display:none"></div>
-  <div class="legend">
-    <span><i style="background:var(--teal)"></i>alleen</span>
-    <span><i style="background:var(--amber)"></i>met begeleider</span>
-    <span><i style="background:var(--grey)"></i>te klein</span>
-    <span><i class="og"></i>ontgroeid</span>
-    <span><i style="background:var(--tall)"></i>te groot</span>
-    <span><i style="background:var(--pink)"></i>favoriet</span>
-    <span><i style="background:var(--no)"></i>wil niet</span>
-  </div>
-  <div class="foot">Persoonlijk hulpje &middot; lengtes en regels altijd ter plaatse dubbelchecken.<br>
-    Klap een lid open voor lengte en voorkeuren. Je gezelschap blijft op dit toestel bewaard.</div>
+</header>
+
+<div class="layout">
+
+  <aside class="rail" id="rail">
+    <button class="rail-close" id="rail-close" title="Sluiten">✕</button>
+
+    <div class="rail-brand">
+      <a class="brand" href="#" aria-label="Magikal Kompas">
+        <img src="assets/brand/logo.png" alt="Magikal Kompas" class="brand-logo">
+      </a>
+      <select class="lang-pill" id="lang-pill-desk" title="Taal" aria-label="Taal">
+        <option value="nl">NL</option>
+        <option value="fr" disabled>FR (binnenkort)</option>
+        <option value="en" disabled>EN (binnenkort)</option>
+      </select>
+    </div>
+
+    <div class="rail-modes" id="rail-modes">
+      <button class="big-mode on" data-m="parken">
+        <div class="bm-title">Welk park?</div>
+        <div class="bm-sub">Vergelijk parken op groepsplezier</div>
+      </button>
+      <button class="big-mode" data-m="volgorde">
+        <div class="bm-title">Wat eerst?</div>
+        <div class="bm-sub">Sorteer attracties in één park</div>
+      </button>
+    </div>
+
+    <div class="rail-sec">
+      <div class="rail-head">
+        <span class="rail-title">Wie gaat mee? <span class="rail-count" id="rail-count">0/0</span></span>
+        <div class="rail-actions">
+          <button class="minibtn" id="rail-share" title="Deelnemers delen">
+            <svg class="ico-share" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+            <span>Deel deelnemers</span>
+          </button>
+        </div>
+      </div>
+      <div id="people"></div>
+    </div>
+
+    <div class="rail-sec rail-disc">
+      <div class="rail-head"><span class="rail-title">Goed om te weten</span></div>
+      <details class="disc-item">
+        <summary><span class="disc-emo">⚠️</span><span class="disc-lbl">Check regels ter plaatse</span><span class="disc-info" aria-hidden="true">ℹ</span></summary>
+        <div class="disc-body">Lengte-eisen, leeftijdsgrenzen en regels kunnen wijzigen. Kijk altijd op de parksite voor het exacte beleid op jullie datum.</div>
+      </details>
+      <details class="disc-item">
+        <summary><span class="disc-emo">🚦</span><span class="disc-lbl">Geen reistijd of wachtrijen</span><span class="disc-info" aria-hidden="true">ℹ</span></summary>
+        <div class="disc-body">De volgorde houdt rekening met haalbaarheid en plezier, niet met wandelafstand binnen het park of wachtrijen. Plan zelf de logistiek; gebruik dit als startpunt.</div>
+      </details>
+      <details class="disc-item">
+        <summary><span class="disc-emo">🔒</span><span class="disc-lbl">Blijft op dit toestel</span><span class="disc-info" aria-hidden="true">ℹ</span></summary>
+        <div class="disc-body">Gezelschap, voorkeuren en instellingen worden lokaal opgeslagen. Delen gebeurt enkel als jij actief een link of QR maakt — er is geen server in het spel.</div>
+      </details>
+      <details class="disc-item">
+        <summary><span class="disc-emo">🎢</span><span class="disc-lbl">Niet gelieerd aan de parken</span><span class="disc-info" aria-hidden="true">ℹ</span></summary>
+        <div class="disc-body">Magikal Kompas is een persoonlijk hulpje. Park- en attractiedata worden best-effort onderhouden; correcties zijn welkom.</div>
+      </details>
+    </div>
+
+    <div class="rail-foot">
+      <button class="footlink" id="rail-settings">⚙ Instellingen</button>
+      <button class="footlink" id="rail-about">ℹ Over</button>
+    </div>
+  </aside>
+
+  <main>
+    <section id="view-parken"></section>
+    <section id="view-volgorde" style="display:none"></section>
+
+    <footer class="page-foot">
+      <div class="foot-disc">
+        <details class="disc-item">
+          <summary><span class="disc-emo">⚠️</span><span class="disc-lbl">Check regels ter plaatse</span><span class="disc-info" aria-hidden="true">ℹ</span></summary>
+          <div class="disc-body">Lengte-eisen, leeftijdsgrenzen en regels kunnen wijzigen. Kijk altijd op de parksite voor het exacte beleid op jullie datum.</div>
+        </details>
+        <details class="disc-item">
+          <summary><span class="disc-emo">🚦</span><span class="disc-lbl">Geen reistijd of wachtrijen</span><span class="disc-info" aria-hidden="true">ℹ</span></summary>
+          <div class="disc-body">De volgorde houdt rekening met haalbaarheid en plezier, niet met wandelafstand binnen het park of wachtrijen. Plan zelf de logistiek; gebruik dit als startpunt.</div>
+        </details>
+        <details class="disc-item">
+          <summary><span class="disc-emo">🔒</span><span class="disc-lbl">Blijft op dit toestel</span><span class="disc-info" aria-hidden="true">ℹ</span></summary>
+          <div class="disc-body">Gezelschap, voorkeuren en instellingen worden lokaal opgeslagen. Delen gebeurt enkel als jij actief een link of QR maakt — er is geen server in het spel.</div>
+        </details>
+        <details class="disc-item">
+          <summary><span class="disc-emo">🎢</span><span class="disc-lbl">Niet gelieerd aan de parken</span><span class="disc-info" aria-hidden="true">ℹ</span></summary>
+          <div class="disc-body">Magikal Kompas is een persoonlijk hulpje. Park- en attractiedata worden best-effort onderhouden; correcties zijn welkom.</div>
+        </details>
+      </div>
+      <div class="foot-meta">
+        <span>Magikal Kompas</span>
+        <span class="dot-sep"></span>
+        <a href="docs/adr/" target="_blank">Beslissingen (ADR's)</a>
+        <span class="dot-sep"></span>
+        <a href="https://github.com/" target="_blank">Broncode</a>
+      </div>
+    </footer>
+  </main>
 </div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="settings" id="settings">
+  <h3>Instellingen</h3>
+  <div class="links">
+    <a id="set-share">
+      <svg class="ico-share" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+      Deelnemers delen
+    </a>
+    <a href="docs/adr/" target="_blank"><span class="ico">📚</span> Beslissingen (ADR's)</a>
+  </div>
+</aside>
+
 <div class="sharepanel" id="sharepanel"></div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script src="data.js"></script>
 <script src="app.js"></script>

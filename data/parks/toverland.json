@@ -1,5 +1,7 @@
 {
   "park": "Toverland",
+  "logo": "assets/logos/toverland.svg",
+  "icon": "assets/icons/toverland.png",
   "meta": {
     "country": "NL",
     "site": "https://www.toverland.com",

@@ -5,7 +5,8 @@ Formaat: [MADR](https://adr.github.io/madr/) — Context, Decision, Consequences
 Considered alternatives. Elke ADR formuleert de *huidige* keuze op zichzelf, niet
 de weg ernaartoe. "Toekomst / open vragen" staat per ADR onder Consequences.
 
-Status van alle records hieronder: **Accepted** (vastgelegd na de POC-fase).
+Status van alle records hieronder: **Accepted** (vastgelegd na de POC-fase),
+tenzij anders vermeld.
 
 | # | Titel | Groep |
 |---|---|---|
@@ -20,3 +21,10 @@ Status van alle records hieronder: **Accepted** (vastgelegd na de POC-fase).
 | [009](009-statische-app-data-los.md) | Statische app met data los van code | Data, rollen & opslag |
 | [010](010-parken-uitsluiten.md) | Parken uitsluiten van de berekening | Data, rollen & opslag |
 | [011](011-leeg-gezelschap-voor-nieuwe-gebruiker.md) | Leeg gezelschap voor een nieuwe gebruiker | Data, rollen & opslag |
+| [012](012-twee-taken-in-de-ui.md) | UI rond twee concrete taken | Productafbakening |
+| [013](013-forceer-uitzondering-per-lid.md) | Forceer-uitzondering per lid en per attractie | Voorkeuren & ranking |
+| [014](014-visuele-en-bron-velden.md) | Visuele en bron-velden per park en per attractie | Data, rollen & opslag |
+| [015](015-meertalige-ui.md) | Meertalige UI met stabiele datasleutels *(Proposed)* | Productafbakening |
+| [016](016-leeftijdsregels-en-ontbrekende-data.md) | Leeftijdsregels per attractie, en "ontbrekende data" als eigen toestand | Attractiemodel |
+| [017](017-hash-routing-voor-tab-en-park.md) | Hash-routing voor tab en gekozen park | Productafbakening |
+| [018](018-chrome-per-breakpoint.md) | Chrome in één plek per breakpoint | Productafbakening |

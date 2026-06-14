@@ -29,8 +29,9 @@ een lid één geheel is (lengte + typevoorkeuren + eigenschap-filters).
   precies wel willen.
 - Een geliefd type kan nooit een absolute weigering overrulen — dat is de bedoeling.
 - Voorkeuren en lengte staan bij elkaar; er is geen los voorkeuren-scherm meer.
-- Toekomst / open vragen: per-attractie-uitzonderingen ("dit ene toestel wél/niet")
-  blijven mogelijk als forceeroptie, voor gevallen die de twee assen niet vatten.
+- Per-attractie-uitzonderingen ("dit ene toestel wél/niet") voor gevallen die
+  de twee assen niet vatten, bestaan als forceer-laag per lid en zijn
+  vastgelegd in [ADR-013](013-forceer-uitzondering-per-lid.md).
 
 ## Considered alternatives
 

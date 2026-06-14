@@ -1,5 +1,7 @@
 {
   "park": "Walibi Holland",
+  "logo": "assets/logos/walibi-holland.svg",
+  "icon": "assets/icons/walibi-holland.svg",
   "meta": {
     "country": "NL",
     "site": "https://www.walibi.nl",

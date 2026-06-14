@@ -1,5 +1,7 @@
 {
   "park": "Walibi Belgium",
+  "logo": "assets/logos/walibi-belgium.svg",
+  "icon": "assets/icons/walibi-belgium.svg",
   "meta": {
     "country": "BE",
     "site": "https://www.walibi.be",

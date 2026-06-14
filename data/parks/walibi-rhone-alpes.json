@@ -1,5 +1,7 @@
 {
   "park": "Walibi Rhone-Alpes",
+  "logo": "assets/logos/walibi-rhone-alpes.svg",
+  "icon": "assets/icons/walibi-rhone-alpes.svg",
   "meta": {
     "country": "FR",
     "site": "https://www.walibi.fr",
