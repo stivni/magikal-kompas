@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Magikal Kompas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header><h1>Magikal Kompas</h1>
+    <div class="tag">Lengtes zetten, voorkeuren ingeven, en zien waar iedereen het meest aan zijn trekken komt.</div></header>
+  <div class="sec">
+    <div class="sec-head">Wie gaat er mee?<button class="sharebtn" id="sharebtn">Overzetten</button></div>
+    <div class="people" id="people"></div>
+  </div>
+  <div class="tabs">
+    <div class="tab on" data-tab="parken">Welk park?</div>
+    <div class="tab" data-tab="kind">Per lid</div>
+  </div>
+  <div class="lensrow" id="lensrow"><div class="pills" id="lens">
+    <div class="pill on" data-l="weak">Zwakste schakel</div>
+    <div class="pill" data-l="avg">Gemiddeld plezier</div>
+  </div></div>
+  <div id="view-parken" class="sec"></div>
+  <div id="view-kind" class="sec" style="display:none"></div>
+  <div class="legend">
+    <span><i style="background:var(--teal)"></i>alleen</span>
+    <span><i style="background:var(--amber)"></i>met begeleider</span>
+    <span><i style="background:var(--grey)"></i>te klein</span>
+    <span><i class="og"></i>ontgroeid</span>
+    <span><i style="background:var(--tall)"></i>te groot</span>
+    <span><i style="background:var(--pink)"></i>favoriet</span>
+    <span><i style="background:var(--no)"></i>wil niet</span>
+  </div>
+  <div class="foot">Persoonlijk hulpje &middot; lengtes en regels altijd ter plaatse dubbelchecken.<br>
+    Klap een lid open voor lengte en voorkeuren. Je gezelschap blijft op dit toestel bewaard.</div>
+</div>
+<div class="sharepanel" id="sharepanel"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "parks": [
+    {
+      "park": "Bellewaerde",
+      "file": "parks/bellewaerde.json",
+      "rides": 31,
+      "country": "BE"
+    },
+    {
+      "park": "Bobbejaanland",
+      "file": "parks/bobbejaanland.json",
+      "rides": 35,
+      "country": "BE"
+    },
+    {
+      "park": "Efteling",
+      "file": "parks/efteling.json",
+      "rides": 9,
+      "country": "NL"
+    },
+    {
+      "park": "La Recre des 3 Cures",
+      "file": "parks/la-recre-des-3-cures.json",
+      "rides": 31,
+      "country": "FR"
+    },
+    {
+      "park": "Plopsaland",
+      "file": "parks/plopsaland.json",
+      "rides": 39,
+      "country": "BE"
+    },
+    {
+      "park": "Toverland",
+      "file": "parks/toverland.json",
+      "rides": 29,
+      "country": "NL"
+    },
+    {
+      "park": "Walibi Belgium",
+      "file": "parks/walibi-belgium.json",
+      "rides": 19,
+      "country": "BE"
+    },
+    {
+      "park": "Walibi Holland",
+      "file": "parks/walibi-holland.json",
+      "rides": 33,
+      "country": "NL"
+    },
+    {
+      "park": "Walibi Rhone-Alpes",
+      "file": "parks/walibi-rhone-alpes.json",
+      "rides": 31,
+      "country": "FR"
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+{
+  "park": "Walibi Rhone-Alpes",
+  "meta": {
+    "country": "FR",
+    "site": "https://www.walibi.fr",
+    "updated": "2026-06-14",
+    "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
+  },
+  "rides": [
+    {
+      "att": "Mystic",
+      "oms": "Verticale klim van 31m in voodoo-wijk",
+      "beg": 130,
+      "zelf": 130,
+      "max": 195,
+      "type": "playground",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Le Totem",
+      "oms": "Lanceertoren, 5x je lichaamsgewicht omhoog",
+      "beg": 130,
+      "zelf": 130,
+      "max": null,
+      "type": "drop_tower",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Le Galion",
+      "oms": "Piratenschip met crescendo-sensaties",
+      "beg": 130,
+      "zelf": 130,
+      "max": null,
+      "type": "pirate_ship",
+      "props": [
+        "schommelt"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Generator",
+      "oms": "Coaster die je voor- en achterover draait",
+      "beg": 130,
+      "zelf": 130,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Mahuka",
+      "oms": "Spinning coaster in verlaten tempel",
+      "beg": 120,
+      "zelf": 120,
+      "max": 195,
+      "type": "spinning_coaster",
+      "props": [
+        "hoog",
+        "snel",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Woodstock Express",
+      "oms": "Coaster met snelle klimmen en bochten",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Hurricane",
+      "oms": "Schommel met 2 minuten gewichtloosheid",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "top_spin",
+      "props": [
+        "hoog",
+        "snel",
+        "draait",
+        "schommelt"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Timber",
+      "oms": "Houten achtbaan met airtimes",
+      "beg": 110,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Gold River",
+      "oms": "Wildwaterbaan in grote boeien",
+      "beg": 90,
+      "zelf": 130,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "AirBoat",
+      "oms": "Snelle boottocht door de Bayou",
+      "beg": 100,
+      "zelf": 120,
+      "max": null,
+      "type": "dark_ride",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Bambooz River",
+      "oms": "Verfrissende Canadian river-tocht",
+      "beg": 100,
+      "zelf": 120,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Tiki Academy",
+      "oms": "Bootjes met waterkanonnen",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "La Coccinelle",
+      "oms": "Familieachtbaan voor eerste sensaties",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Surf Music",
+      "oms": "Glijbaan met drijfband",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "On Air",
+      "oms": "Trap in gondels als vogels in de lucht",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "wave_swinger",
+      "props": [
+        "hoog",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Dock'N Roll",
+      "oms": "Boot die goederen naar Festival City brengt",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "MonORail",
+      "oms": "Verhoogde rit met uitzicht op het park",
+      "beg": 50,
+      "zelf": 120,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Carrousel",
+      "oms": "Klassieke draaimolen tussen palmbomen",
+      "beg": 50,
+      "zelf": 120,
+      "max": null,
+      "type": "carousel",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Tam Tam Aventure",
+      "oms": "Rustige boottocht langs flora en fauna",
+      "beg": 50,
+      "zelf": 120,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Festival Station",
+      "oms": "Trein die het hele park laat ontdekken",
+      "beg": 50,
+      "zelf": 120,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Les P'tits Chaudrons",
+      "oms": "Draaiende ketels",
+      "beg": 80,
+      "zelf": 110,
+      "max": null,
+      "type": "teacups",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Volt-O-Vent",
+      "oms": "Wervelende rit door de vlakten",
+      "beg": 80,
+      "zelf": 105,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Balloon Race",
+      "oms": "Luchtballon-rit voor het hele gezin",
+      "beg": 80,
+      "zelf": 105,
+      "max": null,
+      "type": "wave_swinger",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "WAB Band Tour",
+      "oms": "Treintje met scenes van de kangoeroe",
+      "beg": 50,
+      "zelf": 105,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Le Petit Vapeur",
+      "oms": "Mini-versie van de Totem",
+      "beg": 90,
+      "zelf": 100,
+      "max": null,
+      "type": "drop_tower",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Concert'O",
+      "oms": "Kindervariant van de Canadian river",
+      "beg": 90,
+      "zelf": 90,
+      "max": 140,
+      "type": "water_ride",
+      "props": [
+        "nat"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "La Chevauchee",
+      "oms": "Paardrijtocht op rails",
+      "beg": 90,
+      "zelf": 90,
+      "max": 140,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Playground Explorer Adventure",
+      "oms": "Speeltuin steampunk vanaf 3 jaar",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Playground Exotic Island 7-12",
+      "oms": "Speeltuin voor kinderen 7-12 jaar",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Playground Festival City",
+      "oms": "Speeltuin vanaf 3 jaar",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Playground Exotic Island 3-6",
+      "oms": "Speeltuin voor kinderen 3-6 jaar",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    }
+  ]
+}

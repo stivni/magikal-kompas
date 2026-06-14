@@ -1,0 +1,477 @@
+{
+  "park": "Walibi Holland",
+  "meta": {
+    "country": "NL",
+    "site": "https://www.walibi.nl",
+    "updated": "2026-06-14",
+    "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
+  },
+  "rides": [
+    {
+      "att": "Lost Gravity",
+      "oms": "overkop",
+      "beg": 140,
+      "zelf": 140,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel",
+        "inversies"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Goliath",
+      "oms": "",
+      "beg": 140,
+      "zelf": 140,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Condor",
+      "oms": "",
+      "beg": 140,
+      "zelf": 140,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "La Grande Roue",
+      "oms": "",
+      "beg": 140,
+      "zelf": 140,
+      "max": null,
+      "type": "ferris_wheel",
+      "props": [
+        "hoog",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Blast",
+      "oms": "",
+      "beg": 140,
+      "zelf": 140,
+      "max": null,
+      "type": "drop_tower",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "YOY CHILL",
+      "oms": "coaster",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "YOY THRILL",
+      "oms": "coaster",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Speed of Sound",
+      "oms": "boomerang",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel",
+        "inversies"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "UNTAMED",
+      "oms": "houten coaster",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Xpress: Platform 13",
+      "oms": "overkop",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel",
+        "inversies"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "G-Force",
+      "oms": "",
+      "beg": 120,
+      "zelf": 140,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Space Shot",
+      "oms": "",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "drop_tower",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "The Tomahawk",
+      "oms": "",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "teacups",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Eat My Dust",
+      "oms": "familiecoaster",
+      "beg": 90,
+      "zelf": 105,
+      "max": null,
+      "type": "kiddie_coaster",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Drako",
+      "oms": "kinderachtbaan",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Merlin's Magic Castle",
+      "oms": "",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "dark_ride",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Pavillon de The",
+      "oms": "",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "teacups",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Space Kidz",
+      "oms": "",
+      "beg": 90,
+      "zelf": 105,
+      "max": null,
+      "type": "dark_ride",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Squad's Stunt Flight",
+      "oms": "",
+      "beg": 90,
+      "zelf": 90,
+      "max": 150,
+      "type": "kiddie_flat",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Wind Seekers",
+      "oms": "",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "wave_swinger",
+      "props": [
+        "hoog",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Crazy River",
+      "oms": "",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "El Rio Grande",
+      "oms": "",
+      "beg": 90,
+      "zelf": 140,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Splash Battle",
+      "oms": "",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "water_battle",
+      "props": [
+        "nat"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Fibi's Bubble Swirl",
+      "oms": "",
+      "beg": 0,
+      "zelf": 105,
+      "max": null,
+      "type": "dark_ride",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Haaz' Garage",
+      "oms": "",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Le Tour des Jardins",
+      "oms": "",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Los Sombreros",
+      "oms": "",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Merrie Go'Round",
+      "oms": "",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "dark_ride",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Super Swing",
+      "oms": "",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "wave_swinger",
+      "props": [
+        "hoog",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Tequila Taxi's",
+      "oms": "",
+      "beg": 0,
+      "zelf": 130,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "W.A.B. World Tour",
+      "oms": "",
+      "beg": 0,
+      "zelf": 105,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Walibi's Fun Recorder",
+      "oms": "",
+      "beg": 0,
+      "zelf": 105,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Mini Taxi's",
+      "oms": "",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    }
+  ]
+}

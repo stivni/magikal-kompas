@@ -1,0 +1,518 @@
+{
+  "park": "Bobbejaanland",
+  "meta": {
+    "country": "BE",
+    "site": "https://www.bobbejaanland.be",
+    "updated": "2026-06-14",
+    "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
+  },
+  "rides": [
+    {
+      "att": "El Paso Special",
+      "oms": "interactieve rit",
+      "beg": 140,
+      "zelf": 140,
+      "max": null,
+      "type": "dark_ride",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Sledge Hammer",
+      "oms": "?",
+      "beg": 130,
+      "zelf": 140,
+      "max": null,
+      "type": "top_spin",
+      "props": [
+        "hoog",
+        "snel",
+        "draait",
+        "schommelt"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Fury",
+      "oms": "launch coaster",
+      "beg": 130,
+      "zelf": 130,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Typhoon",
+      "oms": "dive coaster",
+      "beg": 125,
+      "zelf": 140,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "El Rio",
+      "oms": "wildwaterbaan",
+      "beg": 120,
+      "zelf": 140,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Bob Express",
+      "oms": "mine coaster",
+      "beg": 120,
+      "zelf": 140,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Naga Bay",
+      "oms": "spinning coaster",
+      "beg": 120,
+      "zelf": 140,
+      "max": null,
+      "type": "spinning_coaster",
+      "props": [
+        "hoog",
+        "snel",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Orbiter",
+      "oms": "hovercrafts",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "flat_spinner",
+      "props": [
+        "snel",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Speedy Bob",
+      "oms": "familiecoaster",
+      "beg": 110,
+      "zelf": 140,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Dreamcatcher",
+      "oms": "hangende achtbaan",
+      "beg": 110,
+      "zelf": 130,
+      "max": null,
+      "type": "spinning_coaster",
+      "props": [
+        "hoog",
+        "snel",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Balloon Race",
+      "oms": "ballonnetjes",
+      "beg": 110,
+      "zelf": 110,
+      "max": 150,
+      "type": "wave_swinger",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Minirad",
+      "oms": "mini-reuzenrad",
+      "beg": 110,
+      "zelf": 110,
+      "max": 150,
+      "type": "ferris_wheel",
+      "props": [
+        "hoog",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Old Carousel",
+      "oms": "carousel",
+      "beg": 110,
+      "zelf": 110,
+      "max": 150,
+      "type": "carousel",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Dubbeldekcarousel",
+      "oms": "carousel",
+      "beg": 110,
+      "zelf": 110,
+      "max": 150,
+      "type": "carousel",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Minitrein",
+      "oms": "autoritje",
+      "beg": 110,
+      "zelf": 110,
+      "max": 150,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Glijbaan",
+      "oms": "glijbaan",
+      "beg": 110,
+      "zelf": 110,
+      "max": null,
+      "type": "kiddie_flat",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Big Bang",
+      "oms": "bandenglijbaan",
+      "beg": 100,
+      "zelf": 140,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Terra Magma",
+      "oms": "boomstammetjes",
+      "beg": 100,
+      "zelf": 140,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Wildwaterbaan",
+      "oms": "boomstammetjes",
+      "beg": 100,
+      "zelf": 140,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Aztek Express",
+      "oms": "rappe rups",
+      "beg": 100,
+      "zelf": 140,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Kettingmolen",
+      "oms": "vliegende stoeltjes",
+      "beg": 100,
+      "zelf": 140,
+      "max": null,
+      "type": "wave_swinger",
+      "props": [
+        "hoog",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Revolution",
+      "oms": "dark coaster",
+      "beg": 100,
+      "zelf": 140,
+      "max": null,
+      "type": "top_spin",
+      "props": [
+        "hoog",
+        "snel",
+        "draait",
+        "schommelt"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "The Forbidden Caves",
+      "oms": "4D",
+      "beg": 100,
+      "zelf": 130,
+      "max": null,
+      "type": "teacups",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "King Kong",
+      "oms": "lift",
+      "beg": 100,
+      "zelf": 130,
+      "max": null,
+      "type": "drop_tower",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Oki Doki",
+      "oms": "familiecoaster",
+      "beg": 95,
+      "zelf": 140,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Banana Battle",
+      "oms": "waterbattle",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "water_battle",
+      "props": [
+        "nat"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Rode Baron",
+      "oms": "vliegertjes",
+      "beg": 90,
+      "zelf": 90,
+      "max": null,
+      "type": "wave_swinger",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Flying Orca",
+      "oms": "vliegmolen",
+      "beg": 80,
+      "zelf": 140,
+      "max": null,
+      "type": "wave_swinger",
+      "props": [
+        "hoog",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Horse Pedalo",
+      "oms": "railpedalo",
+      "beg": 80,
+      "zelf": 140,
+      "max": null,
+      "type": "water_battle",
+      "props": [
+        "nat"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Reuzenrad",
+      "oms": "reuzenrad",
+      "beg": 80,
+      "zelf": 140,
+      "max": null,
+      "type": "ferris_wheel",
+      "props": [
+        "hoog",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Pony Ride",
+      "oms": "railritje",
+      "beg": 80,
+      "zelf": 110,
+      "max": 195,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Convoy trucks",
+      "oms": "autoritje",
+      "beg": 80,
+      "zelf": 80,
+      "max": 150,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Locomotion",
+      "oms": "autoritje",
+      "beg": 80,
+      "zelf": 80,
+      "max": 150,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Glijbaan kinderland",
+      "oms": "glijbaan",
+      "beg": 80,
+      "zelf": 80,
+      "max": 150,
+      "type": "kiddie_flat",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Bootvaart",
+      "oms": "bootjevaren",
+      "beg": 0,
+      "zelf": 140,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    }
+  ]
+}

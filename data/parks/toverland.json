@@ -1,0 +1,423 @@
+{
+  "park": "Toverland",
+  "meta": {
+    "country": "NL",
+    "site": "https://www.toverland.com",
+    "updated": "2026-06-14",
+    "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
+  },
+  "rides": [
+    {
+      "att": "Booster Bike",
+      "oms": "motorachtbaan",
+      "beg": 140,
+      "zelf": 140,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Kletterparcours",
+      "oms": "klimparcours",
+      "beg": 140,
+      "zelf": 140,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Fenix",
+      "oms": "wing coaster",
+      "beg": 132,
+      "zelf": 132,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Pixarus",
+      "oms": "vliegtuigmolen",
+      "beg": 125,
+      "zelf": 125,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Troy",
+      "oms": "houten achtbaan",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Scorpios",
+      "oms": "schommelschip",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "pirate_ship",
+      "props": [
+        "schommelt"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Djengu River",
+      "oms": "wildwaterbaan",
+      "beg": 100,
+      "zelf": 120,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Dwervelwind",
+      "oms": "draaiende achtbaan",
+      "beg": 100,
+      "zelf": 120,
+      "max": null,
+      "type": "spinning_coaster",
+      "props": [
+        "hoog",
+        "snel",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Coco Bolo",
+      "oms": "valtoren",
+      "beg": 100,
+      "zelf": 120,
+      "max": null,
+      "type": "drop_tower",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Djinn",
+      "oms": "zweefmolen",
+      "beg": 100,
+      "zelf": 120,
+      "max": null,
+      "type": "wave_swinger",
+      "props": [
+        "hoog",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Villa Fiasco",
+      "oms": "funhouse",
+      "beg": 100,
+      "zelf": 120,
+      "max": null,
+      "type": "funhouse",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Maximus' Blitz Bahn",
+      "oms": "bobbaan",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Expedition Zork",
+      "oms": "boomstammetjes",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Toos Express",
+      "oms": "indoor achtbaan",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel",
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Drakenslangen",
+      "oms": "waterglijbaan",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Alpenrutsche",
+      "oms": "dynamisch schommelschip",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "pirate_ship",
+      "props": [
+        "schommelt"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Theekopjes",
+      "oms": "theekopjes",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "teacups",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Paarden van Ithaka",
+      "oms": "rondrit",
+      "beg": 90,
+      "zelf": 110,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Vliegend Tapijt",
+      "oms": "mini vrije val",
+      "beg": 90,
+      "zelf": 90,
+      "max": null,
+      "type": "drop_tower",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Dragonwatch",
+      "oms": "valtoren",
+      "beg": 80,
+      "zelf": 120,
+      "max": null,
+      "type": "drop_tower",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Merlin's Quest",
+      "oms": "boottocht met darkride",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "dark_ride",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Wirbelbaum",
+      "oms": "dynamisch reuzenrad",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "ferris_wheel",
+      "props": [
+        "hoog",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Garden Tour",
+      "oms": "rondrit",
+      "beg": 0,
+      "zelf": 110,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Tolly Molly",
+      "oms": "waterdraaimolen",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "carousel",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Karussell",
+      "oms": "draaimolen",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "carousel",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Jumping Juna",
+      "oms": "carrousel",
+      "beg": 0,
+      "zelf": 90,
+      "max": null,
+      "type": "carousel",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Truukjes",
+      "oms": "mini-autoparcours",
+      "beg": 0,
+      "zelf": 90,
+      "max": null,
+      "type": "kiddie_flat",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Klokhuis",
+      "oms": "mini-rupsbaan",
+      "beg": 0,
+      "zelf": 90,
+      "max": null,
+      "type": "kiddie_flat",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Magiezijn",
+      "oms": "interactieve show",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "type": "show",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    }
+  ]
+}

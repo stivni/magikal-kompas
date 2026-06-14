@@ -1,0 +1,145 @@
+{
+  "park": "Efteling",
+  "meta": {
+    "country": "NL",
+    "site": "https://www.efteling.com",
+    "updated": "2026-06-14",
+    "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
+  },
+  "rides": [
+    {
+      "att": "Baron 1898",
+      "oms": "",
+      "beg": 132,
+      "zelf": 132,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Vliegende Hollander",
+      "oms": "",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "dark_ride",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Python",
+      "oms": "",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Vogel Rok",
+      "oms": "",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "spinning_coaster",
+      "props": [
+        "hoog",
+        "snel",
+        "draait",
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Joris en de Draak",
+      "oms": "",
+      "beg": 110,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Max & Moritz",
+      "oms": "",
+      "beg": 100,
+      "zelf": 130,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Halve Maen",
+      "oms": "",
+      "beg": 80,
+      "zelf": 120,
+      "max": null,
+      "type": "pirate_ship",
+      "props": [
+        "schommelt"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Pirana",
+      "oms": "",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "dark_ride",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Sirocco",
+      "oms": "",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "flat_spinner",
+      "props": [
+        "snel",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    }
+  ]
+}

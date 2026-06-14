@@ -1,0 +1,298 @@
+{
+  "park": "Walibi Belgium",
+  "meta": {
+    "country": "BE",
+    "site": "https://www.walibi.be",
+    "updated": "2026-06-14",
+    "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
+  },
+  "rides": [
+    {
+      "att": "Buzzsaw",
+      "oms": "",
+      "beg": 140,
+      "zelf": 140,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Kondaa",
+      "oms": "",
+      "beg": 130,
+      "zelf": 130,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Cobra",
+      "oms": "",
+      "beg": 130,
+      "zelf": 130,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel",
+        "inversies"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Psyke underground",
+      "oms": "",
+      "beg": 130,
+      "zelf": 140,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel",
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Vampire",
+      "oms": "",
+      "beg": 130,
+      "zelf": 130,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel",
+        "inversies"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Weerwolf",
+      "oms": "",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Pulsar",
+      "oms": "",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Dalton Terror",
+      "oms": "",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Het Paleis van de Geest",
+      "oms": "",
+      "beg": 105,
+      "zelf": 120,
+      "max": null,
+      "type": "dark_ride",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Radja River",
+      "oms": "",
+      "beg": 105,
+      "zelf": 140,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Calamity Mine",
+      "oms": "",
+      "beg": 100,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Tiki Waka",
+      "oms": "",
+      "beg": 100,
+      "zelf": 120,
+      "max": null,
+      "type": "spinning_coaster",
+      "props": [
+        "hoog",
+        "snel",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Fun Pilot",
+      "oms": "",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Salsa Y Fiesta",
+      "oms": "",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "flat_spinner",
+      "props": [
+        "snel",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Kondaala",
+      "oms": "",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Flashback",
+      "oms": "",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Guitar Riff",
+      "oms": "",
+      "beg": 90,
+      "zelf": 105,
+      "max": null,
+      "type": "wave_swinger",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Vliegend Tapijt",
+      "oms": "",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "kiddie_flat",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Gold River Adventure",
+      "oms": "",
+      "beg": 50,
+      "zelf": 120,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    }
+  ]
+}

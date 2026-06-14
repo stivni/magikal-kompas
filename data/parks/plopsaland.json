@@ -1,0 +1,569 @@
+{
+  "park": "Plopsaland",
+  "meta": {
+    "country": "BE",
+    "site": "https://www.plopsalanddepanne.be",
+    "updated": "2026-06-14",
+    "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
+  },
+  "rides": [
+    {
+      "att": "Ride to Happiness",
+      "oms": "",
+      "beg": 130,
+      "zelf": 130,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Anubis",
+      "oms": "",
+      "beg": 125,
+      "zelf": 140,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Heidi",
+      "oms": "",
+      "beg": 120,
+      "zelf": 140,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Nachtwachtflyer",
+      "oms": "",
+      "beg": 120,
+      "zelf": 140,
+      "max": null,
+      "type": "thrill_coaster",
+      "props": [
+        "hoog",
+        "snel",
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Piratenboot",
+      "oms": "",
+      "beg": 120,
+      "zelf": 140,
+      "max": null,
+      "type": "pirate_ship",
+      "props": [
+        "schommelt"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Grote Golf",
+      "oms": "",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Dinosplash",
+      "oms": "",
+      "beg": 100,
+      "zelf": 140,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Jetski",
+      "oms": "",
+      "beg": 100,
+      "zelf": 120,
+      "max": null,
+      "type": "water_battle",
+      "props": [
+        "nat"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Wienerwalz",
+      "oms": "",
+      "beg": 100,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Wickie's Wervelwind",
+      "oms": "",
+      "beg": 100,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Autoscooters",
+      "oms": "",
+      "beg": 100,
+      "zelf": 100,
+      "max": 140,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Supersplash",
+      "oms": "",
+      "beg": 96,
+      "zelf": 120,
+      "max": null,
+      "type": "water_ride",
+      "props": [
+        "nat",
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Draconis",
+      "oms": "",
+      "beg": 96,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Bloemenmolen",
+      "oms": "",
+      "beg": 96,
+      "zelf": 120,
+      "max": null,
+      "type": "dark_ride",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Valtoren",
+      "oms": "",
+      "beg": 96,
+      "zelf": 120,
+      "max": null,
+      "type": "drop_tower",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Swingboom",
+      "oms": "",
+      "beg": 96,
+      "zelf": 120,
+      "max": null,
+      "type": "pirate_ship",
+      "props": [
+        "schommelt"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Waterlelies",
+      "oms": "",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "water_battle",
+      "props": [
+        "nat"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "LikeMe coaster",
+      "oms": "",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "K3 roller skater",
+      "oms": "",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "family_coaster",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Dolle busrit",
+      "oms": "",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Storm op zee",
+      "oms": "",
+      "beg": 85,
+      "zelf": 120,
+      "max": null,
+      "type": "top_spin",
+      "props": [
+        "hoog",
+        "snel",
+        "draait",
+        "schommelt"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Vliegende fietsen",
+      "oms": "",
+      "beg": 85,
+      "zelf": 120,
+      "max": null,
+      "type": "wave_swinger",
+      "props": [
+        "hoog",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Koffiekopjes",
+      "oms": "",
+      "beg": 85,
+      "zelf": 120,
+      "max": null,
+      "type": "teacups",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "MegaMindy fietsjes",
+      "oms": "",
+      "beg": 85,
+      "zelf": 120,
+      "max": null,
+      "type": "wave_swinger",
+      "props": [
+        "hoog",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Wickie The Battle",
+      "oms": "",
+      "beg": 85,
+      "zelf": 120,
+      "max": null,
+      "type": "teacups",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Glijbaan",
+      "oms": "",
+      "beg": 85,
+      "zelf": 100,
+      "max": null,
+      "type": "dark_ride",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Safari",
+      "oms": "",
+      "beg": 85,
+      "zelf": 85,
+      "max": 140,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Verkeerspark",
+      "oms": "",
+      "beg": 85,
+      "zelf": 85,
+      "max": 140,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Konijntjes",
+      "oms": "",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "dark_ride",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Bos van Plop",
+      "oms": "",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "transport",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Op Reis met Bumba",
+      "oms": "",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "transport",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Balloonrace",
+      "oms": "",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "wave_swinger",
+      "props": [
+        "hoog",
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Tractors",
+      "oms": "",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Bumballoon",
+      "oms": "",
+      "beg": 0,
+      "zelf": 110,
+      "max": null,
+      "type": "wave_swinger",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Kikkers",
+      "oms": "",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "drop_tower",
+      "props": [
+        "hoog",
+        "snel"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Eendjes",
+      "oms": "",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "dark_ride",
+      "props": [
+        "donker"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Carousel",
+      "oms": "",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "carousel",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "Dierenmolen",
+      "oms": "",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "carousel",
+      "props": [
+        "draait"
+      ],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    },
+    {
+      "att": "TikTak-bootjes",
+      "oms": "",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "auto-v1",
+      "tag_confidence": "unverified",
+      "source_url": ""
+    }
+  ]
+}
