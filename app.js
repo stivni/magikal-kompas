@@ -30,15 +30,16 @@ const parks=(window.PARK_DATA||[]).map(p=>p.park);
 
 /* ---- GEZELSCHAP (per toestel + deelbaar) ---- */
 const SKEY="ppm_party_v1";
-let people=[{name:"Alex",h:144,on:true},{name:"Emma",h:130,on:true},{name:"Max",h:115,on:true},
-{name:"Anna",h:101,on:true},{name:"Sofia",h:81,on:true}];
+let people=[];
 let typePref={}, propPref={}, forceOv={};
 let excludedParks={};
+let partyOpen=true;
 function applyConfig(d){ if(!d)return; if(d.people)people=d.people;
   typePref=d.typePref||{}; propPref=d.propPref||{}; forceOv=d.forceOv||{};
-  excludedParks=d.excludedParks||{}; }
+  excludedParks=d.excludedParks||{};
+  if(typeof d.partyOpen==="boolean")partyOpen=d.partyOpen; }
 (function load(){ try{const s=localStorage.getItem(SKEY); if(s)applyConfig(JSON.parse(s)); }catch(e){} })();
-function saveParty(){ try{localStorage.setItem(SKEY,JSON.stringify({people,typePref,propPref,forceOv,excludedParks}));}catch(e){} }
+function saveParty(){ try{localStorage.setItem(SKEY,JSON.stringify({people,typePref,propPref,forceOv,excludedParks,partyOpen}));}catch(e){} }
 const isParkOn=p=>!excludedParks[p];
 
 /* ---- ADMIN-correcties ---- */
@@ -143,7 +144,11 @@ function parkMetrics(p){const kids=selected();
 
 /* ================= leden + voorkeuren (samen) ================= */
 function renderMembers(){
-  const el=document.getElementById("people"); el.innerHTML="";
+  renderPartyHeader();
+  const el=document.getElementById("people");
+  if(!partyOpen){el.innerHTML="";el.style.display="none";return;}
+  el.style.display="";
+  el.innerHTML="";
   people.forEach((p,i)=>{
     const open=expanded===p.name;
     const card=document.createElement("div");
@@ -209,12 +214,22 @@ function renderMembers(){
     s.oninput=()=>{const i=s.dataset.i;people[i].h=+s.value;
       s.style.setProperty("--fill",((s.value-HMIN)/(HMAX-HMIN)*100)+"%");
       s.closest(".member").querySelector(".p-val").innerHTML=s.value+'<small> cm</small>';};
-    s.onchange=()=>{saveParty();renderViews();};});
+    s.onchange=()=>{saveParty();renderViews();renderPartyHeader();};});
   el.querySelectorAll(".subtab").forEach(b=>b.onclick=()=>{memberTab[b.dataset.name]=b.dataset.mt;renderMembers();});
   el.querySelectorAll("[data-pp]").forEach(b=>b.onclick=()=>{
     (propPref[b.dataset.name]=propPref[b.dataset.name]||{})[b.dataset.pp]=b.dataset.v; saveParty(); renderMembers(); renderViews();});
   el.querySelectorAll("[data-tp]").forEach(b=>b.onclick=()=>{
     (typePref[b.dataset.name]=typePref[b.dataset.name]||{})[b.dataset.tp]=+b.dataset.v; saveParty(); renderMembers(); renderViews();});
+}
+function renderPartyHeader(){
+  const head=document.querySelector(".party-head"); if(!head)return;
+  const on=people.filter(p=>p.on), names=on.map(p=>p.name).join(", ");
+  head.classList.toggle("open",partyOpen);
+  const summary=partyOpen
+    ? `<span class="ph-title">Wie gaat er mee?</span>`
+    : `<span class="ph-title">Gezelschap</span><span class="ph-summary">${names||"niemand aangevinkt"}</span><span class="ph-count">${on.length}</span>`;
+  head.innerHTML=`<svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="9,6 15,12 9,18"/></svg>${summary}<button class="sharebtn" id="sharebtn">Overzetten</button>`;
+  head.querySelector("#sharebtn").onclick=e=>{e.stopPropagation();openShare();};
 }
 
 /* ================= parken ================= */
@@ -422,7 +437,10 @@ document.querySelector(".tabs").onclick=e=>{const t=e.target.closest(".tab");if(
   ["parken","kind"].forEach(v=>document.getElementById("view-"+v).style.display=tab===v?"":"none");
   document.getElementById("lensrow").style.display=(tab==="parken")?"flex":"none";
   renderViews();};
-document.getElementById("sharebtn").onclick=openShare;
+document.getElementById("partyhead").onclick=e=>{
+  if(e.target.closest("#sharebtn"))return;
+  partyOpen=!partyOpen; if(!partyOpen)expanded=null; saveParty(); renderMembers();
+};
 
 if(IS_ADMIN)document.body.classList.add("admin");
 if(importFromHash()){/* geladen uit deel-link */}

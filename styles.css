@@ -99,7 +99,7 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
 .guestnote{font-size:11px;color:var(--muted);padding:6px 0 2px;font-style:italic}
 
 /* --- ledenkaart (lengte + voorkeuren samen) --- */
-.sec-head .sharebtn{margin-left:auto;text-transform:none;letter-spacing:0;font-weight:700;font-size:12px;
+.sec-head .sharebtn,.party-head .sharebtn{margin-left:auto;text-transform:none;letter-spacing:0;font-weight:700;font-size:12px;
   color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:8px;padding:5px 10px;cursor:pointer}
 .member{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:8px;box-shadow:var(--shadow);overflow:hidden;transition:opacity .15s}
 .member.off{opacity:.45}
@@ -110,10 +110,22 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
 .subtab{flex:1;text-align:center;padding:8px 0;border-radius:7px;font-weight:700;font-size:12px;color:var(--muted);cursor:pointer}
 .subtab.on{background:#fff;color:var(--ink);box-shadow:var(--shadow)}
 
+/* --- inklapbare partysectie --- */
+.party-sec{margin-top:14px}
+.party-head{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;box-shadow:var(--shadow);cursor:pointer;font-size:13px}
+.party-head .chev{color:var(--grey);flex:none;transition:transform .15s}
+.party-head.open .chev{transform:rotate(90deg)}
+.party-head .ph-title{font-weight:700;color:var(--ink);text-transform:uppercase;letter-spacing:.06em;font-size:11px}
+.party-head .ph-summary{flex:1;min-width:0;color:var(--muted);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.party-head .ph-count{font-family:"Bricolage Grotesque";font-weight:800;font-size:13px;color:var(--muted);background:var(--grey-bg);border-radius:999px;padding:2px 8px;flex:none}
+.party-head .sharebtn{margin-left:auto;flex:none}
+.party-head.open .ph-title{flex:1}
+.people{margin-top:8px}
+
 /* --- toevoegen / verwijderen --- */
-.addmember{display:flex;align-items:center;justify-content:center;gap:6px;background:transparent;border:1.5px dashed var(--line);border-radius:14px;padding:12px;font-size:13px;font-weight:700;color:var(--muted);cursor:pointer}
+.addmember{display:flex;align-items:center;justify-content:center;gap:6px;background:transparent;border:1.5px dashed var(--line);border-radius:14px;padding:10px;font-size:12.5px;font-weight:700;color:var(--muted);cursor:pointer;margin-top:4px}
 .addmember:hover{border-color:var(--ink);color:var(--ink)}
-.addmember .plus{font-size:18px;font-weight:800;line-height:1}
+.addmember .plus{font-size:16px;font-weight:800;line-height:1}
 .m-actions{display:flex;justify-content:flex-end;margin-top:10px;padding-top:8px;border-top:1px solid var(--line)}
 .linkbtn{background:none;border:none;font-weight:700;font-size:12px;cursor:pointer;color:var(--ink);padding:6px 8px;border-radius:7px}
 .linkbtn:hover{background:var(--grey-bg)}

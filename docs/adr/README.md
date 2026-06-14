@@ -19,3 +19,4 @@ Status van alle records hieronder: **Accepted** (vastgelegd na de POC-fase).
 | [008](008-opslag-per-toestel.md) | Gezelschaps-data per toestel, deelbaar zonder server | Data, rollen & opslag |
 | [009](009-statische-app-data-los.md) | Statische app met data los van code | Data, rollen & opslag |
 | [010](010-parken-uitsluiten.md) | Parken uitsluiten van de berekening | Data, rollen & opslag |
+| [011](011-leeg-gezelschap-voor-nieuwe-gebruiker.md) | Leeg gezelschap voor een nieuwe gebruiker | Data, rollen & opslag |
