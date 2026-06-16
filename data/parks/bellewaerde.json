@@ -80,7 +80,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/bellewaerde/el-volador.webp",
+        "license": "CC-BY-SA-3.0",
+        "attribution": "Foto door djolivier, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Elvolador@Bellewaerde.JPG"
+      }
     },
     {
       "att": "Flying Carrousel",

@@ -27,6 +27,8 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run build
+      - name: Strip admin from publish artifact
+        run: rm -f dist/admin.html dist/assets/admin-*.js
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
