@@ -36,7 +36,7 @@ export function Rail({
 
       <div className="rail-brand">
         <a className="brand" href="#" aria-label="Magikal Kompas">
-          <img src="/assets/brand/logo.png" alt="Magikal Kompas" className="brand-logo" />
+          <img src={`${import.meta.env.BASE_URL}assets/brand/logo.png`} alt="Magikal Kompas" className="brand-logo" />
         </a>
       </div>
 

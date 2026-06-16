@@ -14,7 +14,7 @@ button{font-family:inherit}
 .appbar{position:sticky;top:0;z-index:30;background:rgba(251,246,236,.92);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
 .appbar-inner{max-width:1040px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:10px 16px}
 .brand{display:inline-flex;align-items:center;text-decoration:none;color:var(--ink);white-space:nowrap}
-.brand-logo{display:block;height:32px;width:auto}
+.brand-logo{display:block;height:44px;width:auto}
 .spacer{flex:1}
 .modes-mob{display:flex;background:var(--grey-bg);padding:3px;border-radius:10px;gap:3px}
 .modes-mob .mode{border:none;background:transparent;cursor:pointer;padding:6px 11px;border-radius:7px;font-weight:700;font-size:12px;color:var(--muted);white-space:nowrap}
@@ -35,7 +35,7 @@ button{font-family:inherit}
 .layout{max-width:1040px;margin:0 auto;display:grid;grid-template-columns:var(--rail-w) 1fr;gap:22px;padding:18px 16px 0}
 .rail{position:sticky;top:18px;align-self:start;max-height:calc(100vh - 36px);overflow:auto;padding-right:2px;display:flex;flex-direction:column;gap:18px}
 .rail-brand{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 2px 2px}
-.rail-brand .brand-logo{height:30px}
+.rail-brand .brand-logo{height:auto;width:100%;max-height:80px;object-fit:contain;object-position:left center}
 @media (max-width: 860px){
   .layout{grid-template-columns:1fr;gap:0;padding-top:10px}
   .rail{display:none}
@@ -340,7 +340,7 @@ input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;bac
 /* mobiele tweaks */
 @media (max-width: 860px){
   .appbar-inner{padding:9px 12px;gap:6px}
-  .brand-logo{height:26px}
+  .brand-logo{height:36px}
   .layout{padding:12px 12px 0}
   .row{padding:13px 14px;gap:10px;grid-template-columns:40px 1fr auto}
   .row .name{font-size:15.5px}
