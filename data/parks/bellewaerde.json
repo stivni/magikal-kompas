@@ -5,7 +5,7 @@
   "meta": {
     "country": "BE",
     "site": "https://www.bellewaerde.be",
-    "updated": "2026-06-14",
+    "updated": "2026-06-16",
     "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
   },
   "rides": [
@@ -18,11 +18,18 @@
       "type": "drop_tower",
       "props": [
         "hoog",
-        "snel"
+        "snel",
+        "high"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "admin",
+      "tag_confidence": "verified",
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/bellewaerde/screaming-eagle.webp?t=1781608106718",
+        "license": "CC-BY-SA-3.0",
+        "attribution": "Foto door djolivier, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Scremineagle@Bellewaerde.JPG"
+      }
     },
     {
       "att": "Boomerang",
@@ -38,7 +45,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/bellewaerde/boomerang.webp",
+        "license": "CC-BY-SA-3.0",
+        "attribution": "Foto door djolivier, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Boomerang.JPG"
+      }
     },
     {
       "att": "Piratenboot",

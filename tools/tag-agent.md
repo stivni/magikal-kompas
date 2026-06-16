@@ -21,11 +21,16 @@ NIET thuis — alleen feiten over de attractie.
 - Laat bij twijfel `low` staan i.p.v. te raden met te veel zelfvertrouwen.
 
 ## Eigenschappen — wat objectief op te zoeken is
-- `inversies`: heeft de baan loopings/over-de-kop? (vaak letterlijk vermeld)
-- `donker`: indoor / darkride? (vermeld op parksite)
-- `hoog` / `snel`: uit hoogte/snelheid of het type + schaal.
-- `nat`: waterattractie? word je echt nat? (let op: watergevecht kan droog blijven)
-- `draait` / `schommelt`: uit het bewegingsmodel.
+
+Keys zijn stabiel Engels (zie [ADR-015](../docs/adr/015-meertalige-ui.md)) —
+gebruik die exact in de `props`-array. UI-labels zijn NL maar staan los van de
+data.
+
+- `inversions`: heeft de baan loopings/over-de-kop? (vaak letterlijk vermeld)
+- `dark`: indoor / darkride? (vermeld op parksite)
+- `high` / `fast`: uit hoogte/snelheid of het type + schaal.
+- `wet`: waterattractie? word je echt nat? (let op: watergevecht kan droog blijven)
+- `spins` / `swings`: uit het bewegingsmodel.
 
 ## Belangrijk
 - Geef per attractie de `source_url` mee. Zonder bron → `tag_confidence: low`.

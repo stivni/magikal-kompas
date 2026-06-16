@@ -28,8 +28,24 @@ Beide waarden zijn altijd zichtbaar; de lens bepaalt alleen de sortering.
   de gebruiker, niet verstopt in een formule.
 - Begeleidersbehoefte en haalbaarheid worden naast de plezier-score getoond, zodat een
   keuze alle dimensies in beeld heeft.
+- De ranking is alleen zo goed als de ingevulde voorkeuren. Een leeg gezelschap
+  ([ADR-011](011-leeg-gezelschap-voor-nieuwe-gebruiker.md)) en de huidige
+  "alles op oké"-default maken dat een nieuwe gebruiker in de praktijk een rang ziet
+  die *aantal haalbare attracties* benadert, niet *plezier*. Twee aanvullingen
+  (beide nog niet geïmplementeerd, vastgelegd voor de React-herbouw — zie
+  [ADR-020](020-frontend-en-admin-stack.md)):
+  - **Wizard bij het toevoegen van een lid**: enkele gerichte vragen (leeftijd,
+    waar deze persoon vooral voor komt, harde "nooit"-eigenschappen) zetten de
+    type- en eigenschap-voorkeuren ineens scherp. Dit is de primaire bron — niet
+    een slimmer algoritme dat met weinig data moet raden.
+  - **Defaults gederiveerd uit geboortejaar** als vangnet wanneer de wizard wordt
+    overgeslagen. Geboortejaar is sowieso al nodig voor leeftijdsregels
+    ([ADR-016](016-leeftijdsregels-en-ontbrekende-data.md)), dus de inspanning
+    is nul. Default-voorkeuren staan zichtbaar op de ledenkaart en zijn
+    overschrijfbaar — geen verborgen aanname.
 - Toekomst / open vragen: weging (bv. favorieten zwaarder dan "oké"-ritten) is nu
-  eenvoudig gehouden; fijnere weging kan later indien de ranking te grof aanvoelt.
+  eenvoudig gehouden. Met betere voorkeur-data uit de wizard kan dit grover of
+  juist preciezer gemaakt worden; eerst de data, dan de weging herzien.
 
 ## Considered alternatives
 

@@ -21,9 +21,11 @@ We structureren de hoofdnavigatie rond exact die twee taken:
 2. **Wat eerst?** — voor één gekozen park: alle attracties gerankt op totale
    groeps-joy, hoogste eerst.
 
-Het park in tab 2 wordt op twee manieren gekozen: pills bovenaan (default = het
-top-gerankte actieve park), of via een "Plan dit park →" knop in elke
-uitgeklapte parkkaart in tab 1.
+Het park in tab 2 wordt op twee manieren gekozen: parkpicker bovenaan (default =
+het top-gerankte actieve park), of door in tab 1 op een parkkaart te klikken —
+de kaart heeft geen eigen detailweergave; de klik leidt rechtstreeks naar tab 2
+met dat park geselecteerd. Uitsluiten gebeurt met een kleine knop op de kaart
+zelf (zie [ADR-010](010-parken-uitsluiten.md)), niet via een uitklapper.
 
 Ride-score per attractie = som van de joy-waarde (favoriet 2, oké 1, exclusie 0)
 over de aangevinkte leden die de attractie haalbaar vinden. Niet-haalbare leden
@@ -35,7 +37,8 @@ favorieten → meer haalbare rijders → alfabetisch.
 - De volgorde-lijst gebruikt geen lens: de gebruiker wil één concrete volgorde,
   niet twee. Eerlijkheid tussen leden komt al tot uiting in tab 1.
 - Per-lid-analyse ("wat kan dit kind alleen?") vervalt als eigen tab. Die info
-  blijft beschikbaar via de uitgeklapte ledenkaart en de per-attractie-dots.
+  blijft beschikbaar via de uitgeklapte ledenkaart en de per-attractie-dots in
+  tab 2.
 - De rangschikking negeert reistijd en wachtrijen bewust: dat is dag-data, geen
   voorkeurs-data. Toekomst / open vragen: of begeleidersbelasting (samen
   haalbaar versus splitsen) zwaarder mee moet wegen in de volgorde.

@@ -17,6 +17,16 @@ verschijnen niet in de gesorteerde lijst en tellen niet mee in de "Per lid"-stat
 Ze blijven onderaan zichtbaar in een aparte sectie "Niet meegerekend" met een knop om ze
 weer mee te nemen.
 
+In/uit-zetten gebeurt via een **"Parken ▼"**-filter naast de sorteer- en land-filter,
+niet via een actie-knop op de parkkaart zelf. De filter toont een platte lijst van alle
+parken met een toggle per stuk; de parkkaart is volledig klikbaar en leidt naar tab 2
+(zie [ADR-012](012-twee-taken-in-de-ui.md)), zodat de kaart één betekenis heeft. De
+"Niet meegerekend"-strook blijft als snel terughaal-overzicht.
+
+Toekomst / open vragen: extra filter-assen (parkketen, reeds bezocht, …) staan op de
+roadmap maar wachten tot die velden in de wereld-data zitten. De filter blijft tot dan
+één platte parkenlijst.
+
 De uitsluitingen worden bewaard in dezelfde [[opslag-per-toestel]] (`localStorage`) als
 de rest van de gezelschaps-state, onder de sleutel `excludedParks`.
 

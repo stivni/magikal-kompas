@@ -18,9 +18,13 @@ zich in een appbar plus een uitschuifbare sheet. Onnodige cognitieve last:
 Eén navigatie-oppervlak per breakpoint:
 
 - **Desktop (≥ 861px)**: een **sidebar** links. Bevat alles wat geen
-  inhoud is — brand, taalkiezer, mode-switcher, gezelschap (met telbadge),
-  deel-knop, "goed om te weten" en instellingen/over in de voet.
-  De appbar is verborgen (`display:none`).
+  inhoud is — brand bovenaan, mode-switcher, gezelschap (met telbadge),
+  deel-knop en "goed om te weten" in het midden, en een **sticky voet**
+  onderaan met taalkiezer + instellingen/over. De voet kleeft aan de
+  onderrand van de rail-scroll (`position:sticky;bottom:0`) zodat de
+  taalkiezer altijd bereikbaar blijft, ook bij een lang gezelschap.
+  Conventie: taalkiezers staan op de meeste sites onderaan; volg dat
+  patroon. De appbar is verborgen (`display:none`).
 - **Mobiel (≤ 860px)**: een **appbar** bovenaan. Bevat brand, mode-switcher,
   taalkiezer, gezelschap-pill en het tandwiel. De sidebar wordt verborgen en
   schuift op vraag open als full-screen sheet (via de gezelschap-pill of het
@@ -28,9 +32,10 @@ Eén navigatie-oppervlak per breakpoint:
 
 Brand en taalkiezer worden in beide breakpoints getoond, maar elk in
 **precies één** container — niet beide tegelijk. Concreet: twee DOM-kopieën van
-de taalkiezer (`#lang-pill-mob` in de appbar, `#lang-pill-desk` in de rail),
-gesynchroniseerd via een korte `onchange`-handler. Eén kopie is zichtbaar per
-breakpoint; de andere zit op `display:none`.
+de taalkiezer (`#lang-pill-mob` compact in de appbar, `#lang-pill-desk` met
+volledige taalnamen in de rail-voet), gesynchroniseerd via een korte
+`onchange`-handler. Eén kopie is zichtbaar per breakpoint; de andere zit op
+`display:none`.
 
 ## Consequences
 

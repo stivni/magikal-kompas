@@ -1,6 +1,6 @@
 # 15. Meertalige UI met stabiele datasleutels
 
-- Status: Proposed
+- Status: Accepted
 - Groep: Productafbakening
 
 ## Context
@@ -126,6 +126,12 @@ zonder pagina-reload.
 
 ## Consequences
 
+- **Uitgevoerd op 2026-06-14**: prop-keys in alle `data/parks/*.json` en in
+  `src/shared/vocab.ts` (`PROPS`, `PNL`, `PEMO`) en `src/shared/types.ts`
+  (`PropKey`) zijn van NL naar EN gemigreerd; `data/schema.md` en
+  `tools/tag-agent.md` tonen voortaan de EN-keys. UI-labels blijven NL via
+  `PNL`/`i18n/nl.json`. De i18n-skelet-fase (`t()`-helper, `nl.json`) was al
+  eerder uitgevoerd.
 - De data-bestanden krijgen een eenmalige sleutel-hernoeming. Niet
   achterwaarts-compatibel: een oude `"hoog"` in een park-JSON werkt niet meer.
   Dat is bewust — een shim levensondersteuning is duurder dan migreren.

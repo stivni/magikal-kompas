@@ -22,9 +22,13 @@ tenzij anders vermeld.
 | [010](010-parken-uitsluiten.md) | Parken uitsluiten van de berekening | Data, rollen & opslag |
 | [011](011-leeg-gezelschap-voor-nieuwe-gebruiker.md) | Leeg gezelschap voor een nieuwe gebruiker | Data, rollen & opslag |
 | [012](012-twee-taken-in-de-ui.md) | UI rond twee concrete taken | Productafbakening |
-| [013](013-forceer-uitzondering-per-lid.md) | Forceer-uitzondering per lid en per attractie | Voorkeuren & ranking |
+| [013](013-forceer-uitzondering-per-lid.md) | Forceer-uitzondering per lid en per attractie *(Withdrawn)* | Voorkeuren & ranking |
 | [014](014-visuele-en-bron-velden.md) | Visuele en bron-velden per park en per attractie | Data, rollen & opslag |
 | [015](015-meertalige-ui.md) | Meertalige UI met stabiele datasleutels *(Proposed)* | Productafbakening |
 | [016](016-leeftijdsregels-en-ontbrekende-data.md) | Leeftijdsregels per attractie, en "ontbrekende data" als eigen toestand | Attractiemodel |
 | [017](017-hash-routing-voor-tab-en-park.md) | Hash-routing voor tab en gekozen park | Productafbakening |
 | [018](018-chrome-per-breakpoint.md) | Chrome in één plek per breakpoint | Productafbakening |
+| [019](019-admin-foto-curatie.md) | Admin-pagina voor foto-curatie | Data, rollen & opslag |
+| [020](020-frontend-en-admin-stack.md) | Frontend en admin-backend in TypeScript (React + Vite + Express) | Productafbakening |
+| [021](021-begeleiding-haalbaarheid.md) | Begeleiding-haalbaarheid als eigen signaal naast plezier *(Proposed)* | Voorkeuren & ranking |
+| [022](022-samen-en-splits-transparantie.md) | Samen en splits: transparantie zonder subgroepen-modeling *(Proposed)* | Voorkeuren & ranking |

@@ -22,7 +22,7 @@
       "min_age_zelf": null,            // min. leeftijd ZELFSTANDIG (jaar) of null, zie ADR-016
       "max_age": null,                 // max. leeftijd (jaar) of null, soft-uit kindertoestel
       "type": "thrill_coaster",        // bewegingsmodel, zie lijst onder
-      "props": ["hoog","snel"],        // eigenschappen die WAAR zijn
+      "props": ["high","fast"],        // eigenschappen die WAAR zijn (stabiel-EN keys)
       "tag_source": "auto-v1",         // auto-v1 | web | admin
       "tag_confidence": "unverified",  // unverified | low | med | high | verified
       "source_url": "",                // bron van de TAGGING (parksite, RCDB, fanwiki)
@@ -89,7 +89,9 @@ pirate_ship, top_spin, teacups, carousel, wave_swinger, ferris_wheel, flat_spinn
 water_ride, water_battle, dark_ride, transport, kiddie_flat, playground, show, funhouse
 
 ## Eigenschappen
-nat, hoog, snel, inversies, draait, schommelt, donker
+wet, high, fast, inversions, spins, swings, dark
 
-Eigenschappen zijn feiten over de attractie (niet smaak). ~81% volgt uit het type;
-de rest (vooral hoog/snel/donker/inversies) per attractie checken.
+Keys zijn stabiel Engels (zie [ADR-015](../docs/adr/015-meertalige-ui.md)); de
+NL-labels in de UI komen uit `PNL`/i18n. Eigenschappen zijn feiten over de
+attractie (niet smaak). ~81% volgt uit het type; de rest (vooral
+high/fast/dark/inversions) per attractie checken.

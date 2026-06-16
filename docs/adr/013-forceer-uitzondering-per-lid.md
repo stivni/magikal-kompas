@@ -1,6 +1,6 @@
 # 13. Forceer-uitzondering per lid en per attractie
 
-- Status: Accepted
+- Status: Withdrawn (zie [Update](#update))
 - Groep: Voorkeuren & ranking
 
 ## Context
@@ -63,3 +63,14 @@ blijft het hoofdmodel — deze laag is afwerking voor wat de assen niet vatten.
   ledenkaart leger houden, maar de uitzondering is een uitspraak van het lid
   en hoort daar conceptueel thuis — en moet meereizen met dat lid bij delen.
   Niet gekozen.
+
+## Update
+
+De per-rit forceeruitzondering vervalt: in de parkmode bestaat de uitklap-met-
+editor niet meer (zie [ADR-012](012-twee-taken-in-de-ui.md)), en `joy()`
+honoreert `forceOv` niet langer. "Aanpassingen" verhuizen naar wereldniveau via
+de admin (zie [ADR-019](019-admin-foto-curatie.md) en latere admin-ADRs);
+favorietsignalen op attractieniveau worden later opnieuw bekeken in een eigen
+beslissing. Bestaande `forceOv`-data in localStorage of deel-URL's blijft
+inert behouden om bestaande links niet te breken, maar is niet meer instelbaar
+en weegt niet meer mee.

@@ -1,7 +1,7 @@
 {
   "park": "Walibi Holland",
   "logo": "assets/logos/walibi-holland.svg",
-  "icon": "assets/icons/walibi-holland.svg",
+  "icon": "assets/icons/walibi-holland.png",
   "meta": {
     "country": "NL",
     "site": "https://www.walibi.nl",
@@ -17,9 +17,9 @@
       "max": null,
       "type": "thrill_coaster",
       "props": [
-        "hoog",
-        "snel",
-        "inversies"
+        "high",
+        "fast",
+        "inversions"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -33,8 +33,8 @@
       "max": null,
       "type": "thrill_coaster",
       "props": [
-        "hoog",
-        "snel"
+        "high",
+        "fast"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -48,8 +48,8 @@
       "max": null,
       "type": "thrill_coaster",
       "props": [
-        "hoog",
-        "snel"
+        "high",
+        "fast"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -63,8 +63,8 @@
       "max": null,
       "type": "ferris_wheel",
       "props": [
-        "hoog",
-        "draait"
+        "high",
+        "spins"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -78,8 +78,8 @@
       "max": null,
       "type": "drop_tower",
       "props": [
-        "hoog",
-        "snel"
+        "high",
+        "fast"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -93,8 +93,8 @@
       "max": null,
       "type": "family_coaster",
       "props": [
-        "hoog",
-        "snel"
+        "high",
+        "fast"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -108,8 +108,8 @@
       "max": null,
       "type": "family_coaster",
       "props": [
-        "hoog",
-        "snel"
+        "high",
+        "fast"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -123,9 +123,9 @@
       "max": null,
       "type": "thrill_coaster",
       "props": [
-        "hoog",
-        "snel",
-        "inversies"
+        "high",
+        "fast",
+        "inversions"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -139,8 +139,8 @@
       "max": null,
       "type": "family_coaster",
       "props": [
-        "hoog",
-        "snel"
+        "high",
+        "fast"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -154,9 +154,9 @@
       "max": null,
       "type": "thrill_coaster",
       "props": [
-        "hoog",
-        "snel",
-        "inversies"
+        "high",
+        "fast",
+        "inversions"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -170,8 +170,8 @@
       "max": null,
       "type": "thrill_coaster",
       "props": [
-        "hoog",
-        "snel"
+        "high",
+        "fast"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -185,8 +185,8 @@
       "max": null,
       "type": "drop_tower",
       "props": [
-        "hoog",
-        "snel"
+        "high",
+        "fast"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -200,7 +200,7 @@
       "max": null,
       "type": "teacups",
       "props": [
-        "draait"
+        "spins"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -226,8 +226,8 @@
       "max": null,
       "type": "family_coaster",
       "props": [
-        "hoog",
-        "snel"
+        "high",
+        "fast"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -241,7 +241,7 @@
       "max": null,
       "type": "dark_ride",
       "props": [
-        "donker"
+        "dark"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -255,7 +255,7 @@
       "max": null,
       "type": "teacups",
       "props": [
-        "draait"
+        "spins"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -269,7 +269,7 @@
       "max": null,
       "type": "dark_ride",
       "props": [
-        "donker"
+        "dark"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -295,8 +295,8 @@
       "max": null,
       "type": "wave_swinger",
       "props": [
-        "hoog",
-        "draait"
+        "high",
+        "spins"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -310,9 +310,9 @@
       "max": null,
       "type": "water_ride",
       "props": [
-        "nat",
-        "hoog",
-        "snel"
+        "wet",
+        "high",
+        "fast"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -326,9 +326,9 @@
       "max": null,
       "type": "water_ride",
       "props": [
-        "nat",
-        "hoog",
-        "snel"
+        "wet",
+        "high",
+        "fast"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -342,7 +342,7 @@
       "max": null,
       "type": "water_battle",
       "props": [
-        "nat"
+        "wet"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -356,7 +356,7 @@
       "max": null,
       "type": "dark_ride",
       "props": [
-        "donker"
+        "dark"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -406,7 +406,7 @@
       "max": null,
       "type": "dark_ride",
       "props": [
-        "donker"
+        "dark"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
@@ -420,8 +420,8 @@
       "max": null,
       "type": "wave_swinger",
       "props": [
-        "hoog",
-        "draait"
+        "high",
+        "spins"
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
