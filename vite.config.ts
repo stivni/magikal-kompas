@@ -45,7 +45,9 @@ function staticAssetsPlugin(): Plugin {
 //   en in build worden alleen geïmporteerde bestanden meegebundeld.
 //   data/parks/*.json komen via import.meta.glob; assets via expliciete
 //   referenties in JSON's en CSS.
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  // GitHub Pages serveert onder /magikal-kompas/. In dev (vite serve) blijft /.
+  base: command === "build" ? "/magikal-kompas/" : "/",
   plugins: [react(), staticAssetsPlugin()],
   // Geen publicDir nodig — we hebben geen losse "static drop"-map.
   // /data en /assets blijven via fs.allow.
@@ -77,4 +79,4 @@ export default defineConfig({
   // Zorg dat assets in /assets en /data correct gekopieerd worden via expliciete
   // imports of fetch-relatieve verwijzingen in de JSON's (image.url). Voor dev
   // serveert Vite ze rechtstreeks.
-})
+}))
