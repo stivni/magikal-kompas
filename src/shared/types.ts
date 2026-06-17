@@ -45,6 +45,20 @@ export interface ImageRef {
   source_page: string
 }
 
+/** Rechten-niet-gecheckte foto, uitsluitend voor herkenning in de admin-UI.
+ * Fundamenteel anders dan `image` (CC-gelicenseerd en publiek; zie ADR-014):
+ * dit veld wordt NOOIT in de publieke UI gerenderd. `note` moet letterlijk
+ * met `"rechten-niet-gecheckt"` beginnen — code gebruikt dat als safeguard. */
+export interface AdminPreview {
+  url: string
+  source_page?: string
+  note: string
+}
+
+/** Permanent-gesloten-status. `true` = bevestigd gesloten, `"unknown"` =
+ * twijfel (admin moet bevestigen), weg/`false` = open. Zie ADR-023. */
+export type ClosedFlag = true | false | "unknown"
+
 export interface Ride {
   att: string
   oms?: string | { nl?: string; en?: string; fr?: string }
@@ -61,6 +75,11 @@ export interface Ride {
   source_url?: string
   park_url?: string
   image?: ImageRef | null
+  admin_preview?: AdminPreview | null
+  closed?: ClosedFlag
+  closed_year?: number | null
+  closed_source_url?: string
+  closed_verify?: boolean
 }
 
 export interface ParkMeta {

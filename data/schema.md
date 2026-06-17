@@ -54,6 +54,40 @@
   }
   ```
 
+- `admin_preview` (per attractie, optioneel): rechten-niet-gecheckte foto-URL
+  die de admin helpt herkennen welke attractie het is. **Alleen** zichtbaar in
+  de admin-UI; nooit in de publieke render. Fundamenteel anders dan `image`
+  (zie [ADR-014](../docs/adr/014-visuele-en-bron-velden.md)).
+
+  ```json
+  "admin_preview": {
+    "url": "https://www.walibi.fr/.../mystic-hero.jpg",
+    "source_page": "https://www.walibi.fr/.../mystic",
+    "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+  }
+  ```
+
+  `note` moet **letterlijk** beginnen met `"rechten-niet-gecheckt"` zodat
+  code het veld automatisch kan herkennen en uit publieke renders kan weren.
+
+## Permanent gesloten attracties (zie [ADR-023](../docs/adr/023-permanent-gesloten-attracties.md))
+
+Verdwenen attracties worden gemarkeerd in plaats van geschrapt — eerder
+geverifieerde lengte/leeftijd-data blijft bewaard, en de attractie blijft
+herkenbaar in oudere bezoekverslagen. Vier optionele velden, allemaal
+weglaten = open:
+
+- `closed`: `true` (bevestigd gesloten), `"unknown"` (twijfel, admin moet
+  bevestigen), of weggelaten/`false` (open).
+- `closed_year`: jaar van sluiting of `null`.
+- `closed_source_url`: link naar bron die de sluiting bevestigt (optioneel
+  bij `"unknown"`).
+- `closed_verify`: `true` als admin het nog moet checken (standaard `true`
+  bij `closed: "unknown"`).
+
+Gesloten attracties tellen niet mee in matching/ranking en worden grijs/
+doorgehaald getoond in zowel admin- als publieke UI.
+
 ## Toegankelijkheids-logica (in de tool)
 
 Per as (lengte en leeftijd) berekent de tool een toestand; de strengste wint. Zie

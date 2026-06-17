@@ -196,9 +196,20 @@ export function AdminApp() {
   return (
     <div id="view-admin" className="layout admin-layout">
       <aside className="rail admin-rail">
+        <div className="rail-brand">
+          <a className="brand" href="/" aria-label="Magikal Kompas">
+            <img
+              src={`${import.meta.env.BASE_URL}assets/brand/logo.png`}
+              alt="Magikal Kompas"
+              className="brand-logo"
+            />
+          </a>
+          <span className="admin-badge">Admin</span>
+        </div>
         <div className="rail-sec">
           <div className="rail-head">
             <span className="rail-title">Parken</span>
+            <a className="minibtn" href="/" title="Terug naar de app">↩ Naar app</a>
           </div>
           <div className="admin-park-list">
             {parksState.map((p) => (

@@ -57,6 +57,39 @@ tekst als ze ontbreken.
   kan attributie of een take-down niet correct verwerkt worden. De UI toont
   attributie zichtbaar (bv. onderaan het beeld of in een tooltip).
 
+### Admin-preview-foto: legitieme uitzondering op de "alleen CC"-regel
+
+Naast `image` (CC-gelicenseerd, publiek getoond met attributie) is er per
+attractie een optioneel **`admin_preview`**-object:
+
+```json
+"admin_preview": {
+  "url": "https://www.walibi.fr/.../mystic-hero.jpg",
+  "source_page": "https://www.walibi.fr/.../mystic",
+  "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+}
+```
+
+Doel: de admin helpen herkennen welke attractie het is wanneer er nog geen
+CC-foto gevonden werd. De tag-agent
+([tools/tag-agent-full.md](../../tools/tag-agent-full.md)) stelt hiervoor
+een hero-foto van de parksite voor (of een Google-Afbeeldingen-treffer),
+**zonder** licentiecheck. Dat botst niet met de "alleen CC"-regel hierboven,
+omdat dit veld onder twee strikte voorwaarden valt:
+
+- **Alleen admin-UI**, nooit publiek. De publieke renders kennen het veld
+  niet en filteren `admin_preview` weg.
+- **`note` is verplicht** en moet **letterlijk** met `"rechten-niet-gecheckt"`
+  beginnen. Dat prefix is een machine-leesbare safeguard: code die het veld
+  per ongeluk publiek zou willen tonen kan ervan uit gaan dat het hier om
+  niet-gecheckt materiaal gaat en moet weigeren te renderen.
+
+Geen lokale kopie in de repo: alleen de externe URL. Bij take-down of dode
+link valt de admin-thumbnail terug op de bestaande emoji-fallback van
+`RideThumb`. Het veld is fundamenteel anders dan `image`: `image` is bron
+voor publieke render mét attributie, `admin_preview` is een werkkrabbel voor
+de admin en blijft binnen die context.
+
 ### Fallback-volgorde voor parkvisuals
 
 Per UI-context kiezen, in deze volgorde:
