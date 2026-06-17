@@ -97,11 +97,19 @@
       "type": "wave_swinger",
       "props": [
         "hoog",
-        "draait"
+        "draait",
+        "high",
+        "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "admin",
+      "tag_confidence": "verified",
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/bellewaerde/flying-carrousel.webp?t=1781632211144",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Druyts.t, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Flying_carrousel.jpg"
+      }
     },
     {
       "att": "El Toro",
@@ -112,11 +120,18 @@
       "type": "flat_spinner",
       "props": [
         "snel",
-        "draait"
+        "draait",
+        "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "admin",
+      "tag_confidence": "verified",
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/bellewaerde/el-toro.webp?t=1781632236863",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Druyts.t, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:El_Toro_(2).jpg"
+      }
     },
     {
       "att": "Amazonia",
@@ -132,7 +147,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/bellewaerde/amazonia.webp?t=1781632262027",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Joren crombez, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Amazonia_(attractie).jpg"
+      }
     },
     {
       "att": "Huis van Houdini",
@@ -146,7 +167,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/bellewaerde/huis-van-houdini.webp",
+        "license": "CC-BY-SA-3.0",
+        "attribution": "Foto door djolivier, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Houdini@Bellewaerde.JPG"
+      }
     },
     {
       "att": "Bengal Rapid River",
@@ -162,7 +189,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/bellewaerde/bengal-rapid-river.webp?t=1781632295959",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Druyts.t, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bengal_Rapid_River_(6).jpg"
+      }
     },
     {
       "att": "Wakala",
@@ -203,11 +236,19 @@
       "type": "family_coaster",
       "props": [
         "hoog",
-        "snel"
+        "snel",
+        "dark",
+        "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "admin",
+      "tag_confidence": "verified",
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/bellewaerde/huracan.webp?t=1781632367113",
+        "license": "CC-BY-SA-3.0",
+        "attribution": "Foto door Freddo, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Gare_d%27Huracan_%C3%A0_Bellewaerde.JPG"
+      }
     },
     {
       "att": "Hampi",
@@ -269,7 +310,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/bellewaerde/niagara.webp?t=1781632402700",
+        "license": "CC-BY-SA-3.0",
+        "attribution": "Foto door Eliedion, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Niagara_Bellewaerde.JPG"
+      }
     },
     {
       "att": "Big Chute",
@@ -281,11 +328,20 @@
       "props": [
         "nat",
         "hoog",
-        "snel"
+        "snel",
+        "wet",
+        "high",
+        "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "admin",
+      "tag_confidence": "verified",
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/bellewaerde/big-chute.webp?t=1781632411992",
+        "license": "CC-BY-SA-3.0",
+        "attribution": "Foto door Druyts.t, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Big_Chute.JPG"
+      }
     },
     {
       "att": "Peter Pan",
@@ -299,7 +355,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/bellewaerde/peter-pan.webp?t=1781632448688",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Druyts.t, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Peter_Pan_(1).jpg"
+      }
     },
     {
       "att": "Koffietassen",
@@ -313,7 +375,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/bellewaerde/koffietassen.webp?t=1781632461297",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door nl:Rickie97, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bellewaerde_Koffietassen.jpg"
+      }
     },
     {
       "att": "Kikker",
@@ -328,7 +396,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/bellewaerde/kikker.webp",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Druyts.t, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Kikker,_Bellewaerde.jpg"
+      }
     },
     {
       "att": "Bigfoot Family 4D",

@@ -5,7 +5,7 @@
   "meta": {
     "country": "FR",
     "site": "https://www.walibi.fr",
-    "updated": "2026-06-14",
+    "updated": "2026-06-17",
     "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
   },
   "rides": [
@@ -15,10 +15,14 @@
       "beg": 130,
       "zelf": 130,
       "max": 195,
-      "type": "playground",
-      "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
+      "type": "thrill_coaster",
+      "props": [
+        "high",
+        "fast",
+        "inversions"
+      ],
+      "tag_source": "admin",
+      "tag_confidence": "verified",
       "source_url": ""
     },
     {
@@ -83,31 +87,32 @@
     },
     {
       "att": "Woodstock Express",
-      "oms": "Coaster met snelle klimmen en bochten",
+      "oms": "Gelijkaardig aan Speedy Bob",
       "beg": 120,
       "zelf": 120,
       "max": null,
-      "type": "playground",
-      "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
+      "type": "family_coaster",
+      "props": [
+        "high",
+        "fast"
+      ],
+      "tag_source": "admin",
+      "tag_confidence": "verified",
       "source_url": ""
     },
     {
       "att": "Hurricane",
-      "oms": "Schommel met 2 minuten gewichtloosheid",
+      "oms": "Starflyer",
       "beg": 120,
       "zelf": 120,
       "max": null,
-      "type": "top_spin",
+      "type": "wave_swinger",
       "props": [
         "high",
-        "fast",
-        "spins",
-        "swings"
+        "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
+      "tag_source": "admin",
+      "tag_confidence": "verified",
       "source_url": ""
     },
     {
@@ -123,7 +128,13 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/walibi-rhone-alpes/timber.webp?t=1781725335029",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Freddo, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Timber_WRA.jpg"
+      }
     },
     {
       "att": "Gold River",
@@ -133,27 +144,32 @@
       "max": null,
       "type": "water_ride",
       "props": [
-        "wet",
-        "high",
-        "fast"
+        "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
+      "tag_source": "admin",
+      "tag_confidence": "verified",
       "source_url": ""
     },
     {
       "att": "AirBoat",
-      "oms": "Snelle boottocht door de Bayou",
+      "oms": "",
       "beg": 100,
       "zelf": 120,
       "max": null,
-      "type": "dark_ride",
+      "type": "top_spin",
       "props": [
-        "dark"
+        "spins",
+        "high"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "admin",
+      "tag_confidence": "verified",
+      "source_url": "",
+      "image": {
+        "url": "assets/photos/walibi-rhone-alpes/airboat.webp?t=1781725391663",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Freddo, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Airboat_WRA.jpg"
+      }
     },
     {
       "att": "Bambooz River",
