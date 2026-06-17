@@ -5,8 +5,8 @@
   "meta": {
     "country": "NL",
     "site": "https://www.toverland.com",
-    "updated": "2026-06-14",
-    "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
+    "updated": "2026-06-17",
+    "tagging": "web-v1 (admin-review nodig voor low/unknown)"
   },
   "rides": [
     {
@@ -15,56 +15,97 @@
       "beg": 140,
       "zelf": 140,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "thrill_coaster",
       "props": [
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/booster-bike",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Booster-Bike-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/booster-bike",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
-      "att": "Kletterparcours",
-      "oms": "klimparcours",
+      "att": "Kletterabenteuer",
+      "oms": "indoor klimparcours",
       "beg": 140,
       "zelf": 140,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "playground",
-      "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "props": [
+        "high"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/kletterabenteuer",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2019-08/Kletterabenteuer-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/kletterabenteuer",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
-      "att": "Fenix",
+      "att": "Fēnix",
       "oms": "wing coaster",
       "beg": 132,
       "zelf": 132,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "thrill_coaster",
       "props": [
         "high",
-        "fast"
+        "fast",
+        "inversions"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/fenix",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Fenix-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/fenix",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Pixarus",
-      "oms": "vliegtuigmolen",
+      "oms": "sky fly vliegtoestel",
       "beg": 125,
       "zelf": 125,
       "max": null,
-      "type": "family_coaster",
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "flat_spinner",
       "props": [
         "high",
-        "fast"
+        "spins",
+        "swings",
+        "inversions"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/pixarus",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2024-02/Pixarus-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/pixarus",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Troy",
@@ -72,14 +113,23 @@
       "beg": 120,
       "zelf": 120,
       "max": null,
-      "type": "family_coaster",
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "thrill_coaster",
       "props": [
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/troy",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Troy-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/troy",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Scorpios",
@@ -87,13 +137,23 @@
       "beg": 120,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "pirate_ship",
       "props": [
-        "swings"
+        "swings",
+        "high"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/scorpios",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Scorpios-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/scorpios",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Djengu River",
@@ -101,15 +161,24 @@
       "beg": 100,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "water_ride",
       "props": [
         "wet",
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/djengu-river",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Djengu-River-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/djengu-river",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Dwervelwind",
@@ -117,30 +186,47 @@
       "beg": 100,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "spinning_coaster",
       "props": [
         "high",
         "fast",
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/dwervelwind",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Dwervelwind-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/dwervelwind",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Coco Bolo",
-      "oms": "valtoren",
+      "oms": "touwtrektoren",
       "beg": 100,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "drop_tower",
       "props": [
-        "high",
-        "fast"
+        "high"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/coco-bolo",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Coco-Bolo-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/coco-bolo",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Djinn",
@@ -148,26 +234,45 @@
       "beg": 100,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "wave_swinger",
       "props": [
         "high",
-        "spins"
+        "spins",
+        "swings"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/djinn",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Djinn-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/djinn",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
-      "att": "Villa Fiasco",
+      "att": "Villa Fiasko",
       "oms": "funhouse",
       "beg": 100,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "funhouse",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/rides/villa-fiasko",
+      "park_url": "https://www.toverland.com/en/rides/villa-fiasko",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2023-07/Villa-Fiasko-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/villa-fiasko",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Maximus' Blitz Bahn",
@@ -175,14 +280,22 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "family_coaster",
       "props": [
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/rides/nieuwe-attractie",
+      "park_url": "https://www.toverland.com/en/rides/nieuwe-attractie",
+      "closed": true,
+      "closed_year": 2025,
+      "closed_source_url": "https://www.toverland.com/en/rides/nieuwe-attractie",
+      "closed_verify": true
     },
     {
       "att": "Expedition Zork",
@@ -190,31 +303,49 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "water_ride",
       "props": [
         "wet",
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/expedition-zork",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Expedition-Zork-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/expedition-zork",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
-      "att": "Toos Express",
-      "oms": "indoor achtbaan",
+      "att": "Toos-Express",
+      "oms": "indoor familieachtbaan",
       "beg": 90,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "family_coaster",
       "props": [
         "high",
         "fast",
         "dark"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/toos-express",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Toos-Express-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/toos-express",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Drakenslangen",
@@ -222,15 +353,24 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "water_ride",
       "props": [
         "wet",
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/drakenslangen",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Drakenslangen-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/drakenslangen",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Alpenrutsche",
@@ -238,27 +378,46 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "pirate_ship",
       "props": [
-        "swings"
+        "swings",
+        "high"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/alpenrutsche",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2023-07/Alpenrutsche-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/alpenrutsche",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Theekopjes",
-      "oms": "theekopjes",
+      "oms": "draaiende theekopjes",
       "beg": 90,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "teacups",
       "props": [
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/theekopjes",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Theekopjes-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/theekopjes",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Paarden van Ithaka",
@@ -266,11 +425,20 @@
       "beg": 90,
       "zelf": 110,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/paarden-van-ithaka",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Paarden-van-Ithaka-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/paarden-van-ithaka",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Vliegend Tapijt",
@@ -278,29 +446,46 @@
       "beg": 90,
       "zelf": 90,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "drop_tower",
       "props": [
-        "high",
-        "fast"
+        "high"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/vliegend-tapijt",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Vliegend-Tapijt-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/vliegend-tapijt",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Dragonwatch",
-      "oms": "valtoren",
+      "oms": "familie-valtoren",
       "beg": 80,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "drop_tower",
       "props": [
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/dragonwatch",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Dragonwatch-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/dragonwatch",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Merlin's Quest",
@@ -308,13 +493,23 @@
       "beg": 0,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "dark_ride",
       "props": [
-        "dark"
+        "dark",
+        "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/merlins-quest",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Merlins-Quest-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/merlins-quest",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Wirbelbaum",
@@ -322,14 +517,23 @@
       "beg": 0,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "ferris_wheel",
       "props": [
         "high",
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/wirbelbaum",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2019-08/Wirbelbaum-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/wirbelbaum",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Garden Tour",
@@ -337,11 +541,20 @@
       "beg": 0,
       "zelf": 110,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/garden-tour",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Garden-Tour-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/garden-tour",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Tolly Molly",
@@ -349,13 +562,23 @@
       "beg": 0,
       "zelf": 100,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "carousel",
       "props": [
-        "spins"
+        "spins",
+        "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/tolly-molly",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Tolly-Molly-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/tolly-molly",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Karussell",
@@ -363,39 +586,66 @@
       "beg": 0,
       "zelf": 100,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "carousel",
       "props": [
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/karussell",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2019-08/Karussell-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/karussell",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Jumping Juna",
-      "oms": "carrousel",
+      "oms": "dynamische carrousel",
       "beg": 0,
       "zelf": 90,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "carousel",
       "props": [
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/jumping-juna",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Jumping-Juna-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/jumping-juna",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
-      "att": "Truukjes",
+      "att": "Morrels Truckjes",
       "oms": "mini-autoparcours",
       "beg": 0,
       "zelf": 90,
       "max": null,
-      "type": "kiddie_flat",
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/toverblog/blog-truukjes-vernieuwd",
+      "park_url": "https://www.toverland.com/en/rides/morrels-truckjes",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2026-03/Morrels-Truckjes-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/morrels-truckjes",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Klokhuis",
@@ -403,11 +653,20 @@
       "beg": 0,
       "zelf": 90,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "kiddie_flat",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/klokhuis",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Klokhuis-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/klokhuis",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Magiezijn",
@@ -415,11 +674,326 @@
       "beg": 0,
       "zelf": 0,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "show",
+      "props": [
+        "dark"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/magiezijn",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2022-07/Magiezijn-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/magiezijn",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Sparky's Splash Dock",
+      "oms": "waterspeelplaats",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [
+        "wet"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/sparkys-splash-dock",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2024-02/Sparkys-Splash-Dock-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/sparkys-splash-dock",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Little Dragons",
+      "oms": "speelplaats voor peuters",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/little-dragons",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Little-Dragons-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/little-dragons",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Exploria Magica",
+      "oms": "interactieve belevenis",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "dark_ride",
+      "props": [
+        "dark"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/exploria-magica",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2024-02/Exploria-Magica-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/exploria-magica",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Waterdwarf Alley",
+      "oms": "ontdekkingsroute",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/waterdwarf-alley",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Waterdwarf-Alley-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/waterdwarf-alley",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Arthur's Tournament Training",
+      "oms": "buitenspeelplaats",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/arthurs-tournament-training",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Arthurs-Tournament-Training-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/arthurs-tournament-training",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Fort Boreas",
+      "oms": "buitenspeelplaats",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/fort-boreas",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Fort-Boreas-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/fort-boreas",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Waku Waku",
+      "oms": "waterspeelplaats",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [
+        "wet"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/waku-waku",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Waku-Waku-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/waku-waku",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Mercado Lúdico",
+      "oms": "spelletjesgalerij",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/mercado-ludico",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Mercado-Ludico-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/mercado-ludico",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Maximus' Wunderball",
+      "oms": "ballenbaan",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/maximus-wunderball",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2023-07/Maximus-Wunderball-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/maximus-wunderball",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Villa Toverhoed",
+      "oms": "interactieve belevenis",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "dark_ride",
+      "props": [
+        "dark"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/villa-toverhoed",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2022-07/Villa-Toverhoed-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/villa-toverhoed",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Tovertuin",
+      "oms": "buitenspeelplaats",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/tovertuin",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Tovertuin-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/tovertuin",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Dwaalhof",
+      "oms": "doolhof",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/dwaalhof",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Dwaalhof-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/dwaalhof",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Sim sa la Klim",
+      "oms": "klimberg",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [
+        "high"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/sim-sa-la-klim",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2023-07/Sim-sa-la-Klim-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/sim-sa-la-klim",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Speelkasteel",
+      "oms": "indoor speelplaats",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.toverland.com/en/attractions",
+      "park_url": "https://www.toverland.com/en/rides/speelkasteel",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Speelkasteel-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/speelkasteel",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     }
   ]
 }

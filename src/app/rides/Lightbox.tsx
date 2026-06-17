@@ -3,6 +3,7 @@
 import { useEffect } from "react"
 import { createPortal } from "react-dom"
 import type { RideWithPark } from "../../shared/types"
+import { assetUrl } from "../../shared/helpers"
 
 export function Lightbox({
   ride,
@@ -41,7 +42,7 @@ export function Lightbox({
         >
           ✕
         </button>
-        <img className="lb-img" src={img.url} alt={ride.att} onClick={(e) => e.stopPropagation()} />
+        <img className="lb-img" src={assetUrl(img.url)} alt={ride.att} onClick={(e) => e.stopPropagation()} />
         <div className="lb-attr">
           <div className="lb-title">
             {ride.att} — {ride.park}

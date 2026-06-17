@@ -6,7 +6,7 @@
     "country": "FR",
     "site": "https://www.walibi.fr",
     "updated": "2026-06-17",
-    "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
+    "tagging": "web-v1 (admin-review nodig voor low/unknown)"
   },
   "rides": [
     {
@@ -24,6 +24,7 @@
       "tag_source": "admin",
       "tag_confidence": "verified",
       "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mystic",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mystic",
       "image": {
         "url": "assets/photos/walibi-rhone-alpes/mystic.webp",
         "license": "CC-BY-2.0",
@@ -42,9 +43,15 @@
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-totem"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-totem",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-totem",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--4207d4bc-c7a9-4fc6-b36b-d48f26dc58ab/totem--1-.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-totem",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Galion",
@@ -56,9 +63,15 @@
       "props": [
         "swings"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-galion"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-galion",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-galion",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--cc5dc5cd-ea2c-40d3-8970-f35674da5d0c/le-galion.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-galion",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Generator",
@@ -69,11 +82,19 @@
       "type": "thrill_coaster",
       "props": [
         "high",
-        "fast"
+        "fast",
+        "inversions",
+        "swings"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/generator"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/generator",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/generator",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/content/dam/wra/walibi-ra-2022-generator-credits-benoit-gillardeau.jpg",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/generator",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Mahuka",
@@ -87,9 +108,15 @@
         "fast",
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mahuka"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mahuka",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mahuka",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--d3f558c2-dfbb-4b4d-9917-fc5cd8cbc1b3/wra-mahuka-03-credits-benoit-gillardeau.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mahuka",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Woodstock Express",
@@ -104,7 +131,13 @@
       ],
       "tag_source": "admin",
       "tag_confidence": "verified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/woodstock-express"
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/woodstock-express",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/woodstock-express",
+      "admin_preview": {
+        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/woodstock-express",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/woodstock-express",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Hurricane",
@@ -119,7 +152,13 @@
       ],
       "tag_source": "admin",
       "tag_confidence": "verified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/hurricane"
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/hurricane",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/hurricane",
+      "admin_preview": {
+        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/hurricane",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/hurricane",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Timber",
@@ -132,9 +171,10 @@
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
+      "tag_source": "web",
+      "tag_confidence": "med",
       "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/timber",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/timber",
       "image": {
         "url": "assets/photos/walibi-rhone-alpes/timber.webp?t=1781725335029",
         "license": "CC-BY-SA-4.0",
@@ -154,7 +194,13 @@
       ],
       "tag_source": "admin",
       "tag_confidence": "verified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/gold-river"
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/gold-river",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/gold-river",
+      "admin_preview": {
+        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/gold-river",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/gold-river",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "AirBoat",
@@ -170,6 +216,7 @@
       "tag_source": "admin",
       "tag_confidence": "verified",
       "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/airboat",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/airboat",
       "image": {
         "url": "assets/photos/walibi-rhone-alpes/airboat.webp?t=1781725391663",
         "license": "CC-BY-SA-4.0",
@@ -189,9 +236,15 @@
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/bambooz-river"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/bambooz-river",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/bambooz-river",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--dcdf77e0-9ae6-48ca-886f-d8388aa727b2/bambooz-river--1-.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/bambooz-river",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Tiki Academy",
@@ -199,15 +252,20 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "water_ride",
+      "type": "water_battle",
       "props": [
         "wet",
-        "high",
-        "fast"
+        "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/tiki-academy"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/tiki-academy",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/tiki-academy",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--9a64fc7d-981f-4ca5-87c5-a7297725a9e0/exotic-island-5.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/tiki-academy",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "La Coccinelle",
@@ -217,12 +275,17 @@
       "max": null,
       "type": "family_coaster",
       "props": [
-        "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/la-coccinelle"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/la-coccinelle",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/la-coccinelle",
+      "admin_preview": {
+        "url": "https://walibi.com/adobe/dynamicmedia/deliver/dm-aid--ccad8471-e792-40bd-baf4-40ab966c79ea/walibi-shooting-pub-2025---0042.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/la-coccinelle",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Surf Music",
@@ -236,9 +299,15 @@
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/surf-music"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/surf-music",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/surf-music",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--001a081c-245c-49af-8f63-2d2e442e6fdd/surfmusic.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/surf-music",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "On Air",
@@ -249,11 +318,18 @@
       "type": "wave_swinger",
       "props": [
         "high",
-        "spins"
+        "spins",
+        "swings"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/on-air"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/on-air",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/on-air",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--b8d0edc8-8a6b-4efb-8339-ca4ce98448ad/dsc03862--1-.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/on-air",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Dock'N Roll",
@@ -263,9 +339,15 @@
       "max": null,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/dockn-roll"
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/dockn-roll",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/dockn-roll",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--21813906-c6d0-44f9-b3e6-70fcd7ab3c41/walibi-ra-2022-0048.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/dockn-roll",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "MonORail",
@@ -274,10 +356,18 @@
       "zelf": 120,
       "max": null,
       "type": "transport",
-      "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/monorail"
+      "props": [
+        "high"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/monorail",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/monorail",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--adf91699-9850-42ad-8d2e-3a233ecaee99/walibi-ra-2022-0017.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/monorail",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Carrousel",
@@ -289,9 +379,15 @@
       "props": [
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/carrousel"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/carrousel",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/carrousel",
+      "admin_preview": {
+        "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--f395f26f-6c0d-46ec-ac48-2e3bd609aa43/walibi-ra-2022-0005.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/carrousel",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Tam Tam Aventure",
@@ -307,7 +403,11 @@
       ],
       "tag_source": "auto-v1",
       "tag_confidence": "unverified",
-      "source_url": ""
+      "source_url": "",
+      "closed": true,
+      "closed_year": null,
+      "closed_source_url": "https://www.walibi.fr/fr/attractions",
+      "closed_verify": false
     },
     {
       "att": "Festival Station",
@@ -317,9 +417,15 @@
       "max": null,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/festival-station"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/festival-station",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/festival-station",
+      "admin_preview": {
+        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/festival-station",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/festival-station",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Les P'tits Chaudrons",
@@ -331,9 +437,15 @@
       "props": [
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/les-ptits-chaudrons"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/les-ptits-chaudrons",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/les-ptits-chaudrons",
+      "admin_preview": {
+        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/les-ptits-chaudrons",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/les-ptits-chaudrons",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Volt-O-Vent",
@@ -341,11 +453,19 @@
       "beg": 80,
       "zelf": 105,
       "max": null,
-      "type": "transport",
-      "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/volt-o-vent"
+      "type": "flat_spinner",
+      "props": [
+        "spins"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/volt-o-vent",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/volt-o-vent",
+      "admin_preview": {
+        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/volt-o-vent",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/volt-o-vent",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Balloon Race",
@@ -357,9 +477,15 @@
       "props": [
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/balloon-race"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/balloon-race",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/balloon-race",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--d4d1b0a7-1c6c-4300-8e94-687f35216ea9/wra-explorer-adventure.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/balloon-race",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "WAB Band Tour",
@@ -369,9 +495,15 @@
       "max": null,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/wab-band-tour"
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/wab-band-tour",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/wab-band-tour",
+      "admin_preview": {
+        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/wab-band-tour",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/wab-band-tour",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Petit Vapeur",
@@ -384,9 +516,15 @@
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/le-petit-vapeur"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/le-petit-vapeur",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/le-petit-vapeur",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--c15a4f93-f82b-4eeb-9fda-6fedda8d9229/walibi-ra-2022-lepetitvapeur-credits-benoit-gillardeau.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/le-petit-vapeur",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Concert'O",
@@ -398,9 +536,15 @@
       "props": [
         "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/concerto"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/concerto",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/concerto",
+      "admin_preview": {
+        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/concerto",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/concerto",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "La Chevauchee",
@@ -410,9 +554,15 @@
       "max": 140,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/la-chevauchee"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/la-chevauchee",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/la-chevauchee",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/adobe/dynamicmedia/deliver/dm-aid--e3a35a89-6087-466c-b782-af0ac0ab61bf/wra-la-chevauchee-credits-benoit-gillardeau.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/la-chevauchee",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Playground Explorer Adventure",
@@ -422,9 +572,15 @@
       "max": null,
       "type": "playground",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-explorer-adventure"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-explorer-adventure",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-explorer-adventure",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--84997b72-4c97-4fc0-99eb-457745d89d46/aire-explorer.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-explorer-adventure",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Playground Exotic Island 7-12",
@@ -434,9 +590,15 @@
       "max": null,
       "type": "playground",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-7-12-ans"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-7-12-ans",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-7-12-ans",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--d0948ecc-ae80-4ef9-abdd-4ebe9e3ce886/exotic-island-7.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-7-12-ans",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Playground Festival City",
@@ -446,9 +608,15 @@
       "max": null,
       "type": "playground",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-festival-city"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-festival-city",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-festival-city",
+      "admin_preview": {
+        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-festival-city",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-festival-city",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Playground Exotic Island 3-6",
@@ -458,9 +626,89 @@
       "max": null,
       "type": "playground",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-3-6-ans"
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-3-6-ans",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-3-6-ans",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--890221c3-ba4f-4d51-8b69-a1e972845610/exotic-island-aire3-6ans.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-3-6-ans",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Melody Road",
+      "oms": "Mini-auto's voor kinderen door het park",
+      "beg": 50,
+      "zelf": 120,
+      "max": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/melody-road",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/melody-road",
+      "admin_preview": {
+        "url": "https://walibi.fr/adobe/dynamicmedia/deliver/dm-aid--5a41ba76-6cee-4e62-8902-b79fd9bff8b9/walibi-ra-2022-melodyroadr-credits-benoit-gillardeau.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/melody-road",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "RepaR'TaKar",
+      "oms": "Stuiterende 4x4 garage-rit met crashes",
+      "beg": 90,
+      "zelf": 105,
+      "max": null,
+      "type": "flat_spinner",
+      "props": [
+        "swings"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/repar-ta-kar",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/repar-ta-kar",
+      "admin_preview": {
+        "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--edd7c408-3473-4c95-aeec-91530d223103/shooting-repar-ta-kar--142--web.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/repar-ta-kar",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Labyrinthe végétal",
+      "oms": "Plantenlabyrint met geheime gangen en tunnels",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "type": "funhouse",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/labyrinthe-vegetal",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/labyrinthe-vegetal",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--43f284fc-9a13-431a-8a94-088d06c3dccb/passage-oubli-.jpg",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/labyrinthe-vegetal",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Parcours aventure",
+      "oms": "Klauterparcours met hangbruggen en glijbanen",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/parcours-aventure",
+      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/parcours-aventure",
+      "admin_preview": {
+        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/parcours-aventure",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/parcours-aventure",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     }
   ]
 }

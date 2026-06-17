@@ -3,12 +3,23 @@
  * Foto-modal heeft één pane met thumb-strip links en klik-om-focus rechts. */
 
 import { useEffect, useMemo, useRef, useState } from "react"
-import type { PhotoCandidate, PropKey, Ride, TypeKey } from "../shared/types"
+import type { ClosedFlag, PhotoCandidate, PropKey, Ride, TypeKey } from "../shared/types"
 import { PEMO, PNL, PROPS, TEMO, TNL, TYPES } from "../shared/vocab"
 import { RideThumb } from "../shared/components/RideThumb"
 import { Flag } from "../shared/components/Flag"
 import { freeText } from "../shared/helpers"
-import { GENUINE_MAX } from "../shared/scoring"
+import { GENUINE_MAX, isClosed } from "../shared/scoring"
+
+/** Veilige check op `admin_preview.note` — moet letterlijk met
+ * `"rechten-niet-gecheckt"` beginnen (zie ADR-014). */
+function adminPreviewURL(ride: Ride): string | null {
+  const ap = ride.admin_preview
+  if (!ap || !ap.url) return null
+  if (!ap.note || !ap.note.trimStart().startsWith("rechten-niet-gecheckt")) {
+    return null
+  }
+  return ap.url
+}
 
 interface Props {
   parkName: string
@@ -36,6 +47,10 @@ export type RideFieldPatch =
   | { kind: "oms"; value: string }
   | { kind: "source_url"; value: string }
   | { kind: "park_url"; value: string }
+  | { kind: "closed"; value: ClosedFlag | undefined }
+  | { kind: "closed_year"; value: number | null }
+  | { kind: "closed_source_url"; value: string }
+  | { kind: "closed_verify"; value: boolean }
 
 export function RideBlock({
   parkName,
@@ -101,12 +116,16 @@ export function RideBlock({
     }
   }, [photoModalOpen])
 
+  const previewUrl = adminPreviewURL(ride)
+  const closed = isClosed(ride)
+  const closedCls = closed ? " ride-closed" : ""
+
   // --- COLLAPSED-STATE ----------------------------------------------------
   if (!open) {
     // Thumb + naam-rij is in z'n geheel klikbaar — opent de ride (zoals de
     // edit-knop). De knop blijft staan als visueel anker en focus-target.
     return (
-      <div className="curate-block collapsed">
+      <div className={"curate-block collapsed" + closedCls}>
         <div className="cb-row">
           <div
             className="cb-clickable-area"
@@ -121,11 +140,13 @@ export function RideBlock({
             }}
             title="Bewerken"
           >
-            <RideThumb ride={ride} />
+            <RideThumb ride={ride} previewSrc={previewUrl} />
             <div className="cb-info">
               <div className="cb-title">
-                {ride.att}
+                <span className={closed ? "ride-name-closed" : ""}>{ride.att}</span>
                 <Flag park={parkName} />
+                <ClosedBadge ride={ride} />
+                {previewUrl ? <PreviewBadge /> : null}
               </div>
               <div className="cb-type">
                 <span className="tchip">
@@ -153,21 +174,24 @@ export function RideBlock({
   // --- OPEN-STATE ---------------------------------------------------------
   // Nieuwe volgorde: identiteit → categorisatie → toegang → visueel → context.
   return (
-    <div className="curate-block open">
+    <div className={"curate-block open" + closedCls}>
       {/* (1) Kaartheader: thumb (klik = foto-modal) + naam + kleine type-chip
               + attributie-regel onder de naam + sluit-knop rechts. */}
       <div className="cb-row open-head">
         <ThumbWithEditOverlay
           ride={ride}
+          previewSrc={previewUrl}
           onClick={() => setPhotoModalOpen(true)}
         />
         <div className="cb-info">
           <div className="cb-title">
-            {ride.att}
+            <span className={closed ? "ride-name-closed" : ""}>{ride.att}</span>
             <Flag park={parkName} />
             <span className="tchip tchip-sm">
               {TEMO[ty] || ""} {TNL[ty] || ty}
             </span>
+            <ClosedBadge ride={ride} />
+            {previewUrl ? <PreviewBadge /> : null}
           </div>
           {cur && cur.url ? (
             <div className="cb-meta" title={cur.attribution || ""}>
@@ -331,6 +355,11 @@ export function RideBlock({
         />
       </div>
 
+      <div className="ed-sep" />
+
+      {/* (8) Status — open / gesloten / te verifiëren (ADR-023). */}
+      <ClosedEditor ride={ride} onSetField={onSetField} />
+
       {photoModalOpen && (
         <PhotoModal
           rideName={ride.att}
@@ -356,9 +385,11 @@ export function RideBlock({
  *  er nog geen foto gekozen is — dan toont de RideThumb zelf de emoji-fallback. */
 function ThumbWithEditOverlay({
   ride,
+  previewSrc,
   onClick,
 }: {
   ride: Ride
+  previewSrc?: string | null
   onClick: () => void
 }) {
   return (
@@ -375,7 +406,7 @@ function ThumbWithEditOverlay({
       }}
       title="Klik om de foto te wijzigen"
     >
-      <RideThumb ride={ride} />
+      <RideThumb ride={ride} previewSrc={previewSrc} />
       <span className="cb-thumb-overlay" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 20h9" />
@@ -1016,4 +1047,105 @@ function isPicked(
     return true
   }
   return false
+}
+
+/** Kleine, opvallende badge die admin waarschuwt: deze thumbnail is een
+ * rechten-niet-gechecktE preview, niet voor publicatie (ADR-014). */
+function PreviewBadge() {
+  return (
+    <span
+      className="preview-badge"
+      title="rechten niet gecheckt — alleen voor herkenning in admin"
+    >
+      rechten niet gecheckt — niet publiceren
+    </span>
+  )
+}
+
+/** Status-pill voor gesloten of "te verifiëren"-attracties (ADR-023). */
+function ClosedBadge({ ride }: { ride: Ride }) {
+  if (ride.closed === true) {
+    const yr = ride.closed_year ? " · " + ride.closed_year : ""
+    return <span className="closed-pill" title="permanent gesloten">gesloten{yr}</span>
+  }
+  if (ride.closed === "unknown") {
+    return (
+      <span className="closed-pill unknown" title="sluiting nog te verifiëren">
+        te verifiëren
+      </span>
+    )
+  }
+  return null
+}
+
+/** Editor voor de closed-familie: drie-statussen-radio + jaartal + bron.
+ * Past `tag_source`/`tag_confidence`-bijwerking niet zelf toe; dat doet de
+ * parent in `applyFieldPatch` zoals voor de andere velden. */
+function ClosedEditor({
+  ride,
+  onSetField,
+}: {
+  ride: Ride
+  onSetField: (field: RideFieldPatch) => void
+}) {
+  const status: "open" | "closed" | "unknown" =
+    ride.closed === true ? "closed" : ride.closed === "unknown" ? "unknown" : "open"
+
+  function setStatus(next: "open" | "closed" | "unknown") {
+    if (next === "open") {
+      onSetField({ kind: "closed", value: undefined })
+    } else if (next === "closed") {
+      onSetField({ kind: "closed", value: true })
+      if (ride.closed_verify) onSetField({ kind: "closed_verify", value: false })
+    } else {
+      onSetField({ kind: "closed", value: "unknown" })
+      if (!ride.closed_verify) onSetField({ kind: "closed_verify", value: true })
+    }
+  }
+
+  return (
+    <div className="ed-stack closed-editor">
+      <div className="ed-cell-lbl">status</div>
+      <div className="cbtns">
+        <button
+          type="button"
+          className={"cbtn " + (status === "open" ? "on" : "")}
+          onClick={() => setStatus("open")}
+        >
+          open
+        </button>
+        <button
+          type="button"
+          className={"cbtn " + (status === "closed" ? "on" : "")}
+          onClick={() => setStatus("closed")}
+        >
+          gesloten
+        </button>
+        <button
+          type="button"
+          className={"cbtn " + (status === "unknown" ? "on" : "")}
+          onClick={() => setStatus("unknown")}
+        >
+          te verifiëren
+        </button>
+      </div>
+      {status !== "open" ? (
+        <div className="ed-text-grid">
+          <NumField
+            label="sluitingsjaar"
+            value={ride.closed_year ?? null}
+            placeholder="leeg = onbekend"
+            allowEmpty
+            onCommit={(n) => onSetField({ kind: "closed_year", value: n })}
+          />
+          <TextField
+            label="closed_source_url"
+            value={ride.closed_source_url ?? ""}
+            placeholder="https://…"
+            onCommit={(s) => onSetField({ kind: "closed_source_url", value: s })}
+          />
+        </div>
+      ) : null}
+    </div>
+  )
 }

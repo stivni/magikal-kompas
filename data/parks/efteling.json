@@ -5,196 +5,860 @@
   "meta": {
     "country": "NL",
     "site": "https://www.efteling.com",
-    "updated": "2026-06-14",
-    "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
+    "updated": "2026-06-17",
+    "tagging": "web-v1 (admin-review nodig voor low/unknown)"
   },
   "rides": [
     {
       "att": "Baron 1898",
-      "oms": "",
+      "oms": "Dive coaster met een verticale duik van 37,5 m in een mijnschacht.",
       "beg": 132,
       "zelf": 132,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "thrill_coaster",
       "props": [
         "high",
-        "fast"
+        "fast",
+        "dark"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "",
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/baron-1898",
+      "park_url": "https://www.efteling.com/nl/park/attracties/baron-1898",
       "image": {
         "url": "assets/photos/efteling/baron-1898.webp",
         "license": "CC-BY-SA-4.0",
         "attribution": "Foto door Steven Lek, via Wikimedia Commons",
         "source_page": "https://commons.wikimedia.org/wiki/File:Baron_1898_Efteling_rollercoaster_2018_9.jpg"
+      },
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/baron-1898/hero/baron-1898-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/baron-1898",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
       }
     },
     {
       "att": "Vliegende Hollander",
-      "oms": "",
+      "oms": "Waterachtbaan door het spookachtige verhaal van kapitein Van der Decken.",
       "beg": 120,
       "zelf": 120,
       "max": null,
-      "type": "dark_ride",
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "water_ride",
       "props": [
+        "wet",
+        "fast",
         "dark"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "",
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/de-vliegende-hollander",
+      "park_url": "https://www.efteling.com/nl/park/attracties/de-vliegende-hollander",
       "image": {
         "url": "assets/photos/efteling/vliegende-hollander.webp",
         "license": "CC-BY-SA-4.0",
         "attribution": "Foto door Steven Lek, via Wikimedia Commons",
         "source_page": "https://commons.wikimedia.org/wiki/File:De_Vliegende_Hollander_rollercoaster_Efteling_2018.jpg"
+      },
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/de-vliegende-hollander/hero/de-vliegende-hollander-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/de-vliegende-hollander",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
       }
     },
     {
       "att": "Python",
-      "oms": "",
+      "oms": "Stalen achtbaan met dubbele looping en kurkentrekker.",
       "beg": 120,
       "zelf": 120,
       "max": null,
-      "type": "family_coaster",
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "thrill_coaster",
       "props": [
         "high",
-        "fast"
+        "fast",
+        "inversions"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "",
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/python",
+      "park_url": "https://www.efteling.com/nl/park/attracties/python",
       "image": {
         "url": "assets/photos/efteling/python.webp",
         "license": "CC-BY-SA-4.0",
         "attribution": "Foto door Steven Lek, via Wikimedia Commons",
         "source_page": "https://commons.wikimedia.org/wiki/File:Python_Efteling_rollercoaster_2018.jpg"
+      },
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/python/hero/python-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/python",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
       }
     },
     {
       "att": "Vogel Rok",
-      "oms": "",
+      "oms": "Overdekte achtbaan in het donker door het verhaal van Sindbad.",
       "beg": 120,
       "zelf": 120,
       "max": null,
-      "type": "spinning_coaster",
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "thrill_coaster",
       "props": [
-        "high",
         "fast",
-        "spins",
         "dark"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "",
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/vogel-rok",
+      "park_url": "https://www.efteling.com/nl/park/attracties/vogel-rok",
       "image": {
         "url": "assets/photos/efteling/vogel-rok.webp",
         "license": "CC-BY-SA-4.0",
         "attribution": "Foto door Steven Lek, via Wikimedia Commons",
         "source_page": "https://commons.wikimedia.org/wiki/File:Vogel_Rok_Efteling.jpg"
+      },
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/vogel-rok/hero/vogel-rok-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/vogel-rok",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
       }
     },
     {
       "att": "Joris en de Draak",
-      "oms": "",
+      "oms": "Houten racer-achtbaan met twee parallelle banen: Water tegen Vuur.",
       "beg": 110,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "family_coaster",
       "props": [
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "",
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/joris-en-de-draak",
+      "park_url": "https://www.efteling.com/nl/park/attracties/joris-en-de-draak",
       "image": {
         "url": "assets/photos/efteling/joris-en-de-draak.webp",
         "license": "CC-BY-SA-3.0",
         "attribution": "Foto door Freddo, via Wikimedia Commons",
         "source_page": "https://commons.wikimedia.org/wiki/File:Joris_en_de_Draak_-_Dragon.JPG"
+      },
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/joris-en-de-draak/hero/joris-en-de-draak-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/joris-en-de-draak",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
       }
     },
     {
       "att": "Max & Moritz",
-      "oms": "",
+      "oms": "Dubbele familie-achtbaan in zeepkistwagentjes met streken-thema.",
       "beg": 100,
       "zelf": 130,
       "max": null,
-      "type": "thrill_coaster",
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "family_coaster",
       "props": [
-        "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "",
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/max-moritz",
+      "park_url": "https://www.efteling.com/nl/park/attracties/max-moritz",
       "image": {
         "url": "assets/photos/efteling/max-en-moritz.webp",
         "license": "CC-BY-SA-4.0",
         "attribution": "Foto door Laurensvanheerde, via Wikimedia Commons",
         "source_page": "https://commons.wikimedia.org/wiki/File:Efteling_Max_%26_Moritz_ingangspoort_en_station.jpg"
+      },
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/max-moritz/hero/max-moritz-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/max-moritz",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
       }
     },
     {
       "att": "Halve Maen",
-      "oms": "",
+      "oms": "Schommelend VOC-schip dat tot 180° heen en weer zwaait.",
       "beg": 80,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "pirate_ship",
       "props": [
-        "swings"
+        "swings",
+        "high"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "",
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/halve-maen",
+      "park_url": "https://www.efteling.com/nl/park/attracties/halve-maen",
       "image": {
         "url": "assets/photos/efteling/halve-maen.webp",
         "license": "CC-BY-SA-4.0",
         "attribution": "Foto door Eliedion, via Wikimedia Commons",
         "source_page": "https://commons.wikimedia.org/wiki/File:Halve_Maen_Efteling.jpg"
+      },
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/halve-maen/hero/halve-maen-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/halve-maen",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
       }
     },
     {
       "att": "Pirana",
-      "oms": "",
+      "oms": "Wildwaterbaan in ronde boten door watervallen en stroomversnellingen.",
       "beg": 0,
       "zelf": 120,
       "max": null,
-      "type": "dark_ride",
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "water_ride",
       "props": [
-        "dark"
+        "wet",
+        "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "",
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/pirana",
+      "park_url": "https://www.efteling.com/nl/park/attracties/pirana",
       "image": {
         "url": "assets/photos/efteling/pirana.webp",
         "license": "CC-BY-SA-4.0",
         "attribution": "Foto door Steven Lek, via Wikimedia Commons",
         "source_page": "https://commons.wikimedia.org/wiki/File:Pirana_Efteling_2018.jpg"
+      },
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/pirana/hero/pirana-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/pirana",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
       }
     },
     {
       "att": "Sirocco",
-      "oms": "",
+      "oms": "Overdekt schuitje dat ronddraait in een storm op zee met Sindbad.",
       "beg": 0,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "flat_spinner",
       "props": [
         "fast",
-        "spins"
+        "spins",
+        "dark"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "",
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.efteling.com/nl/park/attracties/sirocco",
+      "park_url": "https://www.efteling.com/nl/park/attracties/sirocco",
       "image": {
         "url": "assets/photos/efteling/sirocco.webp",
         "license": "CC-BY-SA-4.0",
         "attribution": "Foto door Laurensvanheerde, via Wikimedia Commons",
         "source_page": "https://commons.wikimedia.org/wiki/File:Efteling_Sirocco.jpg"
+      },
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/sirocco/hero/sirocco-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/sirocco",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Danse Macabre",
+      "oms": "Indoor spookspektakel in een drijvende balzaal vol duistere wendingen.",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "top_spin",
+      "props": [
+        "dark",
+        "swings",
+        "spins"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/danse-macabre",
+      "park_url": "https://www.efteling.com/nl/park/attracties/danse-macabre",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/danse-macabre/hero/danse-macabre-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/danse-macabre",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Hooghmoed",
+      "oms": "Drievoudige drop tower waarin gasten schoorsteenvegers worden.",
+      "beg": 90,
+      "zelf": 130,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "drop_tower",
+      "props": [
+        "high",
+        "fast"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/hooghmoed",
+      "park_url": "https://www.efteling.com/nl/park/attracties/hooghmoed",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/hooghmoed/hero/hooghmoed-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/hooghmoed",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Symbolica",
+      "oms": "Interactieve dark ride door het paleis van koning Pardulfus met drie verschillende routes.",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "dark_ride",
+      "props": [
+        "dark"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/symbolica",
+      "park_url": "https://www.efteling.com/nl/park/attracties/symbolica",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/symbolica/hero/symbolica-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/symbolica",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Sprookjesbos",
+      "oms": "Wandelpark met meer dan dertig sprookjes tot leven gebracht in tableaus.",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/sprookjesbos",
+      "park_url": "https://www.efteling.com/nl/park/attracties/sprookjesbos",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/sprookjesbos/hero/sprookjesbos-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/sprookjesbos",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Droomvlucht",
+      "oms": "Zwevende dark ride door een sprookjeswereld van elfen en trollen.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "dark_ride",
+      "props": [
+        "dark",
+        "high"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/droomvlucht",
+      "park_url": "https://www.efteling.com/nl/park/attracties/droomvlucht",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/droomvlucht/hero/droomvlucht-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/droomvlucht",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Villa Volta",
+      "oms": "Ronddraaiend spookhuis (madhouse) met het verhaal van Hugo van den Loonsche Duynen.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "top_spin",
+      "props": [
+        "dark",
+        "spins"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/villa-volta",
+      "park_url": "https://www.efteling.com/nl/park/attracties/villa-volta",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/villa-volta/hero/villa-volta-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/villa-volta",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Pagode",
+      "oms": "Thaise tempel die op 45 meter hoogte rondom een centrale as ronddraait.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "ferris_wheel",
+      "props": [
+        "high"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.efteling.com/nl/park/attracties/pagode",
+      "park_url": "https://www.efteling.com/nl/park/attracties/pagode",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/pagode/hero/pagode-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/pagode",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Archipel",
+      "oms": "Buitenspeeleiland met ondiep water (20–35 cm) en verborgen schatten in een vissersdorp.",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [
+        "wet"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/archipel",
+      "park_url": "https://www.efteling.com/nl/park/attracties/archipel",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/archipel/hero/archipel-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/archipel",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Carnaval Festival",
+      "oms": "Indoor bootjes-dark-ride met Jokie & Jet door de carnavalsfeesten van de wereld.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "dark_ride",
+      "props": [
+        "dark"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/carnaval-festival",
+      "park_url": "https://www.efteling.com/nl/park/attracties/carnaval-festival",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/carnaval-festival/hero/carnaval-festival-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/carnaval-festival",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Fata Morgana",
+      "oms": "Boottocht-dark-ride door een Oosterse stad uit duizend-en-een-nacht.",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "dark_ride",
+      "props": [
+        "dark"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/fata-morgana",
+      "park_url": "https://www.efteling.com/nl/park/attracties/fata-morgana",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/fata-morgana/hero/fata-morgana-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/fata-morgana",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Nest!",
+      "oms": "Inclusief speelbos met glijbanen, klimstructuren en een vlonderpad.",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/nest",
+      "park_url": "https://www.efteling.com/nl/park/attracties/nest",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/nest/hero/nest-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/nest",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Fabula",
+      "oms": "4D-filmervaring over een knorrige beer die leert dromen.",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "show",
+      "props": [
+        "dark",
+        "wet"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/fabula",
+      "park_url": "https://www.efteling.com/nl/park/attracties/fabula",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/fabula/hero/fabula-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/fabula",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Stoomtrein",
+      "oms": "Echte stoomtrein die het park rondrijdt langs twee stations.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/stoomtrein",
+      "park_url": "https://www.efteling.com/nl/park/attracties/stoomtrein",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/stoomtrein/hero/stoomtrein-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/stoomtrein",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Stoomcarrousel",
+      "oms": "Meer dan honderd jaar oude dubbeldeks-draaimolen met Gavioli-orgel.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "carousel",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/stoomcarrousel",
+      "park_url": "https://www.efteling.com/nl/park/attracties/stoomcarrousel",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/stoomcarrousel/hero/stoomcarrousel-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/stoomcarrousel",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Kleuterhof",
+      "oms": "Speeltuin voor de allerkleinsten met treincarrousel, wipkippen en zachte landingsmatten.",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/kleuterhof",
+      "park_url": "https://www.efteling.com/nl/park/attracties/kleuterhof",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/kleuterhof/hero/kleuterhof-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/kleuterhof",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Anton Pieckplein",
+      "oms": "Authentiek dorpsplein met zweefmolens en draaimolens in Anton Pieck-stijl.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "wave_swinger",
+      "props": [
+        "high",
+        "swings"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.efteling.com/nl/park/attracties/anton-pieck-plein",
+      "park_url": "https://www.efteling.com/nl/park/attracties/anton-pieck-plein",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/anton-pieck-plein/hero/anton-pieck-plein-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/anton-pieck-plein",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "De Oude Tufferbaan",
+      "oms": "Zelfrijdende oldtimer-autootjes door een Brabants landschap.",
+      "beg": 0,
+      "zelf": 110,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "transport",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/de-oude-tufferbaan",
+      "park_url": "https://www.efteling.com/nl/park/attracties/de-oude-tufferbaan",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/de-oude-tufferbaan/hero/de-oude-tufferbaan-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/de-oude-tufferbaan",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Het Volk van Laaf",
+      "oms": "Themagebied met een wandelroute door het dorp van het Volk van Laaf.",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.efteling.com/nl/park/attracties/volk-van-laaf",
+      "park_url": "https://www.efteling.com/nl/park/attracties/volk-van-laaf",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/volk-van-laaf/hero/volk-van-laaf-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/volk-van-laaf",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "De Monorail",
+      "oms": "Verhoogde monorailbaan met uitzicht over het Volk van Laaf en omgeving.",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "transport",
+      "props": [
+        "high"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/monorail",
+      "park_url": "https://www.efteling.com/nl/park/attracties/monorail",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/monorail/hero/monorail-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/monorail",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Kindervreugd",
+      "oms": "Speeltuin in Anton Pieck-stijl met handduwcarrousels, wipkippen en rolvaten.",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/kindervreugd",
+      "park_url": "https://www.efteling.com/nl/park/attracties/kindervreugd",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/kindervreugd/hero/kindervreugd-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/kindervreugd",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Kinderspoor",
+      "oms": "Traptreintjes die kinderen zelf moeten voortbewegen door een landelijk decor.",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": 12,
+      "type": "kiddie_flat",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/kinderspoor",
+      "park_url": "https://www.efteling.com/nl/park/attracties/kinderspoor",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/kinderspoor/hero/kinderspoor-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/kinderspoor",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Gondoletta",
+      "oms": "Twintig minuten durende bootocht langs bloemen en watervogels.",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "water_ride",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/gondoletta",
+      "park_url": "https://www.efteling.com/nl/park/attracties/gondoletta",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/gondoletta/hero/gondoletta-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/gondoletta",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Efteling Museum",
+      "oms": "Indoor museum met de geschiedenis en het erfgoed van de Efteling.",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "show",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.efteling.com/nl/park/attracties/efteling-museum",
+      "park_url": "https://www.efteling.com/nl/park/attracties/efteling-museum",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/efteling-museum/hero/efteling-museum-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/efteling-museum",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Diorama",
+      "oms": "Indoor tentoonstelling met miniatuurlandschappen waar dag en nacht elkaar afwisselen.",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "show",
+      "props": [
+        "dark"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/diorama",
+      "park_url": "https://www.efteling.com/nl/park/attracties/diorama",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/diorama/hero/diorama-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/diorama",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Holle Bolle Gijs",
+      "oms": "Pratende papier-etende prullenbakken verspreid door het park.",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "show",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/holle-bolle-gijs",
+      "park_url": "https://www.efteling.com/nl/park/attracties/holle-bolle-gijs",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/holle-bolle-gijs/hero/holle-bolle-gijs-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/holle-bolle-gijs",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Game Gallery",
+      "oms": "Buitenarcade met kermisspellen tegen betaling.",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.efteling.com/nl/park/attracties/game-gallery",
+      "park_url": "https://www.efteling.com/nl/park/attracties/game-gallery",
+      "admin_preview": {
+        "url": "https://www.efteling.com/-/media/efteling/global/attracties/game-gallery/hero/game-gallery-hero.jpg",
+        "source_page": "https://www.efteling.com/nl/park/attracties/game-gallery",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
       }
     }
   ]

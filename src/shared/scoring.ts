@@ -14,6 +14,13 @@ import type {
 
 export const GENUINE_MAX = 180
 
+/** True wanneer de attractie permanent gesloten is (of "onbekend, te
+ * verifiëren"). Centrale check zodat views niet zelf de vlag-semantiek
+ * hoeven kennen. Zie ADR-023. */
+export function isClosed(r: Pick<Ride, "closed">): boolean {
+  return r.closed === true || r.closed === "unknown"
+}
+
 // "strengst wint": hard-uit > ontgroeid > onbekend > begeleid > alleen.
 export const STATE_BUCKET: Record<RideState, number> = {
   alleen: 0,

@@ -32,3 +32,4 @@ tenzij anders vermeld.
 | [020](020-frontend-en-admin-stack.md) | Frontend en admin-backend in TypeScript (React + Vite + Express) | Productafbakening |
 | [021](021-begeleiding-haalbaarheid.md) | Begeleiding-haalbaarheid als eigen signaal naast plezier *(Proposed)* | Voorkeuren & ranking |
 | [022](022-samen-en-splits-transparantie.md) | Samen en splits: transparantie zonder subgroepen-modeling *(Proposed)* | Voorkeuren & ranking |
+| [023](023-permanent-gesloten-attracties.md) | Permanent gesloten attracties markeren in plaats van schrappen | Data, rollen & opslag |

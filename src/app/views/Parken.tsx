@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react"
 import type { CountryCode, PartyState, SortKey } from "../../shared/types"
-import { PARKMETA, parks, ridesOf } from "../../shared/data"
+import { PARKMETA, openRidesOf, parks } from "../../shared/data"
 import { makePrefAccess, parkMetrics } from "../../shared/scoring"
 import { Avatar } from "../../shared/components/Avatar"
 import { Flag } from "../../shared/components/Flag"
@@ -81,7 +81,7 @@ export function Parken({
 
   const rows = filtered.map((p) => ({
     p,
-    m: parkMetrics(ridesOf(p), selected, pref),
+    m: parkMetrics(openRidesOf(p), selected, pref),
   }))
   rows.sort((a, b) =>
     sortKey === "weak"

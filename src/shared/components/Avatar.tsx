@@ -3,7 +3,7 @@
 
 import { useState } from "react"
 import { PARKEXTRA } from "../data"
-import { colorOf, initialsOf } from "../helpers"
+import { assetUrl, colorOf, initialsOf } from "../helpers"
 
 export function Avatar({ park }: { park: string }) {
   const ex = PARKEXTRA[park] || { icon: null, logo: null }
@@ -13,7 +13,7 @@ export function Avatar({ park }: { park: string }) {
     <div className="avatar" style={{ ["--col" as string]: colorOf(park) }}>
       <span className="ini">{initialsOf(park)}</span>
       {src && !broken ? (
-        <img src={src} alt="" onError={() => setBroken(true)} />
+        <img src={assetUrl(src)} alt="" onError={() => setBroken(true)} />
       ) : null}
     </div>
   )

@@ -5,12 +5,12 @@
   "meta": {
     "country": "FR",
     "site": "https://www.larecredes3cures.com",
-    "updated": "2026-06-14",
-    "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
+    "updated": "2026-06-17",
+    "tagging": "web-v1 (admin-review nodig voor low/unknown)"
   },
   "rides": [
     {
-      "att": "Tremot",
+      "att": "TREMOR",
       "oms": "Vrije val toren (80m)",
       "beg": 140,
       "zelf": 140,
@@ -20,24 +20,37 @@
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/tremor-ouverture-printemps-2025/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/tremor-ouverture-printemps-2025/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2025/01/attraction-tremor-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/tremor-ouverture-printemps-2025/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Vertika",
       "oms": "Achtbaan (Eurofighter)",
       "beg": 130,
       "zelf": 130,
-      "max": null,
+      "max": 195,
       "type": "thrill_coaster",
       "props": [
         "high",
-        "fast"
+        "fast",
+        "inversions"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-vertika/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-vertika/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/02/le-vertika-1-scaled-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-vertika/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Cinema 6D",
@@ -49,9 +62,15 @@
       "props": [
         "dark"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/cine-6d/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/cine-6d/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/cine6-d-4-2000x860-1-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/cine-6d/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Mambo",
@@ -59,14 +78,20 @@
       "beg": 110,
       "zelf": 140,
       "max": null,
-      "type": "thrill_coaster",
+      "type": "flat_spinner",
       "props": [
-        "high",
-        "fast"
+        "fast",
+        "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/mambo/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/mambo/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/mambo-2-scaled-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/mambo/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Galion des Pirates",
@@ -76,11 +101,18 @@
       "max": null,
       "type": "pirate_ship",
       "props": [
-        "swings"
+        "swings",
+        "high"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-galion-des-pirates/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-galion-des-pirates/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/le-galion-des-pirates-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-galion-des-pirates/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Les Tasses a The",
@@ -92,9 +124,15 @@
       "props": [
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/les-tasses/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/les-tasses/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/tasses-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/les-tasses/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Reve d'Icare",
@@ -105,11 +143,18 @@
       "type": "wave_swinger",
       "props": [
         "high",
-        "spins"
+        "spins",
+        "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-reve-d-icare/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-reve-d-icare/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/04/ri-e1712159701715-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-reve-d-icare/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Les Jeux couverts",
@@ -117,11 +162,18 @@
       "beg": 100,
       "zelf": 110,
       "max": 140,
+      "max_age": 12,
       "type": "playground",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/jeux-couverts/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/jeux-couverts/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/jeux-interieur-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/jeux-couverts/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Train de la Mine",
@@ -129,11 +181,19 @@
       "beg": 100,
       "zelf": 120,
       "max": null,
-      "type": "transport",
-      "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "type": "family_coaster",
+      "props": [
+        "fast"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-grand-huit/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-grand-huit/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/grand-huit-5-2000x860-1-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-grand-huit/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "La Pieuvre",
@@ -146,9 +206,15 @@
         "fast",
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/la-pieuvre/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/la-pieuvre/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/02/7b31dc884c181dddd950a20181943343-scaled-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/la-pieuvre/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le River Splash",
@@ -158,11 +224,18 @@
       "max": null,
       "type": "water_ride",
       "props": [
-        "wet"
+        "wet",
+        "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/river-s-splash/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/river-s-splash/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/river-splash-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/river-s-splash/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Royaume de Margaux",
@@ -172,9 +245,15 @@
       "max": null,
       "type": "playground",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-royaume-de-margaux/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-royaume-de-margaux/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/royaume-de-margaux-pano-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-royaume-de-margaux/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Niagara",
@@ -188,9 +267,15 @@
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/niagara/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/niagara/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/niagara-scaled-e1712161129195-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/niagara/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Jeepo'Dino",
@@ -200,9 +285,15 @@
       "max": null,
       "type": "kiddie_coaster",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/jeepo-dino/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/jeepo-dino/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/05/attractions-et-manege-pour-les-enfants-dans-le-finistere-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/jeepo-dino/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Les Chateaux Gonflables",
@@ -212,9 +303,15 @@
       "max": 150,
       "type": "playground",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/chateaux-gonflables/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/chateaux-gonflables/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/girafe-2-scaled-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/chateaux-gonflables/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "La Chevauchee Sauvage",
@@ -222,11 +319,17 @@
       "beg": 85,
       "zelf": 110,
       "max": null,
-      "type": "transport",
+      "type": "carousel",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/la-chevauchee-sauvage/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/la-chevauchee-sauvage/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/02/la-chevauchee-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/la-chevauchee-sauvage/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Pitz",
@@ -234,13 +337,19 @@
       "beg": 85,
       "zelf": 110,
       "max": null,
-      "type": "water_ride",
+      "type": "playground",
       "props": [
         "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-pitz/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-pitz/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/pitz-recre-scaled-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-pitz/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Les Drakkars",
@@ -250,9 +359,15 @@
       "max": null,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/les-drakkars/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/les-drakkars/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/les-drakkars-scaled-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/les-drakkars/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Pen Draig",
@@ -264,9 +379,15 @@
       "props": [
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-pen-draig/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-pen-draig/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/02/pein-draig-la-recre-des-3-cures-2-768x1024-1-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-pen-draig/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Baron Rouge",
@@ -279,9 +400,15 @@
         "high",
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-baron-rouge/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-baron-rouge/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/04/baron-rouge-1-scaled-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-baron-rouge/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Karting",
@@ -289,13 +416,21 @@
       "beg": 80,
       "zelf": 140,
       "max": null,
-      "type": "dark_ride",
+      "min_age_beg": 8,
+      "min_age_zelf": 14,
+      "type": "transport",
       "props": [
-        "dark"
+        "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-karting/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-karting/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/karting-la-recre-scaled-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-karting/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Tchou Tchou Moutig",
@@ -305,9 +440,15 @@
       "max": null,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/tchou-tchou-moutig/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/tchou-tchou-moutig/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/tchou-tchou-moutig-scaled-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/tchou-tchou-moutig/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Les Grenouilles",
@@ -317,12 +458,17 @@
       "max": null,
       "type": "drop_tower",
       "props": [
-        "high",
-        "fast"
+        "high"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/les-grenouilles/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/les-grenouilles/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/les-grenouilles-2-2000x860-1-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/les-grenouilles/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Petit Train",
@@ -332,9 +478,15 @@
       "max": null,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/petit-train/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/petit-train/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/petit-train-scaled-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/petit-train/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Le Carrousel",
@@ -346,9 +498,15 @@
       "props": [
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-carroussel/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-carroussel/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/le-carrousel-la-recre-scaled-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-carroussel/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Les Pedalos",
@@ -356,13 +514,19 @@
       "beg": 0,
       "zelf": 160,
       "max": null,
-      "type": "water_battle",
+      "type": "water_ride",
       "props": [
         "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/les-embarcaderes/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/les-embarcaderes/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/02/lac-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/les-embarcaderes/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Les Teufs-Teufs",
@@ -372,9 +536,15 @@
       "max": null,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/teufs-teufs-tracteurs/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/teufs-teufs-tracteurs/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/teuf-teuf-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/teufs-teufs-tracteurs/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "La Grande Roue",
@@ -384,12 +554,17 @@
       "max": null,
       "type": "ferris_wheel",
       "props": [
-        "high",
-        "spins"
+        "high"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/la-grande-roue/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/la-grande-roue/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/02/grande-roue-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/la-grande-roue/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "La Bataille d'eau",
@@ -401,9 +576,15 @@
       "props": [
         "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/bataille-d-eau/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/bataille-d-eau/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/bataille-d-eau-380x395-1-380x249-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/bataille-d-eau/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "L'Aquatico",
@@ -412,10 +593,18 @@
       "zelf": 150,
       "max": null,
       "type": "playground",
-      "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "props": [
+        "wet"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/aquatico/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/aquatico/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/aquatico-scaled-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/aquatico/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     },
     {
       "att": "Les Bassins enfants",
@@ -424,10 +613,36 @@
       "zelf": 0,
       "max": null,
       "type": "playground",
+      "props": [
+        "wet"
+      ],
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/1076/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/1076/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/bassin-enfants-2000x860-1-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/1076/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
+    },
+    {
+      "att": "Les Photos Humoristiques",
+      "oms": "Humoristische souvenirfoto's met decor",
+      "beg": 0,
+      "zelf": 0,
+      "max": null,
+      "type": "show",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "source_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/photos-humoristiques/",
+      "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/photos-humoristiques/",
+      "admin_preview": {
+        "url": "https://www.larecredes3cures.com/app/uploads/2024/03/photos-humoristique-2000x860-1-1600x784-c-center.webp",
+        "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/photos-humoristiques/",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      }
     }
   ]
 }

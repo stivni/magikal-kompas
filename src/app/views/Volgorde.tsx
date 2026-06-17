@@ -7,7 +7,7 @@ import type {
   RideWithPark,
   SortKey,
 } from "../../shared/types"
-import { parks, ridesOf } from "../../shared/data"
+import { openRidesOf, parks } from "../../shared/data"
 import {
   canDo,
   dotSym,
@@ -114,7 +114,7 @@ export function Volgorde({
     queueMicrotask(() => setSelectedPark(parkName!))
   }
 
-  const rides = ridesOf(parkName).map((r) => ({
+  const rides = openRidesOf(parkName).map((r) => ({
     r,
     ...rideGroupScore(r, selected, pref),
   }))

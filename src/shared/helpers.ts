@@ -49,6 +49,20 @@ export function escapeHTML(s: unknown): string {
   return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
 }
 
+/** Maak een asset-pad uit de JSON-data bruikbaar als URL, ongeacht of de
+ *  huidige pagina op `/` (hoofdapp) of `/admin/` (admin-curatie) leeft.
+ *
+ *  JSON-paden zoals "assets/logos/x.svg" zijn relatief en zouden vanuit
+ *  `/admin/` naar `/admin/assets/...` resolven — bestand bestaat daar niet.
+ *  Vite's BASE_URL is in dev `/`, in build `/magikal-kompas/`. Beide produceren
+ *  een correcte URL zodra we prefixen. Reeds-absolute paden blijven ongemoeid. */
+export function assetUrl(path: string | null | undefined): string {
+  if (!path) return ""
+  if (/^https?:\/\//.test(path)) return path
+  if (path.startsWith("/")) return path
+  return import.meta.env.BASE_URL + path
+}
+
 /** Leest het bron-taal-veld van een vrije tekst (string of {nl,en,…}). */
 export function freeText(v: Ride["oms"] | undefined, lang = "nl"): string {
   if (v == null) return ""
