@@ -154,6 +154,9 @@ export function Rail({
           <button className="footlink" onClick={onSettings}>⚙ Instellingen</button>
           <button className="footlink" onClick={onAbout}>ℹ Over</button>
         </div>
+        {import.meta.env.DEV && (
+          <a className="footlink admin-link" href="/admin/">🛠 Admin</a>
+        )}
       </div>
     </aside>
   )
