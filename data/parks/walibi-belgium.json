@@ -5,296 +5,2318 @@
   "meta": {
     "country": "BE",
     "site": "https://www.walibi.be",
-    "updated": "2026-06-14",
-    "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
+    "updated": "2026-06-18",
+    "tagging": "web-v1 (volledige verificatie tegen officiële site; low-gevallen markeren voor admin-review)"
   },
   "rides": [
     {
       "att": "Buzzsaw",
-      "oms": "",
+      "oms": "Hangende thrill-ride die je herhaaldelijk over de kop slingert.",
       "beg": 140,
       "zelf": 140,
-      "max": null,
-      "type": "thrill_coaster",
+      "max": 195,
+      "type": "top_spin",
       "props": [
-        "high",
-        "fast"
+        "inversions",
+        "swings"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 4,
+      "height_intensity": 2,
+      "max_height_m": 18,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/buzzsaw",
+        "https://coaster.cloud/en/attractions/58213fdb-buzzsaw"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/buzzsaw",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--4cc5067b-eefa-4f44-8b93-908cc810001e/buzzsaw1.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/buzzsaw",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "thrill_coaster",
+              "to": "top_spin"
+            },
+            "props": {
+              "from": [
+                "high",
+                "fast",
+                "inversions",
+                "swings"
+              ],
+              "to": [
+                "inversions",
+                "swings"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 18
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Kondaa",
-      "oms": "",
+      "oms": "Hyper-coaster van 50 m, top 7 in Europa qua hoogte en snelheid.",
       "beg": 130,
       "zelf": 130,
-      "max": null,
+      "max": 195,
       "type": "thrill_coaster",
-      "props": [
-        "high",
-        "fast"
+      "props": [],
+      "intensity": 5,
+      "height_intensity": 5,
+      "top_speed_kmh": 113,
+      "max_height_m": 50,
+      "duration_s": 90,
+      "g_force": 4.5,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/kondaa",
+        "https://rcdb.com/15207.htm"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/kondaa",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--27c16662-1c91-49f5-871e-01c3be10f00e/wbe-visuel-attractions-kondaa-facing-1920x1080px.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/kondaa",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 5
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 113
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 50
+            },
+            "duration_s": {
+              "from": null,
+              "to": 90
+            },
+            "g_force": {
+              "from": null,
+              "to": 4.5
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Cobra",
-      "oms": "",
+      "oms": "Looping-achtbaan met drie inversies op 36 m hoogte.",
       "beg": 130,
       "zelf": 130,
       "max": null,
       "type": "thrill_coaster",
       "props": [
-        "high",
-        "fast",
         "inversions"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 4,
+      "height_intensity": 4,
+      "top_speed_kmh": 76,
+      "max_height_m": 35.5,
+      "inversions_count": 3,
+      "duration_s": 108,
+      "g_force": 5.2,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/cobra",
+        "https://rcdb.com/1028.htm"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/cobra",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--6c14cb87-4449-41a5-b7db-3b5fec900b25/43-cobra2.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/cobra",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 76
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 35.5
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 3
+            },
+            "duration_s": {
+              "from": null,
+              "to": 108
+            },
+            "g_force": {
+              "from": null,
+              "to": 5.2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
-      "att": "Psyke underground",
-      "oms": "",
+      "att": "Turbine",
+      "oms": "Gelanceerde achtbaan tot 85 km/u met één inversie; voorheen Psyké Underground.",
       "beg": 130,
       "zelf": 140,
       "max": null,
       "type": "thrill_coaster",
       "props": [
-        "high",
-        "fast",
+        "inversions",
         "dark"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 4,
+      "height_intensity": 4,
+      "top_speed_kmh": 85,
+      "max_height_m": 42,
+      "inversions_count": 1,
+      "duration_s": 35,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/turbine",
+        "https://rcdb.com/921.htm"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/turbine",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--47cb6708-b135-432e-831c-9a80a257d6b4/turbine-dockworld-2025.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/turbine",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 85
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 42
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 1
+            },
+            "duration_s": {
+              "from": null,
+              "to": 35
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Vampire",
-      "oms": "",
+      "oms": "Inverted coaster met 5 inversies op 33 m hoogte.",
       "beg": 130,
       "zelf": 130,
-      "max": null,
+      "max": 195,
       "type": "thrill_coaster",
       "props": [
-        "high",
-        "fast",
         "inversions"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 4,
+      "height_intensity": 4,
+      "top_speed_kmh": 80,
+      "max_height_m": 33.3,
+      "inversions_count": 5,
+      "duration_s": 96,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/vampire",
+        "https://rcdb.com/922.htm"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/vampire",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--2df5b61c-fb20-4573-8337-d33d49afcda8/1-vampire.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/vampire",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 80
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 33.3
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 5
+            },
+            "duration_s": {
+              "from": null,
+              "to": 96
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
-      "att": "Weerwolf",
-      "oms": "",
+      "att": "Loup-Garou",
+      "oms": "Houten achtbaan van 28 m, 80 km/u; sluit op 3 januari 2027 — daarna RMC-ombouw voor heropening 2028.",
       "beg": 120,
       "zelf": 120,
       "max": null,
-      "type": "family_coaster",
-      "props": [
-        "high",
-        "fast"
+      "type": "thrill_coaster",
+      "props": [],
+      "intensity": 4,
+      "height_intensity": 4,
+      "top_speed_kmh": 80,
+      "max_height_m": 28,
+      "drop_m": 23.5,
+      "duration_s": 125,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/loup-garou",
+        "https://rcdb.com/1029.htm"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/loup-garou",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--3a6eef87-0573-45bf-8459-1b64089e02aa/5-loup-garou.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/loup-garou",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {
+            "att": {
+              "from": "Weerwolf",
+              "to": "Loup-Garou"
+            },
+            "oms": {
+              "from": "Houten achtbaan van 28 m, 80 km/u; laatste seizoen voor RMC-ombouw.",
+              "to": "Houten achtbaan van 28 m, 80 km/u; sluit op 3 januari 2027 — daarna RMC-ombouw voor heropening 2028."
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 80
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 28
+            },
+            "drop_m": {
+              "from": null,
+              "to": 23.5
+            },
+            "duration_s": {
+              "from": null,
+              "to": 125
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Pulsar",
-      "oms": "",
+      "oms": "Watercoaster met verticale vrije val van 45 m.",
       "beg": 120,
       "zelf": 120,
       "max": null,
-      "type": "family_coaster",
+      "type": "water_ride",
       "props": [
-        "high",
-        "fast"
+        "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 5,
+      "height_intensity": 5,
+      "top_speed_kmh": 101,
+      "max_height_m": 45,
+      "duration_s": 78,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/pulsar",
+        "https://rcdb.com/12409.htm"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/pulsar",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--40d02a3a-93d9-417d-a7cf-cbe75cc431c0/8-pulsar.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/pulsar",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 5
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 101
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 45
+            },
+            "duration_s": {
+              "from": null,
+              "to": 78
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Dalton Terror",
-      "oms": "",
+      "oms": "Free-fall toren van 77 m.",
       "beg": 120,
       "zelf": 120,
-      "max": null,
-      "type": "family_coaster",
-      "props": [
-        "high",
-        "fast"
+      "max": 195,
+      "type": "drop_tower",
+      "props": [],
+      "intensity": 5,
+      "height_intensity": 5,
+      "top_speed_kmh": 106,
+      "max_height_m": 77,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/dalton-terror",
+        "https://www.tiktok.com/@themeparkcontent/video/7175205355000007941"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/dalton-terror",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--b5115dd6-f79a-48fc-b3fa-1721ddec0777/16-dalton-terror.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/dalton-terror",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 5
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 106
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 77
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Het Paleis van de Geest",
-      "oms": "",
+      "oms": "Tilting funhouse met optische illusies en magische geesten.",
       "beg": 105,
       "zelf": 120,
       "max": null,
-      "type": "dark_ride",
+      "type": "funhouse",
       "props": [
         "dark"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 2,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/le-palais-du-genie"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/le-palais-du-genie",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--f94ad608-c45f-42ef-a4d5-d80d3c8b77e3/palais-de-g-nie.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/le-palais-du-genie",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "dark"
+              ],
+              "to": [
+                "dark",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Radja River",
-      "oms": "",
+      "oms": "Wildwaterraftride in Karma World-zone waarbij je gegarandeerd nat wordt.",
       "beg": 105,
       "zelf": 140,
       "max": null,
       "type": "water_ride",
       "props": [
         "wet",
-        "high",
-        "fast"
+        "themed"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 2,
+      "max_height_m": 3.5,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/radja-river",
+        "https://coasterpedia.net/wiki/Radja_River_(Walibi_Belgium)"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/radja-river",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--b289e603-3f19-49fd-a560-c1352afe69fa/40-radja-river.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/radja-river",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {
+            "props": {
+              "from": ["wet"],
+              "to": ["wet", "themed"]
+            },
+            "oms": {
+              "from": "Wildwaterraftride waarbij je nat wordt.",
+              "to": "Wildwaterraftride in Karma World-zone waarbij je gegarandeerd nat wordt."
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "wet",
+                "high",
+                "fast"
+              ],
+              "to": [
+                "wet",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 3.5
+            }
+          }
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Calamity Mine",
-      "oms": "",
+      "oms": "Mijntrein-achtbaan tot 48 km/u door goudmijn-decor.",
       "beg": 100,
       "zelf": 120,
       "max": null,
       "type": "family_coaster",
-      "props": [
-        "high",
-        "fast"
+      "props": [],
+      "intensity": 3,
+      "height_intensity": 3,
+      "top_speed_kmh": 48,
+      "max_height_m": 14,
+      "duration_s": 140,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/calamity-mine",
+        "https://rcdb.com/924.htm"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/calamity-mine",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--7275c416-d78c-4cea-a1e3-936be059b2b8/17-calamity-mine2.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/calamity-mine",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast"
+              ],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 48
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 14
+            },
+            "duration_s": {
+              "from": null,
+              "to": 140
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
-      "att": "Tiki Waka",
-      "oms": "",
+      "att": "Tiki-Waka",
+      "oms": "Familieachtbaan tot 55 km/u met bochten en heuvels in Exotic World-zone.",
       "beg": 100,
       "zelf": 120,
       "max": null,
-      "type": "spinning_coaster",
-      "props": [
-        "high",
-        "fast",
-        "spins"
+      "type": "family_coaster",
+      "props": [],
+      "intensity": 3,
+      "height_intensity": 3,
+      "top_speed_kmh": 55,
+      "max_height_m": 21,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/tiki-waka",
+        "https://rcdb.com/15205.htm"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/tiki-waka",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--4bd472f7-8be2-4f83-b8fb-9f3d6f69e926/26-tiki-waka.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/tiki-waka",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {
+            "props": {
+              "from": ["spins"],
+              "to": []
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast",
+                "spins"
+              ],
+              "to": [
+                "spins"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 55
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 21
+            }
+          }
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Fun Pilot",
-      "oms": "",
+      "oms": "Kinderachtbaan tot 40 km/u in piloten-thema.",
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "family_coaster",
-      "props": [
-        "high",
-        "fast"
+      "type": "kiddie_coaster",
+      "props": [],
+      "intensity": 2,
+      "height_intensity": 2,
+      "top_speed_kmh": 40,
+      "max_height_m": 9.5,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/fun-pilot",
+        "https://rcdb.com/15206.htm"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/fun-pilot",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--296fae3e-41c6-4f95-9ad3-e25ffb29a91d/38-fun-pilot2.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/fun-pilot",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 40
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 9.5
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
-      "att": "Salsa Y Fiesta",
-      "oms": "",
+      "att": "Tous en Boîte",
+      "oms": "Spinnende familieride in een sardineblikje (Dock World-rethema van Salsa Y Fiesta).",
       "beg": 90,
       "zelf": 120,
       "max": null,
       "type": "flat_spinner",
       "props": [
-        "fast",
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/tous-en-boite"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/tous-en-boite",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--99c11948-8b7b-46f8-8256-fa51dc2f2898/tous-en-boite2.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/tous-en-boite",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Kondaala",
-      "oms": "",
-      "beg": 90,
-      "zelf": 120,
-      "max": null,
-      "type": "family_coaster",
-      "props": [
-        "high",
-        "fast"
-      ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
-    },
-    {
-      "att": "Flashback",
-      "oms": "",
-      "beg": 90,
-      "zelf": 120,
-      "max": null,
-      "type": "water_ride",
-      "props": [
-        "wet",
-        "high",
-        "fast"
-      ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
-    },
-    {
-      "att": "Guitar Riff",
-      "oms": "",
-      "beg": 90,
-      "zelf": 105,
-      "max": null,
-      "type": "wave_swinger",
-      "props": [
-        "spins"
-      ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
-    },
-    {
-      "att": "Vliegend Tapijt",
-      "oms": "",
+      "oms": "Kinderride die op- en neergaat en doet alsof hij vliegt.",
       "beg": 90,
       "zelf": 120,
       "max": null,
       "type": "kiddie_flat",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 2,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/kondaala"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/kondaala",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--1c724d0d-913e-4e68-a154-de6227d7feb0/22-kondaala.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/kondaala",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high"
+              ],
+              "to": []
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
-      "att": "Gold River Adventure",
-      "oms": "",
-      "beg": 50,
+      "att": "Flash-Back",
+      "oms": "PowerSplash water-shuttle-coaster met steile hellingen en dubbele splash, inclusief stuk achteruit.",
+      "beg": 90,
       "zelf": 120,
       "max": null,
       "type": "water_ride",
       "props": [
         "wet",
-        "high",
-        "fast"
+        "dark"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 3,
+      "max_height_m": 23,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/flash-back",
+        "https://coasterpedia.net/wiki/Flash_Back_(Walibi_Belgium)"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/flash-back",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--b50be301-08eb-4092-9329-06be886eb5df/29-flash-back.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/flash-back",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {
+            "att": {
+              "from": "Flashback",
+              "to": "Flash-Back"
+            },
+            "oms": {
+              "from": "Water-shuttle-coaster met dubbele splash en stuk achteruit.",
+              "to": "PowerSplash water-shuttle-coaster met steile hellingen en dubbele splash, inclusief stuk achteruit."
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "wet",
+                "high",
+                "fast"
+              ],
+              "to": [
+                "wet",
+                "high",
+                "dark"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 23
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "Guitar Riff",
+      "oms": "Mini-versie van Dalton Terror — kleinere tower-ride voor kinderen.",
+      "beg": 90,
+      "zelf": 105,
+      "max": null,
+      "type": "drop_tower",
+      "props": [],
+      "intensity": 3,
+      "height_intensity": 3,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/guitar-riff"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/guitar-riff",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--63136b7b-cf3d-43f4-a7e3-a79644068e22/guitar-riff2.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/guitar-riff",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Vliegend Tapijt",
+      "oms": "Magic-carpet die voor- en achterwaarts schommelt boven de woestijn.",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "kiddie_flat",
+      "props": [
+        "swings"
+      ],
+      "intensity": 2,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/le-tapis-volant"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/le-tapis-volant",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--5834a9d2-e53f-487b-97aa-8da324b68fb4/tapis-volant.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/le-tapis-volant",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Mecalodon",
+      "oms": "Familielaunchcoaster van 925 m met drie LSM-launches en 14 airtime-momenten.",
+      "beg": 100,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "family_coaster",
+      "props": [],
+      "intensity": 3,
+      "height_intensity": 3,
+      "top_speed_kmh": 65,
+      "max_height_m": 15,
+      "duration_s": 90,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/mecalodon",
+        "https://rcdb.com/21793.htm"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/mecalodon",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--f8e4bc6c-ea62-4579-a9b2-1d9d1f1db8cc/mecalodon-kv--2025-1920x1080px.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/mecalodon",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 65
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 15
+            },
+            "duration_s": {
+              "from": null,
+              "to": 90
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
+    },
+    {
+      "att": "Stormy",
+      "oms": "Draaiende drakenboot-ride voor kleine zeebonken in Dock World.",
+      "beg": 50,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "flat_spinner",
+      "props": [
+        "spins"
+      ],
+      "intensity": 2,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/stormy"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/stormy",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--ad47fef7-41d9-455b-92ad-2cd99312683d/stormy.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/stormy",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Spinning Vibe",
+      "oms": "HUSS Breakdance — draaiende gondels op meerdere assen.",
+      "beg": 120,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "flat_spinner",
+      "props": [
+        "spins"
+      ],
+      "intensity": 4,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/spinning-vibe",
+        "https://coasterpedia.net/wiki/Spinning_Vibe_(Walibi_Belgium)"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/spinning-vibe",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--738eaaad-9ae5-4be4-862a-beb88c38255b/7-spinning-vibe.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/spinning-vibe",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Silverton",
+      "oms": "Sidecar XL — stoomlocomotief-gondels die je zelf 90° kan kantelen.",
+      "beg": 90,
+      "zelf": 130,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "flat_spinner",
+      "props": [
+        "swings"
+      ],
+      "intensity": 3,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/silverton"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/silverton",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--eff372b4-df83-413d-b5cb-0d0c37f023b1/14-silverton.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/silverton",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "fast",
+                "swings"
+              ],
+              "to": [
+                "fast",
+                "swings",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
+    },
+    {
+      "att": "4D-bioscoop",
+      "oms": "4D-Wanted Alive: filmervaring met bewegende stoelen en effecten.",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "show",
+      "props": [
+        "dark"
+      ],
+      "intensity": 2,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/4d-film"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/4d-film",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--7d140245-8479-47da-b2fa-6851e2ca55dc/wanted-alive-title.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/4d-film",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "dark"
+              ],
+              "to": [
+                "dark",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
+    },
+    {
+      "att": "Grand Carrousel",
+      "oms": "Klassieke draaimolen in de Weerwolf-zone.",
+      "beg": 50,
+      "zelf": 105,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "carousel",
+      "props": [
+        "spins"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/Le-grand-carrousel"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/Le-grand-carrousel",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--e9a78a84-79e1-4686-94ea-d92e6e1a5d3a/grand-carroussel.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/Le-grand-carrousel",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Challenge of Tutankhamon",
+      "oms": "Interactieve dark ride waar je mummies met een laser-pistool moet uitschakelen.",
+      "beg": 80,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "story_ride",
+      "props": [
+        "dark"
+      ],
+      "intensity": 2,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/challenge-of-tutankhamon",
+        "https://blooloop.com/theme-park/in-depth/popcorn-revenge-walibi-belgium/"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/challenge-of-tutankhamon",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--1034ada9-88ea-4f60-b735-fd5f1558d1b9/25-cot.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/challenge-of-tutankhamon",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "dark_ride",
+              "to": "story_ride"
+            },
+            "props": {
+              "from": [
+                "dark"
+              ],
+              "to": [
+                "dark",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
+    },
+    {
+      "att": "Popcorn Revenge",
+      "oms": "Trackless interactieve dark ride waarbij je popcorn-monsters bestrijdt.",
+      "beg": 50,
+      "zelf": 90,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "story_ride",
+      "props": [
+        "dark",
+        "spins"
+      ],
+      "intensity": 2,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/popcorn-revenge",
+        "https://www.alterface.com/portfolio/popcorn-revenge-walibi-belgium/"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/popcorn-revenge",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--f4a01027-87f4-40d4-b1d6-4d6b4368e87c/popcorn-revenge.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/popcorn-revenge",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "dark_ride",
+              "to": "story_ride"
+            },
+            "props": {
+              "from": [
+                "dark",
+                "spins"
+              ],
+              "to": [
+                "dark",
+                "spins",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
+    },
+    {
+      "att": "Melody Road",
+      "oms": "Rustige rondrit met oldtimers door dichte begroeiing.",
+      "beg": 50,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "transport",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/melody-road"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/melody-road",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--401f50a6-8223-4387-844f-d4b26e17f1de/3-melody-road.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/melody-road",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
+    },
+    {
+      "att": "Octopus",
+      "oms": "Slingerende familieride die je in alle richtingen meeneemt.",
+      "beg": 105,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "flat_spinner",
+      "props": [
+        "spins",
+        "swings"
+      ],
+      "intensity": 3,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/octopus"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/octopus",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--b12a42da-3427-47d5-b9aa-3615dafceb35/21-octopus.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/octopus",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Wave Swinger",
+      "oms": "Klassieke zweefmolen — draaimolen en schommel in één.",
+      "beg": 105,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "wave_swinger",
+      "props": [
+        "spins",
+        "swings"
+      ],
+      "intensity": 3,
+      "height_intensity": 3,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/wave-swinger"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/wave-swinger",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--29cea618-cc1e-4e8d-ad8e-d14239f77779/4-wave-swinger.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/wave-swinger",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "spins"
+              ],
+              "to": [
+                "spins",
+                "swings"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Tiki-Trail",
+      "oms": "Buitenavontuur-parcours met klim- en evenwichtselementen.",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/familieattracties/tiki-trail"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/tiki-trail",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--b4326ed4-efc5-4180-9cca-9c147ca10cd1/20-tiki-trail2.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/tiki-trail",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high"
+              ],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
+    },
+    {
+      "att": "4x4 Adventure",
+      "oms": "Kinderride met 4x4-jeeps op een oefenparcours.",
+      "beg": 50,
+      "zelf": 105,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "kiddie_flat",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/4x4-adventure"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/4x4-adventure",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--c3df3679-4b9b-44ec-8bab-66f5c5abe7aa/31-4x4-adventure.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/4x4-adventure",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Fun Recorder",
+      "oms": "Zachte op-en-neer kinderride voor de eerste sensaties.",
+      "beg": 80,
+      "zelf": 105,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "kiddie_flat",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/fun-recorder"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/fun-recorder",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--acd51f73-9f55-423a-b070-5210e528c578/fun-recorder.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/fun-recorder",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Graffiti Shuttle",
+      "oms": "Kleine shuttle-coaster voor kinderen.",
+      "beg": 80,
+      "zelf": 105,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "kiddie_coaster",
+      "props": [],
+      "intensity": 2,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/graffiti-shuttle"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/graffiti-shuttle",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--78247fc7-e42d-47c3-b89b-70a448836938/graffiti-shuttle-1280x800px-02.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/graffiti-shuttle",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Bubble Swirl",
+      "oms": "Kleurrijke heteluchtballon-ride die op je eigen tempo draait.",
+      "beg": 80,
+      "zelf": 105,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "teacups",
+      "props": [
+        "spins"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/bubble-swirl"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/bubble-swirl",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--93265f37-73d1-4e89-9e32-910d0bb4ef20/34-bubble-swirl.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/bubble-swirl",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Mini Tour",
+      "oms": "Klein treintje voor een rustige rondrit voor de allerkleinsten.",
+      "beg": 50,
+      "zelf": 105,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "transport",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/mini-tour"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/mini-tour",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--36ee1689-97e9-4bc3-9ded-3a7b3b5c925d/37-mini-tour.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/mini-tour",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Little Swing",
+      "oms": "Kinderzweefmolen waar stoeltjes door de lucht zweven.",
+      "beg": 90,
+      "zelf": 105,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "wave_swinger",
+      "props": [
+        "spins",
+        "swings"
+      ],
+      "intensity": 2,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/little-swing"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/little-swing",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--82dfe6d0-84f7-40f0-b346-42ef91755345/little-swing.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/little-swing",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "spins"
+              ],
+              "to": [
+                "spins",
+                "swings"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Tree House",
+      "oms": "Grote buitenspeelzone met klimstructuren en glijbanen.",
+      "beg": 80,
+      "zelf": 105,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "playground",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/tree-house"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/tree-house",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--a7095a81-90f3-47db-97e9-2003f5ce7e00/32-tree-house.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/tree-house",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Poneys",
+      "oms": "Kinderride op pony's door een indianendorp.",
+      "beg": 0,
+      "zelf": 105,
+      "max": 140,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "kiddie_flat",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/poneys"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/poneys",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--b5ff7190-5693-401c-b720-a7933423b79b/poneys.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/poneys",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "tag_confidence": {
+              "from": "low",
+              "to": "med"
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Kids Airlines",
+      "oms": "Vliegmolen voor kinderen waar je zelf kiest hoe hoog je vliegt.",
+      "beg": 0,
+      "zelf": 90,
+      "max": 140,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "kiddie_flat",
+      "props": [
+        "spins"
+      ],
+      "intensity": 2,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/kids-airlines"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/kids-airlines",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--14687794-664d-4d7d-9a4c-23b60397562d/kids-airline-2.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/kids-airlines",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Tchou-Tchou Express",
+      "oms": "Klein treintje dat door een dorp van mooie huisjes rijdt.",
+      "beg": 50,
+      "zelf": 105,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "transport",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/tchou-tchou-express"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/tchou-tchou-express",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--62cd3b43-db12-4412-a5fe-361f8d57a015/tchou-tchou-express2.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/tchou-tchou-express",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
+    },
+    {
+      "att": "Spinning Taxi",
+      "oms": "Spinnende kinder-taxi waar je zelf kan kiezen om te rijden of meerijden.",
+      "beg": 50,
+      "zelf": 105,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "teacups",
+      "props": [
+        "spins"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/spinning-taxi"
+      ],
+      "park_url": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/spinning-taxi",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--3cc100fc-9128-43be-905d-7bec025a2b9b/spinning-taxi.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.be/nl/ontdek-het-park/attracties-voor-kinderen/spinning-taxi",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     }
   ]
 }
