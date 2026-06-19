@@ -5,8 +5,8 @@
   "meta": {
     "country": "NL",
     "site": "https://www.efteling.com",
-    "updated": "2026-06-17",
-    "tagging": "web-v1 (admin-review nodig voor low/unknown)"
+    "updated": "2026-06-18",
+    "tagging": "web-v3 (type-correcties Danse Macabre/Villa Volta, props hersteld, hoogte-eisen Piraña/Sirocco gecorrigeerd; admin-review nodig voor low)"
   },
   "rides": [
     {
@@ -22,23 +22,67 @@
       "props": [
         "high",
         "fast",
-        "dark"
+        "dark",
+        "inversions",
+        "scary",
+        "themed"
       ],
+      "intensity": 5,
+      "height_intensity": 4,
+      "top_speed_kmh": 90,
+      "max_height_m": 30,
+      "drop_m": 37.5,
+      "inversions_count": 2,
+      "duration_s": 130,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/baron-1898",
+      "sources": [
+        "https://rcdb.com/12083.htm",
+        "https://www.efteling.com/nl/park/attracties/baron-1898"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/baron-1898",
       "image": {
-        "url": "assets/photos/efteling/baron-1898.webp",
+        "url": "assets/photos/efteling/baron-1898.webp?t=1781727603882",
         "license": "CC-BY-SA-4.0",
-        "attribution": "Foto door Steven Lek, via Wikimedia Commons",
-        "source_page": "https://commons.wikimedia.org/wiki/File:Baron_1898_Efteling_rollercoaster_2018_9.jpg"
+        "attribution": "Foto door Sjoerdswfj, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Baronaanzicht.JPG"
       },
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/baron-1898/hero/baron-1898-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/baron-1898/1024x576-baron-1898-2.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/baron-1898",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "props": {
+              "from": ["dark", "inversions"],
+              "to": ["high", "fast", "dark", "inversions", "scary", "themed"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 5 },
+            "height_intensity": { "from": null, "to": 4 },
+            "top_speed_kmh": { "from": null, "to": 90 },
+            "max_height_m": { "from": null, "to": 30 },
+            "drop_m": { "from": null, "to": 37.5 },
+            "inversions_count": { "from": null, "to": 2 },
+            "duration_s": { "from": null, "to": 130 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "admin",
+          "verified": true
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Vliegende Hollander",
@@ -49,15 +93,25 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "water_ride",
+      "type": "family_coaster",
       "props": [
-        "wet",
+        "high",
         "fast",
-        "dark"
+        "wet",
+        "dark",
+        "themed"
       ],
+      "intensity": 4,
+      "height_intensity": 3,
+      "top_speed_kmh": 70,
+      "max_height_m": 22.5,
+      "duration_s": 225,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/de-vliegende-hollander",
+      "sources": [
+        "https://rcdb.com/3291.htm",
+        "https://www.efteling.com/nl/park/attracties/de-vliegende-hollander"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/de-vliegende-hollander",
       "image": {
         "url": "assets/photos/efteling/vliegende-hollander.webp",
@@ -66,10 +120,39 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:De_Vliegende_Hollander_rollercoaster_Efteling_2018.jpg"
       },
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/de-vliegende-hollander/hero/de-vliegende-hollander-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/vliegende-hollander/1024x576-de-vliegende-hollander-2.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/de-vliegende-hollander",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "props": {
+              "from": ["wet", "dark"],
+              "to": ["high", "fast", "wet", "dark", "themed"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 4 },
+            "height_intensity": { "from": null, "to": 3 },
+            "top_speed_kmh": { "from": null, "to": 70 },
+            "max_height_m": { "from": null, "to": 22.5 },
+            "duration_s": { "from": null, "to": 225 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "admin",
+          "verified": true
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Python",
@@ -86,9 +169,19 @@
         "fast",
         "inversions"
       ],
+      "intensity": 4,
+      "height_intensity": 4,
+      "top_speed_kmh": 75,
+      "max_height_m": 29,
+      "inversions_count": 4,
+      "duration_s": 128,
+      "g_force": 3.5,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/python",
+      "sources": [
+        "https://rcdb.com/897.htm",
+        "https://www.efteling.com/nl/park/attracties/python"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/python",
       "image": {
         "url": "assets/photos/efteling/python.webp",
@@ -97,10 +190,40 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Python_Efteling_rollercoaster_2018.jpg"
       },
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/python/hero/python-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/python/1024x576-python-loopings.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/python",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "props": {
+              "from": ["inversions"],
+              "to": ["high", "fast", "inversions"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 4 },
+            "height_intensity": { "from": null, "to": 4 },
+            "top_speed_kmh": { "from": null, "to": 75 },
+            "max_height_m": { "from": null, "to": 29 },
+            "inversions_count": { "from": null, "to": 4 },
+            "duration_s": { "from": null, "to": 128 },
+            "g_force": { "from": null, "to": 3.5 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Vogel Rok",
@@ -114,11 +237,22 @@
       "type": "thrill_coaster",
       "props": [
         "fast",
-        "dark"
+        "dark",
+        "scary",
+        "themed"
       ],
+      "intensity": 4,
+      "height_intensity": 3,
+      "top_speed_kmh": 65,
+      "max_height_m": 20,
+      "drop_m": 19,
+      "duration_s": 101,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/vogel-rok",
+      "sources": [
+        "https://rcdb.com/900.htm",
+        "https://www.efteling.com/nl/park/attracties/vogel-rok"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/vogel-rok",
       "image": {
         "url": "assets/photos/efteling/vogel-rok.webp",
@@ -127,10 +261,40 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Vogel_Rok_Efteling.jpg"
       },
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/vogel-rok/hero/vogel-rok-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/vogel-rok/1600x900-park-vogel-rok-entree.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/vogel-rok",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "props": {
+              "from": ["dark"],
+              "to": ["fast", "dark", "scary", "themed"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 4 },
+            "height_intensity": { "from": null, "to": 3 },
+            "top_speed_kmh": { "from": null, "to": 65 },
+            "max_height_m": { "from": null, "to": 20 },
+            "drop_m": { "from": null, "to": 19 },
+            "duration_s": { "from": null, "to": 101 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Joris en de Draak",
@@ -143,12 +307,20 @@
       "max_age": null,
       "type": "family_coaster",
       "props": [
-        "high",
-        "fast"
+        "fast",
+        "themed"
       ],
+      "intensity": 3,
+      "height_intensity": 3,
+      "top_speed_kmh": 75,
+      "max_height_m": 22,
+      "drop_m": 22,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/joris-en-de-draak",
+      "sources": [
+        "https://rcdb.com/4526.htm",
+        "https://www.efteling.com/nl/park/attracties/joris-en-de-draak"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/joris-en-de-draak",
       "image": {
         "url": "assets/photos/efteling/joris-en-de-draak.webp",
@@ -157,10 +329,39 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Joris_en_de_Draak_-_Dragon.JPG"
       },
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/joris-en-de-draak/hero/joris-en-de-draak-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/joris-en-de-draak/1024x576-joris-en-de-draak-2.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/joris-en-de-draak",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": ["fast", "themed"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 3 },
+            "height_intensity": { "from": null, "to": 3 },
+            "top_speed_kmh": { "from": null, "to": 75 },
+            "max_height_m": { "from": null, "to": 22 },
+            "drop_m": { "from": null, "to": 22 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Max & Moritz",
@@ -173,23 +374,50 @@
       "max_age": null,
       "type": "family_coaster",
       "props": [
-        "fast"
+        "themed"
       ],
+      "intensity": 2,
+      "height_intensity": 2,
+      "top_speed_kmh": 36,
+      "max_height_m": 6,
+      "duration_s": 150,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/max-moritz",
+      "sources": [
+        "https://rcdb.com/16697.htm",
+        "https://www.efteling.com/nl/park/attracties/max-moritz"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/max-moritz",
       "image": {
         "url": "assets/photos/efteling/max-en-moritz.webp",
         "license": "CC-BY-SA-4.0",
         "attribution": "Foto door Laurensvanheerde, via Wikimedia Commons",
-        "source_page": "https://commons.wikimedia.org/wiki/File:Efteling_Max_%26_Moritz_ingangspoort_en_station.jpg"
+        "source_page": "https://commons.wikimedia.org/wiki/File:Efteling_Max_%26_Moritz_station_trein_van_Max.jpg"
       },
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/max-moritz/hero/max-moritz-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/max-en-moritz/1024x576-max-moritz-overzicht.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/max-moritz",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 2 },
+            "height_intensity": { "from": null, "to": 2 },
+            "top_speed_kmh": { "from": null, "to": 36 },
+            "max_height_m": { "from": null, "to": 6 },
+            "duration_s": { "from": null, "to": 150 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Halve Maen",
@@ -202,29 +430,65 @@
       "max_age": null,
       "type": "pirate_ship",
       "props": [
+        "high",
         "swings",
-        "high"
+        "themed"
       ],
+      "intensity": 3,
+      "height_intensity": 3,
+      "top_speed_kmh": 54,
+      "max_height_m": 25,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/halve-maen",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Halve_Maen_(Efteling)",
+        "https://www.efteling.com/nl/park/attracties/halve-maen"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/halve-maen",
       "image": {
-        "url": "assets/photos/efteling/halve-maen.webp",
-        "license": "CC-BY-SA-4.0",
-        "attribution": "Foto door Eliedion, via Wikimedia Commons",
-        "source_page": "https://commons.wikimedia.org/wiki/File:Halve_Maen_Efteling.jpg"
+        "url": "assets/photos/efteling/halve-maen.webp?t=1781728247786",
+        "license": "CC0",
+        "attribution": "Foto door No machine-readable author provided. Olivier Bost assumed (based on copyright claims)., via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Eft_HalveMaele01.jpg"
       },
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/halve-maen/hero/halve-maen-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/halve-maen/1600x900-halve-maen.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/halve-maen",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "props": {
+              "from": ["swings"],
+              "to": ["high", "swings", "themed"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 3 },
+            "height_intensity": { "from": null, "to": 3 },
+            "top_speed_kmh": { "from": null, "to": 54 },
+            "max_height_m": { "from": null, "to": 25 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Pirana",
       "oms": "Wildwaterbaan in ronde boten door watervallen en stroomversnellingen.",
-      "beg": 0,
+      "beg": 100,
       "zelf": 120,
       "max": null,
       "min_age_beg": null,
@@ -233,11 +497,19 @@
       "type": "water_ride",
       "props": [
         "wet",
-        "spins"
+        "spins",
+        "themed"
       ],
+      "intensity": 2,
+      "height_intensity": 1,
+      "top_speed_kmh": 20,
+      "duration_s": 360,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/pirana",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pira%C3%B1a_(Efteling)",
+        "https://www.efteling.com/nl/park/attracties/pirana"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/pirana",
       "image": {
         "url": "assets/photos/efteling/pirana.webp",
@@ -246,29 +518,62 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Pirana_Efteling_2018.jpg"
       },
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/pirana/hero/pirana-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/pirana/1024x576-pirana-waterbeelden.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/pirana",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "beg": { "from": 0, "to": 100 },
+            "props": {
+              "from": ["wet", "spins"],
+              "to": ["wet", "spins", "themed"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 2 },
+            "height_intensity": { "from": null, "to": 1 },
+            "top_speed_kmh": { "from": null, "to": 20 },
+            "duration_s": { "from": null, "to": 360 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Sirocco",
       "oms": "Overdekt schuitje dat ronddraait in een storm op zee met Sindbad.",
       "beg": 0,
-      "zelf": 120,
+      "zelf": 100,
       "max": null,
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
       "type": "flat_spinner",
       "props": [
-        "fast",
         "spins",
-        "dark"
+        "dark",
+        "themed"
       ],
+      "intensity": 3,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.efteling.com/nl/park/attracties/sirocco",
+      "sources": [
+        "https://coasterpedia.net/wiki/Sirocco_(Efteling)",
+        "https://www.efteling.com/nl/park/attracties/sirocco"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/sirocco",
       "image": {
         "url": "assets/photos/efteling/sirocco.webp",
@@ -277,35 +582,110 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Efteling_Sirocco.jpg"
       },
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/sirocco/hero/sirocco-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/sirocco/1024x576-sirocco-exterieur-winter.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/sirocco",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "zelf": { "from": 120, "to": 100 },
+            "props": {
+              "from": ["spins", "dark"],
+              "to": ["spins", "dark", "themed"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 3 },
+            "height_intensity": { "from": null, "to": 2 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Danse Macabre",
-      "oms": "Indoor spookspektakel in een drijvende balzaal vol duistere wendingen.",
+      "oms": "Intamin Dynamic Motion Stage: een dansend donker spektakel in een spookachtige balzaalomgeving.",
       "beg": 0,
       "zelf": 120,
       "max": null,
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "top_spin",
+      "type": "story_ride",
       "props": [
         "dark",
-        "swings",
-        "spins"
+        "spins",
+        "scary",
+        "themed"
       ],
+      "intensity": 3,
+      "height_intensity": 3,
+      "max_height_m": 20,
+      "drop_m": 3,
+      "duration_s": 210,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/danse-macabre",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Danse_Macabre_(Efteling)",
+        "https://www.efteling.com/nl/park/attracties/danse-macabre"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/danse-macabre",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/danse-macabre/hero/danse-macabre-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/danse-macabre/1024x576-danse-macabre-keyvisual-buitenkant.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/danse-macabre",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "type": { "from": "top_spin", "to": "story_ride" },
+            "oms": {
+              "from": "Indoor spookspektakel in een drijvende balzaal vol duistere wendingen.",
+              "to": "Intamin Dynamic Motion Stage: een dansend donker spektakel in een spookachtige balzaalomgeving."
+            },
+            "props": {
+              "from": ["dark", "swings", "spins", "scary"],
+              "to": ["dark", "spins", "scary", "themed"]
+            },
+            "height_intensity": { "from": 2, "to": 3 },
+            "max_height_m": { "from": null, "to": 20 },
+            "drop_m": { "from": null, "to": 3 },
+            "duration_s": { "from": null, "to": 210 },
+            "sources": {
+              "from": ["https://darkridedatabase.com/rides/danse-macabre/", "https://www.efteling.com/nl/park/attracties/danse-macabre"],
+              "to": ["https://en.wikipedia.org/wiki/Danse_Macabre_(Efteling)", "https://www.efteling.com/nl/park/attracties/danse-macabre"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 3 },
+            "height_intensity": { "from": null, "to": 2 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Hooghmoed",
@@ -319,17 +699,60 @@
       "type": "drop_tower",
       "props": [
         "high",
-        "fast"
+        "scary",
+        "themed"
       ],
+      "intensity": 3,
+      "height_intensity": 2,
+      "max_height_m": 9.5,
+      "drop_m": 6,
+      "duration_s": 90,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/hooghmoed",
+      "sources": [
+        "https://www.efteling.com/en/press/drop-tower-attraction-hooghmoed-opens-at-efteling/",
+        "https://blooloop.com/efteling-hooghmoed-drop-tower-opens/",
+        "https://www.efteling.com/nl/park/attracties/hooghmoed"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/hooghmoed",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/hooghmoed/hero/hooghmoed-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/hooghmoed/1024x576-hooghmoed-overzicht.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/hooghmoed",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": ["high", "scary", "themed"]
+            },
+            "sources": {
+              "from": ["https://www.efteling.com/en/press/drop-tower-attraction-hooghmoed-opens-at-efteling/", "https://blooloop.com/efteling-hooghmoed-drop-tower-opens/"],
+              "to": ["https://www.efteling.com/en/press/drop-tower-attraction-hooghmoed-opens-at-efteling/", "https://blooloop.com/efteling-hooghmoed-drop-tower-opens/", "https://www.efteling.com/nl/park/attracties/hooghmoed"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 3 },
+            "height_intensity": { "from": null, "to": 2 },
+            "max_height_m": { "from": null, "to": 9.5 },
+            "drop_m": { "from": null, "to": 6 },
+            "duration_s": { "from": null, "to": 90 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Symbolica",
@@ -340,19 +763,44 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "dark_ride",
+      "type": "story_ride",
       "props": [
-        "dark"
+        "dark",
+        "themed"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "duration_s": 420,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/symbolica",
+      "sources": [
+        "https://darkridedatabase.com/rides/symbolica-paleis-der-fantasie/",
+        "https://www.efteling.com/nl/park/attracties/symbolica"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/symbolica",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/symbolica/hero/symbolica-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/symbolica/1024x576-koningszaal-symbolica-efteling.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/symbolica",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": { "from": "dark_ride", "to": "story_ride" },
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 },
+            "duration_s": { "from": null, "to": 420 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Sprookjesbos",
@@ -364,16 +812,38 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "playground",
-      "props": [],
+      "props": [
+        "themed"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/sprookjesbos",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/sprookjesbos"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/sprookjesbos",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/sprookjesbos/hero/sprookjesbos-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/sprookjesbos/sprookjesbos-pagina/1600x900-sprookjesbos-gezin-bij-roodkapje.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/sprookjesbos",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Droomvlucht",
@@ -384,44 +854,109 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "dark_ride",
+      "type": "story_ride",
       "props": [
         "dark",
-        "high"
+        "themed"
       ],
+      "intensity": 2,
+      "height_intensity": 3,
+      "max_height_m": 13,
+      "top_speed_kmh": 18,
+      "duration_s": 360,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/droomvlucht",
+      "sources": [
+        "https://darkridedatabase.com/rides/droomvlucht/",
+        "https://www.efteling.com/nl/park/attracties/droomvlucht"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/droomvlucht",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/droomvlucht/hero/droomvlucht-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/droomvlucht/1024x576-droomvlucht-elfjes-zittend-op-tak.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/droomvlucht",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": { "from": "dark_ride", "to": "story_ride" },
+            "intensity": { "from": null, "to": 2 },
+            "height_intensity": { "from": null, "to": 3 },
+            "max_height_m": { "from": null, "to": 13 },
+            "top_speed_kmh": { "from": null, "to": 18 },
+            "duration_s": { "from": null, "to": 360 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Villa Volta",
-      "oms": "Ronddraaiend spookhuis (madhouse) met het verhaal van Hugo van den Loonsche Duynen.",
-      "beg": 0,
+      "oms": "Vekoma madhouse met de illusie van 360° omwenteling door het verhaal van Hugo van den Loonsche Duynen.",
+      "beg": 100,
       "zelf": 100,
       "max": null,
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "top_spin",
+      "type": "funhouse",
       "props": [
         "dark",
-        "spins"
+        "spins",
+        "scary",
+        "themed"
       ],
+      "intensity": 3,
+      "height_intensity": 2,
+      "duration_s": 600,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/villa-volta",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Villa_Volta",
+        "https://www.efteling.com/nl/park/attracties/villa-volta"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/villa-volta",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/villa-volta/hero/villa-volta-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/villa-volta/1024x576-efteling-villa-volta-hugo.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/villa-volta",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "type": { "from": "top_spin", "to": "funhouse" },
+            "oms": {
+              "from": "Ronddraaiend spookhuis (madhouse) met het verhaal van Hugo van den Loonsche Duynen.",
+              "to": "Vekoma madhouse met de illusie van 360° omwenteling door het verhaal van Hugo van den Loonsche Duynen."
+            },
+            "beg": { "from": 0, "to": 100 },
+            "duration_s": { "from": null, "to": 600 }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 3 },
+            "height_intensity": { "from": null, "to": 2 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Pagode",
@@ -434,17 +969,43 @@
       "max_age": null,
       "type": "ferris_wheel",
       "props": [
-        "high"
+        "high",
+        "themed"
       ],
+      "intensity": 1,
+      "height_intensity": 3,
+      "max_height_m": 45,
+      "duration_s": 240,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.efteling.com/nl/park/attracties/pagode",
+      "tag_confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pagoda_(Efteling)",
+        "https://www.efteling.com/nl/park/attracties/pagode"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/pagode",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/pagode/hero/pagode-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/pagode/1600x900-pagode-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/pagode",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 3 },
+            "max_height_m": { "from": null, "to": 45 },
+            "duration_s": { "from": null, "to": 240 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Archipel",
@@ -457,17 +1018,37 @@
       "max_age": null,
       "type": "playground",
       "props": [
-        "wet"
+        "wet",
+        "themed"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/archipel",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/archipel"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/archipel",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/archipel/hero/archipel-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/archipel/1024x576-archipel-paalvisser.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/archipel",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Carnaval Festival",
@@ -478,19 +1059,44 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "dark_ride",
+      "type": "story_ride",
       "props": [
-        "dark"
+        "dark",
+        "themed"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "duration_s": 375,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/carnaval-festival",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Carnival_Festival",
+        "https://www.efteling.com/nl/park/attracties/carnaval-festival"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/carnaval-festival",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/carnaval-festival/hero/carnaval-festival-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/carnaval-festival-2019/1024x576-carnaval-festival-jokie.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/carnaval-festival",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": { "from": "dark_ride", "to": "story_ride" },
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 },
+            "duration_s": { "from": null, "to": 375 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Fata Morgana",
@@ -501,19 +1107,44 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "dark_ride",
+      "type": "story_ride",
       "props": [
-        "dark"
+        "dark",
+        "themed"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "duration_s": 480,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/fata-morgana",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fata_Morgana_(Efteling)",
+        "https://www.efteling.com/nl/park/attracties/fata-morgana"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/fata-morgana",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/fata-morgana/hero/fata-morgana-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/fata-morgana/1024x576-fata-morgana-1.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/fata-morgana",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": { "from": "dark_ride", "to": "story_ride" },
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 },
+            "duration_s": { "from": null, "to": 480 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Nest!",
@@ -525,16 +1156,37 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "playground",
-      "props": [],
+      "props": [
+        "themed"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/nest",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/nest"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/nest",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/nest/hero/nest-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/nest/1024x576-speelbos-nest-gezin-op-het-vlonderpad.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/nest",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Fabula",
@@ -548,17 +1200,38 @@
       "type": "show",
       "props": [
         "dark",
-        "wet"
+        "wet",
+        "themed"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/fabula",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/fabula"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/fabula",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/fabula/hero/fabula-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/fabula/1024x576-fabula-rots.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/fabula",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Stoomtrein",
@@ -570,16 +1243,38 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "transport",
-      "props": [],
+      "props": [
+        "themed"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/stoomtrein",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/stoomtrein"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/stoomtrein",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/stoomtrein/hero/stoomtrein-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/stoomtrein/1600-900-stoomtrein-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/stoomtrein",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Stoomcarrousel",
@@ -591,16 +1286,38 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "carousel",
-      "props": [],
+      "props": [
+        "themed"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/stoomcarrousel",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/stoomcarrousel"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/stoomcarrousel",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/stoomcarrousel/hero/stoomcarrousel-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/stoomcarrousel/1024x576-carrouselpaleis-plein.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/stoomcarrousel",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Kleuterhof",
@@ -613,15 +1330,34 @@
       "max_age": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/kleuterhof",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/kleuterhof"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/kleuterhof",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/kleuterhof/hero/kleuterhof-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/kleuterhof/1600x900-kleuterhof-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/kleuterhof",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Anton Pieckplein",
@@ -635,17 +1371,51 @@
       "type": "wave_swinger",
       "props": [
         "high",
-        "swings"
+        "swings",
+        "themed"
       ],
+      "intensity": 2,
+      "height_intensity": 3,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.efteling.com/nl/park/attracties/anton-pieck-plein",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Anton_Pieck_Square",
+        "https://www.efteling.com/nl/park/attracties/anton-pieck-plein"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/anton-pieck-plein",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/anton-pieck-plein/hero/anton-pieck-plein-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/anton-pieckplein/1024x576-anton-pieckplein-zweefmolen-meisje.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/anton-pieck-plein",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "beg": { "from": 0, "to": 0 },
+            "zelf": { "from": 100, "to": 100 },
+            "props": {
+              "from": ["swings"],
+              "to": ["high", "swings", "themed"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 2 },
+            "height_intensity": { "from": null, "to": 3 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "De Oude Tufferbaan",
@@ -657,16 +1427,38 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "transport",
-      "props": [],
+      "props": [
+        "themed"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/de-oude-tufferbaan",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/de-oude-tufferbaan"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/de-oude-tufferbaan",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/de-oude-tufferbaan/hero/de-oude-tufferbaan-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/de-oude-tufferbaan/1024x576-de-oude-tufferbaan-efteling-geel-voertuig.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/de-oude-tufferbaan",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Het Volk van Laaf",
@@ -678,16 +1470,38 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "playground",
-      "props": [],
+      "props": [
+        "themed"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.efteling.com/nl/park/attracties/volk-van-laaf",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/volk-van-laaf"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/volk-van-laaf",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/volk-van-laaf/hero/volk-van-laaf-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/volk-van-laaf/1024x576-volk-van-laaf-leerhuys.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/volk-van-laaf",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "De Monorail",
@@ -700,17 +1514,47 @@
       "max_age": null,
       "type": "transport",
       "props": [
-        "high"
+        "high",
+        "themed"
       ],
+      "intensity": 1,
+      "height_intensity": 3,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/monorail",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/monorail"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/monorail",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/monorail/hero/monorail-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/monorail/1024x576-monorail-winter.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/monorail",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": ["high", "themed"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 3 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Kindervreugd",
@@ -722,16 +1566,37 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "playground",
-      "props": [],
+      "props": [
+        "themed"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/kindervreugd",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/kindervreugd"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/kindervreugd",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/kindervreugd/hero/kindervreugd-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/kindervreugd/1600x900-kinder-vreugd-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/kindervreugd",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Kinderspoor",
@@ -743,16 +1608,37 @@
       "min_age_zelf": null,
       "max_age": 12,
       "type": "kiddie_flat",
-      "props": [],
+      "props": [
+        "themed"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/kinderspoor",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/kinderspoor"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/kinderspoor",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/kinderspoor/hero/kinderspoor-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/kinderspoor/1600x900-kinderspoor-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/kinderspoor",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Gondoletta",
@@ -764,16 +1650,43 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "water_ride",
-      "props": [],
+      "props": [
+        "themed"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "top_speed_kmh": 3,
+      "duration_s": 1200,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/gondoletta",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gondoletta",
+        "https://www.efteling.com/nl/park/attracties/gondoletta"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/gondoletta",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/gondoletta/hero/gondoletta-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/gondoletta/1024x576-gondoletta-1.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/gondoletta",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 },
+            "top_speed_kmh": { "from": null, "to": 3 },
+            "duration_s": { "from": null, "to": 1200 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Efteling Museum",
@@ -785,16 +1698,37 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "show",
-      "props": [],
+      "props": [
+        "themed"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.efteling.com/nl/park/attracties/efteling-museum",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/efteling-museum"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/efteling-museum",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/efteling-museum/hero/efteling-museum-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/efteling-museum/1024x576-efteling-museum.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/efteling-museum",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Diorama",
@@ -807,17 +1741,38 @@
       "max_age": null,
       "type": "show",
       "props": [
-        "dark"
+        "dark",
+        "themed"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/diorama",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/diorama"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/diorama",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/diorama/hero/diorama-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/diorama/1600x900-diorama-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/diorama",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Holle Bolle Gijs",
@@ -829,16 +1784,37 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "show",
-      "props": [],
+      "props": [
+        "themed"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/holle-bolle-gijs",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/holle-bolle-gijs"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/holle-bolle-gijs",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/holle-bolle-gijs/hero/holle-bolle-gijs-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/holle-bolle-gijs/1600x900-holle-bolle-gijs-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/holle-bolle-gijs",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Game Gallery",
@@ -851,15 +1827,34 @@
       "max_age": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.efteling.com/nl/park/attracties/game-gallery",
+      "sources": [
+        "https://www.efteling.com/nl/park/attracties/game-gallery"
+      ],
       "park_url": "https://www.efteling.com/nl/park/attracties/game-gallery",
       "admin_preview": {
-        "url": "https://www.efteling.com/-/media/efteling/global/attracties/game-gallery/hero/game-gallery-hero.jpg",
+        "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/game-gallery/1600x900-game-gallery-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/game-gallery",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": { "from": null, "to": 1 },
+            "height_intensity": { "from": null, "to": 1 }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     }
   ]
 }
