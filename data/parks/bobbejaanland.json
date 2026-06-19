@@ -5,516 +5,2047 @@
   "meta": {
     "country": "BE",
     "site": "https://www.bobbejaanland.be",
-    "updated": "2026-06-14",
-    "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
+    "updated": "2026-06-18",
+    "tagging": "web-v3 (volledige verificatie vs parksite; low-gevallen voor admin)"
   },
   "rides": [
     {
       "att": "El Paso Special",
-      "oms": "interactieve rit",
+      "oms": "interactieve westernrit door een cowboysdorp",
       "beg": 140,
       "zelf": 140,
       "max": null,
-      "type": "dark_ride",
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "story_ride",
       "props": [
-        "dark"
+        "dark",
+        "themed"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 2,
+      "height_intensity": 1,
+      "duration_s": 300,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/the-el-paso-special",
+        "https://darkridedatabase.com/rides/el-paso-special/"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/the-el-paso-special",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/el-paso/The%20El%20Paso%20Special%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/the-el-paso-special",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "interactieve rit",
+              "to": "interactieve westernrit door een cowboysdorp"
+            },
+            "props": {
+              "from": ["dark"],
+              "to": ["dark", "themed"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "dark_ride",
+              "to": "story_ride"
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "duration_s": {
+              "from": null,
+              "to": 300
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Sledge Hammer",
-      "oms": "?",
+      "oms": "giant frisbee — slingert tot 42 m hoog en 106 km/h",
       "beg": 130,
       "zelf": 140,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "top_spin",
       "props": [
-        "high",
-        "fast",
         "spins",
-        "swings"
+        "swings",
+        "high",
+        "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 5,
+      "height_intensity": 5,
+      "top_speed_kmh": 106,
+      "max_height_m": 42,
+      "duration_s": 150,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/sledge-hammer",
+        "https://coasterpedia.net/wiki/Sledge_Hammer_(Bobbejaanland)"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/sledge-hammer",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/sledge-hammer/Sledge%20Hammer%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/sledge-hammer",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "beg": {
+              "from": null,
+              "to": 130
+            },
+            "oms": {
+              "from": "giant frisbee",
+              "to": "giant frisbee — slingert tot 42 m hoog en 106 km/h"
+            },
+            "props": {
+              "from": ["spins", "swings"],
+              "to": ["spins", "swings", "high", "fast"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 5
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 106
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 42
+            },
+            "duration_s": {
+              "from": null,
+              "to": 150
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Fury",
-      "oms": "launch coaster",
+      "oms": "triple-launch coaster, snelste van de Benelux (107 km/h, 43 m)",
       "beg": 130,
       "zelf": 130,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "thrill_coaster",
       "props": [
-        "high",
-        "fast"
+        "inversions",
+        "fast",
+        "high"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 5,
+      "height_intensity": 4,
+      "top_speed_kmh": 107,
+      "max_height_m": 43,
+      "inversions_count": 2,
+      "duration_s": 90,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/fury",
+        "https://rcdb.com/16110.htm"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/fury",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/fury/Fury%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/fury",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "launch coaster",
+              "to": "triple-launch coaster, snelste van de Benelux (107 km/h, 43 m)"
+            },
+            "props": {
+              "from": ["inversions"],
+              "to": ["inversions", "fast", "high"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 107
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 43
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 2
+            },
+            "duration_s": {
+              "from": null,
+              "to": 90
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Typhoon",
-      "oms": "dive coaster",
+      "oms": "duikachtbaan met 4 inversies en 25 m val",
       "beg": 125,
       "zelf": 140,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "thrill_coaster",
       "props": [
+        "inversions",
         "high",
         "fast"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 5,
+      "height_intensity": 4,
+      "top_speed_kmh": 80,
+      "max_height_m": 25.7,
+      "inversions_count": 4,
+      "duration_s": 90,
+      "g_force": 5.0,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/typhoon",
+        "https://rcdb.com/2229.htm"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/typhoon",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/typhoon/Typhoon%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/typhoon",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "dive coaster",
+              "to": "duikachtbaan met 4 inversies en 25 m val"
+            },
+            "props": {
+              "from": ["inversions"],
+              "to": ["inversions", "high", "fast"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            }
+          }
+        }
+      ]
     },
     {
       "att": "El Rio",
-      "oms": "wildwaterbaan",
+      "oms": "wildwaterbaan met woeste golven en draaikolken",
       "beg": 120,
       "zelf": 140,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "water_ride",
       "props": [
-        "wet",
-        "high",
-        "fast"
+        "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 3,
+      "max_height_m": 10,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/el-rio",
+        "https://nl.wikipedia.org/wiki/El_Rio_(Bobbejaanland)"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/el-rio",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/el-rio/El-Rio-%20Attracties-%20Bobbejaanland-main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/el-rio",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "wildwaterbaan",
+              "to": "wildwaterbaan met woeste golven en draaikolken"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 10
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Bob Express",
-      "oms": "mine coaster",
+      "oms": "mine coaster — 520 m door rotslandschap langs water",
       "beg": 120,
       "zelf": 140,
-      "max": null,
+      "max": 195,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "thrill_coaster",
-      "props": [
-        "high",
-        "fast"
+      "props": [],
+      "intensity": 2,
+      "height_intensity": 3,
+      "top_speed_kmh": 36,
+      "max_height_m": 10,
+      "duration_s": 150,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/bob-express",
+        "https://rcdb.com/919.htm"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/bob-express",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/bob-express/Bob-Express-%20Attracties-%20Bobbejaanland-main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/bob-express",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "mine coaster",
+              "to": "mine coaster — 520 m door rotslandschap langs water"
+            },
+            "max": {
+              "from": null,
+              "to": 195
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Naga Bay",
-      "oms": "spinning coaster",
+      "oms": "spinning coaster — 360° draaien tussen de bomen",
       "beg": 120,
       "zelf": 140,
-      "max": null,
+      "max": 195,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "spinning_coaster",
       "props": [
-        "high",
-        "fast",
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 3,
+      "top_speed_kmh": 55,
+      "max_height_m": 17,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/naga-bay",
+        "https://rcdb.com/9331.htm"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/naga-bay",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/naga-bay/Naga%20Bay%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/naga-bay",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "spinning coaster",
+              "to": "spinning coaster — 360° draaien tussen de bomen"
+            },
+            "max": {
+              "from": null,
+              "to": 195
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Orbiter",
-      "oms": "hovercrafts",
+      "oms": "ronde botsauto's in Kinderland",
       "beg": 120,
       "zelf": 120,
       "max": null,
-      "type": "flat_spinner",
-      "props": [
-        "fast",
-        "spins"
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "kiddie_flat",
+      "props": [],
+      "intensity": 2,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/orbiter"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/orbiter",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/orbiter/Orbiter%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/orbiter",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "botsauto's",
+              "to": "ronde botsauto's in Kinderland"
+            },
+            "type": {
+              "from": "flat_spinner",
+              "to": "kiddie_flat"
+            },
+            "props": {
+              "from": ["spins"],
+              "to": []
+            },
+            "tag_confidence": {
+              "from": "high",
+              "to": "low"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Speedy Bob",
-      "oms": "familiecoaster",
+      "oms": "nostalgische familiecoaster met onvoorspelbare bewegingen",
       "beg": 110,
       "zelf": 140,
-      "max": null,
-      "type": "thrill_coaster",
-      "props": [
-        "high",
-        "fast"
+      "max": 195,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "family_coaster",
+      "props": [],
+      "intensity": 3,
+      "height_intensity": 3,
+      "top_speed_kmh": 45,
+      "max_height_m": 14,
+      "duration_s": 85,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/speedy-bob",
+        "https://rcdb.com/2557.htm"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/speedy-bob",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/speedy-bob/Speedy-Bob-Attracties-%20Bobbejaanland-main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/speedy-bob",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "familiecoaster",
+              "to": "nostalgische familiecoaster met onvoorspelbare bewegingen"
+            },
+            "max": {
+              "from": null,
+              "to": 195
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Dreamcatcher",
-      "oms": "hangende achtbaan",
+      "oms": "hangende achtbaan — 600 m door Anasazi-landschap",
       "beg": 110,
       "zelf": 130,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "spinning_coaster",
       "props": [
-        "high",
-        "fast",
-        "spins"
+        "spins",
+        "swings",
+        "high"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 4,
+      "max_height_m": 25,
+      "duration_s": 164,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/dreamcatcher",
+        "https://rcdb.com/915.htm"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/dreamcatcher",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/the-dreamcatcher/Dreamcatcher-Attracties-%20Bobbejaanland-main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/dreamcatcher",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "hangende achtbaan",
+              "to": "hangende achtbaan — 600 m door Anasazi-landschap"
+            },
+            "props": {
+              "from": ["spins", "swings"],
+              "to": ["spins", "swings", "high"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Balloon Race",
-      "oms": "ballonnetjes",
+      "oms": "draaimolen met ballonvormige gondels voor kinderen",
       "beg": 110,
       "zelf": 110,
       "max": 150,
-      "type": "wave_swinger",
-      "props": [
-        "spins"
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "carousel",
+      "props": [],
+      "intensity": 2,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/balloon-race"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/balloon-race",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/balloon-race/Balloon-Race-%20Attracties-%20Bobbejaanland-main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/balloon-race",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "ballonnetjes",
+              "to": "draaimolen met ballonvormige gondels voor kinderen"
+            },
+            "type": {
+              "from": "wave_swinger",
+              "to": "carousel"
+            },
+            "props": {
+              "from": ["spins"],
+              "to": []
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Minirad",
-      "oms": "mini-reuzenrad",
+      "oms": "mini-reuzenrad in Kinderland",
       "beg": 110,
       "zelf": 110,
       "max": 150,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "ferris_wheel",
-      "props": [
-        "high",
-        "spins"
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/mini-rad"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/mini-rad",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/mini-rad/Mini-Rad-%20Attracties-%20Bobbejaanland-main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/mini-rad",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "props": {
+              "from": ["spins"],
+              "to": []
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Old Carousel",
-      "oms": "carousel",
+      "oms": "klassieke draaimolen met paard- en luchtballon-zitjes",
       "beg": 110,
       "zelf": 110,
       "max": 150,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "carousel",
-      "props": [
-        "spins"
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/old-carrousel"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/old-carrousel",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/old-carrousel/Old%20Carrousel%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/old-carrousel",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "carousel",
+              "to": "klassieke draaimolen met paard- en luchtballon-zitjes"
+            },
+            "props": {
+              "from": ["spins"],
+              "to": []
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Dubbeldekcarousel",
-      "oms": "carousel",
+      "oms": "carousel indoor",
       "beg": 110,
       "zelf": 110,
       "max": 150,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "carousel",
-      "props": [
-        "spins"
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "admin",
+      "tag_confidence": "verified",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/dubbeldek-carrousel"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/dubbeldek-carrousel",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/dubbeldek-carrousel/Dubbeldek-Carrousel-%20Attracties-%20Bobbejaanland-main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/dubbeldek-carrousel",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "admin",
+          "verified": true
+        }
+      ]
     },
     {
       "att": "Minitrein",
-      "oms": "autoritje",
+      "oms": "rode stoomtrein voor kleine machinisten",
       "beg": 110,
       "zelf": 110,
       "max": 150,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/mini-trein"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/mini-trein",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/mini-trein/Mini%20Trein%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/mini-trein",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "autoritje",
+              "to": "rode stoomtrein voor kleine machinisten"
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Glijbaan",
-      "oms": "glijbaan",
+      "oms": "kokomatten-glijbaan (7 m hoog), racen naar beneden",
       "beg": 110,
       "zelf": 110,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "kiddie_flat",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 2,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/glijbaan"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/glijbaan",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/glijbaan/Glijbaan-%20Attracties-%20Bobbejaanland-main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/glijbaan",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "glijbaan",
+              "to": "kokomatten-glijbaan (7 m hoog), racen naar beneden"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Big Bang",
-      "oms": "bandenglijbaan",
+      "oms": "rubberbootglijbaan met 12 m val",
       "beg": 100,
       "zelf": 140,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "water_ride",
       "props": [
-        "wet",
-        "high",
-        "fast"
+        "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 3,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/big-bang"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/big-bang",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/big-bang/Big-Bang-Attracties-Bobbejaanland-2.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/big-bang",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "bandenglijbaan",
+              "to": "rubberbootglijbaan met 12 m val"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Terra Magma",
-      "oms": "boomstammetjes",
+      "oms": "vernieuwde log flume door vulkaan-thema met dark-sectie",
       "beg": 100,
       "zelf": 140,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "water_ride",
       "props": [
         "wet",
-        "high",
-        "fast"
+        "dark",
+        "themed"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 3,
+      "drop_m": 10,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/terra-magma",
+        "https://darkridedatabase.com/report-terra-magma-at-bobbejaanland/",
+        "https://waterridedatabase.com/europe/belgium/bobbejaanland/terra_magma"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/terra-magma",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/terra-magma/Terra%20Magma.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/terra-magma",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "boomstammetjes",
+              "to": "vernieuwde log flume door vulkaan-thema met dark-sectie"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": ["wet", "high", "fast"],
+              "to": ["wet", "dark", "themed"]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "drop_m": {
+              "from": null,
+              "to": 10
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Wildwaterbaan",
-      "oms": "boomstammetjes",
+      "oms": "klassieke log flume (500 m, actief since 1980)",
       "beg": 100,
       "zelf": 140,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "water_ride",
       "props": [
-        "wet",
-        "high",
-        "fast"
+        "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 3,
+      "max_height_m": 13,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/wild-water-slide",
+        "https://nl.wikipedia.org/wiki/Wild_Water_Slide"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/wild-water-slide",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/wildwaterbaan/Wild%20Water%20Slide%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/wild-water-slide",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "boomstammetjes",
+              "to": "klassieke log flume (500 m, actief since 1980)"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 13
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Aztek Express",
-      "oms": "rappe rups",
+      "oms": "musik express door Mexicaans landschap",
       "beg": 100,
       "zelf": 140,
       "max": null,
-      "type": "water_ride",
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "flat_spinner",
       "props": [
-        "wet",
-        "high",
-        "fast"
+        "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/aztek-express"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/aztek-express",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/aztek-express/Aztek%20Express%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/aztek-express",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "musik express",
+              "to": "musik express door Mexicaans landschap"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Kettingmolen",
-      "oms": "vliegende stoeltjes",
+      "oms": "vliegende stoeltjes — handen en voeten in de lucht",
       "beg": 100,
       "zelf": 140,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "wave_swinger",
       "props": [
-        "high",
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 2,
+      "height_intensity": 3,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/kettingmolen"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/kettingmolen",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/kettingmolen/Kettingmolen-%20Attracties-%20Bobbejaanland-main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/kettingmolen",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "vliegende stoeltjes",
+              "to": "vliegende stoeltjes — handen en voeten in de lucht"
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Revolution",
-      "oms": "dark coaster",
+      "oms": "wereldlangste coastertrein met tijdreis-thema",
       "beg": 100,
       "zelf": 140,
       "max": null,
-      "type": "top_spin",
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "thrill_coaster",
       "props": [
-        "high",
-        "fast",
-        "spins",
-        "swings"
+        "dark",
+        "themed"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
-    },
-    {
-      "att": "The Forbidden Caves",
-      "oms": "4D",
-      "beg": 100,
-      "zelf": 130,
-      "max": null,
-      "type": "teacups",
-      "props": [
-        "spins"
+      "intensity": 3,
+      "height_intensity": 3,
+      "top_speed_kmh": 50,
+      "max_height_m": 18.5,
+      "duration_s": 140,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/revolution",
+        "https://rcdb.com/917.htm"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/revolution",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/revolution/Revolution_800_600.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/revolution",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "wereldlangste coastertrein",
+              "to": "wereldlangste coastertrein met tijdreis-thema"
+            },
+            "props": {
+              "from": ["dark"],
+              "to": ["dark", "themed"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        }
+      ]
     },
     {
       "att": "King Kong",
-      "oms": "lift",
+      "oms": "liftatractie — gorilla tilt je 12 m de lucht in",
       "beg": 100,
       "zelf": 130,
       "max": null,
-      "type": "drop_tower",
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "flat_spinner",
       "props": [
         "high",
-        "fast"
+        "themed"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 2,
+      "height_intensity": 3,
+      "max_height_m": 12,
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/king-kong"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/king-kong",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/king-kong/King-Kong-%20Attracties-%20Bobbejaanland-main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/king-kong",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "lift",
+              "to": "liftatractie — gorilla tilt je 12 m de lucht in"
+            },
+            "props": {
+              "from": [],
+              "to": ["high", "themed"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "drop_tower",
+              "to": "flat_spinner"
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 12
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Oki Doki",
-      "oms": "familiecoaster",
+      "oms": "instap-achtbaan voor de allerkleinsten in Kinderland",
       "beg": 95,
       "zelf": 140,
       "max": null,
-      "type": "thrill_coaster",
-      "props": [
-        "high",
-        "fast"
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "family_coaster",
+      "props": [],
+      "intensity": 3,
+      "height_intensity": 3,
+      "top_speed_kmh": 58,
+      "max_height_m": 16.3,
+      "duration_s": 62,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/oki-doki",
+        "https://rcdb.com/2228.htm"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/oki-doki",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/oki-doki/Oki-Doki-%20Attracties-%20Bobbejaanland-main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/oki-doki",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "familiecoaster",
+              "to": "instap-achtbaan voor de allerkleinsten in Kinderland"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Banana Battle",
-      "oms": "waterbattle",
+      "oms": "interactieve waterbattle met waterkanon op boten",
       "beg": 90,
       "zelf": 120,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "water_battle",
       "props": [
         "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 2,
+      "height_intensity": 1,
+      "duration_s": 300,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/banana-battle",
+        "https://coasterpedia.net/wiki/Banana_Battle"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/banana-battle",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/banana-battle/Banana%20Battle%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/banana-battle",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "waterbattle",
+              "to": "interactieve waterbattle met waterkanon op boten"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "duration_s": {
+              "from": null,
+              "to": 300
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Rode Baron",
-      "oms": "vliegertjes",
+      "oms": "kindervliegtuigjes voor jonge piloten (90–150 cm)",
       "beg": 90,
       "zelf": 90,
-      "max": null,
-      "type": "wave_swinger",
-      "props": [
-        "spins"
+      "max": 150,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "kiddie_flat",
+      "props": [],
+      "intensity": 2,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/rode-baron"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/rode-baron",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/rode-baron/Rode-Baron-%20Attracties-%20Bobbejaanland-main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/rode-baron",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "vliegertjes",
+              "to": "kindervliegtuigjes voor jonge piloten (90–150 cm)"
+            },
+            "type": {
+              "from": "wave_swinger",
+              "to": "kiddie_flat"
+            },
+            "props": {
+              "from": ["spins"],
+              "to": []
+            },
+            "max": {
+              "from": null,
+              "to": 150
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Flying Orca",
-      "oms": "vliegmolen",
+      "oms": "rustige orca-draaimolen rond een vuurtoren (Wondergarden)",
       "beg": 80,
       "zelf": 140,
       "max": null,
-      "type": "wave_swinger",
-      "props": [
-        "high",
-        "spins"
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "kiddie_flat",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/flying-orca"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/flying-orca",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/flying-orca/Flying%20Orca%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/flying-orca",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "vliegmolen",
+              "to": "rustige orca-draaimolen rond een vuurtoren (Wondergarden)"
+            },
+            "type": {
+              "from": "wave_swinger",
+              "to": "kiddie_flat"
+            },
+            "props": {
+              "from": ["spins"],
+              "to": []
+            },
+            "intensity": {
+              "from": 2,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": 2,
+              "to": 1
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Horse Pedalo",
-      "oms": "railpedalo",
+      "oms": "paarden-pedalo in Desperado City, eigen tempo",
       "beg": 80,
       "zelf": 140,
       "max": null,
-      "type": "water_battle",
-      "props": [
-        "wet"
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "transport",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/horse-pedalo"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/horse-pedalo",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/horse-pedalo/Horse%20Pedalo%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/horse-pedalo",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "railpedalo",
+              "to": "paarden-pedalo in Desperado City, eigen tempo"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Reuzenrad",
-      "oms": "reuzenrad",
-      "beg": 80,
+      "oms": "iconisch reuzenrad met panoramisch uitzicht over het park",
+      "beg": 140,
       "zelf": 140,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "ferris_wheel",
       "props": [
-        "high",
-        "spins"
+        "high"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 4,
+      "max_height_m": 42,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/reuzenrad",
+        "https://coasterpedia.net/wiki/Reuzenrad_(Bobbejaanland)"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/reuzenrad",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/reuzenrad/Reuzenrad%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/reuzenrad",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "reuzenrad",
+              "to": "iconisch reuzenrad met panoramisch uitzicht over het park"
+            },
+            "beg": {
+              "from": 80,
+              "to": 140
+            },
+            "props": {
+              "from": ["spins"],
+              "to": ["high"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 42
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Pony Ride",
-      "oms": "railritje",
+      "oms": "pony-ritje door de natuur in Desperado City",
       "beg": 80,
       "zelf": 110,
       "max": 195,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/pony-ride"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/pony-ride",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/ponyride/Pony%20Ride%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/pony-ride",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "railritje",
+              "to": "pony-ritje door de natuur in Desperado City"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Convoy trucks",
-      "oms": "autoritje",
+      "oms": "kindertruck-autoritje in Wondergarden (stuur zelf)",
       "beg": 80,
       "zelf": 80,
       "max": 150,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/convoy-trucks"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/convoy-trucks",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/convoy-trucks/Convoy-Trucks-%20Attracties-Bobbejaanland-main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/convoy-trucks",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "autoritje",
+              "to": "kindertruck-autoritje in Wondergarden (stuur zelf)"
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Locomotion",
-      "oms": "autoritje",
+      "oms": "kinderdraaimolen door westers landschap (Wondergarden)",
       "beg": 80,
       "zelf": 80,
       "max": 150,
-      "type": "transport",
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "carousel",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/locomotion"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/locomotion",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/locomotion/Locomotion-%20Attracties-%20Bobbejaanland-main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/locomotion",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "autoritje",
+              "to": "kinderdraaimolen door westers landschap (Wondergarden)"
+            },
+            "type": {
+              "from": "transport",
+              "to": "carousel"
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Glijbaan kinderland",
-      "oms": "glijbaan",
+      "oms": "kleine kleurrijke glijbaan voor de allerkleinsten in Kinderland",
       "beg": 80,
       "zelf": 80,
       "max": 150,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "kiddie_flat",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/glijbaan-kinderland"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/glijbaan-kinderland",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/glijbaan-kinderland/Glijbaan%20Kinderland.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/glijbaan-kinderland",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "glijbaan",
+              "to": "kleine kleurrijke glijbaan voor de allerkleinsten in Kinderland"
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Bootvaart",
-      "oms": "bootjevaren",
+      "oms": "rustige bootjesvaarttocht door de natuur",
       "beg": 0,
       "zelf": 140,
       "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.bobbejaanland.be/parkactiviteiten/attracties/bootvaart"
+      ],
+      "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/bootvaart",
+      "admin_preview": {
+        "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/bootvaart/Bootvaart%20main.jpg",
+        "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/bootvaart",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "bootjevaren",
+              "to": "rustige bootjesvaarttocht door de natuur"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     }
   ]
 }
