@@ -5,8 +5,8 @@
   "meta": {
     "country": "BE",
     "site": "https://www.bellewaerde.be",
-    "updated": "2026-06-17",
-    "tagging": "web-v1 (admin-review nodig voor low/unknown)"
+    "updated": "2026-06-18",
+    "tagging": "web-v3 (36 attracties geverifieerd vs officiële site; Boomerang technische specs gecorrigeerd obv parksite; Piratenboot beg gecorrigeerd naar null + max_height_m toegevoegd; Amazonia beg gecorrigeerd 120→105; Flying Carrousel beg gecorrigeerd naar null; El Toro props hersteld naar fast+spins)"
   },
   "rides": [
     {
@@ -16,26 +16,87 @@
       "zelf": 140,
       "max": 195,
       "type": "drop_tower",
-      "props": [
-        "hoog",
-        "snel",
-        "high"
-      ],
+      "props": [],
+      "intensity": 4,
+      "height_intensity": 3,
+      "top_speed_kmh": 70,
+      "max_height_m": 52,
       "tag_source": "admin",
-      "tag_confidence": "verified",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/screaming-eagle",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/screaming-eagle",
+        "https://en.wikipedia.org/wiki/Bellewaerde"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/screaming-eagle",
       "image": {
-        "url": "assets/photos/bellewaerde/screaming-eagle.webp?t=1781608106718",
+        "url": "assets/photos/bellewaerde/screaming-eagle.webp",
         "license": "CC-BY-SA-3.0",
         "attribution": "Foto door djolivier, via Wikimedia Commons",
         "source_page": "https://commons.wikimedia.org/wiki/File:Scremineagle@Bellewaerde.JPG"
       },
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/screaming-eagle.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/screaming-eagle/screaming-eagle-afdaling.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/screaming-eagle",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T12:55:31.175Z",
+          "by": "admin",
+          "changes": {
+            "intensity": {
+              "from": 5,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": 5,
+              "to": 3
+            },
+            "theming": {
+              "to": "medium"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "hoog",
+                "snel",
+                "high"
+              ],
+              "to": [
+                "high",
+                "fast"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 5
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 70
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 52
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "admin",
+          "verified": true
+        }
+      ],
+      "theming": "medium"
     },
     {
       "att": "Boomerang",
@@ -45,13 +106,22 @@
       "max": null,
       "type": "thrill_coaster",
       "props": [
-        "high",
         "fast",
         "inversions"
       ],
+      "intensity": 5,
+      "height_intensity": 4,
+      "top_speed_kmh": 80,
+      "max_height_m": 32,
+      "inversions_count": 6,
+      "duration_s": 108,
+      "g_force": 5.2,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/boomerang",
+      "sources": [
+        "https://rcdb.com/926.htm",
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/boomerang"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/boomerang",
       "image": {
         "url": "assets/photos/bellewaerde/boomerang.webp",
@@ -60,45 +130,176 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Boomerang.JPG"
       },
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/boomerang.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/boomerang/boomerang-trein-cobra-roll-1.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/boomerang",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "props": {
+              "from": [
+                "inversions"
+              ],
+              "to": [
+                "fast",
+                "inversions"
+              ]
+            },
+            "top_speed_kmh": {
+              "from": 76,
+              "to": 80
+            },
+            "max_height_m": {
+              "from": 35.5,
+              "to": 32
+            },
+            "inversions_count": {
+              "from": 3,
+              "to": 6
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 76
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 35.5
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 3
+            },
+            "duration_s": {
+              "from": null,
+              "to": 108
+            },
+            "g_force": {
+              "from": null,
+              "to": 5.2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "admin",
+          "verified": true
+        }
+      ]
     },
     {
       "att": "Piratenboot",
       "oms": "schommelboot",
-      "beg": 130,
+      "beg": null,
       "zelf": 130,
       "max": null,
       "type": "pirate_ship",
       "props": [
         "swings"
       ],
+      "intensity": 3,
+      "height_intensity": 3,
+      "max_height_m": 20,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/piratenboot",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/piratenboot"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/piratenboot",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/piratenboot.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/piratenboot/piratenboot.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/piratenboot",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "beg": {
+              "from": 130,
+              "to": null
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 20
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "thrill_coaster",
+              "to": "pirate_ship"
+            },
+            "props": {
+              "from": [
+                "swings"
+              ],
+              "to": [
+                "swings",
+                "high"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T22:15:51.155Z",
+          "by": "admin",
+          "changes": {
+            "type": {
+              "from": "pirate_ship",
+              "to": "thrill_coaster"
+            }
+          }
+        }
+      ]
     },
     {
       "att": "El Volador",
-      "oms": "familieachtbaan",
+      "oms": "topple tower",
       "beg": 120,
       "zelf": 120,
       "max": 195,
-      "type": "family_coaster",
+      "type": "flat_spinner",
       "props": [
-        "high",
-        "fast"
+        "spins"
       ],
+      "intensity": 3,
+      "height_intensity": 4,
+      "max_height_m": 16,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/el-volador",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/el-volador",
+        "https://en.wikipedia.org/wiki/Topple_Tower"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/el-volador",
       "image": {
         "url": "assets/photos/bellewaerde/el-volador.webp",
@@ -107,27 +308,71 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Elvolador@Bellewaerde.JPG"
       },
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/el-volador.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/el-volador/el-volador.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/el-volador",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "family_coaster",
+              "to": "flat_spinner"
+            },
+            "oms": {
+              "from": "familieachtbaan",
+              "to": "topple tower"
+            },
+            "props": {
+              "from": [
+                "high",
+                "fast"
+              ],
+              "to": [
+                "high",
+                "spins"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 16
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Flying Carrousel",
       "oms": "vliegende stoeltjes",
-      "beg": 120,
+      "beg": null,
       "zelf": 120,
       "max": null,
       "type": "wave_swinger",
       "props": [
-        "hoog",
-        "draait",
-        "high",
         "spins"
       ],
-      "tag_source": "admin",
-      "tag_confidence": "verified",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/flying-carrousel",
+      "intensity": 2,
+      "height_intensity": 3,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/flying-carrousel"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/flying-carrousel",
       "image": {
         "url": "assets/photos/bellewaerde/flying-carrousel.webp?t=1781632211144",
@@ -136,26 +381,81 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Flying_carrousel.jpg"
       },
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/flying-carrousel.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/flying-carrousel/flying-carrousel-1.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/flying-carrousel",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "beg": {
+              "from": 120,
+              "to": null
+            },
+            "props": {
+              "from": [
+                "high",
+                "spins"
+              ],
+              "to": [
+                "spins"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "hoog",
+                "draait",
+                "high",
+                "spins"
+              ],
+              "to": [
+                "high",
+                "spins"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "admin",
+          "verified": true
+        }
+      ]
     },
     {
       "att": "El Toro",
-      "oms": "octopus",
+      "oms": "breakdance",
       "beg": 120,
       "zelf": 120,
       "max": null,
       "type": "flat_spinner",
       "props": [
-        "snel",
-        "draait",
+        "fast",
         "spins"
       ],
-      "tag_source": "admin",
-      "tag_confidence": "verified",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/el-toro",
+      "intensity": 4,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/el-toro"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/el-toro",
       "image": {
         "url": "assets/photos/bellewaerde/el-toro.webp?t=1781632236863",
@@ -164,27 +464,83 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:El_Toro_(2).jpg"
       },
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/el-toro.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/el-toro/el-toro.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/el-toro",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "props": {
+              "from": [
+                "spins"
+              ],
+              "to": [
+                "fast",
+                "spins"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "oms": {
+              "from": "octopus",
+              "to": "breakdance"
+            },
+            "props": {
+              "from": [
+                "snel",
+                "draait",
+                "spins"
+              ],
+              "to": [
+                "fast",
+                "spins"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "admin",
+          "verified": true
+        }
+      ]
     },
     {
       "att": "Amazonia",
       "oms": "wildwaterbaan",
-      "beg": 120,
+      "beg": 105,
       "zelf": 130,
       "max": null,
       "type": "water_ride",
       "props": [
         "wet",
-        "high",
-        "fast",
         "spins"
       ],
+      "intensity": 4,
+      "height_intensity": 4,
+      "max_height_m": 26,
+      "duration_s": 360,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/amazonia",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/amazonia",
+        "https://interpark.co.uk/latest-news/bellewaerde-in-belgium-unveils-amazonia/"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/amazonia",
       "image": {
         "url": "assets/photos/bellewaerde/amazonia.webp?t=1781632262027",
@@ -193,10 +549,49 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Amazonia_(attractie).jpg"
       },
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2024-04/amazonia.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/amazonia/amazonia-boot-afdaling-1.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/amazonia",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "beg": {
+              "from": 120,
+              "to": 105
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 26
+            },
+            "duration_s": {
+              "from": null,
+              "to": 360
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Het Huis Van Houdini",
@@ -208,9 +603,13 @@
       "props": [
         "spins"
       ],
+      "intensity": 2,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/het-huis-van-houdini",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/het-huis-van-houdini"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/het-huis-van-houdini",
       "image": {
         "url": "assets/photos/bellewaerde/huis-van-houdini.webp",
@@ -219,10 +618,41 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Houdini@Bellewaerde.JPG"
       },
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/huis-van-houdini.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/het-huis-van-houdini/het-huis-van-houdini.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/het-huis-van-houdini",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "spins"
+              ],
+              "to": [
+                "spins",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Bengal Rapid River",
@@ -232,12 +662,16 @@
       "max": null,
       "type": "water_ride",
       "props": [
-        "wet",
-        "fast"
+        "wet"
       ],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/bengal-rapid-river",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/bengal-rapid-river",
+        "https://ewrdb.com/rides/belgium/bellewaerde_park/bengal_rapid_river"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/bengal-rapid-river",
       "image": {
         "url": "assets/photos/bellewaerde/bengal-rapid-river.webp?t=1781632295959",
@@ -246,10 +680,40 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Bengal_Rapid_River_(6).jpg"
       },
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/bengal-rapid-river.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/bengal-rapid-river/bengal-rapid-river-boot-geel-stroomversnelling.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/bengal-rapid-river",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "wet",
+                "fast"
+              ],
+              "to": [
+                "wet"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Wakala",
@@ -258,55 +722,151 @@
       "zelf": 120,
       "max": null,
       "type": "family_coaster",
-      "props": [
-        "fast"
-      ],
+      "props": [],
+      "intensity": 3,
+      "height_intensity": 4,
+      "top_speed_kmh": 50,
+      "max_height_m": 21,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/wakala",
+      "sources": [
+        "https://rcdb.com/17721.htm",
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/wakala"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/wakala",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/wakala.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/wakala/wakala-trein-geel-piek.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/wakala",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "fast"
+              ],
+              "to": [
+                "fast",
+                "high"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 50
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 21
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Dawson Duel",
-      "oms": "sleebaan",
+      "oms": "bergachtbaan",
       "beg": 100,
       "zelf": 120,
       "max": null,
       "type": "family_coaster",
-      "props": [
-        "fast"
-      ],
+      "props": [],
+      "intensity": 3,
+      "height_intensity": 4,
+      "top_speed_kmh": 40,
+      "max_height_m": 25,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/dawson-duel",
+      "sources": [
+        "https://rcdb.com/14196.htm",
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/dawson-duel"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/dawson-duel",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/dawson-duel.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/dawson-duel/dawson-duel-afdaling-kinderen.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/dawson-duel",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "oms": {
+              "from": "sleebaan",
+              "to": "bergachtbaan"
+            },
+            "props": {
+              "from": [
+                "fast"
+              ],
+              "to": [
+                "fast",
+                "high"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 40
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 25
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Huracan",
-      "oms": "familiecoaster",
+      "oms": "familiecoaster indoor",
       "beg": 100,
       "zelf": 120,
       "max": null,
       "type": "family_coaster",
       "props": [
-        "hoog",
-        "snel",
-        "dark",
-        "fast"
+        "dark"
       ],
-      "tag_source": "admin",
-      "tag_confidence": "verified",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/huracan",
+      "intensity": 3,
+      "height_intensity": 3,
+      "top_speed_kmh": 50,
+      "max_height_m": 15,
+      "duration_s": 120,
+      "g_force": 4,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/10979.htm",
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/huracan"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/huracan",
       "image": {
         "url": "assets/photos/bellewaerde/huracan.webp?t=1781632367113",
@@ -315,30 +875,117 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Gare_d%27Huracan_%C3%A0_Bellewaerde.JPG"
       },
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/huracan.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/huracan/huracan-trein-eerste-afdaling.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/huracan",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "hoog",
+                "snel",
+                "dark",
+                "fast"
+              ],
+              "to": [
+                "dark",
+                "fast"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 50
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 15
+            },
+            "duration_s": {
+              "from": null,
+              "to": 120
+            },
+            "g_force": {
+              "from": null,
+              "to": 4
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "admin",
+          "verified": true
+        }
+      ]
     },
     {
       "att": "Hampi",
-      "oms": "boostermolen",
+      "oms": "nebulaz",
       "beg": 100,
       "zelf": 120,
       "max": null,
-      "type": "family_coaster",
+      "type": "flat_spinner",
       "props": [
-        "fast"
+        "spins"
       ],
+      "intensity": 3,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/hampi",
+      "sources": [
+        "https://www.zamperla.com/product/nebulaz",
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/hampi"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/hampi",
       "admin_preview": {
         "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/hampi.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/hampi",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "oms": {
+              "from": "boostermolen",
+              "to": "nebulaz"
+            },
+            "props": {
+              "from": [
+                "fast"
+              ],
+              "to": [
+                "spins"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Brazilian Buggies",
@@ -348,15 +995,51 @@
       "max": null,
       "type": "kiddie_coaster",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 2,
+      "top_speed_kmh": 27,
+      "max_height_m": 4.6,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/brazilian-buggies",
+      "sources": [
+        "https://rcdb.com/20973.htm",
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/brazilian-buggies"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/brazilian-buggies",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/brazilian-buggies.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/brazilian-buggies/brazilian-buggies-gezin-trein-eerste-afdaling.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/brazilian-buggies",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 27
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 4.6
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Rio Do Café",
@@ -368,15 +1051,55 @@
       "props": [
         "wet"
       ],
+      "intensity": 3,
+      "height_intensity": 4,
+      "drop_m": 12,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cafe",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cafe",
+        "https://en.wikipedia.org/wiki/Bellewaerde"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cafe",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/rio-do-cafe.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/rio-do-cafe/rio-do-cafe-afdaling-gezin-1.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cafe",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "wet"
+              ],
+              "to": [
+                "wet",
+                "high"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "drop_m": {
+              "from": null,
+              "to": 12
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Niagara",
@@ -386,13 +1109,18 @@
       "max": null,
       "type": "water_ride",
       "props": [
-        "wet",
-        "high",
-        "fast"
+        "wet"
       ],
+      "intensity": 4,
+      "height_intensity": 4,
+      "max_height_m": 20,
+      "drop_m": 20,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/niagara",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/niagara",
+        "https://en.wikipedia.org/wiki/Bellewaerde"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/niagara",
       "image": {
         "url": "assets/photos/bellewaerde/niagara.webp?t=1781632402700",
@@ -401,10 +1129,39 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Niagara_Bellewaerde.JPG"
       },
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/niagara.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/niagara/niagara-boot-water-golf-avond.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/niagara",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 20
+            },
+            "drop_m": {
+              "from": null,
+              "to": 20
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Big Chute",
@@ -414,16 +1171,17 @@
       "max": null,
       "type": "water_ride",
       "props": [
-        "nat",
-        "hoog",
-        "snel",
-        "wet",
-        "high",
-        "fast"
+        "wet"
       ],
-      "tag_source": "admin",
-      "tag_confidence": "verified",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/big-chute",
+      "intensity": 3,
+      "height_intensity": 3,
+      "max_height_m": 10,
+      "drop_m": 10,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/big-chute"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/big-chute",
       "image": {
         "url": "assets/photos/bellewaerde/big-chute.webp?t=1781632411992",
@@ -432,10 +1190,54 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Big_Chute.JPG"
       },
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/big-chute.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/big-chute/big-chute-gezin-boot-splash-afdaling.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/big-chute",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "nat",
+                "hoog",
+                "snel",
+                "wet",
+                "high",
+                "fast"
+              ],
+              "to": [
+                "wet",
+                "high",
+                "fast"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 10
+            },
+            "drop_m": {
+              "from": null,
+              "to": 10
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "admin",
+          "verified": true
+        }
+      ]
     },
     {
       "att": "Peter Pan",
@@ -445,9 +1247,13 @@
       "max": null,
       "type": "kiddie_coaster",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/peter-pan",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/peter-pan"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/peter-pan",
       "image": {
         "url": "assets/photos/bellewaerde/peter-pan.webp?t=1781632448688",
@@ -456,10 +1262,31 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Peter_Pan_(1).jpg"
       },
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/peter-pan.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/peter-pan/peter-pan.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/peter-pan",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Koffietassen",
@@ -471,9 +1298,13 @@
       "props": [
         "spins"
       ],
+      "intensity": 2,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/koffietassen",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/koffietassen"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/koffietassen",
       "image": {
         "url": "assets/photos/bellewaerde/koffietassen.webp?t=1781632461297",
@@ -482,10 +1313,31 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Bellewaerde_Koffietassen.jpg"
       },
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/koffietassen.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/koffietassen/koffietassen.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/koffietassen",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Kikker",
@@ -495,9 +1347,13 @@
       "max": null,
       "type": "drop_tower",
       "props": [],
+      "intensity": 2,
+      "height_intensity": 3,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/kikker",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/kikker"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/kikker",
       "image": {
         "url": "assets/photos/bellewaerde/kikker.webp",
@@ -506,10 +1362,31 @@
         "source_page": "https://commons.wikimedia.org/wiki/File:Kikker,_Bellewaerde.jpg"
       },
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/kikker.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/kikker/kikker.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/kikker",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "4D-Cinema",
@@ -521,15 +1398,50 @@
       "props": [
         "dark"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/4d-cinema",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/4d-cinema"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/4d-cinema",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2026-04/4d-cinema.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/4d-cinema/4d-cinema-meg-and-the-quest-for-the-holy-spork.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/4d-cinema",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "dark"
+              ],
+              "to": [
+                "dark",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Dansende Ballonnen",
@@ -541,15 +1453,40 @@
       "props": [
         "spins"
       ],
+      "intensity": 1,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/dansende-ballonnen",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/dansende-ballonnen"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/dansende-ballonnen",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/dansende-ballonnen.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/dansende-ballonnen/dansende-ballonnen-mama-dochter-zoon.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/dansende-ballonnen",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Vlinders",
@@ -561,15 +1498,40 @@
       "props": [
         "spins"
       ],
+      "intensity": 1,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/vlinders",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/vlinders"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/vlinders",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/vlinders.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/vlinders/vlinders-kinderen-rups.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/vlinders",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Psssht Station",
@@ -579,15 +1541,40 @@
       "max": null,
       "type": "drop_tower",
       "props": [],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/psssht-station",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/psssht-station"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/psssht-station",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/psssht-station.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/psssht-station/psssht-station-gondel-2.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/psssht-station",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Gekke Koets",
@@ -596,16 +1583,49 @@
       "zelf": 105,
       "max": null,
       "type": "kiddie_flat",
-      "props": [],
+      "props": [
+        "swings"
+      ],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/gekke-koets",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/gekke-koets"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/gekke-koets",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/gekke-koets.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/gekke-koets/gekke-koets-kinderen-gondel-1.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/gekke-koets",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "swings"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Rio Do Cacao",
@@ -617,15 +1637,40 @@
       "props": [
         "wet"
       ],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cacao",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cacao"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cacao",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/rio-do-cacao.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/rio-do-cacao/rio-do-cacao-kinderen-boot-afdaling.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cacao",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Jungle Mission",
@@ -635,15 +1680,47 @@
       "max": null,
       "type": "transport",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/jungle-mission",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/jungle-mission"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/jungle-mission",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/jungle-mission.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/jungle-mission/jungle-mission-gezin-grot.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/jungle-mission",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Tuff-Tuff",
@@ -653,15 +1730,40 @@
       "max": null,
       "type": "transport",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/tuff-tuff",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/tuff-tuff"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/tuff-tuff",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/tuff-tuff.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/tuff-tuff/tuff-tuff.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/tuff-tuff",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Carrousel",
@@ -673,15 +1775,40 @@
       "props": [
         "spins"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/carrousel",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/carrousel"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/carrousel",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/carrousel.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/carrousel/carrousel.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/carrousel",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Expresstrein",
@@ -691,15 +1818,40 @@
       "max": null,
       "type": "transport",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/expresstrein",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/expresstrein"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/expresstrein",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/expresstrein.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/expresstrein/expresstrein-trein.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/expresstrein",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Minirad",
@@ -709,18 +1861,51 @@
       "max": null,
       "type": "ferris_wheel",
       "props": [
-        "high",
         "spins"
       ],
+      "intensity": 1,
+      "height_intensity": 2,
       "tag_source": "web",
-      "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/minirad",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/minirad"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/minirad",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/minirad.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/minirad/minirad-bezoekers-gondels-1.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/minirad",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "spins"
+              ],
+              "to": [
+                "spins"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Seesaw Swing",
@@ -730,18 +1915,52 @@
       "max": null,
       "type": "pirate_ship",
       "props": [
-        "high",
         "swings"
       ],
+      "intensity": 3,
+      "height_intensity": 4,
+      "max_height_m": 14.5,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/seesaw-swing",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/seesaw-swing",
+        "https://blooloop.com/art-engineering-wild-swing-xl/"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/seesaw-swing",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2026-04/seesaw-swing.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/seesaw-swing/seesaw-swing-concept-art.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/seesaw-swing",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 14.5
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Timber Trail",
@@ -750,18 +1969,41 @@
       "zelf": 140,
       "max": null,
       "type": "playground",
-      "props": [
-        "high"
-      ],
+      "props": [],
+      "intensity": 2,
+      "height_intensity": 3,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/timber-trail",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/timber-trail"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/timber-trail",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2026-04/timber-trail.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/timber-trail/timber-trail-concept-art.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/timber-trail",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Bengal Express",
@@ -771,15 +2013,47 @@
       "max": null,
       "type": "transport",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "high",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/bengal-express",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/bengal-express"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/bengal-express",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/bengal-express.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/bengal-express/bengal-express-tijgers-gezin.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/bengal-express",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Hampi Playground",
@@ -789,15 +2063,40 @@
       "max": 160,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/hampi-playground",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/hampi-playground"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/hampi-playground",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/hampi-playground.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/hampi-playground/hampi-playground-2.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/hampi-playground",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Palendorp",
@@ -807,15 +2106,40 @@
       "max": 160,
       "type": "playground",
       "props": [],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/palendorp",
+      "sources": [
+        "https://www.bellewaerde.be/park/nl/het-park/attracties/palendorp"
+      ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/palendorp",
       "admin_preview": {
-        "url": "https://www.bellewaerde.be/sites/default/files/styles/scale_w1920/public/2022-11/palendorp.jpg",
+        "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/palendorp/palendorp-net-tunnel-broer-zus.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/palendorp",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     }
   ]
 }
