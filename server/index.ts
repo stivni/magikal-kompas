@@ -9,6 +9,7 @@ import express from "express"
 import sharp from "sharp"
 import { promises as fs } from "node:fs"
 import { existsSync } from "node:fs"
+import { createHash } from "node:crypto"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 
@@ -16,6 +17,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const ROOT = path.resolve(__dirname, "..")
 const UA = "Magikal-Kompas-Admin/1.0 (local; stijn@vannieuwenhuyse.net)"
+const CACHE_DIR = path.join(ROOT, ".cache", "commons")
 
 const app = express()
 app.use(express.json({ limit: "2mb" }))
@@ -67,11 +69,34 @@ interface Candidate {
   height: number
 }
 
+function candCachePath(park_slug: string, att: string, extra: string): string {
+  // Stabiele bestandsnaam: park-slug + att-slug + korte hash van extra-zoekterm.
+  const attSlug = slugify(att) || "att"
+  const extraHash = extra ? createHash("sha1").update(extra).digest("hex").slice(0, 8) : "noextra"
+  return path.join(CACHE_DIR, `${park_slug}__${attSlug}__${extraHash}.json`)
+}
+
 app.get("/api/candidates", async (req, res) => {
   const park_slug = String(req.query.park_slug || "")
   const att = String(req.query.att || "").trim()
   const extra = String(req.query.extra || "").trim()
+  const refresh = String(req.query.refresh || "") === "1"
   if (!park_slug || !att) return sendError(res, 400, "park_slug en att zijn vereist")
+
+  // Probeer eerst de disk-cache. Commons-foto's veranderen zelden; we cachen
+  // onbeperkt — de "vernieuwen"-knop in admin stuurt refresh=1 om te omzeilen.
+  const cacheFile = candCachePath(park_slug, att, extra)
+  if (!refresh && existsSync(cacheFile)) {
+    try {
+      const raw = await fs.readFile(cacheFile, "utf8")
+      const cached = JSON.parse(raw) as { candidates: Candidate[] }
+      if (Array.isArray(cached?.candidates)) {
+        return res.json(cached.candidates)
+      }
+    } catch {
+      // val terug op live-fetch
+    }
+  }
 
   const park_name = (await parkNameFromSlug(park_slug)) || park_slug
   let q = `"${att}" ${park_name}`
@@ -84,7 +109,7 @@ app.get("/api/candidates", async (req, res) => {
     generator: "search",
     gsrsearch: q,
     gsrnamespace: "6",
-    gsrlimit: "25",
+    gsrlimit: "50",
     prop: "imageinfo",
     iiprop: "url|size|extmetadata|mime",
     iiurlwidth: "330",
@@ -153,7 +178,14 @@ app.get("/api/candidates", async (req, res) => {
       width: w,
       height: Number(ii?.height || 0),
     })
-    if (out.length >= 5) break
+    if (out.length >= 25) break
+  }
+
+  try {
+    await fs.mkdir(CACHE_DIR, { recursive: true })
+    await fs.writeFile(cacheFile, JSON.stringify({ candidates: out }, null, 2), "utf8")
+  } catch (e) {
+    console.error("[admin-server] cache-write faalde:", (e as Error).message)
   }
 
   res.json(out)
@@ -281,6 +313,47 @@ app.post("/api/photo", async (req, res) => {
       source_page,
     },
   })
+})
+
+// ---- /api/admin-preview ----
+
+app.get("/api/admin-preview", async (req, res) => {
+  const raw = String(req.query.u || "").trim()
+  if (!raw) return sendError(res, 400, "u is verplicht")
+
+  let url: URL
+  try {
+    url = new URL(raw)
+  } catch {
+    return sendError(res, 400, "Ongeldige URL")
+  }
+  if (url.protocol !== "http:" && url.protocol !== "https:") {
+    return sendError(res, 400, "Alleen http/https toegestaan")
+  }
+
+  const origin = url.origin
+  let resp: Response
+  try {
+    resp = await fetch(raw, {
+      signal: AbortSignal.timeout(8000),
+      headers: {
+        "User-Agent": UA,
+        "Referer": origin + "/",
+        "Accept": "image/*,*/*;q=0.8",
+      },
+    })
+  } catch (e: unknown) {
+    const msg = (e as Error).name === "TimeoutError" ? "upstream timeout" : (e as Error).message
+    return sendError(res, 504, msg)
+  }
+
+  if (!resp.ok) return sendError(res, resp.status, `upstream ${resp.status}`)
+
+  const ct = resp.headers.get("content-type") || "image/jpeg"
+  res.setHeader("Content-Type", ct)
+  res.setHeader("Cache-Control", "public, max-age=86400")
+  const buf = Buffer.from(await resp.arrayBuffer())
+  res.end(buf)
 })
 
 const PORT = 8001

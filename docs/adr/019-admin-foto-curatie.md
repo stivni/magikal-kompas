@@ -41,13 +41,18 @@ Admin draait als **lokale tool met eigen backend**. Stack-details staan in
   backend (`server/index.ts`, poort 8001). Vite proxiet `/api/*` naar de
   backend zodat de admin-frontend zonder CORS-gedoe praat met `/api/...`.
 - **Drie endpoints**, allemaal JSON:
-  - `GET /api/candidates?park_slug=&att=&extra=` — bevraagt Wikimedia
-    Commons live (`generator=search` + `imageinfo`), filtert op
-    CC0 / CC-BY(-SA) / Public Domain, skipt titels met `construction`,
-    `queue`, `entrance`, `sign`, `map`, `logo` en breedte < 600px. Returnt
-    3–5 kandidaten in hetzelfde JSON-formaat dat de admin-frontend
-    consumeert. Optionele `extra`-zoekterm laat de admin een tweede
-    ronde forceren.
+  - `GET /api/candidates?park_slug=&att=&extra=&refresh=` — bevraagt
+    Wikimedia Commons live (`generator=search` met `gsrlimit=50` +
+    `imageinfo`), filtert op CC0 / CC-BY(-SA) / Public Domain, skipt
+    titels met `construction`, `queue`, `entrance`, `sign`, `map`, `logo`
+    en breedte < 600px. Returnt tot 25 kandidaten in hetzelfde
+    JSON-formaat dat de admin-frontend consumeert. Optionele
+    `extra`-zoekterm laat de admin een gerichte tweede ronde forceren.
+    Antwoorden worden lokaal op disk gecachet in
+    `.cache/commons/<park>__<att>__<extra-hash>.json` (gitignored) zodat
+    herhaalde admin-sessies geen Commons-rate-limit (HTTP 429) raken.
+    `refresh=1` omzeilt de cache en haalt opnieuw bij Commons — daar
+    hangt de "vernieuwen"-knop in de UI aan.
   - `POST /api/save` — krijgt de volledige park-JSON, schrijft die naar
     `data/parks/<slug>.json` (pretty-printed, UTF-8), update
     `meta.updated` naar vandaag. Geen aparte build-rebuild stap meer
@@ -121,6 +126,10 @@ Wat erbij kwam:
 - **Commons-API hangt aan een externe service**. Bij downtime of
   rate-limiting verschijnt "Kandidaten konden niet geladen worden" met
   hint. Type- en props-edits blijven werken (die raken Commons niet).
+  De disk-cache absorbeert herhaalde requests; alleen de eerste
+  bevraging per (park, att, extra) raakt Commons. Cache invalideren =
+  het bestand of `.cache/commons/` verwijderen, of "vernieuwen"
+  klikken in de admin.
 - **`sharp`** dekt alle relevante bronformaten (JPEG, PNG, WebP, TIFF) —
   geen aparte fallback nodig. Native binaries worden via `npm install`
   meegeleverd voor de ontwikkel-architectuur.
@@ -130,6 +139,22 @@ Wat erbij kwam:
   - Multilang-`oms` (object-vorm `{nl, en, fr}`) bewerken in de admin:
     voorlopig niet — bij edit wordt het object vervangen door de
     NL-string. Per-taal-edit krijgt z'n eigen UI als de nood er is.
+
+
+## Dev-proxy voor admin_preview
+
+Externe hero-URL's in `admin_preview.url` worden door parkwebsites vaak
+hotlink-geblokkeerd op basis van de `Referer`-header, waardoor ze niet renderen
+vanuit `http://localhost:5173`. Het nieuwe endpoint `GET
+/api/admin-preview?u=…` op de Express dev-server haalt de afbeelding op met
+een upstream `Referer` gelijk aan de origin van de bron-URL (bv.
+`https://www.efteling.com/`) — dat omzeilt de meeste hotlink-checks.
+
+Dit werkt alleen in dev: de admin is dev-only en de statische prod-build heeft
+geen Express-backend. Dat is aanvaardbaar — `admin_preview` is puur
+een hulpveld voor herkenning tijdens curatie, geen publieke bron.
+`image` blijft het enige veld dat de eindgebruikers-app gebruikt (zie
+[ADR-014](014-visuele-en-bron-velden.md)).
 
 ## Considered alternatives
 
