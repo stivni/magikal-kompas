@@ -350,6 +350,9 @@ app.get("/api/admin-preview", async (req, res) => {
   if (!resp.ok) return sendError(res, resp.status, `upstream ${resp.status}`)
 
   const ct = resp.headers.get("content-type") || "image/jpeg"
+  if (!/^image\//i.test(ct)) {
+    return sendError(res, 502, `upstream content-type ${ct}, geen image`)
+  }
   res.setHeader("Content-Type", ct)
   res.setHeader("Cache-Control", "public, max-age=86400")
   const buf = Buffer.from(await resp.arrayBuffer())

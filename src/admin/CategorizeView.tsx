@@ -446,6 +446,37 @@ function RideTile({ park, ride, dragKey }: { park: string; ride: Ride; dragKey: 
           <span className="cat-tile-emo">{emoji}</span>
         )}
         <span className="cat-tile-typebadge" title={TNL[ride.type]}>{emoji}</span>
+        {ride.park_url && (
+          <a
+            href={ride.park_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cat-tile-extlink"
+            title={`Open op park-site: ${ride.park_url}`}
+            onMouseDown={(e) => e.stopPropagation()}
+            onClick={(e) => e.stopPropagation()}
+            onDragStart={(e) => e.preventDefault()}
+            draggable={false}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="12"
+              height="12"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className="url-ext-ico"
+            >
+              <path d="M14 3h7v7" />
+              <path d="M10 14L21 3" />
+              <path d="M21 14v7h-7" />
+              <path d="M3 10v11h11" />
+            </svg>
+          </a>
+        )}
       </div>
       <div className="cat-tile-name">{ride.att}</div>
       <div className="cat-tile-park">{park}</div>
