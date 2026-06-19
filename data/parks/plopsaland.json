@@ -4,75 +4,310 @@
   "icon": "assets/icons/plopsaland.png",
   "meta": {
     "country": "BE",
-    "site": "https://www.plopsalanddepanne.be",
-    "updated": "2026-06-14",
-    "tagging": "auto-v1 (ongeverifieerd — door tag-agent of admin te bevestigen)"
+    "site": "https://www.plopsa.com/nl/plopsaland-belgium",
+    "updated": "2026-06-18",
+    "tagging": "web-v1 (Bloemenmolen flat_spinner→story_ride; Nachtwacht-Flyer duration+high prop; TikTak-bootjes duration; admin-review nodig voor low-confidence)"
   },
   "rides": [
     {
       "att": "Ride to Happiness",
-      "oms": "",
+      "oms": "Extreme spinning coaster met twee launches tot 90 km/u en vijf inversies.",
       "beg": 130,
       "zelf": 130,
       "max": null,
       "type": "thrill_coaster",
       "props": [
-        "high",
-        "fast"
+        "inversions",
+        "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 5,
+      "height_intensity": 4,
+      "top_speed_kmh": 90,
+      "max_height_m": 33,
+      "inversions_count": 5,
+      "duration_s": 80,
+      "tag_source": "admin",
+      "tag_confidence": "verified",
+      "sources": [
+        "https://rcdb.com/17725.htm",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/the-ride-to-happiness-by-tomorrowland"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/the-ride-to-happiness-by-tomorrowland",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_800/public/images/2025-09/PLB25_RideToHappiness_BestCoasterEurope.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/the-ride-to-happiness-by-tomorrowland",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T12:53:08.973Z",
+          "by": "admin",
+          "verified": true
+        },
+        {
+          "at": "2026-06-18T12:52:18.277Z",
+          "by": "admin",
+          "changes": {
+            "theming": {
+              "to": "medium"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 90
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 33
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 5
+            },
+            "duration_s": {
+              "from": null,
+              "to": 80
+            }
+          }
+        }
+      ],
+      "theming": "medium",
+      "image": {
+        "url": "assets/photos/plopsaland/ride-to-happiness.webp?t=1781801455546",
+        "license": "CC-BY-SA-3.0",
+        "attribution": "Foto door Jérémy-Günther-Heinz Jähnick, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Plopsaland_De_Panne_-_The_Ride_to_Happiness_by_Tomorrowland_(A19).JPG"
+      }
     },
     {
       "att": "Anubis",
-      "oms": "",
+      "oms": "Launched coaster met drie inversies die op twee seconden naar 90 km/u accelereert.",
       "beg": 125,
       "zelf": 140,
       "max": null,
       "type": "thrill_coaster",
       "props": [
-        "high",
-        "fast"
+        "inversions",
+        "themed"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 5,
+      "height_intensity": 4,
+      "top_speed_kmh": 90,
+      "max_height_m": 34,
+      "inversions_count": 3,
+      "tag_source": "admin",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/4181.htm",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/anubis-the-ride"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/anubis-the-ride",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_AnubisTheRide_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/anubis-the-ride",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T12:53:28.358Z",
+          "by": "admin",
+          "changes": {
+            "theming": {
+              "from": "medium",
+              "to": "light"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast",
+                "inversions"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "inversions",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 90
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 34
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 3
+            }
+          }
+        }
+      ],
+      "theming": "light",
+      "image": {
+        "url": "assets/photos/plopsaland/anubis.webp?t=1781801416007",
+        "license": "CCBY-SA3.0DE",
+        "attribution": "Foto door Gerstlauer Amusement Rides GmbH, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Gerstlauer_LC02.JPG"
+      }
     },
     {
       "att": "Heidi",
-      "oms": "",
+      "oms": "Houten familie-achtbaan tot ruim 70 km/u met panorama over het park.",
       "beg": 120,
       "zelf": 140,
       "max": null,
-      "type": "thrill_coaster",
-      "props": [
-        "high",
-        "fast"
+      "type": "family_coaster",
+      "props": [],
+      "intensity": 4,
+      "height_intensity": 4,
+      "top_speed_kmh": 71,
+      "max_height_m": 22,
+      "drop_m": 20.5,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/7645.htm",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/heidi-the-ride"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/heidi-the-ride",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_HeidiTheRide_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/heidi-the-ride",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 71
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 22
+            },
+            "drop_m": {
+              "from": null,
+              "to": 20.5
+            }
+          }
+        }
+      ],
+      "image": {
+        "url": "assets/photos/plopsaland/heidi.webp",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Eliedion, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Heidi_The_Ride_Plopsaland.jpg"
+      }
     },
     {
       "att": "Nachtwachtflyer",
-      "oms": "",
+      "oms": "Star Flyer tot bijna 70 meter hoog met uitzicht over het park en de zee.",
       "beg": 120,
       "zelf": 140,
       "max": null,
-      "type": "thrill_coaster",
+      "type": "wave_swinger",
       "props": [
-        "high",
-        "fast",
-        "dark"
+        "spins",
+        "high"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 4,
+      "height_intensity": 5,
+      "max_height_m": 67,
+      "duration_s": 180,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://nl.wikipedia.org/wiki/Nachtwacht-Flyer",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/nachtwacht-flyer"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/nachtwacht-flyer",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_NachtwachtFlyer_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/nachtwacht-flyer",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {
+            "props": {
+              "from": ["spins"],
+              "to": ["spins", "high"]
+            },
+            "duration_s": {
+              "from": null,
+              "to": 180
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 5
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 67
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Piratenboot",
-      "oms": "",
+      "oms": "Klassieke schommelboot in piratenthema die heen en weer wiegt.",
       "beg": 120,
       "zelf": 140,
       "max": null,
@@ -80,45 +315,205 @@
       "props": [
         "swings"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 3,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-piratenboot"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-piratenboot",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DePiratenboot_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-piratenboot",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        }
+      ],
+      "image": {
+        "url": "assets/photos/plopsaland/piratenboot.webp",
+        "license": "CC-BY-SA-3.0",
+        "attribution": "Foto door Jérémy-Günther-Heinz Jähnick, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Plopsaland_De_Panne_-_Time_Traveler_(B02).JPG"
+      }
     },
     {
       "att": "Grote Golf",
-      "oms": "",
+      "oms": "Vikingthema-waterattractie met steile afdaling tot 70 km/u.",
       "beg": 120,
       "zelf": 120,
       "max": null,
-      "type": "water_ride",
+      "type": "family_coaster",
       "props": [
-        "wet",
-        "high",
-        "fast"
+        "spins",
+        "swings"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 4,
+      "height_intensity": 3,
+      "top_speed_kmh": 70,
+      "max_height_m": 15,
+      "tag_source": "admin",
+      "tag_confidence": "med",
+      "sources": [
+        "https://coasterpedia.net/wiki/Grote_Golf",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-grote-golf"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-grote-golf",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeGroteGolf_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-grote-golf",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T11:57:43.627Z",
+          "by": "admin",
+          "changes": {
+            "props": {
+              "from": [
+                "spins"
+              ],
+              "to": [
+                "spins",
+                "swings"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T11:57:42.145Z",
+          "by": "admin",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "spins"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T11:57:41.009Z",
+          "by": "admin",
+          "changes": {
+            "props": {
+              "from": [
+                "wet"
+              ],
+              "to": []
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Dinosplash",
-      "oms": "",
+      "oms": "Waterachtbaan door een prehistorisch landschap met dino's en lavastromen.",
       "beg": 100,
       "zelf": 140,
       "max": null,
       "type": "water_ride",
       "props": [
         "wet",
-        "high",
-        "fast"
+        "themed"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 4,
+      "max_height_m": 16,
+      "drop_m": 16,
+      "tag_source": "admin",
+      "tag_confidence": "high",
+      "sources": [
+        "https://coasterpedia.net/wiki/DinoSplash_(Plopsaland_De_Panne)",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/dinosplash"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/dinosplash",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DinoSplash_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/dinosplash",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T12:32:56.154Z",
+          "by": "admin",
+          "changes": {
+            "theming": {
+              "to": "medium"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T12:32:48.150Z",
+          "by": "admin",
+          "changes": {
+            "height_intensity": {
+              "from": 3,
+              "to": 4
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "wet",
+                "high",
+                "fast"
+              ],
+              "to": [
+                "wet",
+                "high",
+                "fast",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 16
+            },
+            "drop_m": {
+              "from": null,
+              "to": 16
+            }
+          }
+        }
+      ],
+      "image": {
+        "url": "assets/photos/plopsaland/dinosplash.webp",
+        "license": "CC-BY-SA-3.0",
+        "attribution": "Foto door Jérémy-Günther-Heinz Jähnick, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Plopsaland_De_Panne_-_Dino_Splash_(09).jpg"
+      },
+      "theming": "medium"
     },
     {
       "att": "Jetski",
-      "oms": "",
+      "oms": "Interactieve waterattractie waar je op een jetski boeven achtervolgt en raak spuit.",
       "beg": 100,
       "zelf": 120,
       "max": null,
@@ -126,115 +521,421 @@
       "props": [
         "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 2,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/mega-mindy-jetski"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/mega-mindy-jetski",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_MegaMindyJetski_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/mega-mindy-jetski",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Wienerwalz",
-      "oms": "",
+      "oms": "Themed kettingmolen rond Samson & Marie die ronddraait en uitzwiert.",
       "beg": 100,
       "zelf": 120,
       "max": null,
-      "type": "family_coaster",
+      "type": "wave_swinger",
       "props": [
-        "high",
-        "fast"
+        "spins",
+        "swings"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 3,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wienerwalz"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wienerwalz",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Wienerwalz_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wienerwalz",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Wickie's Wervelwind",
-      "oms": "",
+      "oms": "Slingerende pendel-attractie die steeds heviger heen en weer zwaait in Vikingthema.",
       "beg": 100,
       "zelf": 120,
       "max": null,
-      "type": "family_coaster",
+      "type": "pirate_ship",
       "props": [
-        "high",
-        "fast"
+        "swings"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 3,
+      "max_height_m": 12,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.looopings.nl/weblog/27887/Nieuwe-attractie-in-Plopsaland-12-meter-hoge-schommel-Wickies-Wervelwind.html",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wickies-wervelwind"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wickies-wervelwind",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-07/PDP_WickiesWervelwind_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wickies-wervelwind",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast",
+                "swings",
+                "spins"
+              ],
+              "to": [
+                "high",
+                "swings"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 12
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "high"
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Autoscooters",
-      "oms": "",
+      "oms": "Klassieke botsauto's in een Samson & Marie-thema.",
       "beg": 100,
       "zelf": 100,
       "max": 140,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 2,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/scooter"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/scooter",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Scooter_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/scooter",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Supersplash",
-      "oms": "",
+      "oms": "Shoot-the-chute waar een piratenboot 30 meter naar beneden plonst.",
       "beg": 96,
       "zelf": 120,
       "max": null,
       "type": "water_ride",
       "props": [
-        "wet",
-        "high",
-        "fast"
+        "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 4,
+      "height_intensity": 4,
+      "top_speed_kmh": 70,
+      "drop_m": 30,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/11876.htm",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/supersplash"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/supersplash",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Supersplash_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/supersplash",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 70
+            },
+            "drop_m": {
+              "from": null,
+              "to": 30
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Draconis",
-      "oms": "",
+      "oms": "Familie-achtbaan in donker dragonthema rond het Schemermeer.",
       "beg": 96,
       "zelf": 120,
       "max": null,
       "type": "family_coaster",
       "props": [
-        "high",
-        "fast"
+        "dark",
+        "themed"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 3,
+      "top_speed_kmh": 36,
+      "max_height_m": 14,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/2447.htm",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/draconis"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/draconis",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-09/PDP_Draconis_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/draconis",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast",
+                "dark"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "dark",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 36
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 14
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Bloemenmolen",
-      "oms": "",
+      "oms": "Indoor bootrit door de wereld van Maya de Bij in kleurrijke bloemenvoertuigen met vrolijke muziek en waterstralen.",
       "beg": 96,
       "zelf": 120,
       "max": null,
-      "type": "dark_ride",
+      "type": "story_ride",
       "props": [
-        "dark"
+        "wet",
+        "dark",
+        "themed"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "duration_s": 140,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-bloemenmolen"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-bloemenmolen",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeBloemenmolen_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-bloemenmolen",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {
+            "type": {
+              "from": "flat_spinner",
+              "to": "story_ride"
+            },
+            "props": {
+              "from": ["wet", "spins"],
+              "to": ["wet", "dark", "themed"]
+            },
+            "oms": {
+              "from": "Draaiende bloementhema-attractie in Mayaland met waterspatten en muziek.",
+              "to": "Indoor bootrit door de wereld van Maya de Bij in kleurrijke bloemenvoertuigen met vrolijke muziek en waterstralen."
+            },
+            "intensity": {
+              "from": 2,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": 2,
+              "to": 1
+            },
+            "duration_s": {
+              "from": null,
+              "to": 140
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Valtoren",
-      "oms": "",
+      "oms": "Familievaltoren tot 12 meter in een Mayaland-bladdecor.",
       "beg": 96,
       "zelf": 120,
       "max": null,
       "type": "drop_tower",
-      "props": [
-        "high",
-        "fast"
+      "props": [],
+      "intensity": 3,
+      "height_intensity": 3,
+      "max_height_m": 12,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://coasterpedia.net/wiki/Valtoren",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-valtoren"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-valtoren",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeValtoren_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-valtoren",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 12
+            },
+            "tag_confidence": {
+              "from": "high",
+              "to": "high"
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Swingboom",
-      "oms": "",
+      "oms": "Schommelende boomstam-attractie in Mayaland met duizelingwekkende sensatie.",
       "beg": 96,
       "zelf": 120,
       "max": null,
@@ -242,13 +943,39 @@
       "props": [
         "swings"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 3,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-swingboom"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-swingboom",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeSwingboom_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-swingboom",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Waterlelies",
-      "oms": "",
+      "oms": "Interactieve waterspuitattractie met reuze-waterlelies in Mayaland.",
       "beg": 90,
       "zelf": 120,
       "max": null,
@@ -256,87 +983,302 @@
       "props": [
         "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-waterlelies"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-waterlelies",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeWaterlelies_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-waterlelies",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "LikeMe coaster",
-      "oms": "",
+      "oms": "Familie-achtbaan in #LikeMe-thema zonder loopings, met scherpe bochten.",
       "beg": 90,
       "zelf": 120,
       "max": null,
       "type": "family_coaster",
-      "props": [
-        "high",
-        "fast"
+      "props": [],
+      "intensity": 2,
+      "height_intensity": 3,
+      "top_speed_kmh": 35,
+      "max_height_m": 8,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/1006.htm",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/likeme-coaster"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/likeme-coaster",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_%23LikeMeCoaster_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/likeme-coaster",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 35
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 8
+            }
+          }
+        }
+      ]
     },
     {
       "att": "K3 roller skater",
-      "oms": "",
+      "oms": "Spinning coaster waar de wagentjes draaien in een rolschaats-thema.",
+      "beg": 90,
+      "zelf": 120,
+      "max": null,
+      "type": "spinning_coaster",
+      "props": [
+        "spins"
+      ],
+      "intensity": 3,
+      "height_intensity": 3,
+      "top_speed_kmh": 46,
+      "max_height_m": 13,
+      "duration_s": 66,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/997.htm",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/k3-roller-skater"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/k3-roller-skater",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_K3RollerSkater_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/k3-roller-skater",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 46
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 13
+            },
+            "duration_s": {
+              "from": null,
+              "to": 66
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "Dolle busrit",
+      "oms": "Indoor wilde-busrit met onverwachte bewegingen in Bumbathema.",
       "beg": 90,
       "zelf": 120,
       "max": null,
       "type": "family_coaster",
       "props": [
-        "high",
-        "fast"
+        "dark",
+        "themed"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
-    },
-    {
-      "att": "Dolle busrit",
-      "oms": "",
-      "beg": 90,
-      "zelf": 120,
-      "max": null,
-      "type": "transport",
-      "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 2,
+      "duration_s": 80,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dolle-busrit"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dolle-busrit",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeDolleBusrit_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dolle-busrit",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "fast",
+                "dark"
+              ],
+              "to": [
+                "fast",
+                "dark",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "duration_s": {
+              "from": null,
+              "to": 80
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "med"
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Storm op zee",
-      "oms": "",
+      "oms": "Top spin-attractie waar passagiers heen en weer geslingerd worden in een zeethema.",
       "beg": 85,
       "zelf": 120,
       "max": null,
       "type": "top_spin",
       "props": [
-        "high",
-        "fast",
         "spins",
         "swings"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 3,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://nl.wikipedia.org/wiki/Storm_op_Zee_(Plopsaland_Belgium)",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/storm-op-zee"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/storm-op-zee",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_StormOpZee_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/storm-op-zee",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Vliegende fietsen",
-      "oms": "",
+      "oms": "Interactieve carousel waar je zelf hoger trapt naar boeven boven het Mega Mindy-decor.",
       "beg": 85,
       "zelf": 120,
       "max": null,
       "type": "wave_swinger",
       "props": [
-        "high",
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 2,
+      "height_intensity": 2,
+      "max_height_m": 5,
+      "duration_s": 80,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://coasterpedia.net/wiki/Vliegende_Fietsen_(Plopsaland_De_Panne)",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-vliegende-fietsen"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-vliegende-fietsen",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeVliegendeFietsen_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-vliegende-fietsen",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 5
+            },
+            "duration_s": {
+              "from": null,
+              "to": 80
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Koffiekopjes",
-      "oms": "",
+      "oms": "Klassieke teacups waarin je zelf de draaisnelheid van je kopje kiest.",
       "beg": 85,
       "zelf": 120,
       "max": null,
@@ -344,149 +1286,405 @@
       "props": [
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
-    },
-    {
-      "att": "MegaMindy fietsjes",
-      "oms": "",
-      "beg": 85,
-      "zelf": 120,
-      "max": null,
-      "type": "wave_swinger",
-      "props": [
-        "high",
-        "spins"
+      "intensity": 2,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-koffiekopjes"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-koffiekopjes",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeKoffiekopjes_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-koffiekopjes",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Wickie The Battle",
-      "oms": "",
+      "oms": "Interactieve waterbattle waar je vanuit een Vikingboot tegenstanders natspuit.",
       "beg": 85,
       "zelf": 120,
       "max": null,
-      "type": "teacups",
+      "type": "water_battle",
       "props": [
-        "spins"
+        "wet"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 2,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wickie-the-battle"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wickie-the-battle",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_WickieTheBattle_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wickie-the-battle",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Glijbaan",
-      "oms": "",
+      "oms": "Eén van de langste indoor glijbanen van België, vanaf het hoogste punt van Mayaland.",
       "beg": 85,
       "zelf": 100,
       "max": null,
-      "type": "dark_ride",
-      "props": [
-        "dark"
+      "type": "funhouse",
+      "props": [],
+      "intensity": 2,
+      "height_intensity": 3,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-glijbaan"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-glijbaan",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeGlijbaan_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-glijbaan",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Safari",
-      "oms": "",
+      "oms": "Rustige jeeprondrit door een Afrikaans bos met Samson & Marie-thema.",
       "beg": 85,
       "zelf": 85,
       "max": 140,
       "type": "transport",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
-    },
-    {
-      "att": "Verkeerspark",
-      "oms": "",
-      "beg": 85,
-      "zelf": 85,
-      "max": 140,
-      "type": "transport",
-      "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/safari"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/safari",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Safari_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/safari",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Konijntjes",
-      "oms": "",
+      "oms": "Rustige rondrit op rug van konijnen in het Kabouter Plop-thema.",
       "beg": 0,
       "zelf": 120,
       "max": null,
-      "type": "dark_ride",
+      "type": "carousel",
       "props": [
-        "dark"
+        "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-konijntjes"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-konijntjes",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeKonijntjes_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-konijntjes",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Bos van Plop",
-      "oms": "",
+      "oms": "Overdekte donkere bootrit van 10 minuten door het kabouterbos, vernieuwd geopend in 2026.",
       "beg": 0,
       "zelf": 120,
       "max": null,
-      "type": "transport",
+      "type": "story_ride",
       "props": [
-        "dark"
+        "dark",
+        "themed"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "duration_s": 600,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://coasterpedia.net/wiki/Bos_van_Plop",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-bos-van-plop"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-bos-van-plop",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-12/PDP_HetBosVanPlop_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-bos-van-plop",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "dark_ride",
+              "to": "story_ride"
+            },
+            "props": {
+              "from": [
+                "dark"
+              ],
+              "to": [
+                "dark",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "duration_s": {
+              "from": null,
+              "to": 600
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Op Reis met Bumba",
-      "oms": "",
+      "oms": "Indoor dark ride met Bumba's auto door negen themawerelden.",
       "beg": 0,
       "zelf": 120,
       "max": null,
-      "type": "transport",
+      "type": "story_ride",
       "props": [
-        "dark"
+        "dark",
+        "themed"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://darkridedatabase.com/op-reis-met-bumba-officially-open/",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/op-reis-met-bumba"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/op-reis-met-bumba",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_OpReisMetBumba_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/op-reis-met-bumba",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "dark_ride",
+              "to": "story_ride"
+            },
+            "props": {
+              "from": [
+                "dark"
+              ],
+              "to": [
+                "dark",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Balloonrace",
-      "oms": "",
+      "oms": "Roterende luchtballonnen-attractie met Samson & Marie-thema.",
       "beg": 0,
       "zelf": 120,
       "max": null,
       "type": "wave_swinger",
       "props": [
-        "high",
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 2,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/balloon-race"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/balloon-race",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_BalloonRace_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/balloon-race",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Tractors",
-      "oms": "",
+      "oms": "Familievriendelijke darkride op ronkende tractors over de Big & Betsy Hoeve.",
       "beg": 0,
       "zelf": 120,
       "max": null,
-      "type": "transport",
-      "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "type": "story_ride",
+      "props": [
+        "dark",
+        "themed"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://coasterpedia.net/wiki/Tractors_(Plopsaland_De_Panne)",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-tractors"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-tractors",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeTraktors_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-tractors",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "dark_ride",
+              "to": "story_ride"
+            },
+            "props": {
+              "from": [
+                "dark"
+              ],
+              "to": [
+                "dark",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Bumballoon",
-      "oms": "",
+      "oms": "Indoor draaiende ballonnen-attractie in Circus Bumba.",
       "beg": 0,
       "zelf": 110,
       "max": null,
@@ -494,42 +1692,117 @@
       "props": [
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 2,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/bumballoon"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/bumballoon",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Bumballoon_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/bumballoon",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Kikkers",
-      "oms": "",
+      "oms": "Draaiende kikker-attractie waar kikkers op en neer springen in kabouterthema.",
       "beg": 0,
       "zelf": 100,
       "max": null,
-      "type": "drop_tower",
+      "type": "flat_spinner",
       "props": [
-        "high",
-        "fast"
+        "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 2,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-kikkers"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-kikkers",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeKikkers_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-kikkers",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Eendjes",
-      "oms": "",
+      "oms": "Rustige rondvaart op eenden in de Ploptuin.",
       "beg": 0,
       "zelf": 100,
       "max": null,
-      "type": "dark_ride",
-      "props": [
-        "dark"
+      "type": "carousel",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-eenden"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-eenden",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeEenden_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-eenden",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Carousel",
-      "oms": "",
+      "oms": "Klassieke draaimolen met paarden en koetsjes in Samson & Marie-thema.",
       "beg": 0,
       "zelf": 100,
       "max": null,
@@ -537,13 +1810,39 @@
       "props": [
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/carrousel"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/carrousel",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Carrousel_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/carrousel",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "Dierenmolen",
-      "oms": "",
+      "oms": "Carousel waar jonge kinderen op boerderijdieren plaatsnemen in Heidi-thema.",
       "beg": 0,
       "zelf": 100,
       "max": null,
@@ -551,21 +1850,755 @@
       "props": [
         "spins"
       ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dierenmolen"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dierenmolen",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeDierenmolen_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dierenmolen",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     },
     {
       "att": "TikTak-bootjes",
-      "oms": "",
+      "oms": "Kleurige bootrit door de wereld van Tik Tak met muziek en knipoogjes.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "story_ride",
+      "props": [
+        "dark",
+        "themed"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "duration_s": 360,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://coasterpedia.net/wiki/Tik_Tak",
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/tik-tak"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/tik-tak",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_TikTak_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/tik-tak",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {
+            "duration_s": {
+              "from": null,
+              "to": 360
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "dark_ride",
+              "to": "story_ride"
+            },
+            "props": {
+              "from": [
+                "dark"
+              ],
+              "to": [
+                "dark",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "Rijschool Suikerbuik",
+      "oms": "Verkeerseducatie-attractie waar kinderen op elektrische tractoren rijden over het Big & Betsy-erf.",
+      "beg": 85,
+      "zelf": 85,
+      "max": 140,
+      "type": "transport",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/rijschool-suikerbuik"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/rijschool-suikerbuik",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2026-03/PLB26_RijschoolSuikerbuik_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/rijschool-suikerbuik",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "Het Ballenbad",
+      "oms": "Indoor ballenbad met duizenden ballen in een Mayaland-decor.",
+      "beg": 0,
+      "zelf": 100,
+      "max": 140,
+      "type": "playground",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-ballenbad"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-ballenbad",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_HetBallenbad_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-ballenbad",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "Het Spinnenweb",
+      "oms": "Indoor klimnet door bloemen omhoog naar een groot spinnenweb in Mayaland.",
+      "beg": 85,
+      "zelf": 100,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-spinnenweb"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-spinnenweb",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_HetSpinnenweb_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-spinnenweb",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "Het Vlot",
+      "oms": "Vlot waar je jezelf met een touw over een binnenvijver trekt in Mayaland.",
       "beg": 0,
       "zelf": 100,
       "max": null,
       "type": "transport",
+      "props": [
+        "wet"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-vlot"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-vlot",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_HetVlot_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-vlot",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "De Tuin van Big",
+      "oms": "Speeltuin op het Big & Betsy-erf met diverse speeltoestellen en terras voor begeleiders.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "playground",
       "props": [],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": ""
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-tuin-van-big"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-tuin-van-big",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeTuinVanBig_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-tuin-van-big",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "Poppa's Klimtoren",
+      "oms": "Indoor klimtoren in Circus Bumba met uitzicht over de hele themazone.",
+      "beg": 85,
+      "zelf": 100,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/poppas-klimtoren"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/poppas-klimtoren",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_PoppasKlimtoren_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/poppas-klimtoren",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "Waterfietsen",
+      "oms": "Waterfietsen in de vorm van een zwaan in het Prinsessia-decor.",
+      "beg": 0,
+      "zelf": null,
+      "max": null,
+      "type": "transport",
+      "props": [
+        "wet"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/waterfietsen"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/waterfietsen",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Waterfietsen_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/waterfietsen",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "Tumbi's Ballenbad",
+      "oms": "Indoor ballenbad in circusthema bij Bumba's wereld.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/tumbis-ballenbad"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/tumbis-ballenbad",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_TumbisBallenbad_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/tumbis-ballenbad",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "Willies Speeltuin",
+      "oms": "Indoor speeltuin voor de allerkleinsten met glijbanen en klimtoestellen in Mayaland.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/willies-speeltuin"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/willies-speeltuin",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-04/PDP_WilliesSpeeltuin2_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/willies-speeltuin",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "De Doorloopweide",
+      "oms": "Doorloopweide met boerderijdieren om van dichtbij te bekijken in het Big & Betsy-thema.",
+      "beg": 0,
+      "zelf": 120,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-doorloopweide"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-doorloopweide",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeDoorloopweide_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-doorloopweide",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "Big & Betsy Hoeve",
+      "oms": "Boerderij waar je Boer Betsy, varken Big en de dieren ontmoet.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/big-betsy-hoeve"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/big-betsy-hoeve",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Big%26BetsyHoeve_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/big-betsy-hoeve",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "Bumba's Speeltuin",
+      "oms": "Vrolijke indoor speeltuin met glijbanen en klauterconstructies in Circus Bumba.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/bumbas-speeltuin"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/bumbas-speeltuin",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_BumbasSpeeltuin_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/bumbas-speeltuin",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "De Emmer",
+      "oms": "Reuzegrote kabouter-douche-emmer die met regelmaat ledigt op de bezoekers.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "playground",
+      "props": [
+        "wet"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-emmer"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-emmer",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeEmmer_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-emmer",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "De Hangbrug",
+      "oms": "Zwaaiende hangbrug over een vijver met aansluitende glijtunnel in piratenthema.",
+      "beg": 85,
+      "zelf": 120,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-hangbrug"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-hangbrug",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeHangbrug_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-hangbrug",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "De Klimboom",
+      "oms": "Klim naar de top van een reuzeboom met hindernissen en kom terug omlaag via een glijtunnel.",
+      "beg": 85,
+      "zelf": 100,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-klimboom"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-klimboom",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeKlimboom_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-klimboom",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "De Ploptuin",
+      "oms": "Grote buitenspeeltuin met klauter- en speeltoestellen rond Kabouter Plop.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "playground",
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-ploptuin"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-ploptuin",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DePloptuin_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-ploptuin",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "att": "De Dansende Fonteinen",
+      "oms": "Vrolijke waterfonteinen die in alle richtingen spuiten — afkoelen op warme dagen.",
+      "beg": 0,
+      "zelf": 100,
+      "max": null,
+      "type": "playground",
+      "props": [
+        "wet"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dansende-fonteinen"
+      ],
+      "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dansende-fonteinen",
+      "admin_preview": {
+        "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeDansendeFonteinen_Hero.jpg.webp",
+        "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dansende-fonteinen",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        }
+      ]
     }
   ]
 }
