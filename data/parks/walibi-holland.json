@@ -5,8 +5,8 @@
   "meta": {
     "country": "NL",
     "site": "https://www.walibi.nl",
-    "updated": "2026-06-17",
-    "tagging": "web-v1 (admin-review nodig voor low/unknown)"
+    "updated": "2026-06-18",
+    "tagging": "web-v3 (naamswijzigingen sync + Tomahawk type-correctie; admin-review aanbevolen voor med-gevallen)"
   },
   "rides": [
     {
@@ -20,19 +20,81 @@
       "max_age": null,
       "type": "thrill_coaster",
       "props": [
-        "high",
-        "fast",
         "inversions"
       ],
+      "intensity": 4,
+      "height_intensity": 4,
+      "top_speed_kmh": 87,
+      "max_height_m": 32,
+      "inversions_count": 2,
+      "duration_s": 143,
+      "g_force": 4.3,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/lost-gravity",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/12315.htm",
+        "https://www.walibi.nl/nl/park/attracties/lost-gravity"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/lost-gravity",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--f293e5a0-7b15-48e6-a2a6-7ac8b0335bb3/attractie-lostgravity-45.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/lost-gravity",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 87
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 32
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 2
+            },
+            "duration_s": {
+              "from": null,
+              "to": 143
+            },
+            "g_force": {
+              "from": null,
+              "to": 4.3
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            },
+            "sources": {
+              "from": [
+                "https://www.walibi.nl/nl/park/attracties/lost-gravity"
+              ],
+              "to": [
+                "https://rcdb.com/12315.htm",
+                "https://www.walibi.nl/nl/park/attracties/lost-gravity"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Goliath",
@@ -44,19 +106,75 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "thrill_coaster",
-      "props": [
-        "high",
-        "fast"
-      ],
+      "props": [],
+      "intensity": 5,
+      "height_intensity": 5,
+      "top_speed_kmh": 106,
+      "max_height_m": 46.8,
+      "drop_m": 46,
+      "duration_s": 92,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/goliath",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/1565.htm",
+        "https://www.walibi.nl/nl/park/attracties/goliath"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/goliath",
       "admin_preview": {
-        "url": "https://www.walibi.nl/nl/park/attracties/goliath",
+        "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--0c68e488-c8d0-4785-a1be-774fe4e42acb/goliath-ta---ya-2023.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.nl/nl/park/attracties/goliath",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren; image-URL niet rechtstreeks ontsloten, gebruik parkpagina"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 5
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 106
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 46.8
+            },
+            "drop_m": {
+              "from": null,
+              "to": 46
+            },
+            "duration_s": {
+              "from": null,
+              "to": 92
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            },
+            "sources": {
+              "from": [
+                "https://www.walibi.nl/nl/park/attracties/goliath"
+              ],
+              "to": [
+                "https://rcdb.com/1565.htm",
+                "https://www.walibi.nl/nl/park/attracties/goliath"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Condor",
@@ -69,19 +187,76 @@
       "max_age": null,
       "type": "thrill_coaster",
       "props": [
-        "high",
-        "fast",
         "inversions"
       ],
+      "intensity": 4,
+      "height_intensity": 4,
+      "top_speed_kmh": 80,
+      "max_height_m": 31,
+      "inversions_count": 5,
+      "duration_s": 122,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/condor",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/770.htm",
+        "https://www.walibi.nl/nl/park/attracties/condor"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/condor",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--1008354c-4161-4ed9-9b45-bba3e9399b5b/attractie-condor-3.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/condor",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 80
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 31
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 5
+            },
+            "duration_s": {
+              "from": null,
+              "to": 122
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            },
+            "sources": {
+              "from": [
+                "https://www.walibi.nl/nl/park/attracties/condor"
+              ],
+              "to": [
+                "https://rcdb.com/770.htm",
+                "https://www.walibi.nl/nl/park/attracties/condor"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "La Grande Roue",
@@ -93,18 +268,50 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "ferris_wheel",
-      "props": [
-        "high"
-      ],
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 3,
+      "max_height_m": 45,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/la-grande-roue",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/la-grande-roue"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/la-grande-roue",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--aaabab55-af0b-44b9-bc8d-a2504ad82774/attractie-lagranderoue-gezin-3.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.nl/nl/park/attracties/la-grande-roue",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 45
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Blast",
@@ -117,20 +324,43 @@
       "max_age": null,
       "type": "top_spin",
       "props": [
-        "high",
-        "fast",
         "inversions",
         "swings"
       ],
+      "intensity": 4,
+      "height_intensity": 3,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/blast",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/blast"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/blast",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--fa32cbdb-ae1f-4ba1-b36f-fe29d3dd70b3/attractie-blast-2.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.nl/nl/park/attracties/blast",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "YOY CHILL",
@@ -142,19 +372,75 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "family_coaster",
-      "props": [
-        "high",
-        "fast"
-      ],
+      "props": [],
+      "intensity": 3,
+      "height_intensity": 4,
+      "top_speed_kmh": 80,
+      "max_height_m": 29,
+      "drop_m": 27,
+      "g_force": 3.5,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/yoy/chill",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/20669.htm",
+        "https://www.walibi.nl/nl/park/attracties/yoy/chill"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/yoy/chill",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--9f5fbcd4-da3b-4a0f-95a0-70ed383b38eb/yoy-chill-3.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/yoy/chill",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 80
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 29
+            },
+            "drop_m": {
+              "from": null,
+              "to": 27
+            },
+            "g_force": {
+              "from": null,
+              "to": 3.5
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            },
+            "sources": {
+              "from": [
+                "https://www.walibi.nl/nl/park/attracties/yoy/chill"
+              ],
+              "to": [
+                "https://rcdb.com/20669.htm",
+                "https://www.walibi.nl/nl/park/attracties/yoy/chill"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "YOY THRILL",
@@ -167,19 +453,81 @@
       "max_age": null,
       "type": "thrill_coaster",
       "props": [
-        "high",
-        "fast",
         "inversions"
       ],
+      "intensity": 5,
+      "height_intensity": 4,
+      "top_speed_kmh": 82,
+      "max_height_m": 29,
+      "drop_m": 27,
+      "inversions_count": 6,
+      "g_force": 4,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/yoy/thrill",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/20669.htm",
+        "https://www.walibi.nl/nl/park/attracties/yoy/thrill"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/yoy/thrill",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--626fea4c-e9d5-4703-90f3-754cde61795a/yoy-thrill.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/yoy/thrill",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 82
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 29
+            },
+            "drop_m": {
+              "from": null,
+              "to": 27
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 6
+            },
+            "g_force": {
+              "from": null,
+              "to": 4
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            },
+            "sources": {
+              "from": [
+                "https://www.walibi.nl/nl/park/attracties/yoy/thrill"
+              ],
+              "to": [
+                "https://rcdb.com/20669.htm",
+                "https://www.walibi.nl/nl/park/attracties/yoy/thrill"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Speed of Sound",
@@ -192,19 +540,81 @@
       "max_age": null,
       "type": "thrill_coaster",
       "props": [
-        "high",
-        "fast",
         "inversions"
       ],
+      "intensity": 4,
+      "height_intensity": 4,
+      "top_speed_kmh": 76,
+      "max_height_m": 35.5,
+      "inversions_count": 3,
+      "duration_s": 108,
+      "g_force": 5.2,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/speed-sound",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/773.htm",
+        "https://www.walibi.nl/nl/park/attracties/speed-sound"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/speed-sound",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--481def19-554a-4a36-b6c4-5cc443aad49e/attractie-speedofsound-8.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/speed-sound",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 76
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 35.5
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 3
+            },
+            "duration_s": {
+              "from": null,
+              "to": 108
+            },
+            "g_force": {
+              "from": null,
+              "to": 5.2
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            },
+            "sources": {
+              "from": [
+                "https://www.walibi.nl/nl/park/attracties/speed-sound"
+              ],
+              "to": [
+                "https://rcdb.com/773.htm",
+                "https://www.walibi.nl/nl/park/attracties/speed-sound"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "UNTAMED",
@@ -217,19 +627,81 @@
       "max_age": null,
       "type": "thrill_coaster",
       "props": [
-        "high",
-        "fast",
         "inversions"
       ],
+      "intensity": 5,
+      "height_intensity": 4,
+      "top_speed_kmh": 92,
+      "max_height_m": 36.5,
+      "drop_m": 35.4,
+      "inversions_count": 5,
+      "duration_s": 106,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/untamed",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/16047.htm",
+        "https://www.walibi.nl/nl/park/attracties/untamed"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/untamed",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--62d46489-eec7-43b3-954d-f4e949a6023d/attractie-untamed-gezin-1.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/untamed",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 92
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 36.5
+            },
+            "drop_m": {
+              "from": null,
+              "to": 35.4
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 5
+            },
+            "duration_s": {
+              "from": null,
+              "to": 106
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            },
+            "sources": {
+              "from": [
+                "https://www.walibi.nl/nl/park/attracties/untamed"
+              ],
+              "to": [
+                "https://rcdb.com/16047.htm",
+                "https://www.walibi.nl/nl/park/attracties/untamed"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Xpress: Platform 13",
@@ -242,20 +714,100 @@
       "max_age": null,
       "type": "thrill_coaster",
       "props": [
-        "high",
-        "fast",
         "inversions",
-        "dark"
+        "dark",
+        "scary"
       ],
+      "intensity": 5,
+      "height_intensity": 4,
+      "top_speed_kmh": 90,
+      "max_height_m": 25.8,
+      "inversions_count": 3,
+      "duration_s": 75,
+      "g_force": 5,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/xpress-platform-13",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/769.htm",
+        "https://www.walibi.nl/nl/park/attracties/xpress-platform-13"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/xpress-platform-13",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--48e3b30a-dd78-4fae-882c-a25d5d37b9d5/attracties-xpress-taya-6.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.nl/nl/park/attracties/xpress-platform-13",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 90
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 25.8
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 3
+            },
+            "duration_s": {
+              "from": null,
+              "to": 75
+            },
+            "g_force": {
+              "from": null,
+              "to": 5
+            },
+            "props": {
+              "from": [
+                "high",
+                "fast",
+                "inversions",
+                "dark"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "inversions",
+                "dark",
+                "themed",
+                "scary"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            },
+            "sources": {
+              "from": [
+                "https://www.walibi.nl/nl/park/attracties/xpress-platform-13"
+              ],
+              "to": [
+                "https://rcdb.com/769.htm",
+                "https://www.walibi.nl/nl/park/attracties/xpress-platform-13"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "G-Force",
@@ -268,20 +820,54 @@
       "max_age": null,
       "type": "top_spin",
       "props": [
-        "high",
-        "fast",
         "inversions",
         "spins"
       ],
+      "intensity": 4,
+      "height_intensity": 3,
+      "max_height_m": 20,
+      "duration_s": 120,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/g-force",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/g-force",
+        "https://www.parkz.com.au/attraction/g-force-walibi-holland"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/g-force",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--953c6aee-1bc8-448e-9c37-1ae63abf3d2b/attractie-gforce-5.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/g-force",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 20
+            },
+            "duration_s": {
+              "from": null,
+              "to": 120
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Space Shot",
@@ -293,19 +879,60 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "drop_tower",
-      "props": [
-        "high",
-        "fast"
-      ],
+      "props": [],
+      "intensity": 4,
+      "height_intensity": 5,
+      "max_height_m": 60,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/space-shot",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.nl/en/park/attractions/space-shot",
+        "https://coasterpedia.net/wiki/Space_Shot_(Walibi_Holland)"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/space-shot",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--761eeb2c-dab5-42ce-8514-4dd82d4b1c78/attractie-spaceshot-2.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.nl/nl/park/attracties/space-shot",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 5
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 60
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            },
+            "sources": {
+              "from": [
+                "https://www.walibi.nl/nl/park/attracties/space-shot"
+              ],
+              "to": [
+                "https://www.walibi.nl/en/park/attractions/space-shot",
+                "https://coasterpedia.net/wiki/Space_Shot_(Walibi_Holland)"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "The Tomahawk",
@@ -316,21 +943,78 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "top_spin",
+      "type": "flat_spinner",
       "props": [
         "spins",
-        "swings",
-        "high"
+        "swings"
       ],
+      "intensity": 3,
+      "height_intensity": 3,
+      "max_height_m": 16,
       "tag_source": "web",
-      "tag_confidence": "low",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/tomahawk",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/tomahawk",
+        "https://aroundus.com/p/11884727-tomahawk"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/tomahawk",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--1b1d7104-0de7-47d2-8470-791d5e890121/attractie-thomahawk-7.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/tomahawk",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "type": {
+              "from": "top_spin",
+              "to": "flat_spinner"
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 16
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "med"
+            },
+            "sources": {
+              "from": [
+                "https://www.walibi.nl/nl/park/attracties/tomahawk"
+              ],
+              "to": [
+                "https://www.walibi.nl/nl/park/attracties/tomahawk",
+                "https://aroundus.com/p/11884727-tomahawk"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Eat My Dust",
@@ -343,15 +1027,40 @@
       "max_age": null,
       "type": "kiddie_coaster",
       "props": [],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/eat-my-dust",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/eat-my-dust"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/eat-my-dust",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--9f59c633-ff56-4e24-adbc-b4862324ac23/attractie-eatmydust-gezin-8.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/eat-my-dust",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Drako",
@@ -364,15 +1073,50 @@
       "max_age": null,
       "type": "family_coaster",
       "props": [],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/drako",
+      "sources": [
+        "https://rcdb.com/774.htm",
+        "https://www.walibi.nl/nl/park/attracties/drako"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/drako",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--859c6241-009a-4a46-b175-bccc93ca4d7a/attractie-drako-gezin-2.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/drako",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "sources": {
+              "from": [
+                "https://www.walibi.nl/nl/park/attracties/drako"
+              ],
+              "to": [
+                "https://rcdb.com/774.htm",
+                "https://www.walibi.nl/nl/park/attracties/drako"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Merlin's Magic Castle",
@@ -388,18 +1132,69 @@
         "spins",
         "dark"
       ],
+      "intensity": 2,
+      "height_intensity": 1,
       "tag_source": "web",
-      "tag_confidence": "low",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/merlins-magic-castle",
+      "tag_confidence": "high",
+      "sources": [
+        "https://darkridedatabase.com/rides/merlins-magic-castle/",
+        "https://www.walibi.nl/nl/park/attracties/merlins-magic-castle"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/merlins-magic-castle",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--36296e94-f7b0-4c12-80da-80f0262df3f1/attractie-merlinsmagiccastle-10.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/merlins-magic-castle",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "props": {
+              "from": [
+                "spins",
+                "dark"
+              ],
+              "to": [
+                "spins",
+                "dark",
+                "themed"
+              ]
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "high"
+            },
+            "sources": {
+              "from": [
+                "https://www.walibi.nl/nl/park/attracties/merlins-magic-castle"
+              ],
+              "to": [
+                "https://darkridedatabase.com/rides/merlins-magic-castle/",
+                "https://www.walibi.nl/nl/park/attracties/merlins-magic-castle"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
-      "att": "Pavillon de The",
+      "att": "Pavillon de Thé",
       "oms": "Theekopjes die telkens anders ronddraaien.",
       "beg": 90,
       "zelf": 120,
@@ -411,15 +1206,50 @@
       "props": [
         "spins"
       ],
+      "intensity": 2,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/pavillon-de",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/pavillon-de"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/pavillon-de",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--476d33c6-0113-4e70-8cd9-edd254ded7d5/attractie-paviliondethe-1.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/pavillon-de",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "att": {
+              "from": "Pavillon de The",
+              "to": "Pavillon de Thé"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Space Kidz",
@@ -432,15 +1262,44 @@
       "max_age": null,
       "type": "kiddie_flat",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 2,
       "tag_source": "web",
-      "tag_confidence": "low",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/space-kidz",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/space-kidz"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/space-kidz",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--64b67ea1-536b-40b0-a313-878e4e46ad29/attractie-spacekidz-1.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/space-kidz",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren; type aangepast van dark_ride naar kiddie_flat op basis van parkbeschrijving"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "med"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Stunt Flight",
@@ -453,15 +1312,40 @@
       "max_age": null,
       "type": "kiddie_flat",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/stunt-flight",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/stunt-flight"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/stunt-flight",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--7fdbe550-c9f9-46c7-bc68-889fa7be79d4/attractie-squadsstuntflight--1.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/stunt-flight",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren; hernoemd van \"Squad's Stunt Flight\" naar \"Stunt Flight\""
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Wind Seekers",
@@ -474,18 +1358,46 @@
       "max_age": null,
       "type": "wave_swinger",
       "props": [
-        "high",
         "spins"
       ],
+      "intensity": 2,
+      "height_intensity": 3,
       "tag_source": "web",
-      "tag_confidence": "low",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/wind-seekers",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/wind-seekers"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/wind-seekers",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--a62aa371-2943-4b6e-9763-250e2a2a3a60/attracties-windseekers-gezin-1.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/wind-seekers",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "med"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Crazy River",
@@ -498,19 +1410,61 @@
       "max_age": null,
       "type": "water_ride",
       "props": [
-        "wet",
-        "high",
-        "fast"
+        "wet"
       ],
+      "intensity": 3,
+      "height_intensity": 4,
+      "drop_m": 23,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/crazy-river",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/crazy-river",
+        "https://coasterpedia.net/wiki/Crazy_River_(Walibi_Holland)"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/crazy-river",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--0eae0a75-3be6-4691-9073-0fa77cebc676/attractie-crazyriver-taya-2.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/crazy-river",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "drop_m": {
+              "from": null,
+              "to": 23
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            },
+            "sources": {
+              "from": [
+                "https://www.walibi.nl/nl/park/attracties/crazy-river"
+              ],
+              "to": [
+                "https://www.walibi.nl/nl/park/attracties/crazy-river",
+                "https://coasterpedia.net/wiki/Crazy_River_(Walibi_Holland)"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "El Rio Grande",
@@ -526,15 +1480,40 @@
         "wet",
         "spins"
       ],
+      "intensity": 3,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/el-rio-grande",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/el-rio-grande"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/el-rio-grande",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--a4685a60-c365-4841-b9b8-2d74f39ce7b3/attractie-elriogrande-gezin-5.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/el-rio-grande",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Splash Battle",
@@ -549,18 +1528,43 @@
       "props": [
         "wet"
       ],
+      "intensity": 2,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/splash-battle",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/splash-battle"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/splash-battle",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--4e8e9d5e-e737-476a-9fa8-c5116eeb5e83/splash-battle-2.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.nl/nl/park/attracties/splash-battle",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
-      "att": "Fibi's Bubble Swirl",
+      "att": "Bubble Swirl",
       "oms": "Luchtballonnen die rondzweven door Walibi Play Land.",
       "beg": 0,
       "zelf": 105,
@@ -572,18 +1576,57 @@
       "props": [
         "spins"
       ],
+      "intensity": 1,
+      "height_intensity": 2,
       "tag_source": "web",
-      "tag_confidence": "low",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/bubble-swirl",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/bubble-swirl"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/bubble-swirl",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--7415ca78-64ed-4c1a-a92f-229f6428e54c/walibi-play-land-26-3.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/bubble-swirl",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren; op site hernoemd naar \"Bubble Swirl\", type bijgewerkt van dark_ride naar kiddie_flat"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "att": {
+              "from": "Fibi's Bubble Swirl",
+              "to": "Bubble Swirl"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "med"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
-      "att": "Haaz' Garage",
+      "att": "Garage",
       "oms": "Eerste ritje in een stoere truck — toeter er op los.",
       "beg": 0,
       "zelf": 105,
@@ -593,15 +1636,50 @@
       "max_age": null,
       "type": "transport",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/garage",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/garage"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/garage",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--50c9cc4c-a1f8-464c-8b84-3c2d32f3508b/attractie-haazgarage-gezin-1.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/garage",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren; op site hernoemd naar \"Garage\""
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "att": {
+              "from": "Haaz' Garage",
+              "to": "Garage"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Le Tour des Jardins",
@@ -614,15 +1692,40 @@
       "max_age": null,
       "type": "transport",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/le-tour-des-jardins",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/le-tour-des-jardins"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/le-tour-des-jardins",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--0c12a632-e583-4991-9ea2-c315462f30ce/attractie-letourdesjardins-1.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/le-tour-des-jardins",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Los Sombreros",
@@ -637,15 +1740,40 @@
       "props": [
         "spins"
       ],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/los-sombreros",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/los-sombreros"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/los-sombreros",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--ec36f6eb-38f0-498f-932f-8f404aef2a2c/attractie-lossombreros-4.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/los-sombreros",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren; type bijgewerkt van transport naar flat_spinner"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Merrie Go'Round",
@@ -660,15 +1788,40 @@
       "props": [
         "spins"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/merrie-goround",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/merrie-goround"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/merrie-goround",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--7909865b-5f4a-454b-8685-ee86237d54aa/attractie-merriegoround-1.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/merrie-goround",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren; type bijgewerkt van dark_ride naar carousel"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Super Swing",
@@ -681,18 +1834,42 @@
       "max_age": null,
       "type": "wave_swinger",
       "props": [
-        "high",
         "spins"
       ],
+      "intensity": 2,
+      "height_intensity": 3,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/super-swing",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/super-swing"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/super-swing",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--dd646801-7f8a-460a-bd09-649221c70530/super-swing-2.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/super-swing",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Tequila Taxi's",
@@ -705,18 +1882,43 @@
       "max_age": null,
       "type": "transport",
       "props": [],
+      "intensity": 2,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/tequila-taxis",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/tequila-taxis"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/tequila-taxis",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--4eefdb61-1256-4653-8544-230e8ca3bf07/attractie-tequillataxis-2.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/tequila-taxis",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
-      "att": "W.A.B. World Tour",
+      "att": "Walibi's World Tour",
       "oms": "Trein die een rondrit maakt door Walibi Play Land.",
       "beg": 0,
       "zelf": 105,
@@ -726,15 +1928,50 @@
       "max_age": null,
       "type": "transport",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/walibis-world-tour",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/walibis-world-tour"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/walibis-world-tour",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--eb62471b-97c1-4ed6-9049-81ae409b6002/walibi-play-land-26-11.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/walibis-world-tour",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren; op site hernoemd naar \"Walibi's World Tour\""
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "att": {
+              "from": "W.A.B. World Tour",
+              "to": "Walibi's World Tour"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Walibi's Fun Recorder",
@@ -749,15 +1986,40 @@
       "props": [
         "spins"
       ],
+      "intensity": 2,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/walibis-fun-recorder",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/walibis-fun-recorder"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/walibis-fun-recorder",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--f98b1704-d745-44cd-9460-bbe65dda784c/attractie-funrecorder-2.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/walibis-fun-recorder",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren; type bijgewerkt van transport naar teacups"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Mini Taxi's",
@@ -770,15 +2032,40 @@
       "max_age": null,
       "type": "kiddie_flat",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/mini-taxis",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/mini-taxis"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/mini-taxis",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--ad1fd295-5bb4-4427-810a-816db7b0c2aa/attractie-minitaxis-2.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/mini-taxis",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren; type bijgewerkt van transport naar kiddie_flat"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Cooldown",
@@ -793,15 +2080,44 @@
       "props": [
         "wet"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
-      "tag_confidence": "low",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/cooldown",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/cooldown"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/cooldown",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--6bcbbf84-dc7d-4a06-bb7d-1ccf2bbde79a/attractie-cooldown-gezin-6.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/cooldown",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "med"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Spinning Vibe",
@@ -816,15 +2132,44 @@
       "props": [
         "spins"
       ],
+      "intensity": 3,
+      "height_intensity": 2,
       "tag_source": "web",
-      "tag_confidence": "low",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/spinning-vibe",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/spinning-vibe"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/spinning-vibe",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--06ddbd13-bd12-4de5-94f9-5df850fabfe1/attractie-spinningvibe-2-oud.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/spinning-vibe",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "med"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Walibi Express Station 1",
@@ -837,15 +2182,40 @@
       "max_age": null,
       "type": "transport",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/walibi-express-station-1",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/walibi-express-station-1"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/walibi-express-station-1",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--1d933175-3173-4810-9b08-76f4933e60e2/attractie-walibiexpress-1.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/walibi-express-station-1",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Walibi Express Station 2",
@@ -858,15 +2228,40 @@
       "max_age": null,
       "type": "transport",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/walibi-express-station-2",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/walibi-express-station-2"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/walibi-express-station-2",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--1d933175-3173-4810-9b08-76f4933e60e2/attractie-walibiexpress-1.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/walibi-express-station-2",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Walibi's Shuttle",
@@ -879,15 +2274,44 @@
       "max_age": null,
       "type": "kiddie_flat",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 2,
       "tag_source": "web",
-      "tag_confidence": "low",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/walibis-shuttle",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.nl/nl/park/attracties/walibis-shuttle"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/walibis-shuttle",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--e72783b9-eb17-41fc-9831-9d027a1ae0f8/walibi-play-land-26-10.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/walibis-shuttle",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "med"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Skydiver",
@@ -899,19 +2323,65 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "drop_tower",
-      "props": [
-        "high",
-        "fast"
-      ],
+      "props": [],
+      "intensity": 5,
+      "height_intensity": 5,
+      "max_height_m": 54,
+      "top_speed_kmh": 120,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.nl/nl/park/attracties/skydiver",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.nl/en/park/attractions/skydiver",
+        "https://coasterpedia.net/wiki/Skydiver_(Walibi_Holland)"
+      ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/skydiver",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--5a5d3c04-cfca-4255-968b-e477e0423861/attractie-skydiver-6.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.nl/nl/park/attracties/skydiver",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren; betaalde extra attractie"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 5
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 54
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 120
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            },
+            "sources": {
+              "from": [
+                "https://www.walibi.nl/nl/park/attracties/skydiver"
+              ],
+              "to": [
+                "https://www.walibi.nl/en/park/attractions/skydiver",
+                "https://coasterpedia.net/wiki/Skydiver_(Walibi_Holland)"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     }
   ]
 }
