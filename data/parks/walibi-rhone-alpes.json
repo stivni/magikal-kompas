@@ -5,13 +5,13 @@
   "meta": {
     "country": "FR",
     "site": "https://www.walibi.fr",
-    "updated": "2026-06-17",
-    "tagging": "web-v1 (admin-review nodig voor low/unknown)"
+    "updated": "2026-06-19",
+    "tagging": "web-v3 (volledige verificatie; Le Galion gesloten; Hurricane oms gecorrigeerd; On Air type gecorrigeerd; Mystic props aangevuld; theming-veld opgeruimd; admin_preview URL's verbeterd)"
   },
   "rides": [
     {
       "att": "Mystic",
-      "oms": "Verticale klim van 31m in voodoo-wijk",
+      "oms": "Gerstlauer Infinity Coaster: 3 inversies, shuttle-modus, 31m hoog in voodoo-wijk",
       "beg": 130,
       "zelf": 130,
       "max": 195,
@@ -19,18 +19,109 @@
       "props": [
         "high",
         "fast",
-        "inversions"
+        "inversions",
+        "scary",
+        "themed"
       ],
-      "tag_source": "admin",
-      "tag_confidence": "verified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mystic",
+      "intensity": 5,
+      "height_intensity": 4,
+      "top_speed_kmh": 85,
+      "max_height_m": 31,
+      "inversions_count": 3,
+      "duration_s": 105,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/15842.htm",
+        "https://en.wikipedia.org/wiki/Mystic_(roller_coaster)",
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mystic"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mystic",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--b54bc72a-7c81-403f-aadb-156199d0965f/walibi-shooting-pub-2025---0011.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mystic",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
       "image": {
         "url": "assets/photos/walibi-rhone-alpes/mystic.webp",
         "license": "CC-BY-2.0",
         "attribution": "Foto door Martin Lewison, via Wikimedia Commons",
         "source_page": "https://commons.wikimedia.org/wiki/File:Mystic_1.jpg"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "props": {
+              "from": [
+                "inversions",
+                "scary"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "inversions",
+                "scary",
+                "themed"
+              ]
+            },
+            "oms": {
+              "from": "Verticale klim van 31m in voodoo-wijk",
+              "to": "Gerstlauer Infinity Coaster: 3 inversies, shuttle-modus, 31m hoog in voodoo-wijk"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast",
+                "inversions"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "inversions",
+                "scary",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 85
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 31
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 3
+            },
+            "duration_s": {
+              "from": null,
+              "to": 105
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "admin",
+          "verified": true
+        }
+      ]
     },
     {
       "att": "Le Totem",
@@ -41,37 +132,75 @@
       "type": "drop_tower",
       "props": [
         "high",
-        "fast"
+        "scary"
       ],
+      "intensity": 5,
+      "height_intensity": 5,
+      "top_speed_kmh": 65,
+      "max_height_m": 56.3,
+      "g_force": 4,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-totem",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-totem",
+        "https://lord-park.com/attractions/le-totem/"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-totem",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--4207d4bc-c7a9-4fc6-b36b-d48f26dc58ab/totem--1-.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-totem",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
-    },
-    {
-      "att": "Le Galion",
-      "oms": "Piratenschip met crescendo-sensaties",
-      "beg": 130,
-      "zelf": 130,
-      "max": null,
-      "type": "pirate_ship",
-      "props": [
-        "swings"
-      ],
-      "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-galion",
-      "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-galion",
-      "admin_preview": {
-        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--cc5dc5cd-ea2c-40d3-8970-f35674da5d0c/le-galion.jpg?preferwebp=true&quality=85",
-        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-galion",
-        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "high",
+                "scary"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 5
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 65
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 56.3
+            },
+            "g_force": {
+              "from": null,
+              "to": 4
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Generator",
@@ -83,17 +212,90 @@
       "props": [
         "high",
         "fast",
-        "inversions",
-        "swings"
+        "inversions"
       ],
+      "intensity": 4,
+      "height_intensity": 4,
+      "top_speed_kmh": 75.6,
+      "max_height_m": 35.5,
+      "inversions_count": 3,
+      "duration_s": 108,
+      "g_force": 5.2,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/generator",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/943.htm",
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/generator"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/generator",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/content/dam/wra/walibi-ra-2022-generator-credits-benoit-gillardeau.jpg",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/generator",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast",
+                "inversions",
+                "swings"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "inversions"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 75.6
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 35.5
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 3
+            },
+            "duration_s": {
+              "from": null,
+              "to": 108
+            },
+            "g_force": {
+              "from": null,
+              "to": 5.2
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "image": {
+        "url": "assets/photos/walibi-rhone-alpes/generator.webp",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "Foto door Freddo, via Wikimedia Commons",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Generator_WRA.jpg"
       }
     },
     {
@@ -104,61 +306,252 @@
       "max": 195,
       "type": "spinning_coaster",
       "props": [
-        "high",
-        "fast",
-        "spins"
+        "spins",
+        "inversions",
+        "themed"
       ],
+      "intensity": 4,
+      "height_intensity": 3,
+      "top_speed_kmh": 67,
+      "max_height_m": 18.5,
+      "inversions_count": 3,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mahuka",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/19716.htm",
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mahuka",
+        "https://www.attractionsource.com/2025/09/24/mahuka-at-walibi-rhone-alpes-europes-first-hot-racer/"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mahuka",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--d3f558c2-dfbb-4b4d-9917-fc5cd8cbc1b3/wra-mahuka-03-credits-benoit-gillardeau.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mahuka",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast",
+                "spins"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "spins",
+                "inversions",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 67
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 18.5
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 3
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Woodstock Express",
-      "oms": "Gelijkaardig aan Speedy Bob",
+      "oms": "Vluchtige achtbaan met klimmen, dalingen en bochten in Wild West-thema",
       "beg": 120,
       "zelf": 120,
       "max": null,
       "type": "family_coaster",
       "props": [
-        "high",
-        "fast"
+        "fast",
+        "themed"
       ],
-      "tag_source": "admin",
-      "tag_confidence": "verified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/woodstock-express",
+      "intensity": 3,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://rcdb.com/1713.htm",
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/woodstock-express"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/woodstock-express",
       "admin_preview": {
-        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/woodstock-express",
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--a4e20f4a-0e6b-4c51-8bb0-e3a72e6eef63/woodstock-express.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/woodstock-express",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "Gelijkaardig aan Speedy Bob",
+              "to": "Vluchtige achtbaan met klimmen, dalingen en bochten in Wild West-thema"
+            },
+            "props": {
+              "from": [],
+              "to": [
+                "fast",
+                "themed"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast"
+              ],
+              "to": []
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "tag_source": {
+              "from": "admin",
+              "to": "web"
+            },
+            "tag_confidence": {
+              "from": "verified",
+              "to": "med"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "admin",
+          "verified": true
+        }
+      ]
     },
     {
       "att": "Hurricane",
-      "oms": "Starflyer",
+      "oms": "Reuzenketentoren van 49,7m: gondels draaien en slingeren hoog in de lucht",
       "beg": 120,
       "zelf": 120,
       "max": null,
       "type": "wave_swinger",
       "props": [
         "high",
-        "spins"
+        "spins",
+        "swings"
       ],
-      "tag_source": "admin",
-      "tag_confidence": "verified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/hurricane",
+      "intensity": 4,
+      "height_intensity": 5,
+      "max_height_m": 49.7,
+      "tag_source": "web",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/hurricane",
+        "https://ridden.fr/attraction/hurricane-walibi-rhone-alpes"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/hurricane",
       "admin_preview": {
-        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/hurricane",
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--b8d0edc8-8a6b-4efb-8339-ca4ce98448ad/dsc03862--1-.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/hurricane",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "Starflyer",
+              "to": "Reuzenketentoren van 49,7m: gondels draaien en slingeren hoog in de lucht"
+            },
+            "props": {
+              "from": [
+                "high",
+                "spins",
+                "swings"
+              ],
+              "to": [
+                "high",
+                "spins",
+                "swings"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "spins"
+              ],
+              "to": [
+                "high",
+                "spins",
+                "swings"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 5
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 49.7
+            },
+            "tag_source": {
+              "from": "admin",
+              "to": "web"
+            },
+            "tag_confidence": {
+              "from": "verified",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "admin",
+          "verified": true
+        }
+      ]
     },
     {
       "att": "Timber",
@@ -168,104 +561,356 @@
       "max": null,
       "type": "family_coaster",
       "props": [
-        "high",
         "fast"
       ],
+      "intensity": 4,
+      "height_intensity": 3,
+      "top_speed_kmh": 64.4,
+      "max_height_m": 17,
+      "drop_m": 16.7,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/timber",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/12954.htm",
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/timber"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/timber",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--06174f21-6566-49f9-9054-5f8f43c49965/walibi-shooting-pub-2025---0048.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/timber",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
       "image": {
         "url": "assets/photos/walibi-rhone-alpes/timber.webp?t=1781725335029",
         "license": "CC-BY-SA-4.0",
         "attribution": "Foto door Freddo, via Wikimedia Commons",
         "source_page": "https://commons.wikimedia.org/wiki/File:Timber_WRA.jpg"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 64.4
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 17
+            },
+            "drop_m": {
+              "from": null,
+              "to": 16.7
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Gold River",
-      "oms": "Wildwaterbaan in grote boeien",
+      "oms": "Wildwaterbaan in grote boeien door Wild West-stroomversnellingen",
       "beg": 90,
       "zelf": 130,
       "max": null,
       "type": "water_ride",
       "props": [
-        "wet"
+        "wet",
+        "themed"
       ],
-      "tag_source": "admin",
-      "tag_confidence": "verified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/gold-river",
+      "intensity": 3,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://waterridedatabase.com/rides/france/walibi_rhone_alpes/gold_river",
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/gold-river"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/gold-river",
       "admin_preview": {
-        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/gold-river",
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--84af5fb3-5601-4a2b-8d05-7614d540e08d/walibi-shooting-pub-2025---0023.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/gold-river",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "Wildwaterbaan in grote boeien",
+              "to": "Wildwaterbaan in grote boeien door Wild West-stroomversnellingen"
+            },
+            "props": {
+              "from": [
+                "wet"
+              ],
+              "to": [
+                "wet",
+                "themed"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "tag_source": {
+              "from": "admin",
+              "to": "web"
+            },
+            "tag_confidence": {
+              "from": "verified",
+              "to": "med"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "admin",
+          "verified": true
+        }
+      ]
     },
     {
       "att": "AirBoat",
-      "oms": "",
+      "oms": "Draaiende en tolende bootrit door het bayou, in alle richtingen",
       "beg": 100,
       "zelf": 120,
       "max": null,
       "type": "top_spin",
       "props": [
         "spins",
-        "high"
+        "themed"
       ],
-      "tag_source": "admin",
-      "tag_confidence": "verified",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/airboat",
+      "intensity": 3,
+      "height_intensity": 3,
+      "max_height_m": 10,
+      "tag_source": "web",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/airboat",
+        "https://news.compagniedesalpes.com/discover-soon-airboat-in-walibi-rhone-alpes/"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/airboat",
+      "admin_preview": {
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--66734707-608a-4f18-a29d-e26f90808953/zones-2021-0098-copie.jpg?quality=85&preferwebp=true",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/airboat",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
+      },
       "image": {
         "url": "assets/photos/walibi-rhone-alpes/airboat.webp?t=1781725391663",
         "license": "CC-BY-SA-4.0",
         "attribution": "Foto door Freddo, via Wikimedia Commons",
         "source_page": "https://commons.wikimedia.org/wiki/File:Airboat_WRA.jpg"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "",
+              "to": "Draaiende en tolende bootrit door het bayou, in alle richtingen"
+            },
+            "props": {
+              "from": [
+                "spins"
+              ],
+              "to": [
+                "spins",
+                "themed"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 10
+            },
+            "tag_source": {
+              "from": "admin",
+              "to": "web"
+            },
+            "tag_confidence": {
+              "from": "verified",
+              "to": "med"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "admin",
+          "verified": true
+        }
+      ]
     },
     {
       "att": "Bambooz River",
-      "oms": "Verfrissende Canadian river-tocht",
+      "oms": "Verfrissende Canadian river-tocht met 10m val in Exotic Island",
       "beg": 100,
       "zelf": 120,
       "max": null,
       "type": "water_ride",
       "props": [
         "wet",
-        "high",
-        "fast"
+        "themed"
       ],
+      "intensity": 3,
+      "height_intensity": 3,
+      "drop_m": 10,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/bambooz-river",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/bambooz-river",
+        "https://coasterpedia.net/wiki/Bambooz_River"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/bambooz-river",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--dcdf77e0-9ae6-48ca-886f-d8388aa727b2/bambooz-river--1-.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/bambooz-river",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "Verfrissende Canadian river-tocht",
+              "to": "Verfrissende Canadian river-tocht met 10m val in Exotic Island"
+            },
+            "props": {
+              "from": [
+                "wet"
+              ],
+              "to": [
+                "wet",
+                "themed"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "drop_m": {
+              "from": null,
+              "to": 10
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Tiki Academy",
-      "oms": "Bootjes met waterkanonnen",
+      "oms": "Bootjes met waterkanonnen in Exotic Island-thema",
       "beg": 90,
       "zelf": 120,
       "max": null,
       "type": "water_battle",
       "props": [
         "wet",
-        "spins"
+        "spins",
+        "themed"
       ],
+      "intensity": 2,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/tiki-academy",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/tiki-academy"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/tiki-academy",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--9a64fc7d-981f-4ca5-87c5-a7297725a9e0/exotic-island-5.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/tiki-academy",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "wet",
+                "spins"
+              ],
+              "to": [
+                "wet",
+                "spins",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "La Coccinelle",
@@ -274,100 +919,314 @@
       "zelf": 120,
       "max": null,
       "type": "family_coaster",
-      "props": [
-        "fast"
-      ],
+      "props": [],
+      "intensity": 2,
+      "height_intensity": 3,
+      "top_speed_kmh": 36,
+      "max_height_m": 8,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/la-coccinelle",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/946.htm",
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/la-coccinelle"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/la-coccinelle",
       "admin_preview": {
         "url": "https://walibi.com/adobe/dynamicmedia/deliver/dm-aid--ccad8471-e792-40bd-baf4-40ab966c79ea/walibi-shooting-pub-2025---0042.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/la-coccinelle",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 36
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 8
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Surf Music",
-      "oms": "Glijbaan met drijfband",
+      "oms": "75m lange buisslide voor het hele gezin",
       "beg": 90,
       "zelf": 120,
       "max": null,
       "type": "water_ride",
       "props": [
         "wet",
-        "high",
         "fast"
       ],
+      "intensity": 3,
+      "height_intensity": 3,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/surf-music",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/surf-music"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/surf-music",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--001a081c-245c-49af-8f63-2d2e442e6fdd/surfmusic.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/surf-music",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "Glijbaan met drijfband",
+              "to": "75m lange buisslide voor het hele gezin"
+            },
+            "props": {
+              "from": [
+                "wet"
+              ],
+              "to": [
+                "wet",
+                "fast"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "On Air",
-      "oms": "Trap in gondels als vogels in de lucht",
+      "oms": "Trappend vliegen in gondels boven Exotic Island, kleine schokken inbegrepen",
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "wave_swinger",
+      "type": "flat_spinner",
       "props": [
-        "high",
-        "spins",
-        "swings"
+        "swings",
+        "themed"
       ],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/on-air",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/on-air"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/on-air",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--b8d0edc8-8a6b-4efb-8339-ca4ce98448ad/dsc03862--1-.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/on-air",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "type": {
+              "from": "wave_swinger",
+              "to": "flat_spinner"
+            },
+            "oms": {
+              "from": "Trap in gondels als vogels in de lucht",
+              "to": "Trappend vliegen in gondels boven Exotic Island, kleine schokken inbegrepen"
+            },
+            "props": {
+              "from": [
+                "spins",
+                "swings"
+              ],
+              "to": [
+                "swings",
+                "themed"
+              ]
+            },
+            "height_intensity": {
+              "from": 3,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Dock'N Roll",
-      "oms": "Boot die goederen naar Festival City brengt",
+      "oms": "Boot die goederen naar Festival City brengt met slingerende vaarbewegingen",
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "transport",
-      "props": [],
+      "type": "pirate_ship",
+      "props": [
+        "swings",
+        "themed"
+      ],
+      "intensity": 3,
+      "height_intensity": 2,
       "tag_source": "web",
-      "tag_confidence": "low",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/dockn-roll",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/dockn-roll",
+        "https://lord-park.com/attractions/dockn-roll/"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/dockn-roll",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--21813906-c6d0-44f9-b3e6-70fcd7ab3c41/walibi-ra-2022-0048.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/dockn-roll",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "props": {
+              "from": [
+                "swings"
+              ],
+              "to": [
+                "swings",
+                "themed"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "transport",
+              "to": "pirate_ship"
+            },
+            "props": {
+              "from": [],
+              "to": [
+                "swings"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "med"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "MonORail",
-      "oms": "Verhoogde rit met uitzicht op het park",
+      "oms": "Verhoogde rit met uitzicht op Explorer Adventure-zone",
       "beg": 50,
       "zelf": 120,
       "max": null,
       "type": "transport",
-      "props": [
-        "high"
-      ],
+      "props": [],
+      "intensity": 1,
+      "height_intensity": 3,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/monorail",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/monorail"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/monorail",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--adf91699-9850-42ad-8d2e-3a233ecaee99/walibi-ra-2022-0017.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/monorail",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Carrousel",
@@ -379,35 +1238,40 @@
       "props": [
         "spins"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/carrousel",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/carrousel"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/carrousel",
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--f395f26f-6c0d-46ec-ac48-2e3bd609aa43/walibi-ra-2022-0005.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/carrousel",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
-    },
-    {
-      "att": "Tam Tam Aventure",
-      "oms": "Rustige boottocht langs flora en fauna",
-      "beg": 50,
-      "zelf": 120,
-      "max": null,
-      "type": "water_ride",
-      "props": [
-        "wet",
-        "high",
-        "fast"
-      ],
-      "tag_source": "auto-v1",
-      "tag_confidence": "unverified",
-      "source_url": "",
-      "closed": true,
-      "closed_year": null,
-      "closed_source_url": "https://www.walibi.fr/fr/attractions",
-      "closed_verify": false
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Festival Station",
@@ -417,152 +1281,487 @@
       "max": null,
       "type": "transport",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/festival-station",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/festival-station"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/festival-station",
       "admin_preview": {
-        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/festival-station",
-        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/festival-station",
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--adf91699-9850-42ad-8d2e-3a233ecaee99/walibi-ra-2022-0017.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/familie/festival-station",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Les P'tits Chaudrons",
-      "oms": "Draaiende ketels",
+      "oms": "Draaiende ketels in voodoo-wijk",
       "beg": 80,
       "zelf": 110,
       "max": null,
       "type": "teacups",
       "props": [
-        "spins"
+        "spins",
+        "themed"
       ],
+      "intensity": 2,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/les-ptits-chaudrons",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/les-ptits-chaudrons"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/les-ptits-chaudrons",
       "admin_preview": {
-        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/les-ptits-chaudrons",
-        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/les-ptits-chaudrons",
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--9a64fc7d-981f-4ca5-87c5-a7297725a9e0/exotic-island-5.jpg?preferwebp=true&quality=85",
+        "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/familie/les-ptits-chaudrons",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "Draaiende ketels",
+              "to": "Draaiende ketels in voodoo-wijk"
+            },
+            "props": {
+              "from": [
+                "spins"
+              ],
+              "to": [
+                "spins",
+                "themed"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Volt-O-Vent",
-      "oms": "Wervelende rit door de vlakten",
+      "oms": "Draaiend vliegend huis dat kantelt en schommelt door de vlakten",
       "beg": 80,
       "zelf": 105,
       "max": null,
       "type": "flat_spinner",
       "props": [
-        "spins"
+        "spins",
+        "themed"
       ],
+      "intensity": 2,
+      "height_intensity": 1,
       "tag_source": "web",
-      "tag_confidence": "low",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/volt-o-vent",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/volt-o-vent"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/volt-o-vent",
       "admin_preview": {
-        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/volt-o-vent",
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--d4d1b0a7-1c6c-4300-8e94-687f35216ea9/wra-explorer-adventure.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/volt-o-vent",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "Wervelende rit door de vlakten",
+              "to": "Draaiend vliegend huis dat kantelt en schommelt door de vlakten"
+            },
+            "props": {
+              "from": [
+                "spins"
+              ],
+              "to": [
+                "spins",
+                "themed"
+              ]
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "med"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Balloon Race",
-      "oms": "Luchtballon-rit voor het hele gezin",
+      "oms": "Luchtballon-rit voor het hele gezin in de lucht",
       "beg": 80,
       "zelf": 105,
       "max": null,
       "type": "wave_swinger",
       "props": [
-        "spins"
+        "spins",
+        "swings"
       ],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/balloon-race",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/balloon-race"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/balloon-race",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--d4d1b0a7-1c6c-4300-8e94-687f35216ea9/wra-explorer-adventure.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/balloon-race",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "WAB Band Tour",
-      "oms": "Treintje met scenes van de kangoeroe",
+      "oms": "Treintje met scenes van het kangoeroe-mascotte doorheen Explorer Adventure",
       "beg": 50,
       "zelf": 105,
       "max": null,
-      "type": "transport",
-      "props": [],
+      "type": "story_ride",
+      "props": [
+        "themed",
+        "dark"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
-      "tag_confidence": "low",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/wab-band-tour",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/wab-band-tour"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/wab-band-tour",
       "admin_preview": {
-        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/wab-band-tour",
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--84997b72-4c97-4fc0-99eb-457745d89d46/aire-explorer.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/wab-band-tour",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "type": {
+              "from": "transport",
+              "to": "story_ride"
+            },
+            "oms": {
+              "from": "Treintje met scenes van de kangoeroe",
+              "to": "Treintje met scenes van het kangoeroe-mascotte doorheen Explorer Adventure"
+            },
+            "props": {
+              "from": [
+                "themed"
+              ],
+              "to": [
+                "themed",
+                "dark"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "med"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Le Petit Vapeur",
-      "oms": "Mini-versie van de Totem",
+      "oms": "Mini-lanceertorentje voor jonge bezoekers",
       "beg": 90,
       "zelf": 100,
       "max": null,
       "type": "drop_tower",
-      "props": [
-        "high",
-        "fast"
-      ],
+      "props": [],
+      "intensity": 3,
+      "height_intensity": 3,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/le-petit-vapeur",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/le-petit-vapeur",
+        "https://lord-park.com/attractions/le-petit-vapeur/"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/le-petit-vapeur",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--c15a4f93-f82b-4eeb-9fda-6fedda8d9229/walibi-ra-2022-lepetitvapeur-credits-benoit-gillardeau.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/le-petit-vapeur",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "Mini-versie van de Totem",
+              "to": "Mini-lanceertorentje voor jonge bezoekers"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Concert'O",
-      "oms": "Kindervariant van de Canadian river",
+      "oms": "Mini-Canadian river voor kinderen met steampunk-geluiden",
       "beg": 90,
       "zelf": 90,
       "max": 140,
       "type": "water_ride",
       "props": [
-        "wet"
+        "wet",
+        "themed"
       ],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/concerto",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/concerto"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/concerto",
       "admin_preview": {
-        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/concerto",
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--9a64fc7d-981f-4ca5-87c5-a7297725a9e0/exotic-island-5.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/concerto",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "Kindervariant van de Canadian river",
+              "to": "Mini-Canadian river voor kinderen met steampunk-geluiden"
+            },
+            "props": {
+              "from": [
+                "wet"
+              ],
+              "to": [
+                "wet",
+                "themed"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "La Chevauchee",
-      "oms": "Paardrijtocht op rails",
+      "oms": "Railrit op paardjes voor kleine avonturiers in Wild West-thema",
       "beg": 90,
-      "zelf": 90,
+      "zelf": null,
       "max": 140,
-      "type": "transport",
-      "props": [],
+      "type": "kiddie_flat",
+      "props": [
+        "themed"
+      ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/la-chevauchee",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/la-chevauchee"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/la-chevauchee",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/adobe/dynamicmedia/deliver/dm-aid--e3a35a89-6087-466c-b782-af0ac0ab61bf/wra-la-chevauchee-credits-benoit-gillardeau.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/la-chevauchee",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "type": {
+              "from": "transport",
+              "to": "kiddie_flat"
+            },
+            "oms": {
+              "from": "Paardrijtocht op rails",
+              "to": "Railrit op paardjes voor kleine avonturiers in Wild West-thema"
+            },
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "zelf": {
+              "from": 90,
+              "to": null
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Playground Explorer Adventure",
@@ -572,15 +1771,40 @@
       "max": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-explorer-adventure",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-explorer-adventure"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-explorer-adventure",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--84997b72-4c97-4fc0-99eb-457745d89d46/aire-explorer.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-explorer-adventure",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Playground Exotic Island 7-12",
@@ -590,15 +1814,40 @@
       "max": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-7-12-ans",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-7-12-ans"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-7-12-ans",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--d0948ecc-ae80-4ef9-abdd-4ebe9e3ce886/exotic-island-7.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-7-12-ans",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Playground Festival City",
@@ -608,15 +1857,40 @@
       "max": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-festival-city",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-festival-city"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-festival-city",
       "admin_preview": {
-        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-festival-city",
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--9a64fc7d-981f-4ca5-87c5-a7297725a9e0/exotic-island-5.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-festival-city",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Playground Exotic Island 3-6",
@@ -626,89 +1900,273 @@
       "max": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-3-6-ans",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-3-6-ans"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-3-6-ans",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--890221c3-ba4f-4d51-8b69-a1e972845610/exotic-island-aire3-6ans.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-3-6-ans",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Melody Road",
-      "oms": "Mini-auto's voor kinderen door het park",
+      "oms": "Kinderauto's op rail door het park",
       "beg": 50,
       "zelf": 120,
       "max": null,
       "type": "transport",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/melody-road",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/melody-road"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/melody-road",
       "admin_preview": {
         "url": "https://walibi.fr/adobe/dynamicmedia/deliver/dm-aid--5a41ba76-6cee-4e62-8902-b79fd9bff8b9/walibi-ra-2022-melodyroadr-credits-benoit-gillardeau.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/melody-road",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "Mini-auto's voor kinderen door het park",
+              "to": "Kinderauto's op rail door het park"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "RepaR'TaKar",
-      "oms": "Stuiterende 4x4 garage-rit met crashes",
+      "oms": "Stuiterende 4x4 garage-rit met crashes, uniek in Europa",
       "beg": 90,
       "zelf": 105,
       "max": null,
       "type": "flat_spinner",
       "props": [
-        "swings"
+        "swings",
+        "themed"
       ],
+      "intensity": 3,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/repar-ta-kar",
+      "sources": [
+        "https://themeparks-eu.com/news/walibi-rhone-alpes-opens-new-family-attraction-repar-ta-kar",
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/repar-ta-kar"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/repar-ta-kar",
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--edd7c408-3473-4c95-aeec-91530d223103/shooting-repar-ta-kar--142--web.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/repar-ta-kar",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "Stuiterende 4x4 garage-rit met crashes",
+              "to": "Stuiterende 4x4 garage-rit met crashes, uniek in Europa"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "swings"
+              ],
+              "to": [
+                "swings",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Labyrinthe végétal",
-      "oms": "Plantenlabyrint met geheime gangen en tunnels",
+      "oms": "Plantenlabyrint met geheime gangen en tunnels nabij Mahuka",
       "beg": 0,
       "zelf": 0,
       "max": null,
       "type": "funhouse",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
-      "tag_confidence": "low",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/labyrinthe-vegetal",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/labyrinthe-vegetal"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/labyrinthe-vegetal",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--43f284fc-9a13-431a-8a94-088d06c3dccb/passage-oubli-.jpg",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/labyrinthe-vegetal",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "Plantenlabyrint met geheime gangen en tunnels",
+              "to": "Plantenlabyrint met geheime gangen en tunnels nabij Mahuka"
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "med"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     },
     {
       "att": "Parcours aventure",
-      "oms": "Klauterparcours met hangbruggen en glijbanen",
+      "oms": "Avonturenparcours met hangbruggen en glijbanen in Exotic Island",
       "beg": 0,
       "zelf": 0,
       "max": null,
       "type": "playground",
       "props": [],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
-      "tag_confidence": "low",
-      "source_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/parcours-aventure",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/parcours-aventure"
+      ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/parcours-aventure",
       "admin_preview": {
-        "url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/parcours-aventure",
+        "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--84997b72-4c97-4fc0-99eb-457745d89d46/aire-explorer.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/parcours-aventure",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "oms": {
+              "from": "Klauterparcours met hangbruggen en glijbanen",
+              "to": "Avonturenparcours met hangbruggen en glijbanen in Exotic Island"
+            },
+            "tag_confidence": {
+              "from": "low",
+              "to": "med"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ]
     }
   ]
 }
