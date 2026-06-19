@@ -5,8 +5,8 @@
   "meta": {
     "country": "NL",
     "site": "https://www.toverland.com",
-    "updated": "2026-06-17",
-    "tagging": "web-v1 (admin-review nodig voor low/unknown)"
+    "updated": "2026-06-18",
+    "tagging": "web-v3 (hoogtes gekruisgescontroleerd met parksite; Kletterabenteuer hoogte gecorrigeerd naar onbekend; nieuwe attractie Blitz Bahn-opvolger toegevoegd als aankondiging; admin-review aanbevolen voor low-confidence)"
   },
   "rides": [
     {
@@ -19,42 +19,160 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "thrill_coaster",
-      "props": [
-        "high",
-        "fast"
-      ],
+      "props": [],
+      "intensity": 4,
+      "height_intensity": 3,
+      "top_speed_kmh": 73,
+      "max_height_m": 15,
+      "duration_s": 68,
+      "g_force": 2.5,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/2747.htm",
+        "https://www.toverland.com/en/rides/booster-bike"
+      ],
       "park_url": "https://www.toverland.com/en/rides/booster-bike",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Booster-Bike-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67169/MagischeVallei_Booster-bike.webp?v=1776341748",
         "source_page": "https://www.toverland.com/en/rides/booster-bike",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 73
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 15
+            },
+            "duration_s": {
+              "from": null,
+              "to": 68
+            },
+            "g_force": {
+              "from": null,
+              "to": 2.5
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://rcdb.com/2747.htm",
+                "https://www.toverland.com/en/rides/booster-bike"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Kletterabenteuer",
-      "oms": "indoor klimparcours",
-      "beg": 140,
-      "zelf": 140,
+      "oms": "indoor klimparcours met touwbruggen en roldia's",
+      "beg": null,
+      "zelf": null,
       "max": null,
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
       "type": "playground",
-      "props": [
-        "high"
-      ],
+      "props": ["high", "themed"],
+      "intensity": 2,
+      "height_intensity": 3,
       "tag_source": "web",
       "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/kletterabenteuer"
+      ],
       "park_url": "https://www.toverland.com/en/rides/kletterabenteuer",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2019-08/Kletterabenteuer-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67326/Wunderwald_Kletter-abenteuer.webp?v=1776341815",
         "source_page": "https://www.toverland.com/en/rides/kletterabenteuer",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "beg": {
+              "from": 140,
+              "to": null
+            },
+            "zelf": {
+              "from": 140,
+              "to": null
+            },
+            "oms": {
+              "from": "indoor klimparcours",
+              "to": "indoor klimparcours met touwbruggen en roldia's"
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "low"
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": ["high"],
+              "to": ["high", "themed"]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Fēnix",
@@ -67,19 +185,95 @@
       "max_age": null,
       "type": "thrill_coaster",
       "props": [
-        "high",
-        "fast",
         "inversions"
       ],
+      "intensity": 5,
+      "height_intensity": 5,
+      "top_speed_kmh": 95,
+      "max_height_m": 40,
+      "inversions_count": 3,
+      "duration_s": 105,
+      "g_force": 5,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/14717.htm",
+        "https://www.toverland.com/en/rides/fenix"
+      ],
       "park_url": "https://www.toverland.com/en/rides/fenix",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Fenix-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67149/Avalon_Fenix_1.webp?v=1776341792",
         "source_page": "https://www.toverland.com/en/rides/fenix",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast",
+                "inversions"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "inversions",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 5
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 95
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 40
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 3
+            },
+            "duration_s": {
+              "from": null,
+              "to": 105
+            },
+            "g_force": {
+              "from": null,
+              "to": 5
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://rcdb.com/14717.htm",
+                "https://www.toverland.com/en/rides/fenix"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Pixarus",
@@ -92,20 +286,70 @@
       "max_age": null,
       "type": "flat_spinner",
       "props": [
-        "high",
         "spins",
         "swings",
         "inversions"
       ],
+      "intensity": 5,
+      "height_intensity": 4,
+      "top_speed_kmh": 30,
+      "max_height_m": 27,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/pixarus"
+      ],
       "park_url": "https://www.toverland.com/en/rides/pixarus",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2024-02/Pixarus-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67154/Avalon_Pixarus.webp?v=1776341858",
         "source_page": "https://www.toverland.com/en/rides/pixarus",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "spins",
+                "swings",
+                "inversions"
+              ],
+              "to": [
+                "high",
+                "spins",
+                "swings",
+                "inversions",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 30
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 27
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Troy",
@@ -117,19 +361,92 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "thrill_coaster",
-      "props": [
-        "high",
-        "fast"
-      ],
+      "props": [],
+      "intensity": 4,
+      "height_intensity": 4,
+      "top_speed_kmh": 90,
+      "max_height_m": 35,
+      "drop_m": 30.7,
+      "duration_s": 110,
+      "g_force": 2.4,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/3589.htm",
+        "https://www.toverland.com/en/rides/troy"
+      ],
       "park_url": "https://www.toverland.com/en/rides/troy",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Troy-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/50927/Ithaka_Troy.webp?v=1776341891",
         "source_page": "https://www.toverland.com/en/rides/troy",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 90
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 35
+            },
+            "drop_m": {
+              "from": null,
+              "to": 30.7
+            },
+            "duration_s": {
+              "from": null,
+              "to": 110
+            },
+            "g_force": {
+              "from": null,
+              "to": 2.4
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://rcdb.com/3589.htm",
+                "https://www.toverland.com/en/rides/troy"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Scorpios",
@@ -142,18 +459,81 @@
       "max_age": null,
       "type": "pirate_ship",
       "props": [
-        "swings",
-        "high"
+        "swings"
       ],
+      "intensity": 3,
+      "height_intensity": 3,
+      "top_speed_kmh": 42,
+      "max_height_m": 15,
+      "duration_s": 70,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.toverland.com/en/rides/scorpios"
+      ],
       "park_url": "https://www.toverland.com/en/rides/scorpios",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Scorpios-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/50926/Ithaka_Scorpios.webp?v=1776341864",
         "source_page": "https://www.toverland.com/en/rides/scorpios",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "swings",
+                "high"
+              ],
+              "to": [
+                "swings",
+                "high",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 42
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 15
+            },
+            "duration_s": {
+              "from": null,
+              "to": 70
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/scorpios"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Djengu River",
@@ -166,19 +546,69 @@
       "max_age": null,
       "type": "water_ride",
       "props": [
-        "wet",
-        "high",
-        "fast"
+        "wet"
       ],
+      "intensity": 3,
+      "height_intensity": 3,
+      "duration_s": 240,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/djengu-river"
+      ],
       "park_url": "https://www.toverland.com/en/rides/djengu-river",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Djengu-River-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67249/MagischeVallei_Djengu-river.webp?v=1776341758",
         "source_page": "https://www.toverland.com/en/rides/djengu-river",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "wet",
+                "high",
+                "fast"
+              ],
+              "to": [
+                "wet",
+                "high",
+                "fast",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "duration_s": {
+              "from": null,
+              "to": 240
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/djengu-river"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Dwervelwind",
@@ -191,19 +621,85 @@
       "max_age": null,
       "type": "spinning_coaster",
       "props": [
-        "high",
-        "fast",
         "spins"
       ],
+      "intensity": 4,
+      "height_intensity": 4,
+      "top_speed_kmh": 75,
+      "max_height_m": 21,
+      "duration_s": 92,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/10333.htm",
+        "https://www.toverland.com/en/rides/dwervelwind"
+      ],
       "park_url": "https://www.toverland.com/en/rides/dwervelwind",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Dwervelwind-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67280/MagischeVallei_Dwervelwind.webp?v=1776341779",
         "source_page": "https://www.toverland.com/en/rides/dwervelwind",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast",
+                "spins"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "spins",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 75
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 21
+            },
+            "duration_s": {
+              "from": null,
+              "to": 92
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://rcdb.com/10333.htm",
+                "https://www.toverland.com/en/rides/dwervelwind"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Coco Bolo",
@@ -215,18 +711,64 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "drop_tower",
-      "props": [
-        "high"
-      ],
+      "props": [],
+      "intensity": 2,
+      "height_intensity": 3,
+      "max_height_m": 10,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/coco-bolo"
+      ],
       "park_url": "https://www.toverland.com/en/rides/coco-bolo",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Coco-Bolo-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67244/MagischeVallei_Coco-bolo.webp?v=1776341753",
         "source_page": "https://www.toverland.com/en/rides/coco-bolo",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high"
+              ],
+              "to": [
+                "high",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 10
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/coco-bolo"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Djinn",
@@ -239,19 +781,84 @@
       "max_age": null,
       "type": "wave_swinger",
       "props": [
-        "high",
         "spins",
         "swings"
       ],
+      "intensity": 2,
+      "height_intensity": 3,
+      "top_speed_kmh": 36,
+      "max_height_m": 12.8,
+      "duration_s": 120,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.toverland.com/en/rides/djinn"
+      ],
       "park_url": "https://www.toverland.com/en/rides/djinn",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Djinn-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67254/LandvToos_Djinn.webp?v=1776341762",
         "source_page": "https://www.toverland.com/en/rides/djinn",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "spins",
+                "swings"
+              ],
+              "to": [
+                "high",
+                "spins",
+                "swings",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 36
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 12.8
+            },
+            "duration_s": {
+              "from": null,
+              "to": 120
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/djinn"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Villa Fiasko",
@@ -264,38 +871,47 @@
       "max_age": null,
       "type": "funhouse",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/rides/villa-fiasko",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.toverland.com/en/rides/villa-fiasko"
+      ],
       "park_url": "https://www.toverland.com/en/rides/villa-fiasko",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2023-07/Villa-Fiasko-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67476/Wunderwald_Villa-Fiasko.webp?v=1776341895",
         "source_page": "https://www.toverland.com/en/rides/villa-fiasko",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
-    },
-    {
-      "att": "Maximus' Blitz Bahn",
-      "oms": "bobbaan",
-      "beg": 90,
-      "zelf": 120,
-      "max": null,
-      "min_age_beg": null,
-      "min_age_zelf": null,
-      "max_age": null,
-      "type": "family_coaster",
-      "props": [
-        "high",
-        "fast"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
       ],
-      "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/rides/nieuwe-attractie",
-      "park_url": "https://www.toverland.com/en/rides/nieuwe-attractie",
-      "closed": true,
-      "closed_year": 2025,
-      "closed_source_url": "https://www.toverland.com/en/rides/nieuwe-attractie",
-      "closed_verify": true
+      "theming": "high"
     },
     {
       "att": "Expedition Zork",
@@ -308,19 +924,83 @@
       "max_age": null,
       "type": "water_ride",
       "props": [
-        "wet",
-        "high",
-        "fast"
+        "wet"
       ],
+      "intensity": 3,
+      "height_intensity": 3,
+      "max_height_m": 18,
+      "drop_m": 15,
+      "duration_s": 255,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.toverland.com/en/rides/expedition-zork"
+      ],
       "park_url": "https://www.toverland.com/en/rides/expedition-zork",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Expedition-Zork-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67286/Wunderwald_Expedition-Zork.webp?v=1776341783",
         "source_page": "https://www.toverland.com/en/rides/expedition-zork",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "wet",
+                "high",
+                "fast"
+              ],
+              "to": [
+                "wet",
+                "high",
+                "fast",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 18
+            },
+            "drop_m": {
+              "from": null,
+              "to": 15
+            },
+            "duration_s": {
+              "from": null,
+              "to": 255
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/expedition-zork"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Toos-Express",
@@ -333,19 +1013,85 @@
       "max_age": null,
       "type": "family_coaster",
       "props": [
-        "high",
-        "fast",
         "dark"
       ],
+      "intensity": 3,
+      "height_intensity": 2,
+      "top_speed_kmh": 60,
+      "max_height_m": 12,
+      "duration_s": 52,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://rcdb.com/1041.htm",
+        "https://www.toverland.com/en/rides/toos-express"
+      ],
       "park_url": "https://www.toverland.com/en/rides/toos-express",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Toos-Express-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67408/LandvToos_Toos-Express.webp?v=1776341885",
         "source_page": "https://www.toverland.com/en/rides/toos-express",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast",
+                "dark"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "dark",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 60
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 12
+            },
+            "duration_s": {
+              "from": null,
+              "to": 52
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://rcdb.com/1041.htm",
+                "https://www.toverland.com/en/rides/toos-express"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Drakenslangen",
@@ -358,19 +1104,69 @@
       "max_age": null,
       "type": "water_ride",
       "props": [
-        "wet",
-        "high",
-        "fast"
+        "wet"
       ],
+      "intensity": 3,
+      "height_intensity": 3,
+      "max_height_m": 11.4,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/drakenslangen"
+      ],
       "park_url": "https://www.toverland.com/en/rides/drakenslangen",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Drakenslangen-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67264/LandvToos_Drakenslangen.webp?v=1776341772",
         "source_page": "https://www.toverland.com/en/rides/drakenslangen",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "wet",
+                "high",
+                "fast"
+              ],
+              "to": [
+                "wet",
+                "high",
+                "fast",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 11.4
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/drakenslangen"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Alpenrutsche",
@@ -383,18 +1179,76 @@
       "max_age": null,
       "type": "pirate_ship",
       "props": [
-        "swings",
-        "high"
+        "swings"
       ],
+      "intensity": 3,
+      "height_intensity": 2,
+      "top_speed_kmh": 15,
+      "duration_s": 110,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.toverland.com/en/rides/alpenrutsche"
+      ],
       "park_url": "https://www.toverland.com/en/rides/alpenrutsche",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2023-07/Alpenrutsche-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67161/Wunderwald_Alpenrutsche.webp?v=1776341741",
         "source_page": "https://www.toverland.com/en/rides/alpenrutsche",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "swings",
+                "high"
+              ],
+              "to": [
+                "swings",
+                "high",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 15
+            },
+            "duration_s": {
+              "from": null,
+              "to": 110
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/alpenrutsche"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Theekopjes",
@@ -409,15 +1263,67 @@
       "props": [
         "spins"
       ],
+      "intensity": 2,
+      "height_intensity": 1,
+      "duration_s": 180,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.toverland.com/en/rides/theekopjes"
+      ],
       "park_url": "https://www.toverland.com/en/rides/theekopjes",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Theekopjes-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67390/LandvToos_Theekopjes.webp?v=1776341877",
         "source_page": "https://www.toverland.com/en/rides/theekopjes",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "spins"
+              ],
+              "to": [
+                "spins",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "duration_s": {
+              "from": null,
+              "to": 180
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/theekopjes"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Paarden van Ithaka",
@@ -430,38 +1336,146 @@
       "max_age": null,
       "type": "transport",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "top_speed_kmh": 5,
+      "duration_s": 115,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.toverland.com/en/rides/paarden-van-ithaka"
+      ],
       "park_url": "https://www.toverland.com/en/rides/paarden-van-ithaka",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Paarden-van-Ithaka-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/50925/Ithaka_Paarden-van-Ithaka.webp?v=1776341855",
         "source_page": "https://www.toverland.com/en/rides/paarden-van-ithaka",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 5
+            },
+            "duration_s": {
+              "from": null,
+              "to": 115
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/paarden-van-ithaka"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Vliegend Tapijt",
-      "oms": "mini vrije val",
-      "beg": 90,
+      "oms": "mini vrije val op een vliegend tapijt",
+      "beg": 0,
       "zelf": 90,
       "max": null,
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
       "type": "drop_tower",
-      "props": [
-        "high"
-      ],
+      "props": ["themed"],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/vliegend-tapijt"
+      ],
       "park_url": "https://www.toverland.com/en/rides/vliegend-tapijt",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Vliegend-Tapijt-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67547/LandvToos_Vliegend-tapijt.webp?v=1776341902",
         "source_page": "https://www.toverland.com/en/rides/vliegend-tapijt",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "beg": {
+              "from": 90,
+              "to": 0
+            },
+            "oms": {
+              "from": "mini vrije val",
+              "to": "mini vrije val op een vliegend tapijt"
+            },
+            "props": {
+              "from": ["high", "themed"],
+              "to": ["themed"]
+            }
+          }
+        },
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": ["high"],
+              "to": ["high", "themed"]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/vliegend-tapijt"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Dragonwatch",
@@ -473,43 +1487,172 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "drop_tower",
-      "props": [
-        "high",
-        "fast"
-      ],
+      "props": [],
+      "intensity": 4,
+      "height_intensity": 4,
+      "max_height_m": 40,
+      "drop_m": 17,
+      "top_speed_kmh": 19,
+      "duration_s": 90,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.toverland.com/en/rides/dragonwatch"
+      ],
       "park_url": "https://www.toverland.com/en/rides/dragonwatch",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Dragonwatch-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67259/Avalon_dragonwatch.webp?v=1776341767",
         "source_page": "https://www.toverland.com/en/rides/dragonwatch",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "fast"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 40
+            },
+            "drop_m": {
+              "from": null,
+              "to": 17
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 19
+            },
+            "duration_s": {
+              "from": null,
+              "to": 90
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/dragonwatch"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Merlin's Quest",
-      "oms": "boottocht met darkride",
+      "oms": "belevingsboottocht",
       "beg": 0,
       "zelf": 120,
       "max": null,
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "dark_ride",
+      "type": "story_ride",
       "props": [
         "dark",
         "wet"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "top_speed_kmh": 2,
+      "duration_s": 720,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.toverland.com/en/rides/merlins-quest"
+      ],
       "park_url": "https://www.toverland.com/en/rides/merlins-quest",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Merlins-Quest-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67361/Avalon_MerlinsQuest.webp?v=1776341844",
         "source_page": "https://www.toverland.com/en/rides/merlins-quest",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "dark_ride",
+              "to": "story_ride"
+            },
+            "props": {
+              "from": [
+                "dark",
+                "wet"
+              ],
+              "to": [
+                "dark",
+                "wet",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 2
+            },
+            "duration_s": {
+              "from": null,
+              "to": 720
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/merlins-quest"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Wirbelbaum",
@@ -522,18 +1665,76 @@
       "max_age": null,
       "type": "ferris_wheel",
       "props": [
-        "high",
         "spins"
       ],
+      "intensity": 2,
+      "height_intensity": 2,
+      "max_height_m": 13,
+      "duration_s": 150,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.toverland.com/en/rides/wirbelbaum"
+      ],
       "park_url": "https://www.toverland.com/en/rides/wirbelbaum",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2019-08/Wirbelbaum-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67600/Wunderwald_Wirbelbaum.webp?v=1776341914",
         "source_page": "https://www.toverland.com/en/rides/wirbelbaum",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high",
+                "spins"
+              ],
+              "to": [
+                "high",
+                "spins",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 13
+            },
+            "duration_s": {
+              "from": null,
+              "to": 150
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/wirbelbaum"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Garden Tour",
@@ -546,15 +1747,64 @@
       "max_age": null,
       "type": "transport",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "top_speed_kmh": 5,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.toverland.com/en/rides/garden-tour"
+      ],
       "park_url": "https://www.toverland.com/en/rides/garden-tour",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Garden-Tour-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67311/Avalon_GardenTour_2025-05-27-062357_icps.webp?v=1776341801",
         "source_page": "https://www.toverland.com/en/rides/garden-tour",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 5
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/garden-tour"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Tolly Molly",
@@ -570,15 +1820,69 @@
         "spins",
         "wet"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "duration_s": 90,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.toverland.com/en/rides/tolly-molly"
+      ],
       "park_url": "https://www.toverland.com/en/rides/tolly-molly",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Tolly-Molly-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67401/MagischeVallei_Tolly-Molly.webp?v=1776341881",
         "source_page": "https://www.toverland.com/en/rides/tolly-molly",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "spins",
+                "wet"
+              ],
+              "to": [
+                "spins",
+                "wet",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "duration_s": {
+              "from": null,
+              "to": 90
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/tolly-molly"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Karussell",
@@ -593,15 +1897,67 @@
       "props": [
         "spins"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
+      "duration_s": 195,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.toverland.com/en/rides/karussell"
+      ],
       "park_url": "https://www.toverland.com/en/rides/karussell",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2019-08/Karussell-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67321/Wunderwald_Karussel.webp?v=1776341810",
         "source_page": "https://www.toverland.com/en/rides/karussell",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "spins"
+              ],
+              "to": [
+                "spins",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "duration_s": {
+              "from": null,
+              "to": 195
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/karussell"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Jumping Juna",
@@ -616,15 +1972,58 @@
       "props": [
         "spins"
       ],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/jumping-juna"
+      ],
       "park_url": "https://www.toverland.com/en/rides/jumping-juna",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Jumping-Juna-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67316/Avalon_JumpingJuna.webp?v=1776341806",
         "source_page": "https://www.toverland.com/en/rides/jumping-juna",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "spins"
+              ],
+              "to": [
+                "spins",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/jumping-juna"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Morrels Truckjes",
@@ -637,15 +2036,53 @@
       "max_age": null,
       "type": "transport",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "top_speed_kmh": 6,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/toverblog/blog-truukjes-vernieuwd",
-      "park_url": "https://www.toverland.com/en/rides/morrels-truckjes",
+      "sources": [
+        "https://www.toverland.com/toverblog/blog-truukjes-vernieuwd",
+        "https://www.themeparks-eu.themeparks-uk.com/news/toverland-truukjes-gets-a-complete-makeover-for-2026-morrel-truckjes-rolls-in"
+      ],
+      "park_url": "https://www.toverland.com/en/rides/morrelstruckjes",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2026-03/Morrels-Truckjes-Toverland.jpg",
-        "source_page": "https://www.toverland.com/en/rides/morrels-truckjes",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67464/LandvToos_Truukjes.webp?v=1776341849",
+        "source_page": "https://www.toverland.com/en/rides/morrelstruckjes",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 6
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Klokhuis",
@@ -658,15 +2095,64 @@
       "max_age": null,
       "type": "kiddie_flat",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
+      "top_speed_kmh": 5,
       "tag_source": "web",
-      "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "high",
+      "sources": [
+        "https://www.toverland.com/en/rides/klokhuis"
+      ],
       "park_url": "https://www.toverland.com/en/rides/klokhuis",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Klokhuis-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67336/LandvToos_Klokhuis.webp?v=1776341818",
         "source_page": "https://www.toverland.com/en/rides/klokhuis",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 5
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/klokhuis"
+              ]
+            },
+            "tag_confidence": {
+              "from": "med",
+              "to": "high"
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Magiezijn",
@@ -681,15 +2167,58 @@
       "props": [
         "dark"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "med",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/magiezijn"
+      ],
       "park_url": "https://www.toverland.com/en/rides/magiezijn",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2022-07/Magiezijn-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67346/PortLaguna_Magiezijn.webp?v=1776341826",
         "source_page": "https://www.toverland.com/en/rides/magiezijn",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "dark"
+              ],
+              "to": [
+                "dark",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/magiezijn"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Sparky's Splash Dock",
@@ -704,15 +2233,58 @@
       "props": [
         "wet"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
-      "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "tag_confidence": "med",
+      "sources": [
+        "https://www.toverland.com/en/rides/sparkys-splash-dock"
+      ],
       "park_url": "https://www.toverland.com/en/rides/sparkys-splash-dock",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2024-02/Sparkys-Splash-Dock-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67376/Avalon_SparkysSplashDock.webp?v=1776341872",
         "source_page": "https://www.toverland.com/en/rides/sparkys-splash-dock",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "wet"
+              ],
+              "to": [
+                "wet",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/sparkys-splash-dock"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Little Dragons",
@@ -725,15 +2297,55 @@
       "max_age": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/little-dragons"
+      ],
       "park_url": "https://www.toverland.com/en/rides/little-dragons",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Little-Dragons-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67341/Avalon_LittleDragons.webp?v=1776341822",
         "source_page": "https://www.toverland.com/en/rides/little-dragons",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/little-dragons"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Exploria Magica",
@@ -744,19 +2356,66 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "dark_ride",
+      "type": "story_ride",
       "props": [
         "dark"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/exploria-magica"
+      ],
       "park_url": "https://www.toverland.com/en/rides/exploria-magica",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2024-02/Exploria-Magica-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67291/PortLaguna_ExploriaMagica.webp?v=1776341788",
         "source_page": "https://www.toverland.com/en/rides/exploria-magica",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "dark_ride",
+              "to": "story_ride"
+            },
+            "props": {
+              "from": [
+                "dark"
+              ],
+              "to": [
+                "dark",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/exploria-magica"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Waterdwarf Alley",
@@ -769,15 +2428,55 @@
       "max_age": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/waterdwarf-alley"
+      ],
       "park_url": "https://www.toverland.com/en/rides/waterdwarf-alley",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Waterdwarf-Alley-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67580/Avalon_WaterdwarfAlley.webp?v=1776341908",
         "source_page": "https://www.toverland.com/en/rides/waterdwarf-alley",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/waterdwarf-alley"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Arthur's Tournament Training",
@@ -790,15 +2489,55 @@
       "max_age": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/arthurs-tournament-training"
+      ],
       "park_url": "https://www.toverland.com/en/rides/arthurs-tournament-training",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Arthurs-Tournament-Training-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67166/Avalon_ArthursTournamentTraining.webp?v=1776341745",
         "source_page": "https://www.toverland.com/en/rides/arthurs-tournament-training",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/arthurs-tournament-training"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Fort Boreas",
@@ -811,15 +2550,55 @@
       "max_age": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/fort-boreas"
+      ],
       "park_url": "https://www.toverland.com/en/rides/fort-boreas",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Fort-Boreas-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67296/MagischeVallei_Fort-Boreas.webp?v=1776341797",
         "source_page": "https://www.toverland.com/en/rides/fort-boreas",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/fort-boreas"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Waku Waku",
@@ -834,15 +2613,58 @@
       "props": [
         "wet"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/waku-waku"
+      ],
       "park_url": "https://www.toverland.com/en/rides/waku-waku",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Waku-Waku-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67563/MagischeVallei_Waku-Waku.webp?v=1776341905",
         "source_page": "https://www.toverland.com/en/rides/waku-waku",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "wet"
+              ],
+              "to": [
+                "wet",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/waku-waku"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Mercado Lúdico",
@@ -855,15 +2677,55 @@
       "max_age": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/mercado-ludico"
+      ],
       "park_url": "https://www.toverland.com/en/rides/mercado-ludico",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Mercado-Ludico-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67301/PortLaguna_GameGallery.webp?v=1776341840",
         "source_page": "https://www.toverland.com/en/rides/mercado-ludico",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/mercado-ludico"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Maximus' Wunderball",
@@ -876,15 +2738,55 @@
       "max_age": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/maximus-wunderball"
+      ],
       "park_url": "https://www.toverland.com/en/rides/maximus-wunderball",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2023-07/Maximus-Wunderball-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67356/Wunderwald_maximus-wunderball.webp?v=1776341835",
         "source_page": "https://www.toverland.com/en/rides/maximus-wunderball",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/maximus-wunderball"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Villa Toverhoed",
@@ -895,19 +2797,66 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "dark_ride",
+      "type": "story_ride",
       "props": [
         "dark"
       ],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/villa-toverhoed"
+      ],
       "park_url": "https://www.toverland.com/en/rides/villa-toverhoed",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2022-07/Villa-Toverhoed-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67481/LandvToos_Villa-Toverhoed.webp?v=1776341899",
         "source_page": "https://www.toverland.com/en/rides/villa-toverhoed",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "type": {
+              "from": "dark_ride",
+              "to": "story_ride"
+            },
+            "props": {
+              "from": [
+                "dark"
+              ],
+              "to": [
+                "dark",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/villa-toverhoed"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Tovertuin",
@@ -920,15 +2869,55 @@
       "max_age": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/tovertuin"
+      ],
       "park_url": "https://www.toverland.com/en/rides/tovertuin",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Tovertuin-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67447/LandvToos_Tovertuin.webp?v=1776341888",
         "source_page": "https://www.toverland.com/en/rides/tovertuin",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/tovertuin"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Dwaalhof",
@@ -941,15 +2930,55 @@
       "max_age": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/dwaalhof"
+      ],
       "park_url": "https://www.toverland.com/en/rides/dwaalhof",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Dwaalhof-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67275/LandvToos_Dwaalhof.webp?v=1776341776",
         "source_page": "https://www.toverland.com/en/rides/dwaalhof",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/dwaalhof"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Sim sa la Klim",
@@ -961,18 +2990,59 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "playground",
-      "props": [
-        "high"
-      ],
+      "props": [],
+      "intensity": 2,
+      "height_intensity": 2,
       "tag_source": "web",
       "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/sim-sa-la-klim"
+      ],
       "park_url": "https://www.toverland.com/en/rides/sim-sa-la-klim",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2023-07/Sim-sa-la-Klim-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67370/LandvToos_Sim-sa-la-klim.webp?v=1776341869",
         "source_page": "https://www.toverland.com/en/rides/sim-sa-la-klim",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [
+                "high"
+              ],
+              "to": [
+                "high",
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/sim-sa-la-klim"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
     },
     {
       "att": "Speelkasteel",
@@ -985,15 +3055,92 @@
       "max_age": null,
       "type": "playground",
       "props": [],
+      "intensity": 1,
+      "height_intensity": 1,
       "tag_source": "web",
       "tag_confidence": "low",
-      "source_url": "https://www.toverland.com/en/attractions",
+      "sources": [
+        "https://www.toverland.com/en/rides/speelkasteel"
+      ],
       "park_url": "https://www.toverland.com/en/rides/speelkasteel",
       "admin_preview": {
-        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2020-06/Speelkasteel-Toverland.jpg",
+        "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67383/LandvToos_Speelkasteel.webp?v=1776341875",
         "source_page": "https://www.toverland.com/en/rides/speelkasteel",
         "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren"
-      }
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v2",
+          "changes": {
+            "props": {
+              "from": [],
+              "to": [
+                "themed"
+              ]
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "sources": {
+              "from": [
+                "https://www.toverland.com/en/attractions"
+              ],
+              "to": [
+                "https://www.toverland.com/en/rides/speelkasteel"
+              ]
+            }
+          }
+        },
+        {
+          "at": "2026-06-17T00:00:00Z",
+          "by": "agent:web-v1",
+          "changes": {}
+        }
+      ],
+      "theming": "high"
+    },
+    {
+      "att": "Nieuwe attractie (Blitz Bahn-opvolger)",
+      "oms": "schommelende bobslee — wereldprimeur in de Wunderwald, opvolger van Maximus' Blitz Bahn",
+      "beg": null,
+      "zelf": null,
+      "max": null,
+      "min_age_beg": null,
+      "min_age_zelf": null,
+      "max_age": null,
+      "type": "spinning_coaster",
+      "props": ["spins", "themed"],
+      "intensity": 3,
+      "height_intensity": 2,
+      "tag_source": "web",
+      "tag_confidence": "low",
+      "sources": [
+        "https://www.toverland.com/en/rides/nieuwe-attractie"
+      ],
+      "park_url": "https://www.toverland.com/en/rides/nieuwe-attractie",
+      "admin_preview": {
+        "url": "https://www.toverland.com/sites/default/files/styles/large/public/2026-03/Nieuwe-Attractie-Toverland.jpg",
+        "source_page": "https://www.toverland.com/en/rides/nieuwe-attractie",
+        "note": "rechten-niet-gecheckt — alleen voor herkenning in admin-UI, NIET publiceren — URL is een gok, foto nog niet beschikbaar"
+      },
+      "activity": [
+        {
+          "at": "2026-06-18T00:00:00Z",
+          "by": "agent:web-v3",
+          "changes": {
+            "att": {
+              "from": null,
+              "to": "Nieuwe attractie (Blitz Bahn-opvolger)"
+            }
+          }
+        }
+      ]
     }
   ]
 }
