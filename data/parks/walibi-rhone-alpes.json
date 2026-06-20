@@ -38,6 +38,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mystic",
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Mystic_(Walibi_Rhône-Alpes)",
+      "manufacturer": "Gerstlauer",
+      "model": "Infinity Coaster",
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--b54bc72a-7c81-403f-aadb-156199d0965f/walibi-shooting-pub-2025---0011.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mystic",
@@ -148,6 +150,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-totem",
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Space_Shot_(parcs_Walibi)",
+      "manufacturer": "S&S",
+      "model": "Space Shot",
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--4207d4bc-c7a9-4fc6-b36b-d48f26dc58ab/totem--1-.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/le-totem",
@@ -231,6 +235,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/generator",
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Boomerang_(parcs_Walibi)",
+      "manufacturer": "Vekoma",
+      "model": "Boomerang",
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--c32d8ef2-0fc0-4cb7-aa31-b55cee9f8ee8/walibi-ra-2022-generator-credits-benoit-gillardeau.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/generator",
@@ -327,6 +333,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mahuka",
       "wikipedia_url": null,
+      "manufacturer": "Intamin",
+      "model": "Hot Racer",
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--d3f558c2-dfbb-4b4d-9917-fc5cd8cbc1b3/wra-mahuka-03-credits-benoit-gillardeau.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/mahuka",
@@ -405,6 +413,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/woodstock-express",
       "wikipedia_url": null,
+      "manufacturer": "Zamperla",
+      "model": "Zig Zag Coaster",
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--5bf863b8-4a4e-446a-821a-fff3bd29bc4d/walibi-ra-2022-0057.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/woodstock-express",
@@ -487,6 +497,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/hurricane",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--4c85043c-4197-4fd4-9d0e-70103d3c9e30/hurricane--4-.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/hurricane",
@@ -582,6 +594,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/timber",
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Timber_(Walibi_Rhône-Alpes)",
+      "manufacturer": "Gravity Group",
+      "model": null,
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--06174f21-6566-49f9-9054-5f8f43c49965/walibi-shooting-pub-2025---0048.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/timber",
@@ -652,6 +666,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/gold-river",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--84af5fb3-5601-4a2b-8d05-7614d540e08d/walibi-shooting-pub-2025---0023.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/gold-river",
@@ -728,6 +744,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/airboat",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://adobe.dynamicmedia.com/deliver/dm-aid--66734707-608a-4f18-a29d-e26f90808953/zones-2021-0098-copie.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/sensations/airboat",
@@ -814,6 +832,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/bambooz-river",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--dcdf77e0-9ae6-48ca-886f-d8388aa727b2/bambooz-river--1-.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/bambooz-river",
@@ -885,6 +905,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/tiki-academy",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--9a64fc7d-981f-4ca5-87c5-a7297725a9e0/exotic-island-5.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/tiki-academy",
@@ -943,6 +965,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/la-coccinelle",
       "wikipedia_url": null,
+      "manufacturer": "Zierer",
+      "model": "Tivoli Large",
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--ccad8471-e792-40bd-baf4-40ab966c79ea/walibi-shooting-pub-2025---0042.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/la-coccinelle",
@@ -1002,6 +1026,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/surf-music",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--001a081c-245c-49af-8f63-2d2e442e6fdd/surfmusic.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/surf-music",
@@ -1068,6 +1094,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/on-air",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--b8d0edc8-8a6b-4efb-8339-ca4ce98448ad/dsc03862--1-.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/on-air",
@@ -1144,6 +1172,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/dockn-roll",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--21813906-c6d0-44f9-b3e6-70fcd7ab3c41/walibi-ra-2022-0048.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/dockn-roll",
@@ -1217,6 +1247,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/monorail",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--adf91699-9850-42ad-8d2e-3a233ecaee99/walibi-ra-2022-0017.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/monorail",
@@ -1263,6 +1295,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/carrousel",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--f395f26f-6c0d-46ec-ac48-2e3bd609aa43/walibi-ra-2022-0005.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/carrousel",
@@ -1307,6 +1341,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/festival-station",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--f7c6d323-3e8a-41e6-898d-0cce709162fd/festival-station.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/festival-station",
@@ -1354,6 +1390,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/les-ptits-chaudrons",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--7eda157a-dfd6-4165-b250-b7f954fd444e/les-p-tits-chaudrons--1-.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/les-ptits-chaudrons",
@@ -1420,6 +1458,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/volt-o-vent",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--d4d1b0a7-1c6c-4300-8e94-687f35216ea9/wra-explorer-adventure.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/volt-o-vent",
@@ -1490,6 +1530,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/balloon-race",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--d4d1b0a7-1c6c-4300-8e94-687f35216ea9/wra-explorer-adventure.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/balloon-race",
@@ -1537,6 +1579,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/wab-band-tour",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--e0523ae3-e094-4205-9d96-5dd65d1b10e2/wab-band-tour--2-.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/wab-band-tour",
@@ -1615,6 +1659,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/le-petit-vapeur",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--c15a4f93-f82b-4eeb-9fda-6fedda8d9229/walibi-ra-2022-lepetitvapeur-credits-benoit-gillardeau.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/le-petit-vapeur",
@@ -1672,6 +1718,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/concerto",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--77178611-9ba1-444f-b5e2-b7200f99d8a3/walibi-ra-2022-0013.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/concerto",
@@ -1737,6 +1785,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/la-chevauchee",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--e3a35a89-6087-466c-b782-af0ac0ab61bf/wra-la-chevauchee-credits-benoit-gillardeau.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/la-chevauchee",
@@ -1805,6 +1855,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-explorer-adventure",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--84997b72-4c97-4fc0-99eb-457745d89d46/aire-explorer.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-explorer-adventure",
@@ -1849,6 +1901,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-7-12-ans",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--d0948ecc-ae80-4ef9-abdd-4ebe9e3ce886/exotic-island-7.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-7-12-ans",
@@ -1893,6 +1947,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-festival-city",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--2bd976f2-f1bc-4349-a951-d2dd4fd9299f/festival-city.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-festival-city",
@@ -1937,6 +1993,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-3-6-ans",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--890221c3-ba4f-4d51-8b69-a1e972845610/exotic-island-aire3-6ans.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/enfants/aire-de-jeux-exotic-island-3-6-ans",
@@ -1981,6 +2039,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/melody-road",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://walibi.fr/adobe/dynamicmedia/deliver/dm-aid--5a41ba76-6cee-4e62-8902-b79fd9bff8b9/walibi-ra-2022-melodyroadr-credits-benoit-gillardeau.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/melody-road",
@@ -2039,6 +2099,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/repar-ta-kar",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--edd7c408-3473-4c95-aeec-91530d223103/shooting-repar-ta-kar--142--web.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/repar-ta-kar",
@@ -2102,6 +2164,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/labyrinthe-vegetal",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--43f284fc-9a13-431a-8a94-088d06c3dccb/passage-oubli-.jpg",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/labyrinthe-vegetal",
@@ -2160,6 +2224,8 @@
       ],
       "park_url": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/parcours-aventure",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.fr/adobe/dynamicmedia/deliver/dm-aid--ae7be43d-3bd0-4a3a-abe0-c6454262903f/parcours-aventure9.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.fr/fr/decouvrir-le-parc/attractions/famille/parcours-aventure",
