@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import { parks } from "../shared/data"
 import { parkSlug } from "../shared/helpers"
 
-export type Tab = "parken" | "volgorde"
+export type Tab = "parken" | "volgorde" | "deelnemers"
 export interface Route {
   tab: Tab
   park: string | null
@@ -30,6 +30,9 @@ export function routeFromHash(): Route | null {
     const slug = decodeURIComponent(m[2] || "")
     return { tab: "volgorde", park: NAME_OF[slug] || null }
   }
+  if (m[1] === "deelnemers") {
+    return { tab: "deelnemers", park: null }
+  }
   return { tab: "parken", park: null }
 }
 
@@ -37,6 +40,7 @@ export function buildHash(tab: Tab, park: string | null): string {
   if (tab === "volgorde") {
     return park ? "#/wat-eerst/" + SLUG_OF[park] : "#/wat-eerst"
   }
+  if (tab === "deelnemers") return "#/deelnemers"
   return "#/parken"
 }
 

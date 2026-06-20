@@ -41,16 +41,12 @@ export function MergePanel({
   function apply() {
     const next: PartyState = {
       people: party.people.slice(),
-      typePref: { ...party.typePref },
-      propPref: { ...party.propPref },
-      forceOv: { ...party.forceOv },
+      memberPrefs: { ...party.memberPrefs },
       excludedParks: party.excludedParks,
     }
     nonConflicts.forEach((p) => {
-      next.people.push({ ...p })
-      if (incoming.typePref[p.name]) next.typePref[p.name] = incoming.typePref[p.name]!
-      if (incoming.propPref[p.name]) next.propPref[p.name] = incoming.propPref[p.name]!
-      if (incoming.forceOv[p.name]) next.forceOv[p.name] = incoming.forceOv[p.name]!
+      next.people.push({ ...p, favorite: false })
+      if (incoming.memberPrefs[p.name]) next.memberPrefs[p.name] = incoming.memberPrefs[p.name]!
     })
     Object.keys(choices).forEach((name) => {
       const choice = choices[name]
@@ -59,19 +55,13 @@ export function MergePanel({
       if (choice === "keep") return
       if (choice === "overwrite") {
         const idx = next.people.findIndex((x) => x.name === name)
-        if (idx >= 0) next.people[idx] = { ...inc }
-        delete next.typePref[name]
-        delete next.propPref[name]
-        delete next.forceOv[name]
-        if (incoming.typePref[name]) next.typePref[name] = incoming.typePref[name]!
-        if (incoming.propPref[name]) next.propPref[name] = incoming.propPref[name]!
-        if (incoming.forceOv[name]) next.forceOv[name] = incoming.forceOv[name]!
+        if (idx >= 0) next.people[idx] = { ...inc, favorite: false }
+        delete next.memberPrefs[name]
+        if (incoming.memberPrefs[name]) next.memberPrefs[name] = incoming.memberPrefs[name]!
       } else if (choice === "add") {
         const nn = uniqueName(next.people, name)
-        next.people.push({ ...inc, name: nn })
-        if (incoming.typePref[name]) next.typePref[nn] = incoming.typePref[name]!
-        if (incoming.propPref[name]) next.propPref[nn] = incoming.propPref[name]!
-        if (incoming.forceOv[name]) next.forceOv[nn] = incoming.forceOv[name]!
+        next.people.push({ ...inc, name: nn, favorite: false })
+        if (incoming.memberPrefs[name]) next.memberPrefs[nn] = incoming.memberPrefs[name]!
       }
     })
     setParty(next)

@@ -1,43 +1,122 @@
-/* Sidebar / mobile sheet: brand, mode-switcher, gezelschap, "goed om te weten",
- * sticky voet met taalkiezer + instellingen/over. Zie ADR-018. */
+/* Eén chrome-component voor sidebar (desktop) en topbar (mobiel).
+ *
+ * Inhoud is identiek tussen breakpoints — brand, mode-switcher, pill,
+ * disclaimers, taal, instellingen, over. De vorm verandert: verticale
+ * sidebar op desktop, horizontale topbar op mobiel. Disclaimers vallen op
+ * mobiel weg omdat ze ook in de page-foot staan.
+ *
+ * Zie ADR-018 (chrome per breakpoint). */
 
+import { useEffect, useState } from "react"
 import type { PartyState } from "../../shared/types"
 import type { Tab } from "../useHashRoute"
-import { PartyPanel } from "../party/PartyPanel"
+import { PartyPill } from "./PartyPill"
 
 interface Props {
-  open: boolean
   tab: Tab
   setTab: (t: Tab) => void
   party: PartyState
-  setParty: (p: PartyState) => void
-  onClose: () => void
-  onShare: () => void
-  onSettings: () => void
+  onTogglePill: () => void
   onAbout: () => void
 }
 
-export function Rail({
-  open,
+const MOBILE_QUERY = "(max-width: 960px)"
+
+function useIsMobile(): boolean {
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window === "undefined" ? false : window.matchMedia(MOBILE_QUERY).matches,
+  )
+  useEffect(() => {
+    const m = window.matchMedia(MOBILE_QUERY)
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches)
+    m.addEventListener("change", handler)
+    return () => m.removeEventListener("change", handler)
+  }, [])
+  return isMobile
+}
+
+function LangPicker({ compact }: { compact: boolean }) {
+  return (
+    <select
+      className={"lang-pill" + (compact ? "" : " rail-lang")}
+      title="Taal"
+      aria-label="Taal"
+      defaultValue="nl"
+    >
+      {compact ? (
+        <>
+          <option value="nl">NL</option>
+          <option value="fr" disabled>FR</option>
+          <option value="en" disabled>EN</option>
+        </>
+      ) : (
+        <>
+          <option value="nl">Nederlands</option>
+          <option value="fr" disabled>Français (binnenkort)</option>
+          <option value="en" disabled>English (binnenkort)</option>
+        </>
+      )}
+    </select>
+  )
+}
+
+function Brand() {
+  return (
+    <a className="brand" href="#" aria-label="Magikal Kompas">
+      <img
+        src={`${import.meta.env.BASE_URL}assets/brand/logo.png`}
+        alt="Magikal Kompas"
+        className="brand-logo"
+      />
+    </a>
+  )
+}
+
+export function Chrome({
   tab,
   setTab,
   party,
-  setParty,
-  onClose,
-  onShare,
-  onSettings,
+  onTogglePill,
   onAbout,
 }: Props) {
-  const on = party.people.filter((p) => p.on).length
-  const total = party.people.length
-  return (
-    <aside className={"rail " + (open ? "show" : "")}>
-      <button className="rail-close" onClick={onClose} title="Sluiten">✕</button>
+  const isMobile = useIsMobile()
 
+  if (isMobile) {
+    return (
+      <header className="appbar">
+        <div className="appbar-inner">
+          <Brand />
+          <nav className="modes-mob">
+            <button
+              className={"mode " + (tab === "parken" ? "on" : "")}
+              onClick={() => setTab("parken")}
+            >
+              Welk park?
+            </button>
+            <button
+              className={"mode " + (tab === "volgorde" ? "on" : "")}
+              onClick={() => setTab("volgorde")}
+            >
+              Wat eerst?
+            </button>
+          </nav>
+          <div className="spacer"></div>
+          <LangPicker compact />
+          <PartyPill
+            party={party}
+            active={tab === "deelnemers"}
+            onClick={onTogglePill}
+            variant="appbar"
+          />
+        </div>
+      </header>
+    )
+  }
+
+  return (
+    <aside className="rail">
       <div className="rail-brand">
-        <a className="brand" href="#" aria-label="Magikal Kompas">
-          <img src={`${import.meta.env.BASE_URL}assets/brand/logo.png`} alt="Magikal Kompas" className="brand-logo" />
-        </a>
+        <Brand />
       </div>
 
       <div className="rail-modes">
@@ -57,35 +136,12 @@ export function Rail({
         </button>
       </div>
 
-      <div className="rail-sec">
-        <div className="rail-head">
-          <span className="rail-title">
-            Wie gaat mee? <span className="rail-count">{on}/{total}</span>
-          </span>
-          <div className="rail-actions">
-            <button className="minibtn" onClick={onShare} title="Deelnemers delen">
-              <svg
-                className="ico-share"
-                viewBox="0 0 24 24"
-                width="13"
-                height="13"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7" />
-                <polyline points="16 6 12 2 8 6" />
-                <line x1="12" y1="2" x2="12" y2="15" />
-              </svg>
-              <span>Deel deelnemers</span>
-            </button>
-          </div>
-        </div>
-        <PartyPanel party={party} setParty={setParty} />
-      </div>
+      <PartyPill
+        party={party}
+        active={tab === "deelnemers"}
+        onClick={onTogglePill}
+        variant="rail"
+      />
 
       <div className="rail-sec rail-disc">
         <div className="rail-head">
@@ -140,18 +196,8 @@ export function Rail({
       </div>
 
       <div className="rail-foot">
-        <select
-          className="lang-pill rail-lang"
-          title="Taal"
-          aria-label="Taal"
-          defaultValue="nl"
-        >
-          <option value="nl">Nederlands</option>
-          <option value="fr" disabled>Français (binnenkort)</option>
-          <option value="en" disabled>English (binnenkort)</option>
-        </select>
+        <LangPicker compact={false} />
         <div className="rail-foot-links">
-          <button className="footlink" onClick={onSettings}>⚙ Instellingen</button>
           <button className="footlink" onClick={onAbout}>ℹ Over</button>
         </div>
         {import.meta.env.DEV && (

@@ -1,9 +1,10 @@
 /* "Welk park?"-view. */
 
-import { useMemo, useState } from "react"
+import { useMemo } from "react"
 import type { CountryCode, PartyState, SortKey } from "../../shared/types"
-import { PARKMETA, openRidesOf, parks } from "../../shared/data"
-import { makePrefAccess, parkMetrics } from "../../shared/scoring"
+import { PARKMETA, ridesOf, parks } from "../../shared/data"
+import { makePrefAccess, parkMetrics, parkBehaviorCounts } from "../../shared/scoring"
+import { emptyPrefs } from "../partyStore"
 import { Avatar } from "../../shared/components/Avatar"
 import { Flag } from "../../shared/components/Flag"
 import { Controls } from "./Controls"
@@ -38,10 +39,26 @@ export function Parken({
   setOpenPop,
 }: Props) {
   const selected = party.people.filter((p) => p.on)
-  const pref = useMemo(
-    () => makePrefAccess(party.typePref, party.propPref),
-    [party.typePref, party.propPref],
-  )
+  const pref = useMemo(() => makePrefAccess({}, {}), [])
+
+  function parkTotals(parkSlug: string) {
+    const rides = ridesOf(parkSlug)
+    const totals = { intrinsiek: 0, voorGroep: 0, saai: 0, alsmoet: 0, nooit: 0, growth: 0, outgrown: 0 }
+    for (const k of selected) {
+      const prefs = party.memberPrefs[k.name] ?? emptyPrefs()
+      const c = parkBehaviorCounts(rides, k, prefs, parkSlug)
+      totals.intrinsiek += c.intrinsiek
+      totals.voorGroep  += c.voorGroep
+      totals.saai       += c.saai
+      totals.alsmoet    += c.alsmoet
+      totals.nooit      += c.nooit
+      totals.growth     += c.growth
+      totals.outgrown   += c.outgrown
+    }
+    const willen = totals.intrinsiek - totals.alsmoet
+    const kunnen = totals.intrinsiek + totals.voorGroep + totals.saai + totals.alsmoet
+    return { ...totals, willen, kunnen }
+  }
 
   function setExcluded(m: Record<string, boolean>) {
     setParty({ ...party, excludedParks: m })
@@ -81,23 +98,16 @@ export function Parken({
 
   const rows = filtered.map((p) => ({
     p,
-    m: parkMetrics(openRidesOf(p), selected, pref),
+    m: parkMetrics(ridesOf(p), selected, pref),
+    t: parkTotals(p),
   }))
   rows.sort((a, b) =>
-    sortKey === "weak"
-      ? b.m.minFav - a.m.minFav ||
-        b.m.minScore - a.m.minScore ||
-        b.m.avgScore - a.m.avgScore
-      : b.m.avgFav - a.m.avgFav || b.m.avgScore - a.m.avgScore,
+    b.t.willen - a.t.willen || b.t.kunnen - a.t.kunnen,
   )
 
-  const maxVal = rows.reduce(
-    (m, r) => Math.max(m, sortKey === "weak" ? r.m.minFav : r.m.avgFav),
-    0,
-  )
+  const maxWillen = Math.max(1, ...rows.map((r) => r.t.willen))
 
   const filtersOn = countryFilter.size > 0 || !!searchQuery.trim()
-  const anyFav = rows.some((r) => r.m.avgFav > 0)
 
   function clearFilters() {
     setCountryFilter(new Set())
@@ -133,29 +143,8 @@ export function Parken({
           </a>
         </div>
       ) : null}
-      {!anyFav && filtered.length > 0 && (
-        <div className="hint">
-          Nog geen voorkeuren — parken staan op aantal haalbare attracties. Klap
-          een lid open en zet eigenschappen of types.
-        </div>
-      )}
-      {rows.map(({ p, m }) => {
-        const bigVal =
-          sortKey === "weak" ? m.minFav : m.avgFav.toFixed(1)
-        const bigLbl =
-          sortKey === "weak"
-            ? `favorieten voor ${m.weakKid.k.name}`
-            : "favorieten gem."
-        const altVal =
-          sortKey === "weak" ? m.avgFav.toFixed(1) : m.minFav
-        const altLbl =
-          sortKey === "weak" ? "gem. p.p." : `zwakste (${m.weakKid.k.name})`
-        const barPct =
-          maxVal > 0
-            ? Math.round(
-                ((sortKey === "weak" ? m.minFav : m.avgFav) / maxVal) * 100,
-              )
-            : 0
+      {rows.map(({ p, m, t }) => {
+        const barPct = Math.round(Math.max(0, t.willen) / maxWillen * 100)
         return (
           <div className="park-card" key={p}>
             <div className="row" onClick={() => onPickPark(p)}>
@@ -181,13 +170,22 @@ export function Parken({
                 <div className="bar">
                   <i style={{ width: barPct + "%" }} />
                 </div>
+                {(t.intrinsiek + t.voorGroep + t.saai + t.alsmoet + t.nooit + t.growth + t.outgrown) > 0 && (
+                  <div className="behavior-bar park-behavior-bar">
+                    {t.intrinsiek > 0 && <div className="bb-seg bb-seg--intrinsiek" style={{flexGrow: t.intrinsiek}} title={`😍 ${t.intrinsiek}`}><span className="bb-seg-label">😍 {t.intrinsiek}</span></div>}
+                    {t.voorGroep  > 0 && <div className="bb-seg bb-seg--voorGroep"  style={{flexGrow: t.voorGroep}}  title={`🙂 ${t.voorGroep}`}><span className="bb-seg-label">🙂 {t.voorGroep}</span></div>}
+                    {t.saai       > 0 && <div className="bb-seg bb-seg--saai"       style={{flexGrow: t.saai}}       title={`🥱 ${t.saai}`}><span className="bb-seg-label">🥱 {t.saai}</span></div>}
+                    {t.alsmoet    > 0 && <div className="bb-seg bb-seg--alsmoet"    style={{flexGrow: t.alsmoet}}    title={`😰 ${t.alsmoet}`}><span className="bb-seg-label">😰 {t.alsmoet}</span></div>}
+                    {t.nooit      > 0 && <div className="bb-seg bb-seg--nooit"      style={{flexGrow: t.nooit}}      title={`🙅 ${t.nooit}`}><span className="bb-seg-label">🙅 {t.nooit}</span></div>}
+                    {t.growth     > 0 && <div className="bb-seg bb-seg--growth"     style={{flexGrow: t.growth}}     title={`🌱 ${t.growth}`}><span className="bb-seg-label">🌱 {t.growth}</span></div>}
+                    {t.outgrown   > 0 && <div className="bb-seg bb-seg--outgrown"   style={{flexGrow: t.outgrown}}   title={`🍂 ${t.outgrown}`}><span className="bb-seg-label">🍂 {t.outgrown}</span></div>}
+                  </div>
+                )}
               </div>
               <div className="score">
-                <b>{bigVal}</b>
-                <span className="unit">{bigLbl}</span>
-                <span className="alt">
-                  <b>{altVal}</b> {altLbl}
-                </span>
+                <b>{t.willen}</b>
+                <span className="unit">willen</span>
+                <span className="alt"><b>{t.kunnen}</b> kunnen</span>
               </div>
             </div>
           </div>

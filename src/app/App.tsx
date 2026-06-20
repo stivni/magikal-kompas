@@ -1,15 +1,15 @@
 /* Root-component voor de hoofdapp. Centraliseert party-state, route-state en
  * UI-state (popover, share/merge panels). */
 
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import type { CountryCode, PartyState, SortKey } from "../shared/types"
 import { EMPTY_PARTY, importFromHash, loadParty, saveParty } from "./partyStore"
 import type { SharePayload } from "./partyStore"
 import { useHashRoute } from "./useHashRoute"
-import { AppBar } from "./chrome/AppBar"
-import { Rail } from "./chrome/Rail"
+import { Chrome } from "./chrome/Chrome"
 import { Parken } from "./views/Parken"
 import { Volgorde } from "./views/Volgorde"
+import { Deelnemers } from "./views/Deelnemers"
 import { SharePanel } from "./party/SharePanel"
 import { MergePanel } from "./party/MergePanel"
 
@@ -23,19 +23,28 @@ export function App() {
   const [countryFilter, setCountryFilter] = useState<Set<CountryCode>>(new Set())
   const [searchQuery, setSearchQuery] = useState("")
   const [openPop, setOpenPop] = useState<"sort" | "country" | "parks" | null>(null)
-  const [railOpen, setRailOpen] = useState(false)
-  const [settingsOpen, setSettingsOpen] = useState(false)
   const [shareOpen, setShareOpen] = useState(false)
   const [mergeIncoming, setMergeIncoming] = useState<SharePayload | null>(null)
+  const [pendingExpand, setPendingExpand] = useState<string | null>(null)
 
   function setParty(p: PartyState) {
     setPartyState(p)
     saveParty(p)
   }
 
-  function setTab(t: "parken" | "volgorde") {
+  function setTab(t: "parken" | "volgorde" | "deelnemers") {
     setRoute({ tab: t, park: t === "volgorde" ? selectedPark : null })
     setOpenPop(null)
+  }
+
+  // Pill = toggle: vanuit een taak naar deelnemers, vanuit deelnemers terug
+  // naar de laatste taak. Zo onderbreekt setup je flow niet.
+  const lastTaskTab = useRef<"parken" | "volgorde">("parken")
+  useEffect(() => {
+    if (tab === "parken" || tab === "volgorde") lastTaskTab.current = tab
+  }, [tab])
+  function togglePill() {
+    setTab(tab === "deelnemers" ? lastTaskTab.current : "deelnemers")
   }
 
   function setSelectedPark(p: string) {
@@ -54,15 +63,11 @@ export function App() {
       const next: PartyState = {
         ...party,
         people: party.people.slice(),
-        typePref: { ...party.typePref },
-        propPref: { ...party.propPref },
-        forceOv: { ...party.forceOv },
+        memberPrefs: { ...party.memberPrefs },
       }
       incoming.people.forEach((p) => {
-        next.people.push({ ...p })
-        if (incoming.typePref[p.name]) next.typePref[p.name] = incoming.typePref[p.name]!
-        if (incoming.propPref[p.name]) next.propPref[p.name] = incoming.propPref[p.name]!
-        if (incoming.forceOv[p.name]) next.forceOv[p.name] = incoming.forceOv[p.name]!
+        next.people.push({ ...p, favorite: false })
+        if (incoming.memberPrefs[p.name]) next.memberPrefs[p.name] = incoming.memberPrefs[p.name]!
       })
       setParty(next)
     } else {
@@ -70,6 +75,16 @@ export function App() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
+
+  // Empty-state is een route-redirect: zonder leden uitkomen op #/parken of
+  // #/volgorde is een doodlopende straat; stuur naar #/deelnemers waar de
+  // uitnodiging (wizard + cards) staat. Zie ADR-011.
+  useEffect(() => {
+    if (party.people.length === 0 && (tab === "parken" || tab === "volgorde")) {
+      setRoute({ tab: "deelnemers", park: null })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [party.people.length, tab])
 
   // Klik buiten een control → popover sluiten.
   useEffect(() => {
@@ -83,43 +98,23 @@ export function App() {
     return () => document.removeEventListener("click", onDoc)
   }, [openPop])
 
-  function addMemberPrompt() {
-    const raw = prompt("Naam van het nieuwe lid?", "")
-    if (!raw) return
-    const name = raw.trim()
-    if (!name) return
-    if (party.people.some((p) => p.name === name)) {
-      alert("Die naam bestaat al.")
-      return
-    }
-    setParty({
-      ...party,
-      people: [...party.people, { name, h: 120, on: true }],
-    })
+  function goToDeelnemers() {
+    setTab("deelnemers")
+  }
+
+  function editMember(name: string) {
+    setPendingExpand(name)
+    setTab("deelnemers")
   }
 
   return (
     <>
-      <AppBar
-        tab={tab}
-        setTab={setTab}
-        party={party}
-        onOpenRail={() => setRailOpen(true)}
-        onOpenSettings={() => setSettingsOpen(true)}
-      />
       <div className="layout">
-        <Rail
-          open={railOpen}
+        <Chrome
           tab={tab}
-          setTab={(t) => {
-            setTab(t)
-            setRailOpen(false)
-          }}
+          setTab={setTab}
           party={party}
-          setParty={setParty}
-          onClose={() => setRailOpen(false)}
-          onShare={() => setShareOpen(true)}
-          onSettings={() => setSettingsOpen(true)}
+          onTogglePill={togglePill}
           onAbout={() =>
             alert(
               "Magikal Kompas — een persoonlijk hulpje om parken én attracties te kiezen op basis van lengte en voorkeuren. Alles blijft op dit toestel.",
@@ -144,7 +139,7 @@ export function App() {
                 onPickPark={(p) => {
                   setRoute({ tab: "volgorde", park: p })
                 }}
-                onAddMember={addMemberPrompt}
+                onAddMember={goToDeelnemers}
                 openPop={openPop}
                 setOpenPop={setOpenPop}
               />
@@ -161,8 +156,23 @@ export function App() {
                 sortKey={sortKey}
                 selectedPark={selectedPark}
                 setSelectedPark={setSelectedPark}
-                onAddMember={addMemberPrompt}
+                onAddMember={goToDeelnemers}
                 onGoToParken={() => setTab("parken")}
+                onEditMember={editMember}
+              />
+            )}
+          </section>
+          <section
+            id="view-deelnemers"
+            style={{ display: tab === "deelnemers" ? "" : "none" }}
+          >
+            {tab === "deelnemers" && (
+              <Deelnemers
+                party={party}
+                setParty={setParty}
+                onShare={() => setShareOpen(true)}
+                pendingExpand={pendingExpand}
+                onExpandConsumed={() => setPendingExpand(null)}
               />
             )}
           </section>
@@ -233,43 +243,19 @@ export function App() {
         </main>
       </div>
 
-      <div
-        className={"scrim " + (settingsOpen ? "show" : "")}
-        onClick={() => setSettingsOpen(false)}
-      ></div>
-      <aside className={"settings " + (settingsOpen ? "show" : "")}>
-        <h3>Instellingen</h3>
-        <div className="links">
-          <a
-            onClick={() => {
-              setSettingsOpen(false)
-              setShareOpen(true)
-            }}
-            style={{ cursor: "pointer" }}
-          >
-            <svg
-              className="ico-share"
-              viewBox="0 0 24 24"
-              width="15"
-              height="15"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7" />
-              <polyline points="16 6 12 2 8 6" />
-              <line x1="12" y1="2" x2="12" y2="15" />
-            </svg>
-            Deelnemers delen
-          </a>
-          <a href="docs/adr/" target="_blank">
-            <span className="ico">📚</span> Beslissingen (ADR's)
-          </a>
-        </div>
-      </aside>
+      <footer className="thin-foot" aria-label="Belangrijk om te weten">
+        <span><span aria-hidden="true">⚠️</span> Check regels lokaal</span>
+        <span className="sep">·</span>
+        <span><span aria-hidden="true">🔒</span> Blijft op dit toestel</span>
+        <span className="sep">·</span>
+        <span><span aria-hidden="true">🎢</span> Niet gelieerd aan de parken</span>
+        {import.meta.env.DEV && (
+          <>
+            <span className="sep">·</span>
+            <a className="footlink admin-link" href="/admin/">🛠 Admin</a>
+          </>
+        )}
+      </footer>
 
       {shareOpen && (
         <SharePanel party={party} onClose={() => setShareOpen(false)} />

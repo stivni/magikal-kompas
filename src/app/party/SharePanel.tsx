@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import type { Member, PartyState } from "../../shared/types"
 import { ageRange } from "../../shared/scoring"
+import { sortMembers } from "../../shared/helpers"
 import { shareURL } from "../partyStore"
 
 declare global {
@@ -99,7 +100,7 @@ export function SharePanel({
           server. De ontvanger kiest zelf wat te doen als een naam al bestaat.
         </p>
         <div className="sharelist">
-          {party.people.map((p) => (
+          {sortMembers(party.people).map((p) => (
             <div
               key={p.name}
               className="sharerow"
