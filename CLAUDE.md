@@ -1,5 +1,9 @@
 # Project guidelines
 
+## Codeerwerk
+
+- Alle code-wijzigingen (nieuwe functies, refactors, UI-aanpassingen) delegeren aan een Sonnet-subagent via de Agent-tool met `model: "sonnet"`. Niet zelf rechtstreeks bewerken.
+
 ## Architectuurbeslissingen
 
 - Elke design- of architectuurbeslissing moet worden opgenomen in een ADR (Architecture Decision Record). Het is voorlopig toegelaten om bestaande ADRs bij te werken in plaats van altijd een nieuwe aan te maken.

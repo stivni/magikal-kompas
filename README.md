@@ -46,7 +46,7 @@ en commit.
 
 ## Data taggen met een agent
 
-Zie `tools/tag-agent.md`. Het idee: één agent **per park** haalt de echte
+Zie `tools/park-curation.md`. Het idee: één agent **per park** haalt de echte
 attractielijst op, vult type + eigenschappen in **met bron en zekerheid**, en
 schrijft het parkbestand. Jij kijkt alleen de gemarkeerde twijfelgevallen na.
 
@@ -63,7 +63,7 @@ echte schaalprobleem is tag-onderhoud, niet de download.
 
 Alle types/eigenschappen zijn nu `tag_source: auto-v1`, `tag_confidence: unverified`
 — automatisch geraden, nog niet geverifieerd. Eerste klus: per park door de
-tag-agent halen of in admin-modus nalopen.
+park-curation-agent halen of in admin-modus nalopen.
 
 
 ## Leden overzetten tussen toestellen
