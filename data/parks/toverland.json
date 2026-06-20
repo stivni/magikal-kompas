@@ -34,6 +34,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/booster-bike",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Booster_Bike",
+      "manufacturer": "Vekoma",
+      "model": "Motorbike Coaster",
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Booster-Bike.jpg/500px-Booster-Bike.jpg",
         "source_page": "https://en.wikipedia.org/wiki/Booster_Bike",
@@ -112,7 +114,10 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "playground",
-      "props": ["high", "themed"],
+      "props": [
+        "high",
+        "themed"
+      ],
       "intensity": 2,
       "height_intensity": 3,
       "tag_source": "web",
@@ -122,6 +127,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/kletterabenteuer",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Kletterabenteuer",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Kletterabenteuer_Toverland_%282024%29.jpg/500px-Kletterabenteuer_Toverland_%282024%29.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Kletterabenteuer_Toverland_(2024).jpg",
@@ -155,8 +162,13 @@
           "by": "agent:web-v2",
           "changes": {
             "props": {
-              "from": ["high"],
-              "to": ["high", "themed"]
+              "from": [
+                "high"
+              ],
+              "to": [
+                "high",
+                "themed"
+              ]
             },
             "intensity": {
               "from": null,
@@ -204,6 +216,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/fenix",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fenix_(roller_coaster)",
+      "manufacturer": "B&M",
+      "model": "Wing Coaster",
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Fenix-Toverland2.jpg/500px-Fenix-Toverland2.jpg",
         "source_page": "https://en.wikipedia.org/wiki/Fenix_(roller_coaster)",
@@ -304,6 +318,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/pixarus",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Pixarus",
+      "manufacturer": "Gerstlauer",
+      "model": "Sky Fly",
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Toverland_Pixarus_01.jpg/500px-Toverland_Pixarus_01.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/Category:Pixarus",
@@ -381,6 +397,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/troy",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Troy_(roller_coaster)",
+      "manufacturer": "GCI",
+      "model": "Wooden Coaster",
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Troy_FirstDrop.jpg/500px-Troy_FirstDrop.jpg",
         "source_page": "https://en.wikipedia.org/wiki/Troy_(roller_coaster)",
@@ -478,6 +496,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/scorpios",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Scorpios_(schommelschip)",
+      "manufacturer": "Metallbau Emmeln",
+      "model": "Schommelschip",
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Scorpios.jpg/500px-Scorpios.jpg",
         "source_page": "https://nl.wikipedia.org/wiki/Toverland",
@@ -564,6 +584,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/djengu-river",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Djengu_River",
+      "manufacturer": "Hafema",
+      "model": "Rapid River",
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Djengu_River_Toverland.jpg/500px-Djengu_River_Toverland.jpg",
         "source_page": "https://nl.wikipedia.org/wiki/Toverland",
@@ -643,6 +665,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/dwervelwind",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Dwervelwind",
+      "manufacturer": "Mack Rides",
+      "model": "Spinning Coaster",
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Dwervelwind-1.jpg/500px-Dwervelwind-1.jpg",
         "source_page": "https://nl.wikipedia.org/wiki/Toverland",
@@ -730,6 +754,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/coco-bolo",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Coco_Bolo",
+      "manufacturer": "Heege Freizeittechnik",
+      "model": null,
       "admin_preview": {
         "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67244/MagischeVallei_Coco-bolo.webp?v=1776341753",
         "source_page": "https://www.toverland.com/en/rides/coco-bolo",
@@ -805,6 +831,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/djinn",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Djinn_(Toverland)",
+      "manufacturer": "Wooddesign",
+      "model": "Wave Swinger",
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Djinn_Toverland.jpg/500px-Djinn_Toverland.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Djinn_Toverland.jpg",
@@ -890,6 +918,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/villa-fiasko",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Villa_Fiasko",
+      "manufacturer": "Kumbak",
+      "model": "Cakewalk",
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Villa_Fiasco.jpg/500px-Villa_Fiasco.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Villa_Fiasco.jpg",
@@ -949,6 +979,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/expedition-zork",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Expedition_Zork",
+      "manufacturer": "Mack Rides",
+      "model": "Log Flume",
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Expedition_Zork_Toverland_15.jpg/500px-Expedition_Zork_Toverland_15.jpg",
         "source_page": "https://nl.wikipedia.org/wiki/Toverland",
@@ -1040,6 +1072,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/toos-express",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Toos-Express",
+      "manufacturer": "Vekoma",
+      "model": "Junior Coaster",
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Toverland-Boomerang.jpg/500px-Toverland-Boomerang.jpg",
         "source_page": "https://nl.wikipedia.org/wiki/Toos-Express",
@@ -1129,6 +1163,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/drakenslangen",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Drakenslangen",
+      "manufacturer": "Van Egdom",
+      "model": null,
       "admin_preview": {
         "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67264/LandvToos_Drakenslangen.webp?v=1776341772",
         "source_page": "https://www.toverland.com/en/rides/drakenslangen",
@@ -1206,6 +1242,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/alpenrutsche",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Alpenrutsche",
+      "manufacturer": "Zierer",
+      "model": "Rockin' Tug",
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Alpenrutsche_Toverland_%282024%29.jpg/500px-Alpenrutsche_Toverland_%282024%29.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Alpenrutsche_Toverland_(2024).jpg",
@@ -1288,6 +1326,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/theekopjes",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Theekopjes_(Toverland)",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Theekopjes_Toverland_%282024%29.jpg/500px-Theekopjes_Toverland_%282024%29.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Theekopjes_Toverland_(2024).jpg",
@@ -1363,6 +1403,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/paarden-van-ithaka",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Paarden_van_Ithaka",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/50925/Ithaka_Paarden-van-Ithaka.webp?v=1776341855",
         "source_page": "https://www.toverland.com/en/rides/paarden-van-ithaka",
@@ -1427,7 +1469,9 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "drop_tower",
-      "props": ["themed"],
+      "props": [
+        "themed"
+      ],
       "intensity": 2,
       "height_intensity": 2,
       "tag_source": "web",
@@ -1437,6 +1481,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/vliegend-tapijt",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Vliegend_Tapijt_(Toverland)",
+      "manufacturer": "SBF",
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Vliegend_Tapijt_Toverland_%282024%29.jpg/500px-Vliegend_Tapijt_Toverland_%282024%29.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Vliegend_Tapijt_Toverland_(2024).jpg",
@@ -1456,8 +1502,13 @@
               "to": "mini vrije val op een vliegend tapijt"
             },
             "props": {
-              "from": ["high", "themed"],
-              "to": ["themed"]
+              "from": [
+                "high",
+                "themed"
+              ],
+              "to": [
+                "themed"
+              ]
             }
           }
         },
@@ -1466,8 +1517,13 @@
           "by": "agent:web-v2",
           "changes": {
             "props": {
-              "from": ["high"],
-              "to": ["high", "themed"]
+              "from": [
+                "high"
+              ],
+              "to": [
+                "high",
+                "themed"
+              ]
             },
             "intensity": {
               "from": null,
@@ -1519,6 +1575,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/dragonwatch",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Dragonwatch",
+      "manufacturer": "Intamin",
+      "model": "Paratower",
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Toverland_Dragonwatch_05.jpg/500px-Toverland_Dragonwatch_05.jpg",
         "source_page": "https://nl.wikipedia.org/wiki/Toverland",
@@ -1611,6 +1669,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/merlins-quest",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Merlin's_Quest",
+      "manufacturer": "Mack Rides",
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Merlin%27s_Quest_Toverland_2018_02.jpg/500px-Merlin%27s_Quest_Toverland_2018_02.jpg",
         "source_page": "https://nl.wikipedia.org/wiki/Toverland",
@@ -1698,6 +1758,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/wirbelbaum",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Wirbelbaum",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Wirbelbaum_Toverland_%282024%29.jpg/500px-Wirbelbaum_Toverland_%282024%29.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Wirbelbaum_Toverland_(2024).jpg",
@@ -1778,6 +1840,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/garden-tour",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Garden_Tour",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Garden_Tour_Toverland_01.jpg/500px-Garden_Tour_Toverland_01.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/Category:Garden_Tour",
@@ -1852,6 +1916,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/tolly-molly",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Tolly_Molly",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tolly_Molly_Toverland_%282024%29.jpg/500px-Tolly_Molly_Toverland_%282024%29.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Tolly_Molly_Toverland_(2024).jpg",
@@ -1930,6 +1996,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/karussell",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Karussell",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Karussell_Toverland_%282024%29.jpg/500px-Karussell_Toverland_%282024%29.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Karussell_Toverland_(2024).jpg",
@@ -2005,6 +2073,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/jumping-juna",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Jumping_Juna",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Jumping_Juna_Toverland.jpg/500px-Jumping_Juna_Toverland.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Jumping_Juna_Toverland.jpg",
@@ -2072,6 +2142,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/morrelstruckjes",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Morrels_Truckjes",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Toverland_truukjes.jpg/500px-Toverland_truukjes.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Toverland_truukjes.jpg",
@@ -2131,6 +2203,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/klokhuis",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Klokhuis_Toverland_%282024%29.jpg/500px-Klokhuis_Toverland_%282024%29.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Klokhuis_Toverland_(2024).jpg",
@@ -2203,6 +2277,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/magiezijn",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Magiezijn_Toverland_%282024%29.jpg/500px-Magiezijn_Toverland_%282024%29.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Magiezijn_Toverland_(2024).jpg",
@@ -2270,6 +2346,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/sparkys-splash-dock",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67376/Avalon_SparkysSplashDock.webp?v=1776341872",
         "source_page": "https://www.toverland.com/en/rides/sparkys-splash-dock",
@@ -2335,6 +2413,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/little-dragons",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Little_Dragons",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67341/Avalon_LittleDragons.webp?v=1776341822",
         "source_page": "https://www.toverland.com/en/rides/little-dragons",
@@ -2399,6 +2479,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/exploria-magica",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Exploria_Magica",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67291/PortLaguna_ExploriaMagica.webp?v=1776341788",
         "source_page": "https://www.toverland.com/en/rides/exploria-magica",
@@ -2468,6 +2550,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/waterdwarf-alley",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Waterdwarf_Alley",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Waterdwarf_Alley_Toverland_01.jpg/500px-Waterdwarf_Alley_Toverland_01.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/Category:Waterdwarf_Alley",
@@ -2530,6 +2614,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/arthurs-tournament-training",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Arthur's_Tournament_Training",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67166/Avalon_ArthursTournamentTraining.webp?v=1776341745",
         "source_page": "https://www.toverland.com/en/rides/arthurs-tournament-training",
@@ -2592,6 +2678,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/fort-boreas",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Fort_Boreas",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Fort_Boreas_Toverland_%282024%29.jpg/500px-Fort_Boreas_Toverland_%282024%29.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Fort_Boreas_Toverland_(2024).jpg",
@@ -2656,6 +2744,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/waku-waku",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Waku_Waku_(Toverland)",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67563/MagischeVallei_Waku-Waku.webp?v=1776341905",
         "source_page": "https://www.toverland.com/en/rides/waku-waku",
@@ -2721,6 +2811,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/mercado-ludico",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67301/PortLaguna_GameGallery.webp?v=1776341840",
         "source_page": "https://www.toverland.com/en/rides/mercado-ludico",
@@ -2783,6 +2875,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/maximus-wunderball",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Maximus'_Wunderball",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Maximus%27_Wunderball_01.jpg/500px-Maximus%27_Wunderball_01.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/Category:Maximus%27_Wunderball",
@@ -2847,6 +2941,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/villa-toverhoed",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Villa_Toverhoed",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67481/LandvToos_Villa-Toverhoed.webp?v=1776341899",
         "source_page": "https://www.toverland.com/en/rides/villa-toverhoed",
@@ -2916,6 +3012,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/tovertuin",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://toverland.ams3.cdn.digitaloceanspaces.com/transforms/Paralax/_parralax/67447/LandvToos_Tovertuin.webp?v=1776341888",
         "source_page": "https://www.toverland.com/en/rides/tovertuin",
@@ -2978,6 +3076,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/dwaalhof",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Dwaalhof_(Toverland)",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Dwaalhof_Toverland_%282024%29.jpg/500px-Dwaalhof_Toverland_%282024%29.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Dwaalhof_Toverland_(2024).jpg",
@@ -3040,6 +3140,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/sim-sa-la-klim",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Sim_sa_la_Klim",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Sim_sa_la_Klim_Toverland_%282024%29.jpg/500px-Sim_sa_la_Klim_Toverland_%282024%29.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Sim_sa_la_Klim_Toverland_(2024).jpg",
@@ -3105,6 +3207,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/speelkasteel",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Speelkasteel_Toverland_%282024%29.jpg/500px-Speelkasteel_Toverland_%282024%29.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Speelkasteel_Toverland_(2024).jpg",
@@ -3157,7 +3261,10 @@
       "min_age_zelf": null,
       "max_age": null,
       "type": "spinning_coaster",
-      "props": ["spins", "themed"],
+      "props": [
+        "spins",
+        "themed"
+      ],
       "intensity": 3,
       "height_intensity": 2,
       "tag_source": "web",
@@ -3167,6 +3274,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/nieuwe-attractie",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.toverland.com/sites/default/files/styles/large/public/2026-03/Nieuwe-Attractie-Toverland.jpg",
         "source_page": "https://www.toverland.com/en/rides/nieuwe-attractie",
