@@ -34,6 +34,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/the-el-paso-special",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/El_Paso_(Bobbejaanland)",
+      "manufacturer": "Mack",
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/el-paso/The%20El%20Paso%20Special%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/the-el-paso-special",
@@ -107,6 +109,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/sledge-hammer",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Sledge_Hammer_(Bobbejaanland)",
+      "manufacturer": "Huss",
+      "model": "Giant Frisbee",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/sledge-hammer/Sledge%20Hammer%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/sledge-hammer",
@@ -188,6 +192,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/fury",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Fury_(Bobbejaanland)",
+      "manufacturer": "Gerstlauer",
+      "model": "Infinity Coaster",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/fury/Fury%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/fury",
@@ -270,6 +276,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/typhoon",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Typhoon_(Bobbejaanland)",
+      "manufacturer": "Gerstlauer",
+      "model": "Euro-Fighter",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/typhoon/Typhoon%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/typhoon",
@@ -330,6 +338,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/el-rio",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/El_Rio_(Bobbejaanland)",
+      "manufacturer": "Hafema",
+      "model": "Rapid River",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/el-rio/El-Rio-%20Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/el-rio",
@@ -390,6 +400,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/bob-express",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Bob_Express",
+      "manufacturer": "Mack",
+      "model": "Powered Coaster",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/bob-express/Bob-Express-%20Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/bob-express",
@@ -451,6 +463,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/naga-bay",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Naga_Bay",
+      "manufacturer": "Maurer",
+      "model": "SC 3000",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/naga-bay/Naga%20Bay%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/naga-bay",
@@ -507,6 +521,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/orbiter",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/orbiter/Orbiter%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/orbiter",
@@ -575,6 +591,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/speedy-bob",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Speedy_Bob",
+      "manufacturer": "Mack",
+      "model": "Wilde Maus",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/speedy-bob/Speedy-Bob-Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/speedy-bob",
@@ -638,6 +656,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/dreamcatcher",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Dreamcatcher_(Bobbejaanland)",
+      "manufacturer": "Vekoma",
+      "model": "Swinging Turns",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/the-dreamcatcher/Dreamcatcher-Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/dreamcatcher",
@@ -694,6 +714,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/balloon-race",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/balloon-race/Balloon-Race-%20Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/balloon-race",
@@ -754,6 +776,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/mini-rad",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/mini-rad/Mini-Rad-%20Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/mini-rad",
@@ -810,6 +834,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/old-carrousel",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/old-carrousel/Old%20Carrousel%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/old-carrousel",
@@ -870,6 +896,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/dubbeldek-carrousel",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/dubbeldek-carrousel/Dubbeldek-Carrousel-%20Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/dubbeldek-carrousel",
@@ -917,6 +945,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/mini-trein",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/mini-trein/Mini%20Trein%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/mini-trein",
@@ -973,6 +1003,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/glijbaan",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/glijbaan/Glijbaan-%20Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/glijbaan",
@@ -1027,6 +1059,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/big-bang",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Big_Bang_(Bobbejaanland)",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/big-bang/Big-Bang-Attracties-Bobbejaanland-2.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/big-bang",
@@ -1086,6 +1120,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/terra-magma",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Terra_Magma",
+      "manufacturer": "Intamin",
+      "model": "Log Flume",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/terra-magma/Terra%20Magma.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/terra-magma",
@@ -1150,6 +1186,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/wild-water-slide",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Wild_Water_Slide",
+      "manufacturer": "Intamin",
+      "model": "Log Flume",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/wildwaterbaan/Wild%20Water%20Slide%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/wild-water-slide",
@@ -1208,6 +1246,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/aztek-express",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Aztek_Express",
+      "manufacturer": "Mack",
+      "model": "Music Express",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/aztek-express/Aztek%20Express%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/aztek-express",
@@ -1262,6 +1302,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/kettingmolen",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Kettingmolen",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/kettingmolen/Kettingmolen-%20Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/kettingmolen",
@@ -1325,6 +1367,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/revolution",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Revolution_(Bobbejaanland)",
+      "manufacturer": "Vekoma",
+      "model": "Illusion",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/revolution/Revolution_800_600.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/revolution",
@@ -1385,6 +1429,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/king-kong",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/King_Kong_(Bobbejaanland)",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/king-kong/King-Kong-%20Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/king-kong",
@@ -1453,6 +1499,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/oki-doki",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Oki_Doki",
+      "manufacturer": "Vekoma",
+      "model": "Junior Coaster",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/oki-doki/Oki-Doki-%20Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/oki-doki",
@@ -1509,6 +1557,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/banana-battle",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Banana_Battle",
+      "manufacturer": "Preston & Barbieri",
+      "model": "Splash Battle",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/banana-battle/Banana%20Battle%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/banana-battle",
@@ -1565,6 +1615,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/rode-baron",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/rode-baron/Rode-Baron-%20Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/rode-baron",
@@ -1633,6 +1685,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/flying-orca",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/flying-orca/Flying%20Orca%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/flying-orca",
@@ -1705,6 +1759,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/horse-pedalo",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/horse-pedalo/Horse%20Pedalo%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/horse-pedalo",
@@ -1761,6 +1817,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/reuzenrad",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/reuzenrad/Reuzenrad%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/reuzenrad",
@@ -1825,6 +1883,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/pony-ride",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/ponyride/Pony%20Ride%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/pony-ride",
@@ -1877,6 +1937,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/convoy-trucks",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/convoy-trucks/Convoy-Trucks-%20Attracties-Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/convoy-trucks",
@@ -1933,6 +1995,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/locomotion",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/locomotion/Locomotion-%20Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/locomotion",
@@ -1993,6 +2057,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/glijbaan-kinderland",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/glijbaan-kinderland/Glijbaan%20Kinderland.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/glijbaan-kinderland",
@@ -2049,6 +2115,8 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/bootvaart",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/bootvaart/Bootvaart%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/bootvaart",
