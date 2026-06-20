@@ -30,6 +30,9 @@ Routes:
   gerankt).
 - `#/wat-eerst/<slug>` — tab "Wat eerst?" met expliciet gekozen park. Slug =
   lowercase, accenten gestript (NFD), niet-alfanumerieke runs als `-`.
+- `#/deelnemers` — beheer-pagina voor het gezelschap (huishouden + gasten).
+  Bereikbaar via de pill in rail/topbar en als redirect-doel voor een lege
+  party (zie [ADR-011](011-leeg-gezelschap-voor-nieuwe-gebruiker.md)).
 
 Bij elke tab- of park-wissel doet de app `history.replaceState` met de
 bijhorende route. Een `hashchange`-luisteraar reageert op browser-back/forward.

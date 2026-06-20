@@ -14,7 +14,7 @@ tenzij anders vermeld.
 | [002](002-toegankelijkheid-toestanden.md) | Toegankelijkheid in vier toestanden | Attractiemodel |
 | [003](003-type-en-eigenschappen.md) | Twee assen: bewegingstype en eigenschappen | Attractiemodel |
 | [004](004-eigenschappen-afgeleid.md) | Eigenschappen primair afgeleid uit het type | Attractiemodel |
-| [005](005-voorkeuren-per-lid.md) | Voorkeuren per lid, met harde uitsluiter | Voorkeuren & ranking |
+| [005](005-voorkeuren-per-lid.md) | Voorkeuren per lid, met harde uitsluiter *(Superseded)* | Voorkeuren & ranking |
 | [006](006-ranken-op-plezier.md) | Parken ranken op plezier, twee lenzen | Voorkeuren & ranking |
 | [007](007-drie-datalagen.md) | Drie datalagen met eigen eigenaarschap | Data, rollen & opslag |
 | [008](008-opslag-per-toestel.md) | Gezelschaps-data per toestel, deelbaar zonder server | Data, rollen & opslag |
@@ -33,3 +33,6 @@ tenzij anders vermeld.
 | [021](021-begeleiding-haalbaarheid.md) | Begeleiding-haalbaarheid als eigen signaal naast plezier *(Proposed)* | Voorkeuren & ranking |
 | [022](022-samen-en-splits-transparantie.md) | Samen en splits: transparantie zonder subgroepen-modeling *(Proposed)* | Voorkeuren & ranking |
 | [023](023-permanent-gesloten-attracties.md) | Permanent gesloten attracties markeren in plaats van schrappen | Data, rollen & opslag |
+| [024](024-voorkeur-model-gedragsstaten.md) | Voorkeur-model: gedragsstaten als afleiding van intensiteits-assen | Voorkeuren & ranking |
+| [025](025-kunnen-willen-moeten-zullen.md) | Park-aggregaten als vier werkwoorden: KUNNEN · WILLEN · MOETEN · ZULLEN *(Proposed)* | Voorkeuren & ranking |
+| [026](026-splits-planning.md) | Splits-planning: subgroepen als eerste-klas-burger *(Proposed)* | Voorkeuren & ranking |

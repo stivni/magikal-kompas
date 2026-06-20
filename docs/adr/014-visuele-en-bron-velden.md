@@ -38,8 +38,9 @@ tekst als ze ontbreken.
   uitgerekt logo in een vierkant chipje lelijk wordt en omgekeerd; één bron
   voor beide gebruiken dwingt een compromis af.
 - **`ride.park_url`** (attractieniveau): directe link naar de officiële
-  attractiepagina op de parksite. Apart van `source_url` — dat veld blijft
-  *bron van de tagging* (kan ook RCDB of een fanwiki zijn). `park_url` is
+  attractiepagina op de parksite. Apart van `sources` — dat veld blijft
+  *bron(nen) van de tagging* (kan ook RCDB of een fanwiki zijn) en is sinds
+  de schemarefresh een lijst (`string[]`) ipv één string. `park_url` is
   bedoeld voor de "meer info"-link in de UI.
 - **`ride.image`** (attractieniveau): object met expliciete licentievelden:
 
@@ -72,7 +73,7 @@ attractie een optioneel **`admin_preview`**-object:
 
 Doel: de admin helpen herkennen welke attractie het is wanneer er nog geen
 CC-foto gevonden werd. De tag-agent
-([tools/tag-agent-full.md](../../tools/tag-agent-full.md)) stelt hiervoor
+([tools/park-curation.md](../../tools/park-curation.md)) stelt hiervoor
 een hero-foto van de parksite voor (of een Google-Afbeeldingen-treffer),
 **zonder** licentiecheck. Dat botst niet met de "alleen CC"-regel hierboven,
 omdat dit veld onder twee strikte voorwaarden valt:
@@ -127,8 +128,8 @@ Fasering:
 1. **Nu**: `park.logo` en `park.icon` invullen voor de bestaande parken;
    letterblokje-fallback en disclaimer-footer in de UI.
 2. **Nu, gratis meegenomen**: `park_url` opnemen in het schema; de tag-agent
-   ([tools/tag-agent.md](../../tools/tag-agent.md)) vult dit voortaan mee in
-   waar mogelijk, naast `source_url`.
+   ([tools/park-curation.md](../../tools/park-curation.md)) vult dit voortaan mee in
+   waar mogelijk, naast `sources`.
 3. **Later**: `image` in een aparte tag-agent-ronde, gericht op Wikimedia
    Commons en andere CC-bronnen. Geen treffer → veld blijft leeg.
 
@@ -142,9 +143,9 @@ Fasering:
   [ADR-009](009-statische-app-data-los.md)): versioneerbaar, geen runtime-fetch
   naar externe hosts nodig, geen broken links als een externe bron verdwijnt.
   Prijs: de repo wordt groter naarmate foto's worden toegevoegd.
-- `source_url` (bron van de tagging) en `park_url` (officiële attractiepagina)
-  bestaan naast elkaar met verschillende betekenis. De tag-agent moet dat
-  onderscheid maken.
+- `sources` (bron(nen) van de tagging, lijst) en `park_url` (officiële
+  attractiepagina, één string) bestaan naast elkaar met verschillende
+  betekenis. De tag-agent moet dat onderscheid maken.
 - Toekomst / open vragen:
   - Wanneer de fotomap groot wordt: lui-laden per park, gelijklopend met de
     uitweg die [ADR-009](009-statische-app-data-los.md) al schetst.
@@ -160,8 +161,8 @@ Fasering:
   repo-omvang, maar breekt zodra de bron verdwijnt of zijn pad wijzigt, en
   vereist runtime-fetch — wat [ADR-009](009-statische-app-data-los.md) bewust
   vermijdt voor de kern. Niet gekozen.
-- **`source_url` hergebruiken voor de "meer info"-link.** Rekt de semantiek
-  op: `source_url` mag vandaag een fanwiki of RCDB zijn, geen officiële
+- **`sources` hergebruiken voor de "meer info"-link.** Rekt de semantiek
+  op: een bron mag vandaag een fanwiki of RCDB zijn, geen officiële
   parkpagina. Niet gekozen — `park_url` apart houden is duidelijker en
   goedkoper dan later ontwarren.
 - **Logo's en foto's nu samen aanpakken.** Logo's zijn klein en snel; CC-foto's

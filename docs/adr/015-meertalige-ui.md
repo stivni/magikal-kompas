@@ -17,7 +17,7 @@ Drie dingen kleuren waarom dit nu speelt:
 - **Publiek dat overschrijdt.** De parken in [data/parks](../../data/parks) zijn
   BE/NL/Frans/Duits van origine. Een gezelschap met een Franstalig of
   Engelstalig lid is realistisch; vandaag vallen die terug op vertalen-in-het-hoofd.
-- **Bronnen die meertalig zijn.** De tag-agent ([tools/tag-agent.md](../../tools/tag-agent.md))
+- **Bronnen die meertalig zijn.** De tag-agent ([tools/park-curation.md](../../tools/park-curation.md))
   put uit parksites (vaak meertalig), RCDB (EN), Wikipedia/Wikimedia (per taal).
   Stabiele sleutels in de data maken dat agentwerk goedkoper: één keer taggen,
   meerdere labels uit één map renderen.
@@ -116,7 +116,7 @@ zonder pagina-reload.
    uit bestaande hardcoded strings). Eén taal, maar de structuur staat.
 2. **Nu, in dezelfde slag**: eigenschapssleutels hernoemen in de data en in
    [data/schema.md](../../data/schema.md). De tag-agent-prompt
-   ([tools/tag-agent.md](../../tools/tag-agent.md)) krijgt dezelfde
+   ([tools/park-curation.md](../../tools/park-curation.md)) krijgt dezelfde
    sleutel-update: NL-prompt-tekst blijft (operator-taal), maar de
    voorbeeld-output en de toegelaten property-waardes worden EN-keys.
    Goedkoper bij 9 parken dan bij 30.
@@ -129,13 +129,13 @@ zonder pagina-reload.
 - **Uitgevoerd op 2026-06-14**: prop-keys in alle `data/parks/*.json` en in
   `src/shared/vocab.ts` (`PROPS`, `PNL`, `PEMO`) en `src/shared/types.ts`
   (`PropKey`) zijn van NL naar EN gemigreerd; `data/schema.md` en
-  `tools/tag-agent.md` tonen voortaan de EN-keys. UI-labels blijven NL via
+  `tools/park-curation.md` tonen voortaan de EN-keys. UI-labels blijven NL via
   `PNL`/`i18n/nl.json`. De i18n-skelet-fase (`t()`-helper, `nl.json`) was al
   eerder uitgevoerd.
 - De data-bestanden krijgen een eenmalige sleutel-hernoeming. Niet
   achterwaarts-compatibel: een oude `"hoog"` in een park-JSON werkt niet meer.
   Dat is bewust — een shim levensondersteuning is duurder dan migreren.
-- De tag-agent ([tools/tag-agent.md](../../tools/tag-agent.md)) levert
+- De tag-agent ([tools/park-curation.md](../../tools/park-curation.md)) levert
   voortaan stabiele Engelse property-keys. De prompt blijft NL (dat is
   operator-taal), de output-keys niet.
 - De UI moet door een `t()`-laag. Eerste keer iets meer code; daarna is een

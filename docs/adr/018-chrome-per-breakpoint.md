@@ -17,7 +17,7 @@ zich in een appbar plus een uitschuifbare sheet. Onnodige cognitieve last:
 
 Eén navigatie-oppervlak per breakpoint:
 
-- **Desktop (≥ 861px)**: een **sidebar** links. Bevat alles wat geen
+- **Desktop (≥ 961px)**: een **sidebar** links. Bevat alles wat geen
   inhoud is — brand bovenaan, mode-switcher, gezelschap (met telbadge),
   deel-knop en "goed om te weten" in het midden, en een **sticky voet**
   onderaan met taalkiezer + instellingen/over. De voet kleeft aan de
@@ -25,27 +25,31 @@ Eén navigatie-oppervlak per breakpoint:
   taalkiezer altijd bereikbaar blijft, ook bij een lang gezelschap.
   Conventie: taalkiezers staan op de meeste sites onderaan; volg dat
   patroon. De appbar is verborgen (`display:none`).
-- **Mobiel (≤ 860px)**: een **appbar** bovenaan. Bevat brand, mode-switcher,
+- **Mobiel (≤ 960px)**: een **appbar** bovenaan. Bevat brand, mode-switcher,
   taalkiezer, gezelschap-pill en het tandwiel. De sidebar wordt verborgen en
   schuift op vraag open als full-screen sheet (via de gezelschap-pill of het
   tandwiel). De sheet hergebruikt dezelfde rail-DOM.
 
-Brand en taalkiezer worden in beide breakpoints getoond, maar elk in
-**precies één** container — niet beide tegelijk. Concreet: twee DOM-kopieën van
-de taalkiezer (`#lang-pill-mob` compact in de appbar, `#lang-pill-desk` met
-volledige taalnamen in de rail-voet), gesynchroniseerd via een korte
-`onchange`-handler. Eén kopie is zichtbaar per breakpoint; de andere zit op
-`display:none`.
+Eén React-component (`Chrome.tsx`) verzorgt beide breakpoints. Een
+`useIsMobile()`-hook beslist per render welk DOM-fragment getoond wordt
+(appbar of sidebar); React mount/unmount alleen wat nodig is bij een
+window-resize. Geen verborgen DOM-kopieën meer en geen `onchange`-sync — state
+en handlers leven in één component.
+
+De gezelschap-pill (`PartyPill`) krijgt een `variant`-prop (`"rail"` of
+`"appbar"`) die alleen layout-details regelt: op desktop een rij met icon,
+avatars (max 6) en chev; op mobiel een compactere variant met icon, avatars
+(max 3) en geen chev. Beide linken naar `#/deelnemers` (zie
+[ADR-017](017-hash-routing-voor-tab-en-park.md)). Dat illustreert het
+"chrome ≡ chrome"-principe: één rol, één component, twee vormen afhankelijk
+van de beschikbare ruimte.
 
 ## Consequences
 
 - Geen "verdubbelde" chrome meer: één blik leert waar dingen zitten.
-- De rail-DOM dient zowel als desktop-sidebar als mobiele sheet. Dat houdt
-  state en interacties identiek tussen breakpoints.
-- Twee lichte DOM-kopieën (brand-blok en taalkiezer) blijven nodig zolang
-  CSS-only oplossingen (zoals `display:contents` + grid-reordering) niet
-  toelaten om hetzelfde element op twee plekken te hangen. Een
-  `onchange`-sync van enkele regels is goedkoper dan een DOM-move-on-resize.
+- Eén component, één bron-van-waarheid voor chrome-state. Bij een
+  window-resize switcht React netjes tussen de twee DOM-fragmenten zonder
+  parallelle DOM-kopieën te onderhouden.
 - Het tandwiel-popover blijft bestaan op mobiel als korte route naar
   "Deelnemers delen" en de ADR-link. Op desktop wordt het popover bereikt
   via de "⚙ Instellingen"-knop in de rail-voet — niet via een eigen knop in

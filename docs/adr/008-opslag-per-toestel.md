@@ -23,6 +23,13 @@ hun naam, lengte, voorkeuren en uitzonderingen — worden meegestuurd. De ontvan
 ontvanger per botsende naam een keuze (behouden, overschrijven, of toevoegen onder een
 nieuwe naam zoals "Emma 2").
 
+Alle lokale leden zijn datamodel-gewijs gelijkwaardig: er is geen "mijn huishouden vs.
+gasten"-onderscheid in `Member`. Iedere deelnemer kan handmatig als **favoriet**
+worden gemarkeerd (`favorite: true`, default `false`); de deelnemers-pagina geeft
+favorieten een eigen sectie bovenaan zolang er minstens één is en plaatst alle andere
+leden in "Andere deelnemers" eronder. Favorieten zijn een vrije curatie-laag — niet
+gebonden aan herkomst (eigen wizard of merge) of aan wie vandaag mee gaat (`on`).
+
 ## Consequences
 
 - Geen server betekent geen centrale opslag van kinderdata en dus geen bijbehorende
@@ -37,6 +44,13 @@ nieuwe naam zoals "Emma 2").
 - Merge aan ontvangerkant met conflict-prompt: bestaand gezelschap op het ontvangende
   toestel wordt nooit zomaar overschreven. Eenmalig instellen op oma's tablet (één
   kleinkind) en later iemand anders toevoegen blijft mogelijk zonder dataverlies.
+- Geïmporteerde profielen blijven bewaard voor een volgende gelegenheid; ze starten als
+  gewone (niet-favoriet) deelnemers. Wie er vandaag niet bij is, blijft in de lijst maar
+  zonder vink, en de pill in de chrome toont alleen de actieve leden — historische
+  profielen vullen het gezichtsveld dus niet onnodig.
+- De ster (`favorite`) is een vrije UI-laag: niets in de scoring of share-flow hangt
+  ervan af. Een gebruiker kan iedereen ster geven, niemand, of alleen wie hij vaak
+  meeneemt — het is puur curatie.
 - QR leunt op een client-side bibliotheek; zonder internet rendert de QR niet, maar de
   link blijft werken.
 - Toekomst / open vragen: accounts met synchronisatie over toestellen worden bewust

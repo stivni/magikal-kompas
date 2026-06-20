@@ -1,12 +1,26 @@
 # 23. Permanent gesloten attracties markeren in plaats van schrappen
 
-- Status: Accepted
+- Status: Withdrawn
 - Groep: Data, rollen & opslag
+
+> **Withdrawn (2026-06-17)** — eerst geprobeerd zoals hieronder beschreven
+> (markeren met `closed`/`closed_year`/`closed_source_url`/`closed_verify`);
+> teruggedraaid op gebruikersfeedback. Gesloten attracties horen niet meer
+> in actieve data, en de extra velden + UI-staart voegden te veel ruis toe
+> voor één-op-één-keer-per-jaar-wissels. De sluitdatum bewaren we voorlopig
+> niet in JSON maar wel in de commit-msg waarin de attractie verwijderd
+> wordt; herkenbaarheid in oudere bezoekverslagen vangen we op door git-log
+> ipv een vlag op het levende bestand.
+>
+> De tag-agent stelt verwijderingen voortaan voor als aparte sectie van
+> zijn output (rapport, niet als JSON-flag); admin verwijdert.
+>
+> Hieronder blijft de oorspronkelijke beslissing staan als historisch spoor.
 
 ## Context
 
 Parken vernieuwen voortdurend: een attractie verdwijnt, een nieuwe komt erbij.
-De tag-agent ([tools/tag-agent-full.md](../../tools/tag-agent-full.md)) merkt
+De tag-agent ([tools/park-curation.md](../../tools/park-curation.md)) merkt
 zulke verschuivingen op door de bestaande JSON te kruisen met de actuele
 parksite. Twee opties drongen zich op voor "deze attractie staat niet meer
 op de parksite":

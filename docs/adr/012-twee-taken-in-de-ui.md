@@ -21,6 +21,13 @@ We structureren de hoofdnavigatie rond exact die twee taken:
 2. **Wat eerst?** — voor één gekozen park: alle attracties gerankt op totale
    groeps-joy, hoogste eerst.
 
+Het beheer van het gezelschap zelf — leden toevoegen, lengtes/voorkeuren bewerken,
+gasten opzij zetten — is een *setup-taak* en bewust géén derde nav-tab. Het leeft op
+een aparte route `#/deelnemers` (zie [ADR-017](017-hash-routing-voor-tab-en-park.md))
+bereikbaar via een pill in de chrome. De pill toont de telling (bv. "4/6 vandaag mee")
+zodat de gebruiker zonder klik weet waar hij staat; klikken brengt hem naar de
+beheer-pagina met de volle viewport-breedte.
+
 Het park in tab 2 wordt op twee manieren gekozen: parkpicker bovenaan (default =
 het top-gerankte actieve park), of door in tab 1 op een parkkaart te klikken —
 de kaart heeft geen eigen detailweergave; de klik leidt rechtstreeks naar tab 2

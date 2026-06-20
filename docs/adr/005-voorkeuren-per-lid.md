@@ -1,7 +1,16 @@
 # 5. Voorkeuren per lid, op beide assen, met harde uitsluiter
 
-- Status: Accepted
+- Status: **Superseded** door [ADR-024](024-voorkeur-model-gedragsstaten.md)
 - Groep: Voorkeuren & ranking
+
+> **Achterhaald.** Het model van "dol op / oké / nee" op types en "prima /
+> liever / nooit" op props bleek bij wizard-ontwerp drie scheuren te hebben:
+> "te eng" en "te saai" lopen door elkaar, binary props zijn te grof (K3-
+> rollercoaster vs Nachtwachtflyer beide `high`), en de sociale dimensie
+> ontbreekt ("mee voor de groep" ≠ "alleen om te begeleiden" ≠ "ik haak af").
+> [ADR-024](024-voorkeur-model-gedragsstaten.md) vervangt dit met vijf
+> gedragsstaten als afleiding van intensiteits-assen + categorie-interesses.
+> Onderstaande blijft staan als leesbaar pad-naar-deze-keuze.
 
 ## Context
 
