@@ -3,12 +3,12 @@
  * Foto-modal heeft één pane met thumb-strip links en klik-om-focus rechts. */
 
 import { useEffect, useMemo, useRef, useState } from "react"
-import type { ClosedFlag, PhotoCandidate, PropKey, Ride, TypeKey } from "../shared/types"
-import { PEMO, PNL, PROPS, TEMO, TNL, TYPES } from "../shared/vocab"
+import type { ActivityEntry, PhotoCandidate, PropKey, Ride, Theming, TypeKey } from "../shared/types"
+import { PEMO, PNL, PROPS, TEMO, TNL, TYPES, THEMING_LEVELS } from "../shared/vocab"
 import { RideThumb } from "../shared/components/RideThumb"
 import { Flag } from "../shared/components/Flag"
 import { freeText } from "../shared/helpers"
-import { GENUINE_MAX, isClosed } from "../shared/scoring"
+import { GENUINE_MAX } from "../shared/scoring"
 
 /** Veilige check op `admin_preview.note` — moet letterlijk met
  * `"rechten-niet-gecheckt"` beginnen (zie ADR-014). */
@@ -21,6 +21,18 @@ function adminPreviewURL(ride: Ride): string | null {
   return ap.url
 }
 
+/** Eén van drie review-niveaus voor een ride, afgeleid uit tag_source en
+ * tag_confidence. Drijft de gekleurde linker-rand en de status-badge in de
+ * collapsed-rij; bedoeld zodat de admin bij scrollen direct ziet welke
+ * rijen aandacht vragen. */
+type ReviewLevel = "ok" | "review" | "low"
+function reviewLevel(ride: Ride): ReviewLevel {
+  if (ride.tag_confidence === "low") return "low"
+  if (ride.tag_source === "admin" && ride.tag_confidence === "verified") return "ok"
+  if (ride.tag_source === "web" || ride.tag_source === "auto-v1") return "review"
+  return "review"
+}
+
 interface Props {
   parkName: string
   ride: Ride
@@ -30,13 +42,16 @@ interface Props {
   onSetType: (t: TypeKey) => void
   onToggleProp: (pr: PropKey) => void
   onSetField: (field: RideFieldPatch) => void
+  onVerify: () => void
   onRefresh: (extra: string) => void
   onPick: (c: PhotoCandidate, opts?: { focusX?: number; focusY?: number }) => void
 }
 
 /** Mogelijke veld-mutaties die de admin uitvoert op een ride. Het type
  * houdt expliciet bij welk veld bewerkt wordt — de parent past het toe en
- * triggert een save. */
+ * triggert een save. Voor `sources` geeft de UI de volledige nieuwe lijst
+ * door (add/edit/remove zijn alle drie hetzelfde patch-type), zodat
+ * `applyFieldPatch` simpel blijft. */
 export type RideFieldPatch =
   | { kind: "beg"; value: number }
   | { kind: "zelf"; value: number }
@@ -45,12 +60,11 @@ export type RideFieldPatch =
   | { kind: "min_age_zelf"; value: number | null }
   | { kind: "max_age"; value: number | null }
   | { kind: "oms"; value: string }
-  | { kind: "source_url"; value: string }
+  | { kind: "sources"; value: string[] }
   | { kind: "park_url"; value: string }
-  | { kind: "closed"; value: ClosedFlag | undefined }
-  | { kind: "closed_year"; value: number | null }
-  | { kind: "closed_source_url"; value: string }
-  | { kind: "closed_verify"; value: boolean }
+  | { kind: "intensity"; value: number | null }
+  | { kind: "height_intensity"; value: number | null }
+  | { kind: "theming"; value: Theming | null }
 
 export function RideBlock({
   parkName,
@@ -61,6 +75,7 @@ export function RideBlock({
   onSetType,
   onToggleProp,
   onSetField,
+  onVerify,
   onRefresh,
   onPick,
 }: Props) {
@@ -117,15 +132,13 @@ export function RideBlock({
   }, [photoModalOpen])
 
   const previewUrl = adminPreviewURL(ride)
-  const closed = isClosed(ride)
-  const closedCls = closed ? " ride-closed" : ""
+  const level = reviewLevel(ride)
+  const levelCls = " rb-level-" + level
 
   // --- COLLAPSED-STATE ----------------------------------------------------
   if (!open) {
-    // Thumb + naam-rij is in z'n geheel klikbaar — opent de ride (zoals de
-    // edit-knop). De knop blijft staan als visueel anker en focus-target.
     return (
-      <div className={"curate-block collapsed" + closedCls}>
+      <div className={"curate-block collapsed" + levelCls}>
         <div className="cb-row">
           <div
             className="cb-clickable-area"
@@ -140,30 +153,53 @@ export function RideBlock({
             }}
             title="Bewerken"
           >
-            <RideThumb ride={ride} previewSrc={previewUrl} />
+            <span className={"cb-thumb-wrap" + (!ride.image?.url ? " needs-photo" : "")}>
+              <RideThumb ride={ride} previewSrc={previewUrl} />
+              {!ride.image?.url ? (
+                <span
+                  className="cb-needs-photo-badge"
+                  title="Nog geen CC-foto gekozen"
+                  aria-label="Nog geen CC-foto gekozen"
+                >
+                  !
+                </span>
+              ) : null}
+            </span>
             <div className="cb-info">
               <div className="cb-title">
-                <span className={closed ? "ride-name-closed" : ""}>{ride.att}</span>
+                <span>{ride.att}</span>
                 <Flag park={parkName} />
-                <ClosedBadge ride={ride} />
-                {previewUrl ? <PreviewBadge /> : null}
+                <ReviewBadge level={level} />
               </div>
               <div className="cb-type">
                 <span className="tchip">
                   {TEMO[ty] || ""} {TNL[ty] || ty}
                 </span>
               </div>
+              <ProvenanceLine activity={ride.activity} />
             </div>
           </div>
+          {level !== "ok" ? (
+            <button
+              className="verifybtn"
+              onClick={(e) => { e.stopPropagation(); onVerify() }}
+              aria-label="Markeer als geverifieerd"
+              title="Markeer als geverifieerd — niets wijzigen, alleen acknowledgen"
+            >
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </button>
+          ) : null}
           <button
             className="editbtn"
             onClick={onToggleOpen}
-            aria-label="Bewerken"
-            title="Bewerken"
+            aria-label="Openen"
+            aria-expanded="false"
+            title="Openen"
           >
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M12 20h9" />
-              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <polyline points="9 6 15 12 9 18" />
             </svg>
           </button>
         </div>
@@ -174,30 +210,56 @@ export function RideBlock({
   // --- OPEN-STATE ---------------------------------------------------------
   // Nieuwe volgorde: identiteit → categorisatie → toegang → visueel → context.
   return (
-    <div className={"curate-block open" + closedCls}>
+    <div className={"curate-block open" + levelCls}>
       {/* (1) Kaartheader: thumb (klik = foto-modal) + naam + kleine type-chip
               + attributie-regel onder de naam + sluit-knop rechts. */}
       <div className="cb-row open-head">
         <ThumbWithEditOverlay
           ride={ride}
           previewSrc={previewUrl}
+          needsPhoto={!ride.image?.url}
           onClick={() => setPhotoModalOpen(true)}
         />
-        <div className="cb-info">
+        <div
+          className="cb-info cb-info-toggle"
+          onClick={onToggleOpen}
+          role="button"
+          tabIndex={0}
+          aria-expanded="true"
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault()
+              onToggleOpen()
+            }
+          }}
+          title="Klik om te sluiten"
+        >
           <div className="cb-title">
-            <span className={closed ? "ride-name-closed" : ""}>{ride.att}</span>
+            <span>{ride.att}</span>
             <Flag park={parkName} />
             <span className="tchip tchip-sm">
               {TEMO[ty] || ""} {TNL[ty] || ty}
             </span>
-            <ClosedBadge ride={ride} />
-            {previewUrl ? <PreviewBadge /> : null}
+            <ReviewBadge level={level} />
           </div>
           {cur && cur.url ? (
             <div className="cb-meta" title={cur.attribution || ""}>
               {cur.attribution || ""}
               {cur.license ? <> · <span className="lb-lic">{cur.license}</span></> : null}
-              {cur.source_page ? <> · <a href={cur.source_page} target="_blank" rel="noopener">bron</a></> : null}
+              {cur.source_page ? (
+                <>
+                  {" "}
+                  ·{" "}
+                  <a
+                    href={cur.source_page}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    bron
+                  </a>
+                </>
+              ) : null}
             </div>
           ) : null}
         </div>
@@ -205,11 +267,11 @@ export function RideBlock({
           className="editbtn on"
           onClick={onToggleOpen}
           aria-label="Sluiten"
+          aria-expanded="true"
           title="Sluiten"
         >
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9" />
           </svg>
         </button>
       </div>
@@ -240,6 +302,74 @@ export function RideBlock({
             {PEMO[pr]} {PNL[pr]}
           </button>
         ))}
+      </div>
+
+      {/* (3b) Intensiteits-/hoogte-tag + theming (ADR-024) */}
+      <div className="ed-grid intensity-grid">
+        <div className="ed-cell">
+          <span className="ed-cell-lbl">Intensiteit (1-5)</span>
+          <div className="lvl-pick">
+            {[1, 2, 3, 4, 5].map((n) => (
+              <button
+                key={n}
+                type="button"
+                className={"lvl-pick-btn" + (ride.intensity === n ? " on" : "")}
+                onClick={() =>
+                  onSetField({
+                    kind: "intensity",
+                    value: ride.intensity === n ? null : n,
+                  })
+                }
+              >
+                {n}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="ed-cell">
+          <span className="ed-cell-lbl">Hoogte-beleving (1-5)</span>
+          <div className="lvl-pick">
+            {[1, 2, 3, 4, 5].map((n) => (
+              <button
+                key={n}
+                type="button"
+                className={"lvl-pick-btn" + (ride.height_intensity === n ? " on" : "")}
+                onClick={() =>
+                  onSetField({
+                    kind: "height_intensity",
+                    value: ride.height_intensity === n ? null : n,
+                  })
+                }
+              >
+                {n}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="ed-cell">
+          <span className="ed-cell-lbl">Thematisatie</span>
+          <div className="lvl-pick">
+            {THEMING_LEVELS.map((t) => (
+              <button
+                key={t.key}
+                type="button"
+                className={
+                  "lvl-pick-btn theming-btn" +
+                  ((ride.theming ?? "none") === t.key ? " on" : "")
+                }
+                onClick={() =>
+                  onSetField({
+                    kind: "theming",
+                    value: t.key === "none" ? null : t.key,
+                  })
+                }
+                title={t.nl}
+              >
+                {t.emoji === "—" ? "—" : t.emoji}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="ed-sep" />
@@ -339,26 +469,16 @@ export function RideBlock({
 
       <div className="ed-sep" />
 
-      {/* (7) Bronnen — cell-labels op de twee inputs vervangen het section-label. */}
-      <div className="ed-text-grid">
-        <TextField
-          label="source_url (tagging)"
-          value={ride.source_url ?? ""}
-          placeholder="RCDB, fanwiki, …"
-          onCommit={(s) => onSetField({ kind: "source_url", value: s })}
-        />
-        <TextField
-          label="park_url (officiële pagina)"
-          value={ride.park_url ?? ""}
-          placeholder="https://…"
-          onCommit={(s) => onSetField({ kind: "park_url", value: s })}
-        />
-      </div>
+      {/* (7) URLs — park_url (officiële pagina) + sources-lijst (tagging). */}
+      <UrlsEditor
+        parkUrl={ride.park_url ?? ""}
+        sources={ride.sources ?? []}
+        onSetParkUrl={(s) => onSetField({ kind: "park_url", value: s })}
+        onSetSources={(ss) => onSetField({ kind: "sources", value: ss })}
+      />
 
-      <div className="ed-sep" />
-
-      {/* (8) Status — open / gesloten / te verifiëren (ADR-023). */}
-      <ClosedEditor ride={ride} onSetField={onSetField} />
+      {/* (8) Geschiedenis (laatste 3) — default ingeklapt. */}
+      <HistoryBlock activity={ride.activity} />
 
       {photoModalOpen && (
         <PhotoModal
@@ -386,15 +506,17 @@ export function RideBlock({
 function ThumbWithEditOverlay({
   ride,
   previewSrc,
+  needsPhoto,
   onClick,
 }: {
   ride: Ride
   previewSrc?: string | null
+  needsPhoto?: boolean
   onClick: () => void
 }) {
   return (
     <div
-      className="cb-thumb-clickable"
+      className={"cb-thumb-clickable" + (needsPhoto ? " needs-photo" : "")}
       onClick={onClick}
       role="button"
       tabIndex={0}
@@ -404,7 +526,7 @@ function ThumbWithEditOverlay({
           onClick()
         }
       }}
-      title="Klik om de foto te wijzigen"
+      title={needsPhoto ? "Nog geen CC-foto gekozen — klik om er een te kiezen" : "Klik om de foto te wijzigen"}
     >
       <RideThumb ride={ride} previewSrc={previewSrc} />
       <span className="cb-thumb-overlay" aria-hidden="true">
@@ -413,6 +535,11 @@ function ThumbWithEditOverlay({
           <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
         </svg>
       </span>
+      {needsPhoto ? (
+        <span className="cb-needs-photo-badge" title="Nog geen CC-foto gekozen" aria-label="Nog geen CC-foto gekozen">
+          !
+        </span>
+      ) : null}
     </div>
   )
 }
@@ -725,7 +852,7 @@ function PreviewArea({
         <div className="pr-row">
           <span className="lb-lic">{cand.license || ""}</span>
           {cand.source_page && (
-            <a href={cand.source_page} target="_blank" rel="noopener">
+            <a href={cand.source_page} target="_blank" rel="noopener noreferrer">
               bron
             </a>
           )}
@@ -1049,103 +1176,360 @@ function isPicked(
   return false
 }
 
-/** Kleine, opvallende badge die admin waarschuwt: deze thumbnail is een
- * rechten-niet-gechecktE preview, niet voor publicatie (ADR-014). */
-function PreviewBadge() {
+/** Compacte review-status-badge op de collapsed-rij + open-header. Drijft
+ * dezelfde semantiek als de gekleurde linker-rand (rb-level-*). */
+function ReviewBadge({ level }: { level: ReviewLevel }) {
+  if (level === "ok") {
+    return (
+      <span className="review-pill ok" title="admin · verified">
+        ✓ OK
+      </span>
+    )
+  }
+  if (level === "low") {
+    return (
+      <span className="review-pill low" title="tag_confidence: low">
+        ⚠ low-confidence
+      </span>
+    )
+  }
   return (
-    <span
-      className="preview-badge"
-      title="rechten niet gecheckt — alleen voor herkenning in admin"
-    >
-      rechten niet gecheckt — niet publiceren
+    <span className="review-pill review" title="agent-getagd · review nodig">
+      agent · review
     </span>
   )
 }
 
-/** Status-pill voor gesloten of "te verifiëren"-attracties (ADR-023). */
-function ClosedBadge({ ride }: { ride: Ride }) {
-  if (ride.closed === true) {
-    const yr = ride.closed_year ? " · " + ride.closed_year : ""
-    return <span className="closed-pill" title="permanent gesloten">gesloten{yr}</span>
-  }
-  if (ride.closed === "unknown") {
-    return (
-      <span className="closed-pill unknown" title="sluiting nog te verifiëren">
-        te verifiëren
-      </span>
-    )
-  }
-  return null
-}
-
-/** Editor voor de closed-familie: drie-statussen-radio + jaartal + bron.
- * Past `tag_source`/`tag_confidence`-bijwerking niet zelf toe; dat doet de
- * parent in `applyFieldPatch` zoals voor de andere velden. */
-function ClosedEditor({
-  ride,
-  onSetField,
+/** Editor voor `park_url` + `sources[]`. Toont URLs als klikbare links
+ * met edit/verwijder-icoontjes. Geen vrije text-input in normale modus —
+ * potlood-icoon switcht naar input + commit op blur/Enter. */
+function UrlsEditor({
+  parkUrl,
+  sources,
+  onSetParkUrl,
+  onSetSources,
 }: {
-  ride: Ride
-  onSetField: (field: RideFieldPatch) => void
+  parkUrl: string
+  sources: string[]
+  onSetParkUrl: (s: string) => void
+  onSetSources: (ss: string[]) => void
 }) {
-  const status: "open" | "closed" | "unknown" =
-    ride.closed === true ? "closed" : ride.closed === "unknown" ? "unknown" : "open"
-
-  function setStatus(next: "open" | "closed" | "unknown") {
-    if (next === "open") {
-      onSetField({ kind: "closed", value: undefined })
-    } else if (next === "closed") {
-      onSetField({ kind: "closed", value: true })
-      if (ride.closed_verify) onSetField({ kind: "closed_verify", value: false })
-    } else {
-      onSetField({ kind: "closed", value: "unknown" })
-      if (!ride.closed_verify) onSetField({ kind: "closed_verify", value: true })
-    }
+  function addSource() {
+    onSetSources([...sources, ""])
+  }
+  function setSourceAt(i: number, v: string) {
+    const next = sources.slice()
+    next[i] = v
+    onSetSources(next)
+  }
+  function removeSourceAt(i: number) {
+    const next = sources.slice()
+    next.splice(i, 1)
+    onSetSources(next)
   }
 
   return (
-    <div className="ed-stack closed-editor">
-      <div className="ed-cell-lbl">status</div>
-      <div className="cbtns">
-        <button
-          type="button"
-          className={"cbtn " + (status === "open" ? "on" : "")}
-          onClick={() => setStatus("open")}
-        >
-          open
-        </button>
-        <button
-          type="button"
-          className={"cbtn " + (status === "closed" ? "on" : "")}
-          onClick={() => setStatus("closed")}
-        >
-          gesloten
-        </button>
-        <button
-          type="button"
-          className={"cbtn " + (status === "unknown" ? "on" : "")}
-          onClick={() => setStatus("unknown")}
-        >
-          te verifiëren
-        </button>
+    <div className="urls-editor">
+      <div className="ed-cell-lbl">URLs</div>
+
+      <div className="url-line">
+        <span className="url-line-lbl">park_url</span>
+        <UrlRow
+          value={parkUrl}
+          placeholder="https://… (officiële attractiepagina)"
+          startEditing={!parkUrl}
+          onCommit={onSetParkUrl}
+        />
       </div>
-      {status !== "open" ? (
-        <div className="ed-text-grid">
-          <NumField
-            label="sluitingsjaar"
-            value={ride.closed_year ?? null}
-            placeholder="leeg = onbekend"
-            allowEmpty
-            onCommit={(n) => onSetField({ kind: "closed_year", value: n })}
-          />
-          <TextField
-            label="closed_source_url"
-            value={ride.closed_source_url ?? ""}
-            placeholder="https://…"
-            onCommit={(s) => onSetField({ kind: "closed_source_url", value: s })}
-          />
+
+      <div className="url-line url-line-sources">
+        <span className="url-line-lbl">sources</span>
+        <div className="sources-list">
+          {sources.map((s, i) => (
+            <UrlRow
+              key={i}
+              value={s}
+              placeholder="https://… (parksite, RCDB, fanwiki, …)"
+              startEditing={!s}
+              onCommit={(v) => setSourceAt(i, v)}
+              onRemove={() => removeSourceAt(i)}
+            />
+          ))}
+          <button type="button" className="add-row add-row-small" onClick={addSource}>
+            <span className="plus">+</span> bron toevoegen
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+/** Eén URL-regel: in lees-modus een klikbare link + potlood-icoontje;
+ * in bewerk-modus een tekst-input met commit op blur/Enter. Optionele
+ * verwijder-knop rechts (X). Begint in bewerk-modus als de waarde leeg
+ * is, zodat een net-toegevoegde regel meteen invulbaar is. */
+function UrlRow({
+  value,
+  placeholder,
+  startEditing,
+  onCommit,
+  onRemove,
+}: {
+  value: string
+  placeholder?: string
+  startEditing?: boolean
+  onCommit: (s: string) => void
+  onRemove?: () => void
+}) {
+  const [editing, setEditing] = useState(!!startEditing)
+  const [text, setText] = useState(value)
+  useEffect(() => {
+    setText(value)
+  }, [value])
+
+  function commit() {
+    setEditing(false)
+    if (text !== value) onCommit(text)
+  }
+
+  if (editing) {
+    return (
+      <div className="url-row editing">
+        <input
+          type="text"
+          autoFocus
+          className="ed-text url-input"
+          value={text}
+          placeholder={placeholder}
+          onChange={(e) => setText(e.target.value)}
+          onBlur={commit}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              e.preventDefault()
+              ;(e.currentTarget as HTMLInputElement).blur()
+            } else if (e.key === "Escape") {
+              e.preventDefault()
+              setText(value)
+              setEditing(false)
+            }
+          }}
+        />
+        {onRemove ? (
+          <button
+            type="button"
+            className="url-icon-btn url-icon-remove"
+            onMouseDown={(e) => {
+              // mousedown ipv click — voorkomt dat de input eerst blurt en
+              // de remove dan op een ondertussen-verschoven regel zou slaan.
+              e.preventDefault()
+              onRemove()
+            }}
+            title="verwijderen"
+            aria-label="verwijderen"
+          >
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        ) : null}
+      </div>
+    )
+  }
+
+  return (
+    <div className="url-row">
+      {value ? (
+        <a
+          href={value}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="url-link"
+          title={value}
+        >
+          <span className="url-text">{value}</span>
+          <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="url-ext-ico">
+            <path d="M14 3h7v7" />
+            <path d="M10 14L21 3" />
+            <path d="M21 14v7h-7" />
+            <path d="M3 10v11h11" />
+          </svg>
+        </a>
+      ) : (
+        <span className="url-link muted">(leeg)</span>
+      )}
+      <button
+        type="button"
+        className="url-icon-btn"
+        onClick={() => setEditing(true)}
+        title="bewerken"
+        aria-label="bewerken"
+      >
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M12 20h9" />
+          <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+        </svg>
+      </button>
+      {onRemove ? (
+        <button
+          type="button"
+          className="url-icon-btn url-icon-remove"
+          onClick={onRemove}
+          title="verwijderen"
+          aria-label="verwijderen"
+        >
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      ) : null}
+    </div>
+  )
+}
+
+/** "door X · Yt geleden" — label voor `by` ("admin" → "jou", "agent:vN" →
+ *  "agent (vN)", anders raw). Geen render als activity ontbreekt/leeg. */
+function ProvenanceLine({ activity }: { activity?: ActivityEntry[] }) {
+  if (!activity || !activity.length) return null
+  const e = activity[0]!
+  return (
+    <div className="cb-prov">
+      door {byLabel(e.by)} · {relativeTime(e.at)}
+    </div>
+  )
+}
+
+function byLabel(by: string): string {
+  if (by === "admin") return "jou"
+  if (by.startsWith("agent:")) return "agent (" + by.slice("agent:".length) + ")"
+  return by
+}
+
+/** NL relatieve tijd. */
+function relativeTime(iso: string): string {
+  const t = Date.parse(iso)
+  if (Number.isNaN(t)) return iso
+  const diff = Math.max(0, Date.now() - t)
+  const sec = Math.floor(diff / 1000)
+  if (sec < 30) return "net"
+  const min = Math.floor(sec / 60)
+  if (min < 60) return min + " min geleden"
+  const hr = Math.floor(min / 60)
+  if (hr < 24) return hr + "u geleden"
+  const days = Math.floor(hr / 24)
+  if (days === 1) return "gisteren"
+  if (days < 14) return days + "d geleden"
+  const weeks = Math.floor(days / 7)
+  if (weeks < 9) return weeks + " weken geleden"
+  const months = Math.floor(days / 30)
+  if (months < 12) return months + " maanden geleden"
+  const years = Math.floor(days / 365)
+  return years === 1 ? "1 jaar geleden" : years + " jaar geleden"
+}
+
+/** Uitklapbaar "Geschiedenis (laatste 3)"-blok. Default ingeklapt. */
+function HistoryBlock({ activity }: { activity?: ActivityEntry[] }) {
+  const [open, setOpen] = useState(false)
+  const list = activity ?? []
+  if (!list.length) return null
+  return (
+    <div className="history-block">
+      <button
+        type="button"
+        className="history-head"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+      >
+        <span className={"hb-chev" + (open ? " open" : "")}>▸</span>
+        <span>Geschiedenis (laatste {list.length})</span>
+      </button>
+      {open ? (
+        <div className="history-panel">
+          {list.map((e, i) => (
+            <HistEntry key={i} entry={e} />
+          ))}
         </div>
       ) : null}
     </div>
   )
+}
+
+function HistEntry({ entry }: { entry: ActivityEntry }) {
+  if ("verified" in entry) {
+    return (
+      <div className="hist-entry">
+        <div className="hist-meta">
+          door {byLabel(entry.by)} · {relativeTime(entry.at)}
+        </div>
+        <span className="hist-verify-pill">✓ gemarkeerd als geverifieerd door {byLabel(entry.by)}</span>
+      </div>
+    )
+  }
+  const keys = Object.keys(entry.changes)
+  return (
+    <div className="hist-entry">
+      <div className="hist-meta">
+        door {byLabel(entry.by)} · {relativeTime(entry.at)}
+      </div>
+      <div className="hist-diff">
+        {keys.map((k) => (
+          <DiffRow key={k} field={k} from={entry.changes[k]!.from} to={entry.changes[k]!.to} />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+function DiffRow({ field, from, to }: { field: string; from: unknown; to: unknown }) {
+  if (field === "image" || field === "admin_preview") {
+    return (
+      <div className="hist-diff-row">
+        <span className="hist-field">{field}:</span> bijgewerkt
+      </div>
+    )
+  }
+  if (Array.isArray(from) || Array.isArray(to)) {
+    const a = (Array.isArray(from) ? from : []) as unknown[]
+    const b = (Array.isArray(to) ? to : []) as unknown[]
+    const aset = new Set(a.map((x) => JSON.stringify(x)))
+    const bset = new Set(b.map((x) => JSON.stringify(x)))
+    const added = b.filter((x) => !aset.has(JSON.stringify(x)))
+    const removed = a.filter((x) => !bset.has(JSON.stringify(x)))
+    const maxLen = Math.max(a.length, b.length)
+    if (maxLen <= 5 && (added.length || removed.length)) {
+      return (
+        <div className="hist-diff-row">
+          <span className="hist-field">{field}:</span>{" "}
+          {added.length ? <span className="diff-add">+[{added.map(stringifyShort).join(", ")}]</span> : null}
+          {added.length && removed.length ? " " : null}
+          {removed.length ? <span className="diff-rem">-[{removed.map(stringifyShort).join(", ")}]</span> : null}
+        </div>
+      )
+    }
+    return (
+      <div className="hist-diff-row">
+        <span className="hist-field">{field}:</span> [{a.map(stringifyShort).join(", ")}] → [{b.map(stringifyShort).join(", ")}]
+      </div>
+    )
+  }
+  return (
+    <div className="hist-diff-row">
+      <span className="hist-field">{field}:</span> {stringifyScalar(from)} → {stringifyScalar(to)}
+    </div>
+  )
+}
+
+function stringifyScalar(v: unknown): string {
+  if (v == null) return "—"
+  if (typeof v === "string") return JSON.stringify(v)
+  if (typeof v === "object") return "(object)"
+  return String(v)
+}
+
+function stringifyShort(v: unknown): string {
+  if (v == null) return "—"
+  if (typeof v === "string") return v
+  if (typeof v === "object") return "(object)"
+  return String(v)
 }

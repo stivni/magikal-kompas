@@ -1,243 +1,360 @@
-/* Tijdelijk experimenteer-tool: sleep rides over kolommen om empirisch
- * een goede categorie-indeling te zoeken (voedt ADR-024/ADR-025).
- * Alleen lokale state (localStorage) — schrijft NOOIT naar park-JSON's
- * of naar het echte Category-type. */
+/* Admin curatie-view: drie assen in kolom-layout met drag-drop naar park-JSON.
+ *
+ * Drie views via top-bar switcher:
+ *  - Type-view:      37 TypeKey-kolommen, gegroepeerd per cluster, drag → ride.type
+ *  - Intensity-view: 5 kolommen 1-5, drag → ride.intensity
+ *  - Hoogte-view:    5 kolommen 1-5, drag → ride.height_intensity
+ *
+ * Drag-drop schrijft direct naar de park-JSON via api.ts (apiPatchRideType /
+ * apiPatchRideIntensity). Optimistisch updaten + rollback bij error.
+ * Geen localStorage meer — echte data is de bron. */
 
-import { useEffect, useMemo, useRef, useState } from "react"
-import type { Park, Ride, TypeKey } from "../shared/types"
-import { CATEGORIES, TEMO, TNL } from "../shared/vocab"
+import { useCallback, useMemo, useRef, useState } from "react"
+import type { Category, Park, Ride, TypeKey } from "../shared/types"
+import {
+  CATEGORIES,
+  CEMO,
+  CNL,
+  HEIGHT_ANCHORS,
+  INTENSITY_ANCHORS,
+  TEMO,
+  TNL,
+  TYPES,
+} from "../shared/vocab"
+import { categoryOf } from "../shared/scoring"
+import { FilterMulti } from "./FilterMulti"
+import { DRAG_MIME, RideTile } from "./RideTile"
+import { apiPatchRideIntensity, apiPatchRideType } from "./api"
 
-const STORAGE_KEY = "mk-categorize-experiment-v1"
-const UNSORTED_ID = "unsorted"
-const DRAG_MIME = "application/x-mk-ride"
+// ── Cluster-definitie voor de Type-view (afgeleid uit categoryOf) ─────────────
 
-interface Column {
-  id: string
-  title: string
+interface CategoryCluster {
+  category: Category
+  types: TypeKey[]
 }
 
-interface CatState {
-  columns: Column[]
-  /** key = "<park>|<att>"  →  column id */
-  placement: Record<string, string>
-}
-
-function rideKey(park: string, att: string): string {
-  return park + "|" + att
-}
-
-function seededState(parks: Park[]): CatState {
-  const columns: Column[] = [
-    { id: UNSORTED_ID, title: "Ongesorteerd" },
-    ...CATEGORIES.map((c) => ({ id: c.key, title: c.label })),
-  ]
-  const placement: Record<string, string> = {}
-  parks.forEach((p) =>
-    p.rides.forEach((r) => {
-      placement[rideKey(p.park, r.att)] = UNSORTED_ID
-    }),
-  )
-  return { columns, placement }
-}
-
-function loadState(parks: Park[]): CatState {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    if (!raw) return seededState(parks)
-    const parsed = JSON.parse(raw) as Partial<CatState>
-    const columns: Column[] = Array.isArray(parsed.columns)
-      ? parsed.columns.filter((c): c is Column => !!c && typeof c.id === "string")
-      : []
-    if (!columns.find((c) => c.id === UNSORTED_ID)) {
-      columns.unshift({ id: UNSORTED_ID, title: "Ongesorteerd" })
-    }
-    const placement: Record<string, string> = { ...(parsed.placement ?? {}) }
-    const colIds = new Set(columns.map((c) => c.id))
-    // Plaats elke huidige ride en zorg dat verwijderde kolommen → unsorted.
-    parks.forEach((p) =>
-      p.rides.forEach((r) => {
-        const k = rideKey(p.park, r.att)
-        if (!placement[k] || !colIds.has(placement[k]!)) placement[k] = UNSORTED_ID
-      }),
-    )
-    return { columns, placement }
-  } catch {
-    return seededState(parks)
+/** Groepeer alle TypeKeys per gevoel-categorie, in de volgorde van ADR-025. */
+const CATEGORY_CLUSTERS: CategoryCluster[] = (() => {
+  const map = new Map<Category, TypeKey[]>()
+  // Initialiseer in de volgorde uit CATEGORIES (ADR-025: thrill · spin · immerse · splash · compete · drive · romp · savor)
+  for (const { key } of CATEGORIES) map.set(key, [])
+  // Verdeel alle TypeKeys over hun categorie
+  for (const t of TYPES) {
+    const cat = categoryOf(t)
+    map.get(cat)!.push(t)
   }
+  return [...map.entries()].map(([category, types]) => ({ category, types }))
+})()
+
+// ── Intensity / Hoogte assen ──────────────────────────────────────────────────
+
+const INT_COLS = [1, 2, 3, 4, 5] as const
+
+// Kleur-gradient groen→rood voor intensiteit-kolommen
+const INT_COLORS = [
+  "#4caf50", // 1 = licht
+  "#8bc34a", // 2
+  "#ff9800", // 3
+  "#f44336", // 4
+  "#b71c1c", // 5 = mega
+] as const
+
+// ── Types ──────────────────────────────────────────────────────────────────────
+
+type AxisMode = "type" | "intensity" | "height"
+
+interface RideItem {
+  park: Park
+  ride: Ride
+  /** "<park.park>|<ride.att>" */
+  key: string
 }
 
-export function CategorizeView({ parks }: { parks: Park[] }) {
-  const [state, setState] = useState<CatState>(() => loadState(parks))
+// Save-state per ride-key
+type RideSaveState = "idle" | "saving" | "saved" | "error"
 
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
-  }, [state])
+// ── Helpers ────────────────────────────────────────────────────────────────────
 
-  // Filters
+function rideKey(parkName: string, att: string): string {
+  return parkName + "|" + att
+}
+
+function parseDropKeys(raw: string): string[] {
+  return raw.split("\n").map((s) => s.trim()).filter(Boolean)
+}
+
+
+// ── Hoofd-component ─────────────────────────────────────────────────────────
+
+export function CategorizeView({ parks: initialParks }: { parks: Park[] }) {
+  const [parks, setParks] = useState<Park[]>(() =>
+    initialParks.map((p) => structuredClone(p)),
+  )
+  const [axis, setAxis] = useState<AxisMode>("type")
   const [parkFilter, setParkFilter] = useState<Set<string>>(new Set())
-  const [typeFilter, setTypeFilter] = useState<Set<TypeKey>>(new Set())
-  const [hideSorted, setHideSorted] = useState(false)
+  const [search, setSearch] = useState("")
   const [dropTarget, setDropTarget] = useState<string | null>(null)
+  const [saveStates, setSaveStates] = useState<Record<string, RideSaveState>>({})
+  const [errorMsg, setErrorMsg] = useState<string | null>(null)
+  // Uitklapstatus per cluster-label (type-view)
+  const [collapsedClusters, setCollapsedClusters] = useState<Set<string>>(new Set())
+  // Uitgebreide (detail) tegel
+  const [expandedKey, setExpandedKey] = useState<string | null>(null)
 
-  const allRides = useMemo(() => {
-    const out: Array<{ park: string; ride: Ride; key: string }> = []
+  // Synchroniseer parks als de prop verandert (bv. bij save in AdminApp)
+  const prevInitialRef = useRef(initialParks)
+  if (prevInitialRef.current !== initialParks) {
+    prevInitialRef.current = initialParks
+    setParks(initialParks.map((p) => structuredClone(p)))
+  }
+
+  // ── Alle rides gecombineerd ────────────────────────────────────────────────
+
+  const allItems = useMemo<RideItem[]>(() => {
+    const out: RideItem[] = []
     parks.forEach((p) =>
-      p.rides.forEach((r) => out.push({ park: p.park, ride: r, key: rideKey(p.park, r.att) })),
+      p.rides.forEach((r) =>
+        out.push({ park: p, ride: r, key: rideKey(p.park, r.att) }),
+      ),
     )
     return out
   }, [parks])
 
-  const availableTypes = useMemo(() => {
-    const set = new Set<TypeKey>()
-    allRides.forEach(({ ride }) => set.add(ride.type))
-    return [...set].sort()
-  }, [allRides])
+  // ── Filter ────────────────────────────────────────────────────────────────
 
-  function passesFilters(park: string, ride: Ride, colId: string): boolean {
-    if (parkFilter.size && !parkFilter.has(park)) return false
-    if (typeFilter.size && !typeFilter.has(ride.type)) return false
-    if (hideSorted && colId !== UNSORTED_ID) return false
-    return true
-  }
+  const normalizedSearch = search.trim().toLowerCase()
 
-  function ridesInColumn(colId: string) {
-    return allRides.filter(({ park, ride, key }) => {
-      const place = state.placement[key] ?? UNSORTED_ID
-      if (place !== colId) return false
-      return passesFilters(park, ride, colId)
-    })
-  }
-
-  function moveRide(key: string, toColId: string) {
-    setState((s) => {
-      if ((s.placement[key] ?? UNSORTED_ID) === toColId) return s
-      return { ...s, placement: { ...s.placement, [key]: toColId } }
-    })
-  }
-
-  function addColumn() {
-    const id = "col_" + Date.now().toString(36) + "_" + state.columns.length
-    setState((s) => ({ ...s, columns: [...s.columns, { id, title: "Nieuwe categorie" }] }))
-  }
-
-  function renameColumn(id: string, title: string) {
-    setState((s) => ({
-      ...s,
-      columns: s.columns.map((c) => (c.id === id ? { ...c, title } : c)),
-    }))
-  }
-
-  function removeColumn(id: string) {
-    if (id === UNSORTED_ID) return
-    setState((s) => {
-      const placement = { ...s.placement }
-      for (const k of Object.keys(placement)) {
-        if (placement[k] === id) placement[k] = UNSORTED_ID
+  const filteredItems = useMemo(() => {
+    return allItems.filter(({ park, ride }) => {
+      if (parkFilter.size && !parkFilter.has(park.park)) return false
+      if (normalizedSearch) {
+        const hay = (ride.att + " " + park.park).toLowerCase()
+        if (!hay.includes(normalizedSearch)) return false
       }
-      return { columns: s.columns.filter((c) => c.id !== id), placement }
+      return true
     })
+  }, [allItems, parkFilter, normalizedSearch])
+
+  // ── Per-kolom items ───────────────────────────────────────────────────────
+
+  function itemsForType(t: TypeKey): RideItem[] {
+    return filteredItems.filter(({ ride }) => ride.type === t)
   }
 
-  function moveColumn(id: string, dir: -1 | 1) {
-    setState((s) => {
-      const i = s.columns.findIndex((c) => c.id === id)
-      if (i < 0) return s
-      const j = i + dir
-      if (j < 0 || j >= s.columns.length) return s
-      // Ongesorteerd mag overal staan; geen extra restrictie.
-      const cols = [...s.columns]
-      const tmp = cols[i]!
-      cols[i] = cols[j]!
-      cols[j] = tmp
-      return { ...s, columns: cols }
-    })
+  function itemsForInt(n: number, field: "intensity" | "height_intensity"): RideItem[] {
+    return filteredItems.filter(({ ride }) => ride[field] === n)
   }
 
-  function exportJson() {
-    const out: Record<string, Array<{ park: string; att: string }>> = {}
-    state.columns.forEach((c) => {
-      out[c.title] = []
-    })
-    Object.entries(state.placement).forEach(([key, colId]) => {
-      const col = state.columns.find((c) => c.id === colId)
-      if (!col) return
-      const idx = key.indexOf("|")
-      if (idx < 0) return
-      const park = key.slice(0, idx)
-      const att = key.slice(idx + 1)
-      out[col.title]!.push({ park, att })
-    })
-    const blob = new Blob([JSON.stringify(out, null, 2)], { type: "application/json" })
-    const url = URL.createObjectURL(blob)
-    const a = document.createElement("a")
-    a.href = url
-    a.download = "mk-categorize-experiment.json"
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
-    URL.revokeObjectURL(url)
+  function itemsNoInt(field: "intensity" | "height_intensity"): RideItem[] {
+    return filteredItems.filter(({ ride }) => ride[field] == null)
   }
 
-  const fileInputRef = useRef<HTMLInputElement>(null)
-  function triggerImport() {
-    fileInputRef.current?.click()
+  // Ref om altijd de actuele parks te kunnen lezen in async callbacks
+  const parksRef = useRef<Park[]>(parks)
+  parksRef.current = parks
+
+  // ── Save-helpers ──────────────────────────────────────────────────────────
+
+  function setSave(key: string, state: RideSaveState) {
+    setSaveStates((s) => ({ ...s, [key]: state }))
+    if (state === "saved") {
+      setTimeout(() => setSaveStates((s) => ({ ...s, [key]: "idle" })), 1500)
+    }
   }
-  function handleImport(e: React.ChangeEvent<HTMLInputElement>) {
-    const f = e.target.files?.[0]
-    if (!f) return
-    f.text().then((txt) => {
-      try {
-        const parsed = JSON.parse(txt) as Record<string, Array<{ park: string; att: string }>>
-        // Bouw kolommen op basis van titels uit het bestand; behoud unsorted als eerste.
-        const titles = Object.keys(parsed)
-        const columns: Column[] = [{ id: UNSORTED_ID, title: "Ongesorteerd" }]
-        titles.forEach((title, i) => {
-          if (title === "Ongesorteerd") {
-            columns[0]!.title = title
-            return
-          }
-          // Hergebruik bestaande id's waar mogelijk (CATEGORIES.key matcht).
-          const seed = CATEGORIES.find((c) => c.label === title)
-          const id = seed ? seed.key : "col_imp_" + i
-          columns.push({ id, title })
-        })
-        const placement: Record<string, string> = {}
-        // Default alles naar unsorted, dan toewijzen vanuit bestand.
-        allRides.forEach(({ key }) => {
-          placement[key] = UNSORTED_ID
-        })
-        titles.forEach((title) => {
-          const col = columns.find((c) => c.title === title)
-          if (!col) return
-          parsed[title]!.forEach(({ park, att }) => {
-            placement[rideKey(park, att)] = col.id
-          })
-        })
-        setState({ columns, placement })
-      } catch (err) {
-        alert("Importeren mislukt: " + (err as Error).message)
-      } finally {
-        if (fileInputRef.current) fileInputRef.current.value = ""
+
+  // Rollback: herstel de originele waarden
+  function rollback(parkName: string, att: string, original: Ride) {
+    setParks((prev) =>
+      prev.map((p) => {
+        if (p.park !== parkName) return p
+        return { ...p, rides: p.rides.map((r) => (r.att === att ? original : r)) }
+      }),
+    )
+  }
+
+  // ── Drag-drop handlers ────────────────────────────────────────────────────
+
+  const handleDropType = useCallback(
+    async (keys: string[], newType: TypeKey) => {
+      for (const key of keys) {
+        const sep = key.indexOf("|")
+        if (sep < 0) continue
+        const parkName = key.slice(0, sep)
+        const att = key.slice(sep + 1)
+        const parkObj = parksRef.current.find((p) => p.park === parkName)
+        if (!parkObj) continue
+        const rideObj = parkObj.rides.find((r) => r.att === att)
+        if (!rideObj) continue
+        if (rideObj.type === newType) continue
+
+        const original = structuredClone(rideObj)
+        setSave(key, "saving")
+        // Bouw updatedPark zelf op (zonder te wachten op setState) voor de API
+        const updatedPark: Park = {
+          ...parkObj,
+          rides: parkObj.rides.map((r) =>
+            r.att === att ? { ...r, type: newType, tag_source: "admin" } : r,
+          ),
+        }
+        setParks((prev) =>
+          prev.map((p) => (p.park === parkName ? updatedPark : p)),
+        )
+
+        try {
+          await apiPatchRideType(updatedPark, att, newType)
+          setSave(key, "saved")
+        } catch (e: unknown) {
+          setSave(key, "error")
+          setErrorMsg((e as Error).message || "Opslaan mislukt")
+          rollback(parkName, att, original)
+          setTimeout(() => setErrorMsg(null), 4000)
+        }
       }
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [],
+  )
+
+  const handleDropIntensity = useCallback(
+    async (keys: string[], value: number, field: "intensity" | "height_intensity") => {
+      for (const key of keys) {
+        const sep = key.indexOf("|")
+        if (sep < 0) continue
+        const parkName = key.slice(0, sep)
+        const att = key.slice(sep + 1)
+        const parkObj = parksRef.current.find((p) => p.park === parkName)
+        if (!parkObj) continue
+        const rideObj = parkObj.rides.find((r) => r.att === att)
+        if (!rideObj) continue
+        if (rideObj[field] === value) continue
+
+        const original = structuredClone(rideObj)
+        setSave(key, "saving")
+        const updatedPark: Park = {
+          ...parkObj,
+          rides: parkObj.rides.map((r) =>
+            r.att === att ? { ...r, [field]: value } : r,
+          ),
+        }
+        setParks((prev) =>
+          prev.map((p) => (p.park === parkName ? updatedPark : p)),
+        )
+
+        try {
+          await apiPatchRideIntensity(updatedPark, att, field, value)
+          setSave(key, "saved")
+        } catch (e: unknown) {
+          setSave(key, "error")
+          setErrorMsg((e as Error).message || "Opslaan mislukt")
+          rollback(parkName, att, original)
+          setTimeout(() => setErrorMsg(null), 4000)
+        }
+      }
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [],
+  )
+
+  // ── Cluster toggle ────────────────────────────────────────────────────────
+
+  function toggleCluster(label: string) {
+    setCollapsedClusters((s) => {
+      const next = new Set(s)
+      if (next.has(label)) next.delete(label)
+      else next.add(label)
+      return next
     })
   }
 
-  function resetAll() {
-    if (!confirm("Reset naar startindeling? Alle plaatsingen gaan verloren.")) return
-    setState(seededState(parks))
+  // ── Render helpers ────────────────────────────────────────────────────────
+
+  function makeDragHandlers(
+    colId: string,
+    onDrop: (keys: string[]) => void,
+  ) {
+    return {
+      onDragOver: (e: React.DragEvent) => {
+        if (e.dataTransfer.types.includes(DRAG_MIME)) {
+          e.preventDefault()
+          e.dataTransfer.dropEffect = "move"
+          if (dropTarget !== colId) setDropTarget(colId)
+        }
+      },
+      onDragLeave: (e: React.DragEvent) => {
+        if (e.currentTarget === e.target) setDropTarget(null)
+      },
+      onDrop: (e: React.DragEvent) => {
+        e.preventDefault()
+        const keys = parseDropKeys(e.dataTransfer.getData(DRAG_MIME))
+        if (keys.length) onDrop(keys)
+        setDropTarget(null)
+      },
+    }
   }
 
-  // Statistieken voor de toolbar
-  const totals = useMemo(() => {
-    const sorted = allRides.filter(({ key }) => (state.placement[key] ?? UNSORTED_ID) !== UNSORTED_ID)
-      .length
-    return { total: allRides.length, sorted, unsorted: allRides.length - sorted }
-  }, [allRides, state.placement])
+  function renderTiles(items: RideItem[]) {
+    return items.map(({ park, ride, key }) => (
+      <div key={key} className="curate-tile-wrap">
+        <div className={"curate-tile-save save-" + (saveStates[key] ?? "idle")}>
+          {saveStates[key] === "saving" && <span className="save-spinner" />}
+          {saveStates[key] === "saved" && <span className="save-check">✓</span>}
+          {saveStates[key] === "error" && <span className="save-err">!</span>}
+        </div>
+        <div onClick={() => setExpandedKey(expandedKey === key ? null : key)}>
+          <RideTile park={park.park} ride={ride} dragKey={key} />
+        </div>
+        {expandedKey === key && (
+          <RideDetail park={park} ride={ride} allParks={parks} />
+        )}
+      </div>
+    ))
+  }
+
+  // ── Stats ─────────────────────────────────────────────────────────────────
+
+  const statsType = useMemo(() => {
+    const untyped = filteredItems.filter(({ ride }) => !ride.type).length
+    return { total: filteredItems.length, untyped }
+  }, [filteredItems])
+
+  const statsInt = useMemo(() => {
+    const noInt = itemsNoInt("intensity").length
+    const noH = itemsNoInt("height_intensity").length
+    return { total: filteredItems.length, noInt, noH }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [filteredItems])
+
+  // ── Render ─────────────────────────────────────────────────────────────────
 
   return (
     <div className="cat-view">
+      {/* Toolbar */}
       <div className="cat-toolbar">
         <div className="cat-tb-row">
+          {/* Axis switcher */}
+          <div className="curate-axis-switch">
+            <button
+              className={"curate-axis-btn" + (axis === "type" ? " on" : "")}
+              onClick={() => setAxis("type")}
+            >
+              Type
+            </button>
+            <button
+              className={"curate-axis-btn" + (axis === "intensity" ? " on" : "")}
+              onClick={() => setAxis("intensity")}
+            >
+              Intensiteit
+            </button>
+            <button
+              className={"curate-axis-btn" + (axis === "height" ? " on" : "")}
+              onClick={() => setAxis("height")}
+            >
+              Hoogte
+            </button>
+          </div>
+
+          <span className="cat-tb-sep" />
+
           <FilterMulti
             label="Park"
             options={parks.map((p) => p.park)}
@@ -245,153 +362,264 @@ export function CategorizeView({ parks }: { parks: Park[] }) {
             onChange={setParkFilter}
             renderOption={(o) => o}
           />
-          <FilterMulti
-            label="Type"
-            options={availableTypes}
-            selected={typeFilter}
-            onChange={setTypeFilter as (s: Set<string>) => void}
-            renderOption={(o) => `${TEMO[o as TypeKey] ?? ""} ${TNL[o as TypeKey] ?? o}`}
-          />
-          <label className="cat-toggle">
+
+          <div className="cat-search">
             <input
-              type="checkbox"
-              checked={hideSorted}
-              onChange={(e) => setHideSorted(e.target.checked)}
+              type="search"
+              className="cat-search-input"
+              placeholder="Zoek attractie…"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
             />
-            <span>Verberg gesorteerde</span>
-          </label>
-          <span className="cat-tb-sep" />
-          <button className="cat-btn" onClick={addColumn}>+ Kolom</button>
-          <button className="cat-btn" onClick={exportJson}>⬇ Export</button>
-          <button className="cat-btn" onClick={triggerImport}>⬆ Import</button>
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept="application/json,.json"
-            style={{ display: "none" }}
-            onChange={handleImport}
-          />
+            {search && (
+              <button className="cat-search-clear" onClick={() => setSearch("")} title="Wissen">
+                ×
+              </button>
+            )}
+          </div>
+
           <div className="cat-spacer" />
-          <span className="cat-stat">
-            {totals.sorted} / {totals.total} gesorteerd
-          </span>
-          <button className="cat-btn cat-btn-danger" onClick={resetAll}>Reset</button>
+
+          {axis === "type" && (
+            <span className="cat-stat">
+              {statsType.total} attracties
+            </span>
+          )}
+          {axis === "intensity" && (
+            <span className="cat-stat">
+              {statsInt.total} attracties · <strong>{statsInt.noInt}</strong> zonder intensiteit
+            </span>
+          )}
+          {axis === "height" && (
+            <span className="cat-stat">
+              {statsInt.total} attracties · <strong>{statsInt.noH}</strong> zonder hoogte
+            </span>
+          )}
         </div>
       </div>
 
-      {(() => {
-        const unsortedItems = ridesInColumn(UNSORTED_ID)
-        const isDropOver = dropTarget === UNSORTED_ID
+      {/* Error-toast */}
+      {errorMsg && (
+        <div className="save-toast error" role="alert">
+          {errorMsg}
+        </div>
+      )}
+
+      {/* Kolom-views */}
+      {axis === "type" && (
+        <TypeView
+          clusters={CATEGORY_CLUSTERS}
+          getItems={itemsForType}
+          dropTarget={dropTarget}
+          makeDragHandlers={makeDragHandlers}
+          onDrop={(keys, type) => handleDropType(keys, type)}
+          collapsedClusters={collapsedClusters}
+          onToggleCluster={toggleCluster}
+          renderTiles={renderTiles}
+        />
+      )}
+      {axis === "intensity" && (
+        <IntHeightView
+          label="Intensiteit"
+          field="intensity"
+          anchors={INTENSITY_ANCHORS}
+          getItems={(n) => itemsForInt(n, "intensity")}
+          getUnsorted={() => itemsNoInt("intensity")}
+          dropTarget={dropTarget}
+          makeDragHandlers={makeDragHandlers}
+          onDrop={(keys, n) => handleDropIntensity(keys, n, "intensity")}
+          renderTiles={renderTiles}
+        />
+      )}
+      {axis === "height" && (
+        <IntHeightView
+          label="Hoogte-beleving"
+          field="height_intensity"
+          anchors={HEIGHT_ANCHORS}
+          getItems={(n) => itemsForInt(n, "height_intensity")}
+          getUnsorted={() => itemsNoInt("height_intensity")}
+          dropTarget={dropTarget}
+          makeDragHandlers={makeDragHandlers}
+          onDrop={(keys, n) => handleDropIntensity(keys, n, "height_intensity")}
+          renderTiles={renderTiles}
+        />
+      )}
+    </div>
+  )
+}
+
+// ── Type-view ──────────────────────────────────────────────────────────────────
+
+function TypeView({
+  clusters,
+  getItems,
+  dropTarget,
+  makeDragHandlers,
+  onDrop,
+  collapsedClusters,
+  onToggleCluster,
+  renderTiles,
+}: {
+  clusters: CategoryCluster[]
+  getItems: (t: TypeKey) => RideItem[]
+  dropTarget: string | null
+  makeDragHandlers: (
+    colId: string,
+    onDrop: (keys: string[]) => void,
+  ) => {
+    onDragOver: (e: React.DragEvent) => void
+    onDragLeave: (e: React.DragEvent) => void
+    onDrop: (e: React.DragEvent) => void
+  }
+  onDrop: (keys: string[], type: TypeKey) => void
+  collapsedClusters: Set<string>
+  onToggleCluster: (label: string) => void
+  renderTiles: (items: RideItem[]) => React.ReactNode[]
+}) {
+  return (
+    <div className="curate-type-view">
+      {clusters.map((cluster) => {
+        const clusterKey = cluster.category
+        const collapsed = collapsedClusters.has(clusterKey)
+        const clusterCount = cluster.types.reduce(
+          (sum, t) => sum + getItems(t).length,
+          0,
+        )
         return (
-          <div
-            className={"cat-unsorted-zone" + (isDropOver ? " drop-over" : "")}
-            onDragOver={(e) => {
-              if (e.dataTransfer.types.includes(DRAG_MIME)) {
-                e.preventDefault()
-                e.dataTransfer.dropEffect = "move"
-                if (dropTarget !== UNSORTED_ID) setDropTarget(UNSORTED_ID)
-              }
-            }}
-            onDragLeave={(e) => {
-              if (e.currentTarget === e.target) setDropTarget(null)
-            }}
-            onDrop={(e) => {
-              e.preventDefault()
-              const key = e.dataTransfer.getData(DRAG_MIME)
-              if (key) moveRide(key, UNSORTED_ID)
-              setDropTarget(null)
-            }}
-          >
-            <div className="cat-unsorted-head">
-              <span className="cat-unsorted-title">Ongesorteerd</span>
-              <span className="cat-col-count">{unsortedItems.length}</span>
-              <span className="cat-unsorted-hint">Sleep een tegel naar een kolom onderaan</span>
-            </div>
-            <div className="cat-unsorted-strip">
-              {unsortedItems.length === 0 ? (
-                <div className="cat-col-empty">— alles gesorteerd —</div>
-              ) : (
-                unsortedItems.map(({ park, ride, key }) => (
-                  <RideTile key={key} park={park} ride={ride} dragKey={key} />
-                ))
-              )}
-            </div>
+          <div key={clusterKey} className="curate-cluster">
+            <button
+              className="curate-cluster-head"
+              onClick={() => onToggleCluster(clusterKey)}
+              aria-expanded={!collapsed}
+            >
+              <span className={"curate-cluster-chev" + (collapsed ? "" : " open")}>▸</span>
+              <span className="curate-cluster-emo">{CEMO[cluster.category]}</span>
+              <span className="curate-cluster-label">{CNL[cluster.category]}</span>
+              <span className="curate-cluster-cat">({cluster.category})</span>
+              <span className="curate-cluster-meta">
+                — {cluster.types.length} types
+              </span>
+              <span className="curate-cluster-count">{clusterCount}</span>
+            </button>
+            {!collapsed && (
+              <div className="curate-cluster-body">
+                {cluster.types.map((t) => {
+                  const items = getItems(t)
+                  const isOver = dropTarget === "type:" + t
+                  return (
+                    <div
+                      key={t}
+                      className={"curate-col" + (isOver ? " drop-over" : "")}
+                      {...makeDragHandlers("type:" + t, (keys) => onDrop(keys, t))}
+                    >
+                      <div className="curate-col-head">
+                        <div className="curate-col-title">
+                          <span className="curate-col-emo">{TEMO[t]}</span>
+                          <span className="curate-col-name">{TNL[t]}</span>
+                          <span className="curate-col-count">{items.length}</span>
+                        </div>
+                      </div>
+                      <div className="curate-col-body">
+                        {items.length === 0 ? (
+                          <div className="cat-col-empty">— leeg —</div>
+                        ) : (
+                          renderTiles(items)
+                        )}
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            )}
           </div>
         )
-      })()}
+      })}
+    </div>
+  )
+}
 
-      <div className="cat-cols">
-        {state.columns.filter((c) => c.id !== UNSORTED_ID).map((col) => {
-          const items = ridesInColumn(col.id)
-          const isDropOver = dropTarget === col.id
-          const realIdx = state.columns.findIndex((c) => c.id === col.id)
-          const realLen = state.columns.length
+// ── Intensity / Height view ────────────────────────────────────────────────────
+
+function IntHeightView({
+  field,
+  anchors,
+  getItems,
+  getUnsorted,
+  dropTarget,
+  makeDragHandlers,
+  onDrop,
+  renderTiles,
+}: {
+  label: string
+  field: "intensity" | "height_intensity"
+  anchors: Array<{ level: number; label: string; [k: string]: unknown }>
+  getItems: (n: number) => RideItem[]
+  getUnsorted: () => RideItem[]
+  dropTarget: string | null
+  makeDragHandlers: (
+    colId: string,
+    onDrop: (keys: string[]) => void,
+  ) => {
+    onDragOver: (e: React.DragEvent) => void
+    onDragLeave: (e: React.DragEvent) => void
+    onDrop: (e: React.DragEvent) => void
+  }
+  onDrop: (keys: string[], n: number) => void
+  renderTiles: (items: RideItem[]) => React.ReactNode[]
+}) {
+  const unsorted = getUnsorted()
+  const isOverUnsorted = dropTarget === field + ":unsorted"
+
+  return (
+    <div className="curate-int-view">
+      {/* Ongesorteerd-zone */}
+      {unsorted.length > 0 && (
+        <div
+          className={"cat-unsorted-zone curate-unsorted" + (isOverUnsorted ? " drop-over" : "")}
+          {...makeDragHandlers(field + ":unsorted", () => {
+            // Naar unsorted slepen verwijdert de waarde — maar we supporten dat
+            // hier niet (geen null-write). Gewoon negeren.
+          })}
+        >
+          <div className="cat-unsorted-head">
+            <span className="cat-unsorted-title">Niet ingevuld</span>
+            <span className="cat-col-count">{unsorted.length}</span>
+            <span className="cat-unsorted-hint">Sleep naar een kolom om te taggen</span>
+          </div>
+          <div className="cat-unsorted-strip">
+            {renderTiles(unsorted)}
+          </div>
+        </div>
+      )}
+
+      {/* 5 kolommen */}
+      <div className="curate-int-cols">
+        {INT_COLS.map((n) => {
+          const items = getItems(n)
+          const isOver = dropTarget === field + ":" + n
+          const anchor = anchors[n - 1]!
+          const color = INT_COLORS[n - 1]!
           return (
             <div
-              key={col.id}
-              className={"cat-col" + (isDropOver ? " drop-over" : "")}
-              onDragOver={(e) => {
-                if (e.dataTransfer.types.includes(DRAG_MIME)) {
-                  e.preventDefault()
-                  e.dataTransfer.dropEffect = "move"
-                  if (dropTarget !== col.id) setDropTarget(col.id)
-                }
-              }}
-              onDragLeave={(e) => {
-                // alleen reset als we de kolom-container verlaten, niet bij child→child
-                if (e.currentTarget === e.target) setDropTarget(null)
-              }}
-              onDrop={(e) => {
-                e.preventDefault()
-                const key = e.dataTransfer.getData(DRAG_MIME)
-                if (key) moveRide(key, col.id)
-                setDropTarget(null)
-              }}
+              key={n}
+              className={"curate-col curate-int-col" + (isOver ? " drop-over" : "")}
+              {...makeDragHandlers(field + ":" + n, (keys) => onDrop(keys, n))}
             >
-              <div className="cat-col-head">
-                <input
-                  className="cat-col-title"
-                  value={col.title}
-                  onChange={(e) => renameColumn(col.id, e.target.value)}
-                />
-                <div className="cat-col-subhead">
-                  <span className="cat-col-count">{items.length}</span>
-                  <div className="cat-col-ctl">
-                    <button
-                      className="cat-iconbtn"
-                      title="Naar links"
-                      onClick={() => moveColumn(col.id, -1)}
-                      disabled={realIdx <= 1}
-                    >
-                      ‹
-                    </button>
-                    <button
-                      className="cat-iconbtn"
-                      title="Naar rechts"
-                      onClick={() => moveColumn(col.id, +1)}
-                      disabled={realIdx === realLen - 1}
-                    >
-                      ›
-                    </button>
-                    <button
-                      className="cat-iconbtn cat-iconbtn-danger"
-                      title="Kolom verwijderen (rides → ongesorteerd)"
-                      onClick={() => {
-                        if (confirm(`Kolom "${col.title}" verwijderen?`)) removeColumn(col.id)
-                      }}
-                    >
-                      ×
-                    </button>
-                  </div>
+              <div
+                className="curate-col-head curate-int-head"
+                style={{ borderTopColor: color }}
+              >
+                <div className="curate-int-num" style={{ color }}>
+                  {n}
                 </div>
+                <div className="curate-int-lbl">{anchor.label}</div>
+                <span className="curate-col-count">{items.length}</span>
               </div>
-              <div className="cat-col-body">
+              <div className="curate-col-body">
                 {items.length === 0 ? (
                   <div className="cat-col-empty">— leeg —</div>
                 ) : (
-                  items.map(({ park, ride, key }) => (
-                    <RideTile key={key} park={park} ride={ride} dragKey={key} />
-                  ))
+                  renderTiles(items)
                 )}
               </div>
             </div>
@@ -402,146 +630,68 @@ export function CategorizeView({ parks }: { parks: Park[] }) {
   )
 }
 
-// Proxy omzeilt hotlink-blokkade bij externe park-site URLs in admin_preview.
-function proxify(url: string | undefined): string | undefined {
-  if (!url) return undefined
-  if (/^https?:\/\//i.test(url)) return `/api/admin-preview?u=${encodeURIComponent(url)}`
-  return url
-}
+// ── Ride-detail paneel (klik op tegel) ────────────────────────────────────────
 
-function RideTile({ park, ride, dragKey }: { park: string; ride: Ride; dragKey: string }) {
-  const [imgState, setImgState] = useState<"preview" | "image" | "emoji">("preview")
-  const emoji = TEMO[ride.type] ?? "•"
-
-  const previewSrc = proxify(ride.admin_preview?.url) || ride.image?.url
-  const imageSrc = ride.image?.url
-
-  const currentSrc =
-    imgState === "preview" ? previewSrc :
-    imgState === "image" ? imageSrc :
-    undefined
-
-  function handleError() {
-    if (imgState === "preview" && imageSrc) {
-      setImgState("image")
-    } else {
-      setImgState("emoji")
+function RideDetail({ park, ride, allParks }: { park: Park; ride: Ride; allParks: Park[] }) {
+  // Zoek exacte replica's (zelfde manufacturer+model, andere attractie)
+  const replicas = useMemo(() => {
+    if (!ride.manufacturer || !ride.model) return []
+    const out: Array<{ parkName: string; att: string }> = []
+    for (const p of allParks) {
+      for (const r of p.rides) {
+        if (r.att === ride.att && p.park === park.park) continue
+        if (r.manufacturer === ride.manufacturer && r.model === ride.model) {
+          out.push({ parkName: p.park, att: r.att })
+        }
+      }
     }
-  }
+    return out
+  }, [ride, park, allParks])
 
   return (
-    <div
-      className="cat-tile"
-      draggable
-      onDragStart={(e) => {
-        e.dataTransfer.effectAllowed = "move"
-        e.dataTransfer.setData(DRAG_MIME, dragKey)
-      }}
-      title={`${ride.att} — ${park} — ${TNL[ride.type]}`}
-    >
-      <div className="cat-tile-thumb">
-        {currentSrc && imgState !== "emoji" ? (
-          <img src={currentSrc} alt="" loading="lazy" onError={handleError} />
-        ) : (
-          <span className="cat-tile-emo">{emoji}</span>
-        )}
-        <span className="cat-tile-typebadge" title={TNL[ride.type]}>{emoji}</span>
-        {ride.park_url && (
-          <a
-            href={ride.park_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cat-tile-extlink"
-            title={`Open op park-site: ${ride.park_url}`}
-            onMouseDown={(e) => e.stopPropagation()}
-            onClick={(e) => e.stopPropagation()}
-            onDragStart={(e) => e.preventDefault()}
-            draggable={false}
-          >
-            <svg
-              viewBox="0 0 24 24"
-              width="12"
-              height="12"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-              className="url-ext-ico"
-            >
-              <path d="M14 3h7v7" />
-              <path d="M10 14L21 3" />
-              <path d="M21 14v7h-7" />
-              <path d="M3 10v11h11" />
-            </svg>
-          </a>
-        )}
+    <div className="curate-ride-detail">
+      <div className="crd-row">
+        <span className="crd-lbl">Type</span>
+        <span>{TEMO[ride.type]} {TNL[ride.type]}</span>
       </div>
-      <div className="cat-tile-name">{ride.att}</div>
-      <div className="cat-tile-park">{park}</div>
-    </div>
-  )
-}
-
-function FilterMulti<T extends string>({
-  label,
-  options,
-  selected,
-  onChange,
-  renderOption,
-}: {
-  label: string
-  options: T[]
-  selected: Set<T>
-  onChange: (s: Set<T>) => void
-  renderOption: (o: T) => string
-}) {
-  const [open, setOpen] = useState(false)
-  const wrapRef = useRef<HTMLDivElement>(null)
-  useEffect(() => {
-    if (!open) return
-    function onDoc(e: MouseEvent) {
-      if (wrapRef.current && !wrapRef.current.contains(e.target as Node)) setOpen(false)
-    }
-    document.addEventListener("mousedown", onDoc)
-    return () => document.removeEventListener("mousedown", onDoc)
-  }, [open])
-
-  const summary =
-    selected.size === 0
-      ? "Alle"
-      : selected.size === 1
-        ? renderOption([...selected][0]!)
-        : `${selected.size} geselecteerd`
-
-  function toggle(o: T) {
-    const next = new Set(selected)
-    if (next.has(o)) next.delete(o)
-    else next.add(o)
-    onChange(next)
-  }
-
-  return (
-    <div className="cat-filter" ref={wrapRef}>
-      <button className="cat-filter-btn" onClick={() => setOpen((v) => !v)}>
-        <span className="cat-filter-lbl">{label}:</span>
-        <span className="cat-filter-sum">{summary}</span>
-        <span className="cat-filter-caret">▾</span>
-      </button>
-      {open && (
-        <div className="cat-filter-menu">
-          {selected.size > 0 && (
-            <button className="cat-filter-clear" onClick={() => onChange(new Set())}>
-              Wissen
-            </button>
-          )}
-          {options.map((o) => (
-            <label key={o} className="cat-filter-opt">
-              <input type="checkbox" checked={selected.has(o)} onChange={() => toggle(o)} />
-              <span>{renderOption(o)}</span>
-            </label>
-          ))}
+      <div className="crd-row">
+        <span className="crd-lbl">Intensiteit</span>
+        <span>{ride.intensity ?? "—"}</span>
+      </div>
+      <div className="crd-row">
+        <span className="crd-lbl">Hoogte</span>
+        <span>{ride.height_intensity ?? "—"}</span>
+      </div>
+      {ride.props && ride.props.length > 0 && (
+        <div className="crd-row">
+          <span className="crd-lbl">Props</span>
+          <span>{ride.props.join(", ")}</span>
+        </div>
+      )}
+      {ride.manufacturer && (
+        <div className="crd-row">
+          <span className="crd-lbl">Fabrikant</span>
+          <span>{ride.manufacturer}{ride.model ? " · " + ride.model : ""}</span>
+        </div>
+      )}
+      {ride.park_url && (
+        <div className="crd-row">
+          <span className="crd-lbl">Park-URL</span>
+          <a href={ride.park_url} target="_blank" rel="noopener noreferrer" className="crd-link">
+            {ride.park_url}
+          </a>
+        </div>
+      )}
+      {replicas.length > 0 && (
+        <div className="crd-replicas">
+          <span className="crd-lbl">Replica's</span>
+          <ul className="crd-replica-list">
+            {replicas.map((r) => (
+              <li key={r.parkName + r.att}>
+                {r.parkName} — {r.att}
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </div>
