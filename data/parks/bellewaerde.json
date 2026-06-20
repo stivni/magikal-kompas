@@ -28,6 +28,7 @@
         "https://en.wikipedia.org/wiki/Bellewaerde"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/screaming-eagle",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Screaming_Eagle",
       "image": {
         "url": "assets/photos/bellewaerde/screaming-eagle.webp",
         "license": "CC-BY-SA-3.0",
@@ -123,6 +124,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/boomerang"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/boomerang",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Boomerang_(Bellewaerde)",
       "image": {
         "url": "assets/photos/bellewaerde/boomerang.webp",
         "license": "CC-BY-SA-3.0",
@@ -222,6 +224,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/piratenboot"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/piratenboot",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Piratenboot_(Bellewaerde_Park)",
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/piratenboot/piratenboot.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/piratenboot",
@@ -301,6 +304,7 @@
         "https://en.wikipedia.org/wiki/Topple_Tower"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/el-volador",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/El_Volador",
       "image": {
         "url": "assets/photos/bellewaerde/el-volador.webp",
         "license": "CC-BY-SA-3.0",
@@ -374,6 +378,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/flying-carrousel"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/flying-carrousel",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Flying_Carrousel",
       "image": {
         "url": "assets/photos/bellewaerde/flying-carrousel.webp?t=1781632211144",
         "license": "CC-BY-SA-4.0",
@@ -457,6 +462,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/el-toro"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/el-toro",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/El_Toro_(Bellewaerde)",
       "image": {
         "url": "assets/photos/bellewaerde/el-toro.webp?t=1781632236863",
         "license": "CC-BY-SA-4.0",
@@ -542,6 +548,7 @@
         "https://interpark.co.uk/latest-news/bellewaerde-in-belgium-unveils-amazonia/"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/amazonia",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Amazonia_(Bellewaerde)",
       "image": {
         "url": "assets/photos/bellewaerde/amazonia.webp?t=1781632262027",
         "license": "CC-BY-SA-4.0",
@@ -611,6 +618,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/het-huis-van-houdini"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/het-huis-van-houdini",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Magische_Huis_van_Houdini",
       "image": {
         "url": "assets/photos/bellewaerde/huis-van-houdini.webp",
         "license": "CC-BY-SA-3.0",
@@ -673,6 +681,7 @@
         "https://ewrdb.com/rides/belgium/bellewaerde_park/bengal_rapid_river"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/bengal-rapid-river",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Bengal_Rapid_River",
       "image": {
         "url": "assets/photos/bellewaerde/bengal-rapid-river.webp?t=1781632295959",
         "license": "CC-BY-SA-4.0",
@@ -734,6 +743,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/wakala"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/wakala",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Wakala",
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/wakala/wakala-trein-geel-piek.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/wakala",
@@ -797,6 +807,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/dawson-duel"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/dawson-duel",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Dawson_Duel",
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/dawson-duel/dawson-duel-afdaling-kinderen.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/dawson-duel",
@@ -868,6 +879,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/huracan"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/huracan",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Huracan",
       "image": {
         "url": "assets/photos/bellewaerde/huracan.webp?t=1781632367113",
         "license": "CC-BY-SA-3.0",
@@ -948,6 +960,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/hampi"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/hampi",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/adobe/dynamicmedia/deliver/dm-aid--166a7933-0048-4c46-8aa1-c421f28970a0/hampi-logo.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/hampi",
@@ -1006,6 +1019,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/brazilian-buggies"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/brazilian-buggies",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/brazilian-buggies/brazilian-buggies-gezin-trein-eerste-afdaling.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/brazilian-buggies",
@@ -1061,6 +1075,7 @@
         "https://en.wikipedia.org/wiki/Bellewaerde"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cafe",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Rio_Do_Caf%C3%A9",
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/rio-do-cafe/rio-do-cafe-afdaling-gezin-1.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cafe",
@@ -1122,6 +1137,7 @@
         "https://en.wikipedia.org/wiki/Bellewaerde"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/niagara",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Niagara_(Bellewaerde)",
       "image": {
         "url": "assets/photos/bellewaerde/niagara.webp?t=1781632402700",
         "license": "CC-BY-SA-3.0",
@@ -1183,6 +1199,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/big-chute"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/big-chute",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Big_Chute",
       "image": {
         "url": "assets/photos/bellewaerde/big-chute.webp?t=1781632411992",
         "license": "CC-BY-SA-3.0",
@@ -1255,6 +1272,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/peter-pan"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/peter-pan",
+      "wikipedia_url": null,
       "image": {
         "url": "assets/photos/bellewaerde/peter-pan.webp?t=1781632448688",
         "license": "CC-BY-SA-4.0",
@@ -1306,6 +1324,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/koffietassen"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/koffietassen",
+      "wikipedia_url": null,
       "image": {
         "url": "assets/photos/bellewaerde/koffietassen.webp?t=1781632461297",
         "license": "CC-BY-SA-4.0",
@@ -1355,6 +1374,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/kikker"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/kikker",
+      "wikipedia_url": null,
       "image": {
         "url": "assets/photos/bellewaerde/kikker.webp",
         "license": "CC-BY-SA-4.0",
@@ -1406,6 +1426,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/4d-cinema"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/4d-cinema",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/4d-cinema/4d-cinema-meg-and-the-quest-for-the-holy-spork.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/4d-cinema",
@@ -1461,6 +1482,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/dansende-ballonnen"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/dansende-ballonnen",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/dansende-ballonnen/dansende-ballonnen-mama-dochter-zoon.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/dansende-ballonnen",
@@ -1506,6 +1528,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/vlinders"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/vlinders",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/vlinders/vlinders-kinderen-rups.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/vlinders",
@@ -1549,6 +1572,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/psssht-station"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/psssht-station",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/psssht-station/psssht-station-gondel-2.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/psssht-station",
@@ -1594,6 +1618,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/gekke-koets"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/gekke-koets",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/gekke-koets/gekke-koets-kinderen-gondel-1.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/gekke-koets",
@@ -1645,6 +1670,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cacao"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cacao",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/rio-do-cacao/rio-do-cacao-kinderen-boot-afdaling.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cacao",
@@ -1688,6 +1714,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/jungle-mission"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/jungle-mission",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Jungle_Mission",
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/jungle-mission/jungle-mission-gezin-grot.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/jungle-mission",
@@ -1738,6 +1765,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/tuff-tuff"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/tuff-tuff",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/tuff-tuff/tuff-tuff.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/tuff-tuff",
@@ -1783,6 +1811,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/carrousel"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/carrousel",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/carrousel/carrousel.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/carrousel",
@@ -1826,6 +1855,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/expresstrein"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/expresstrein",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/expresstrein/expresstrein-trein.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/expresstrein",
@@ -1871,6 +1901,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/minirad"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/minirad",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/minirad/minirad-bezoekers-gondels-1.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/minirad",
@@ -1927,6 +1958,7 @@
         "https://blooloop.com/art-engineering-wild-swing-xl/"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/seesaw-swing",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/seesaw-swing/seesaw-swing-concept-art.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/seesaw-swing",
@@ -1978,6 +2010,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/timber-trail"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/timber-trail",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/timber-trail/timber-trail-concept-art.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/timber-trail",
@@ -2021,6 +2054,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/bengal-express"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/bengal-express",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Bengal_Express",
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/bengal-express/bengal-express-tijgers-gezin.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/bengal-express",
@@ -2071,6 +2105,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/hampi-playground"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/hampi-playground",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/hampi-playground/hampi-playground-2.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/hampi-playground",
@@ -2114,6 +2149,7 @@
         "https://www.bellewaerde.be/park/nl/het-park/attracties/palendorp"
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/palendorp",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/palendorp/palendorp-net-tunnel-broer-zus.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/palendorp",
