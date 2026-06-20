@@ -15,10 +15,11 @@
       "beg": 130,
       "zelf": 130,
       "max": null,
-      "type": "thrill_coaster",
+      "type": "spinning_coaster",
       "props": [
         "inversions",
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 5,
       "height_intensity": 4,
@@ -120,7 +121,7 @@
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/anubis-the-ride",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Anubis_The_Ride",
       "manufacturer": "Gerstlauer",
-      "model": "Launch Coaster",
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_AnubisTheRide_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/anubis-the-ride",
@@ -254,7 +255,7 @@
       "beg": 120,
       "zelf": 140,
       "max": null,
-      "type": "wave_swinger",
+      "type": "star_flyer",
       "props": [
         "spins",
         "high"
@@ -284,8 +285,13 @@
           "by": "agent:web-v1",
           "changes": {
             "props": {
-              "from": ["spins"],
-              "to": ["spins", "high"]
+              "from": [
+                "spins"
+              ],
+              "to": [
+                "spins",
+                "high"
+              ]
             },
             "duration_s": {
               "from": null,
@@ -444,7 +450,7 @@
       "beg": 100,
       "zelf": 140,
       "max": null,
-      "type": "water_ride",
+      "type": "log_flume",
       "props": [
         "wet",
         "themed"
@@ -538,7 +544,7 @@
       "beg": 100,
       "zelf": 120,
       "max": null,
-      "type": "water_battle",
+      "type": "kids_drive",
       "props": [
         "wet"
       ],
@@ -690,7 +696,7 @@
       "beg": 100,
       "zelf": 100,
       "max": 140,
-      "type": "transport",
+      "type": "bumper_cars",
       "props": [],
       "intensity": 2,
       "height_intensity": 1,
@@ -731,7 +737,7 @@
       "beg": 96,
       "zelf": 120,
       "max": null,
-      "type": "water_ride",
+      "type": "log_flume",
       "props": [
         "wet"
       ],
@@ -853,7 +859,7 @@
       "beg": 96,
       "zelf": 120,
       "max": null,
-      "type": "story_ride",
+      "type": "balloon_ride",
       "props": [
         "wet",
         "dark",
@@ -886,8 +892,15 @@
               "to": "story_ride"
             },
             "props": {
-              "from": ["wet", "spins"],
-              "to": ["wet", "dark", "themed"]
+              "from": [
+                "wet",
+                "spins"
+              ],
+              "to": [
+                "wet",
+                "dark",
+                "themed"
+              ]
             },
             "oms": {
               "from": "Draaiende bloementhema-attractie in Mayaland met waterspatten en muziek.",
@@ -933,7 +946,7 @@
       "beg": 96,
       "zelf": 120,
       "max": null,
-      "type": "drop_tower",
+      "type": "kiddie_drop",
       "props": [],
       "intensity": 3,
       "height_intensity": 3,
@@ -1027,7 +1040,7 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "water_battle",
+      "type": "slow_boat",
       "props": [
         "wet"
       ],
@@ -1122,7 +1135,7 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "spinning_coaster",
+      "type": "kiddie_coaster",
       "props": [
         "spins"
       ],
@@ -1140,7 +1153,7 @@
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/k3-roller-skater",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/K3_Roller_Skater",
       "manufacturer": "Vekoma",
-      "model": "Junior Coaster",
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_K3RollerSkater_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/k3-roller-skater",
@@ -1248,7 +1261,8 @@
       "type": "top_spin",
       "props": [
         "spins",
-        "swings"
+        "swings",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 2,
@@ -1290,7 +1304,7 @@
       "beg": 85,
       "zelf": 120,
       "max": null,
-      "type": "wave_swinger",
+      "type": "flying_bicycles",
       "props": [
         "spins"
       ],
@@ -1350,7 +1364,8 @@
       "max": null,
       "type": "teacups",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 1,
@@ -1391,7 +1406,7 @@
       "beg": 85,
       "zelf": 120,
       "max": null,
-      "type": "water_battle",
+      "type": "splash_battle",
       "props": [
         "wet"
       ],
@@ -1434,7 +1449,7 @@
       "beg": 85,
       "zelf": 100,
       "max": null,
-      "type": "funhouse",
+      "type": "playground",
       "props": [],
       "intensity": 2,
       "height_intensity": 3,
@@ -1475,7 +1490,7 @@
       "beg": 85,
       "zelf": 85,
       "max": 140,
-      "type": "transport",
+      "type": "slow_boat",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1516,7 +1531,7 @@
       "beg": 0,
       "zelf": 120,
       "max": null,
-      "type": "carousel",
+      "type": "kiddie_track_ride",
       "props": [
         "spins"
       ],
@@ -1680,7 +1695,7 @@
       "beg": 0,
       "zelf": 120,
       "max": null,
-      "type": "wave_swinger",
+      "type": "balloon_ride",
       "props": [
         "spins"
       ],
@@ -1723,7 +1738,7 @@
       "beg": 0,
       "zelf": 120,
       "max": null,
-      "type": "story_ride",
+      "type": "transport_train",
       "props": [
         "dark",
         "themed"
@@ -1781,7 +1796,7 @@
       "beg": 0,
       "zelf": 110,
       "max": null,
-      "type": "wave_swinger",
+      "type": "balloon_ride",
       "props": [
         "spins"
       ],
@@ -1824,7 +1839,7 @@
       "beg": 0,
       "zelf": 100,
       "max": null,
-      "type": "flat_spinner",
+      "type": "kiddie_drop",
       "props": [
         "spins"
       ],
@@ -1867,7 +1882,7 @@
       "beg": 0,
       "zelf": 100,
       "max": null,
-      "type": "carousel",
+      "type": "kiddie_track_ride",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2063,7 +2078,7 @@
       "beg": 85,
       "zelf": 85,
       "max": 140,
-      "type": "transport",
+      "type": "karting",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2186,7 +2201,7 @@
       "beg": 0,
       "zelf": 100,
       "max": null,
-      "type": "transport",
+      "type": "slow_boat",
       "props": [
         "wet"
       ],
@@ -2311,7 +2326,7 @@
       "beg": 0,
       "zelf": null,
       "max": null,
-      "type": "transport",
+      "type": "pedal_boat",
       "props": [
         "wet"
       ],

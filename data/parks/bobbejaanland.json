@@ -34,7 +34,7 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/the-el-paso-special",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/El_Paso_(Bobbejaanland)",
-      "manufacturer": "Mack",
+      "manufacturer": "Mack Rides",
       "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/el-paso/The%20El%20Paso%20Special%20main.jpg",
@@ -51,8 +51,13 @@
               "to": "interactieve westernrit door een cowboysdorp"
             },
             "props": {
-              "from": ["dark"],
-              "to": ["dark", "themed"]
+              "from": [
+                "dark"
+              ],
+              "to": [
+                "dark",
+                "themed"
+              ]
             }
           }
         },
@@ -94,7 +99,8 @@
         "spins",
         "swings",
         "high",
-        "fast"
+        "fast",
+        "nausea"
       ],
       "intensity": 5,
       "height_intensity": 5,
@@ -130,8 +136,16 @@
               "to": "giant frisbee — slingert tot 42 m hoog en 106 km/h"
             },
             "props": {
-              "from": ["spins", "swings"],
-              "to": ["spins", "swings", "high", "fast"]
+              "from": [
+                "spins",
+                "swings"
+              ],
+              "to": [
+                "spins",
+                "swings",
+                "high",
+                "fast"
+              ]
             }
           }
         },
@@ -172,7 +186,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "thrill_coaster",
+      "type": "launch_coaster",
       "props": [
         "inversions",
         "fast",
@@ -209,8 +223,14 @@
               "to": "triple-launch coaster, snelste van de Benelux (107 km/h, 43 m)"
             },
             "props": {
-              "from": ["inversions"],
-              "to": ["inversions", "fast", "high"]
+              "from": [
+                "inversions"
+              ],
+              "to": [
+                "inversions",
+                "fast",
+                "high"
+              ]
             }
           }
         },
@@ -255,7 +275,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "thrill_coaster",
+      "type": "launch_coaster",
       "props": [
         "inversions",
         "high",
@@ -293,8 +313,14 @@
               "to": "duikachtbaan met 4 inversies en 25 m val"
             },
             "props": {
-              "from": ["inversions"],
-              "to": ["inversions", "high", "fast"]
+              "from": [
+                "inversions"
+              ],
+              "to": [
+                "inversions",
+                "high",
+                "fast"
+              ]
             }
           }
         },
@@ -323,7 +349,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "water_ride",
+      "type": "rapids",
       "props": [
         "wet"
       ],
@@ -339,7 +365,7 @@
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/el-rio",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/El_Rio_(Bobbejaanland)",
       "manufacturer": "Hafema",
-      "model": "Rapid River",
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/el-rio/El-Rio-%20Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/el-rio",
@@ -400,7 +426,7 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/bob-express",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Bob_Express",
-      "manufacturer": "Mack",
+      "manufacturer": "Mack Rides",
       "model": "Powered Coaster",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/bob-express/Bob-Express-%20Attracties-%20Bobbejaanland-main.jpg",
@@ -449,7 +475,8 @@
       "max_age": null,
       "type": "spinning_coaster",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 3,
@@ -510,8 +537,10 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
-      "props": [],
+      "type": "tilt_a_whirl",
+      "props": [
+        "nausea"
+      ],
       "intensity": 2,
       "height_intensity": 1,
       "tag_source": "web",
@@ -542,7 +571,9 @@
               "to": "kiddie_flat"
             },
             "props": {
-              "from": ["spins"],
+              "from": [
+                "spins"
+              ],
               "to": []
             },
             "tag_confidence": {
@@ -591,7 +622,7 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/speedy-bob",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Speedy_Bob",
-      "manufacturer": "Mack",
+      "manufacturer": "Mack Rides",
       "model": "Wilde Maus",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/speedy-bob/Speedy-Bob-Attracties-%20Bobbejaanland-main.jpg",
@@ -642,7 +673,8 @@
       "props": [
         "spins",
         "swings",
-        "high"
+        "high",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 4,
@@ -673,8 +705,15 @@
               "to": "hangende achtbaan — 600 m door Anasazi-landschap"
             },
             "props": {
-              "from": ["spins", "swings"],
-              "to": ["spins", "swings", "high"]
+              "from": [
+                "spins",
+                "swings"
+              ],
+              "to": [
+                "spins",
+                "swings",
+                "high"
+              ]
             }
           }
         },
@@ -703,7 +742,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "carousel",
+      "type": "balloon_ride",
       "props": [],
       "intensity": 2,
       "height_intensity": 2,
@@ -735,7 +774,9 @@
               "to": "carousel"
             },
             "props": {
-              "from": ["spins"],
+              "from": [
+                "spins"
+              ],
               "to": []
             }
           }
@@ -789,7 +830,9 @@
           "by": "agent:web-v3",
           "changes": {
             "props": {
-              "from": ["spins"],
+              "from": [
+                "spins"
+              ],
               "to": []
             },
             "tag_confidence": {
@@ -851,7 +894,9 @@
               "to": "klassieke draaimolen met paard- en luchtballon-zitjes"
             },
             "props": {
-              "from": ["spins"],
+              "from": [
+                "spins"
+              ],
               "to": []
             },
             "tag_confidence": {
@@ -934,7 +979,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -992,7 +1037,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
+      "type": "playground",
       "props": [],
       "intensity": 2,
       "height_intensity": 2,
@@ -1046,7 +1091,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "water_ride",
+      "type": "log_flume",
       "props": [
         "wet"
       ],
@@ -1102,7 +1147,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "water_ride",
+      "type": "log_flume",
       "props": [
         "wet",
         "dark",
@@ -1121,7 +1166,7 @@
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/terra-magma",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Terra_Magma",
       "manufacturer": "Intamin",
-      "model": "Log Flume",
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/terra-magma/Terra%20Magma.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/terra-magma",
@@ -1143,8 +1188,16 @@
           "by": "agent:web-v2",
           "changes": {
             "props": {
-              "from": ["wet", "high", "fast"],
-              "to": ["wet", "dark", "themed"]
+              "from": [
+                "wet",
+                "high",
+                "fast"
+              ],
+              "to": [
+                "wet",
+                "dark",
+                "themed"
+              ]
             },
             "intensity": {
               "from": null,
@@ -1171,7 +1224,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "water_ride",
+      "type": "log_flume",
       "props": [
         "wet"
       ],
@@ -1187,7 +1240,7 @@
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/wild-water-slide",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Wild_Water_Slide",
       "manufacturer": "Intamin",
-      "model": "Log Flume",
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/wildwaterbaan/Wild%20Water%20Slide%20main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/wild-water-slide",
@@ -1233,7 +1286,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "flat_spinner",
+      "type": "family_coaster",
       "props": [
         "spins"
       ],
@@ -1246,7 +1299,7 @@
       ],
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/aztek-express",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Aztek_Express",
-      "manufacturer": "Mack",
+      "manufacturer": "Mack Rides",
       "model": "Music Express",
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/aztek-express/Aztek%20Express%20main.jpg",
@@ -1384,8 +1437,13 @@
               "to": "wereldlangste coastertrein met tijdreis-thema"
             },
             "props": {
-              "from": ["dark"],
-              "to": ["dark", "themed"]
+              "from": [
+                "dark"
+              ],
+              "to": [
+                "dark",
+                "themed"
+              ]
             }
           }
         },
@@ -1414,10 +1472,11 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "flat_spinner",
+      "type": "top_spin",
       "props": [
         "high",
-        "themed"
+        "themed",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 3,
@@ -1447,7 +1506,10 @@
             },
             "props": {
               "from": [],
-              "to": ["high", "themed"]
+              "to": [
+                "high",
+                "themed"
+              ]
             }
           }
         },
@@ -1500,7 +1562,7 @@
       "park_url": "https://www.bobbejaanland.be/parkactiviteiten/attracties/oki-doki",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Oki_Doki",
       "manufacturer": "Vekoma",
-      "model": "Junior Coaster",
+      "model": null,
       "admin_preview": {
         "url": "https://www.bobbejaanland.be/content/dam/bjl/images/attractions/oki-doki/Oki-Doki-%20Attracties-%20Bobbejaanland-main.jpg",
         "source_page": "https://www.bobbejaanland.be/parkactiviteiten/attracties/oki-doki",
@@ -1542,7 +1604,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "water_battle",
+      "type": "splash_battle",
       "props": [
         "wet"
       ],
@@ -1604,7 +1666,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
+      "type": "flying_chairs",
       "props": [],
       "intensity": 2,
       "height_intensity": 2,
@@ -1636,7 +1698,9 @@
               "to": "kiddie_flat"
             },
             "props": {
-              "from": ["spins"],
+              "from": [
+                "spins"
+              ],
               "to": []
             },
             "max": {
@@ -1674,7 +1738,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
+      "type": "flying_chairs",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1706,7 +1770,9 @@
               "to": "kiddie_flat"
             },
             "props": {
-              "from": ["spins"],
+              "from": [
+                "spins"
+              ],
               "to": []
             },
             "intensity": {
@@ -1748,7 +1814,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "pedal_ride",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1838,8 +1904,12 @@
               "to": 140
             },
             "props": {
-              "from": ["spins"],
-              "to": ["high"]
+              "from": [
+                "spins"
+              ],
+              "to": [
+                "high"
+              ]
             }
           }
         },
@@ -1872,7 +1942,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "animal_ride",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1926,7 +1996,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1984,7 +2054,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "carousel",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2046,7 +2116,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
+      "type": "playground",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2104,7 +2174,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "slow_boat",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,

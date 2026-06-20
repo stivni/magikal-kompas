@@ -5,7 +5,7 @@
   "meta": {
     "country": "BE",
     "site": "https://www.bellewaerde.be",
-    "updated": "2026-06-18",
+    "updated": "2026-06-20",
     "tagging": "web-v3 (36 attracties geverifieerd vs officiële site; Boomerang technische specs gecorrigeerd obv parksite; Piratenboot beg gecorrigeerd naar null + max_height_m toegevoegd; Amazonia beg gecorrigeerd 120→105; Flying Carrousel beg gecorrigeerd naar null; El Toro props hersteld naar fast+spins)"
   },
   "rides": [
@@ -29,7 +29,7 @@
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/screaming-eagle",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Screaming_Eagle",
-      "manufacturer": "HUSS",
+      "manufacturer": "Huss",
       "model": "Shot 'N Drop",
       "image": {
         "url": "assets/photos/bellewaerde/screaming-eagle.webp",
@@ -119,7 +119,7 @@
       "inversions_count": 6,
       "duration_s": 108,
       "g_force": 5.2,
-      "tag_source": "web",
+      "tag_source": "admin",
       "tag_confidence": "high",
       "sources": [
         "https://rcdb.com/926.htm",
@@ -296,7 +296,7 @@
       "beg": 120,
       "zelf": 120,
       "max": 195,
-      "type": "flat_spinner",
+      "type": "frisbee_pendulum",
       "props": [
         "spins"
       ],
@@ -462,7 +462,8 @@
       "type": "flat_spinner",
       "props": [
         "fast",
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 4,
       "height_intensity": 2,
@@ -544,7 +545,7 @@
       "beg": 105,
       "zelf": 130,
       "max": null,
-      "type": "water_ride",
+      "type": "rapids",
       "props": [
         "wet",
         "spins"
@@ -620,9 +621,10 @@
       "beg": 105,
       "zelf": 120,
       "max": null,
-      "type": "funhouse",
+      "type": "madhouse",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 1,
@@ -633,7 +635,7 @@
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/het-huis-van-houdini",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Magische_Huis_van_Houdini",
-      "manufacturer": "Huss",
+      "manufacturer": "Vekoma",
       "model": "Madhouse",
       "image": {
         "url": "assets/photos/bellewaerde/huis-van-houdini.webp",
@@ -684,7 +686,7 @@
       "beg": 100,
       "zelf": 140,
       "max": null,
-      "type": "water_ride",
+      "type": "rapids",
       "props": [
         "wet"
       ],
@@ -699,7 +701,7 @@
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/bengal-rapid-river",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Bengal_Rapid_River",
       "manufacturer": "Intamin",
-      "model": "River Rapid",
+      "model": null,
       "image": {
         "url": "assets/photos/bellewaerde/bengal-rapid-river.webp?t=1781632295959",
         "license": "CC-BY-SA-4.0",
@@ -763,7 +765,7 @@
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/wakala",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Wakala",
       "manufacturer": "Gerstlauer",
-      "model": "Family Coaster",
+      "model": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/wakala/wakala-trein-geel-piek.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/wakala",
@@ -971,7 +973,7 @@
       "beg": 100,
       "zelf": 120,
       "max": null,
-      "type": "flat_spinner",
+      "type": "walkthrough_decor",
       "props": [
         "spins"
       ],
@@ -1038,7 +1040,7 @@
       "height_intensity": 2,
       "top_speed_kmh": 27,
       "max_height_m": 4.6,
-      "tag_source": "web",
+      "tag_source": "admin",
       "tag_confidence": "high",
       "sources": [
         "https://rcdb.com/20973.htm",
@@ -1047,7 +1049,7 @@
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/brazilian-buggies",
       "wikipedia_url": null,
       "manufacturer": "Zamperla",
-      "model": "Family Coaster",
+      "model": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/brazilian-buggies/brazilian-buggies-gezin-trein-eerste-afdaling.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/brazilian-buggies",
@@ -1089,7 +1091,7 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "water_ride",
+      "type": "slow_boat",
       "props": [
         "wet"
       ],
@@ -1104,8 +1106,8 @@
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cafe",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Rio_Do_Caf%C3%A9",
-      "manufacturer": "Mack",
-      "model": "Log Flume",
+      "manufacturer": "Mack Rides",
+      "model": null,
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/rio-do-cafe/rio-do-cafe-afdaling-gezin-1.jpg",
         "source_page": "https://www.bellewaerde.be/park/nl/het-park/attracties/rio-do-cafe",
@@ -1152,7 +1154,7 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "water_ride",
+      "type": "log_flume",
       "props": [
         "wet"
       ],
@@ -1217,7 +1219,7 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "water_ride",
+      "type": "log_flume",
       "props": [
         "wet"
       ],
@@ -1350,7 +1352,8 @@
       "max": null,
       "type": "teacups",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 1,
@@ -1402,7 +1405,7 @@
       "beg": 90,
       "zelf": 105,
       "max": null,
-      "type": "drop_tower",
+      "type": "kiddie_drop",
       "props": [],
       "intensity": 2,
       "height_intensity": 3,
@@ -1512,7 +1515,7 @@
       "beg": 80,
       "zelf": 105,
       "max": null,
-      "type": "kiddie_flat",
+      "type": "balloon_ride",
       "props": [
         "spins"
       ],
@@ -1560,7 +1563,7 @@
       "beg": 80,
       "zelf": 105,
       "max": null,
-      "type": "kiddie_flat",
+      "type": "flying_chairs",
       "props": [
         "spins"
       ],
@@ -1608,7 +1611,7 @@
       "beg": 80,
       "zelf": 105,
       "max": null,
-      "type": "drop_tower",
+      "type": "kiddie_drop",
       "props": [],
       "intensity": 2,
       "height_intensity": 2,
@@ -1654,7 +1657,7 @@
       "beg": 80,
       "zelf": 105,
       "max": null,
-      "type": "kiddie_flat",
+      "type": "flying_chairs",
       "props": [
         "swings"
       ],
@@ -1708,7 +1711,7 @@
       "beg": 80,
       "zelf": 90,
       "max": 140,
-      "type": "water_ride",
+      "type": "slow_boat",
       "props": [
         "wet"
       ],
@@ -1756,7 +1759,7 @@
       "beg": 0,
       "zelf": 120,
       "max": null,
-      "type": "transport",
+      "type": "story_ride",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1809,7 +1812,7 @@
       "beg": 0,
       "zelf": 105,
       "max": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1903,7 +1906,7 @@
       "beg": 0,
       "zelf": 105,
       "max": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2021,7 +2024,7 @@
       ],
       "park_url": "https://www.bellewaerde.be/park/nl/het-park/attracties/seesaw-swing",
       "wikipedia_url": null,
-      "manufacturer": "Art & Engineering",
+      "manufacturer": "ART Engineering",
       "model": "Wild Swing XL",
       "admin_preview": {
         "url": "https://www.bellewaerde.be/content/dam/blw/nl/algemeen/afbeeldingen/attracties/seesaw-swing/seesaw-swing-concept-art.jpg",
@@ -2110,7 +2113,7 @@
       "beg": 0,
       "zelf": 120,
       "max": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,

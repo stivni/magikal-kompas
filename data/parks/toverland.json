@@ -18,7 +18,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "thrill_coaster",
+      "type": "launch_coaster",
       "props": [],
       "intensity": 4,
       "height_intensity": 3,
@@ -35,7 +35,7 @@
       "park_url": "https://www.toverland.com/en/rides/booster-bike",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Booster_Bike",
       "manufacturer": "Vekoma",
-      "model": "Motorbike Coaster",
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Booster-Bike.jpg/500px-Booster-Bike.jpg",
         "source_page": "https://en.wikipedia.org/wiki/Booster_Bike",
@@ -197,7 +197,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "thrill_coaster",
+      "type": "inverted_coaster",
       "props": [
         "inversions"
       ],
@@ -301,7 +301,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "flat_spinner",
+      "type": "inverted_coaster",
       "props": [
         "spins",
         "swings",
@@ -380,7 +380,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "thrill_coaster",
+      "type": "wooden_coaster",
       "props": [],
       "intensity": 4,
       "height_intensity": 4,
@@ -397,8 +397,8 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/troy",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Troy_(roller_coaster)",
-      "manufacturer": "GCI",
-      "model": "Wooden Coaster",
+      "manufacturer": "Great Coasters International",
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Troy_FirstDrop.jpg/500px-Troy_FirstDrop.jpg",
         "source_page": "https://en.wikipedia.org/wiki/Troy_(roller_coaster)",
@@ -497,7 +497,7 @@
       "park_url": "https://www.toverland.com/en/rides/scorpios",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Scorpios_(schommelschip)",
       "manufacturer": "Metallbau Emmeln",
-      "model": "Schommelschip",
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Scorpios.jpg/500px-Scorpios.jpg",
         "source_page": "https://nl.wikipedia.org/wiki/Toverland",
@@ -570,7 +570,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "water_ride",
+      "type": "rapids",
       "props": [
         "wet"
       ],
@@ -585,7 +585,7 @@
       "park_url": "https://www.toverland.com/en/rides/djengu-river",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Djengu_River",
       "manufacturer": "Hafema",
-      "model": "Rapid River",
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Djengu_River_Toverland.jpg/500px-Djengu_River_Toverland.jpg",
         "source_page": "https://nl.wikipedia.org/wiki/Toverland",
@@ -650,7 +650,8 @@
       "max_age": null,
       "type": "spinning_coaster",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 4,
       "height_intensity": 4,
@@ -666,7 +667,7 @@
       "park_url": "https://www.toverland.com/en/rides/dwervelwind",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Dwervelwind",
       "manufacturer": "Mack Rides",
-      "model": "Spinning Coaster",
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Dwervelwind-1.jpg/500px-Dwervelwind-1.jpg",
         "source_page": "https://nl.wikipedia.org/wiki/Toverland",
@@ -742,7 +743,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "drop_tower",
+      "type": "kiddie_drop",
       "props": [],
       "intensity": 2,
       "height_intensity": 3,
@@ -907,8 +908,10 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "funhouse",
-      "props": [],
+      "type": "madhouse",
+      "props": [
+        "nausea"
+      ],
       "intensity": 1,
       "height_intensity": 1,
       "tag_source": "web",
@@ -963,7 +966,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "water_ride",
+      "type": "rapids",
       "props": [
         "wet"
       ],
@@ -980,7 +983,7 @@
       "park_url": "https://www.toverland.com/en/rides/expedition-zork",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Expedition_Zork",
       "manufacturer": "Mack Rides",
-      "model": "Log Flume",
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Expedition_Zork_Toverland_15.jpg/500px-Expedition_Zork_Toverland_15.jpg",
         "source_page": "https://nl.wikipedia.org/wiki/Toverland",
@@ -1073,7 +1076,7 @@
       "park_url": "https://www.toverland.com/en/rides/toos-express",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Toos-Express",
       "manufacturer": "Vekoma",
-      "model": "Junior Coaster",
+      "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Toverland-Boomerang.jpg/500px-Toverland-Boomerang.jpg",
         "source_page": "https://nl.wikipedia.org/wiki/Toos-Express",
@@ -1149,7 +1152,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "water_ride",
+      "type": "log_flume",
       "props": [
         "wet"
       ],
@@ -1314,7 +1317,8 @@
       "max_age": null,
       "type": "teacups",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 1,
@@ -1390,7 +1394,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "carousel",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1468,7 +1472,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "drop_tower",
+      "type": "flying_chairs",
       "props": [
         "themed"
       ],
@@ -1481,7 +1485,7 @@
       ],
       "park_url": "https://www.toverland.com/en/rides/vliegend-tapijt",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Vliegend_Tapijt_(Toverland)",
-      "manufacturer": "SBF",
+      "manufacturer": "SBF Visa Group",
       "model": null,
       "admin_preview": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Vliegend_Tapijt_Toverland_%282024%29.jpg/500px-Vliegend_Tapijt_Toverland_%282024%29.jpg",
@@ -1828,7 +1832,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2129,7 +2133,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2191,7 +2195,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
+      "type": "walkthrough_decor",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2928,7 +2932,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "story_ride",
+      "type": "walkthrough_decor",
       "props": [
         "dark"
       ],
@@ -3263,7 +3267,8 @@
       "type": "spinning_coaster",
       "props": [
         "spins",
-        "themed"
+        "themed",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 2,

@@ -214,7 +214,7 @@
       "beg": 130,
       "zelf": 130,
       "max": null,
-      "type": "thrill_coaster",
+      "type": "inverted_coaster",
       "props": [
         "high",
         "fast",
@@ -317,7 +317,8 @@
       "props": [
         "spins",
         "inversions",
-        "themed"
+        "themed",
+        "nausea"
       ],
       "intensity": 4,
       "height_intensity": 3,
@@ -577,7 +578,7 @@
       "beg": 110,
       "zelf": 120,
       "max": null,
-      "type": "family_coaster",
+      "type": "wooden_coaster",
       "props": [
         "fast"
       ],
@@ -651,7 +652,7 @@
       "beg": 90,
       "zelf": 130,
       "max": null,
-      "type": "water_ride",
+      "type": "log_flume",
       "props": [
         "wet",
         "themed"
@@ -731,7 +732,8 @@
       "type": "top_spin",
       "props": [
         "spins",
-        "themed"
+        "themed",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 3,
@@ -816,7 +818,7 @@
       "beg": 100,
       "zelf": 120,
       "max": null,
-      "type": "water_ride",
+      "type": "rapids",
       "props": [
         "wet",
         "themed"
@@ -890,7 +892,7 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "water_battle",
+      "type": "splash_battle",
       "props": [
         "wet",
         "spins",
@@ -1012,10 +1014,11 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "water_ride",
+      "type": "flat_spinner",
       "props": [
         "wet",
-        "fast"
+        "fast",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 3,
@@ -1083,7 +1086,8 @@
       "type": "flat_spinner",
       "props": [
         "swings",
-        "themed"
+        "themed",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 2,
@@ -1236,7 +1240,7 @@
       "beg": 50,
       "zelf": 120,
       "max": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 3,
@@ -1330,7 +1334,7 @@
       "beg": 50,
       "zelf": 120,
       "max": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1379,7 +1383,8 @@
       "type": "teacups",
       "props": [
         "spins",
-        "themed"
+        "themed",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 1,
@@ -1447,7 +1452,8 @@
       "type": "flat_spinner",
       "props": [
         "spins",
-        "themed"
+        "themed",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 1,
@@ -1516,7 +1522,7 @@
       "beg": 80,
       "zelf": 105,
       "max": null,
-      "type": "wave_swinger",
+      "type": "balloon_ride",
       "props": [
         "spins",
         "swings"
@@ -1647,7 +1653,7 @@
       "beg": 90,
       "zelf": 100,
       "max": null,
-      "type": "drop_tower",
+      "type": "kiddie_drop",
       "props": [],
       "intensity": 3,
       "height_intensity": 3,
@@ -1704,10 +1710,11 @@
       "beg": 90,
       "zelf": 90,
       "max": 140,
-      "type": "water_ride",
+      "type": "flat_spinner",
       "props": [
         "wet",
-        "themed"
+        "themed",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 2,
@@ -1772,7 +1779,7 @@
       "beg": 90,
       "zelf": null,
       "max": 140,
-      "type": "kiddie_flat",
+      "type": "flying_chairs",
       "props": [
         "themed"
       ],
@@ -2028,7 +2035,7 @@
       "beg": 50,
       "zelf": 120,
       "max": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2087,7 +2094,8 @@
       "type": "flat_spinner",
       "props": [
         "swings",
-        "themed"
+        "themed",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 1,
@@ -2153,7 +2161,7 @@
       "beg": 0,
       "zelf": 0,
       "max": null,
-      "type": "funhouse",
+      "type": "walkthrough_decor",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,

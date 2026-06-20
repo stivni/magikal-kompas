@@ -1,0 +1,393 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://magikal-kompas/data/park-schema.json",
+  "title": "Magikal Kompas — parkbestand",
+  "description": "Schema voor een enkel park-JSON-bestand in data/parks/<slug>.json.",
+  "type": "object",
+  "required": ["park", "meta", "rides"],
+  "additionalProperties": false,
+  "properties": {
+    "park": {
+      "type": "string",
+      "description": "Officiële parknaam (eigennaam, niet vertalen)."
+    },
+    "logo": {
+      "type": ["string", "null"],
+      "description": "Pad naar het liggende logobestand, bv. assets/logos/<slug>.svg. Zie ADR-014."
+    },
+    "icon": {
+      "type": ["string", "null"],
+      "description": "Pad naar het vierkante icoon, bv. assets/icons/<slug>.svg. Geen automatische fallback naar logo. Zie ADR-014."
+    },
+    "theming_score": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Thematisatie-score voor het park als geheel (1–5). Voedt de persoons-as thematisatie-belang. Ontbrekend → default 3 (neutraal). Zie ADR-024 v2."
+    },
+    "meta": {
+      "type": "object",
+      "description": "Metadata over het park.",
+      "additionalProperties": false,
+      "properties": {
+        "country": {
+          "type": "string",
+          "enum": ["BE", "NL", "FR", "DE", "LU", "UK", "GB"],
+          "description": "ISO 3166-1 alpha-2 landcode."
+        },
+        "site": {
+          "type": "string",
+          "format": "uri",
+          "description": "Officiële website van het park."
+        },
+        "updated": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+          "description": "Datum waarop de data voor het laatst is bijgewerkt (YYYY-MM-DD)."
+        },
+        "tagging": {
+          "type": "string",
+          "description": "Korte notitie over de staat van de tagging, bv. welke agent-versie gebruikt is."
+        }
+      }
+    },
+    "rides": {
+      "type": "array",
+      "description": "Lijst van actieve attracties in dit park. Permanent gesloten attracties worden hard verwijderd (zie ADR-023).",
+      "items": {
+        "$ref": "#/$defs/Ride"
+      }
+    }
+  },
+  "$defs": {
+    "Ride": {
+      "type": "object",
+      "description": "Een attractie in het park.",
+      "required": ["att", "beg", "zelf", "max", "type", "props"],
+      "additionalProperties": false,
+      "properties": {
+        "att": {
+          "type": "string",
+          "description": "Naam van de attractie (eigennaam, niet vertalen)."
+        },
+        "oms": {
+          "oneOf": [
+            { "type": "string" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "nl": { "type": "string" },
+                "en": { "type": "string" },
+                "fr": { "type": "string" }
+              }
+            }
+          ],
+          "description": "Korte omschrijving. Mag een string zijn (bron-taal NL) of een {nl, en, fr}-object. Beide vormen zijn geldig. Zie ADR-015."
+        },
+        "beg": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Minimale lengte om ONDER BEGELEIDING mee te mogen (cm). 0 = geen lengte-eis."
+        },
+        "zelf": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Minimale lengte om ZELFSTANDIG mee te mogen (cm). 0 = geen lengte-eis."
+        },
+        "max": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "description": "Maximale lengte (cm), of null als er geen bovengrens is. ≥180 cm = veiligheidsgrens; <180 cm = kindertoestel (ontgroeid, telt niet als gemist)."
+        },
+        "min_age_beg": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "description": "Minimale leeftijd om ONDER BEGELEIDING mee te mogen (jaar), of null. Zie ADR-016."
+        },
+        "min_age_zelf": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "description": "Minimale leeftijd om ZELFSTANDIG mee te mogen (jaar), of null. Zie ADR-016."
+        },
+        "max_age": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "description": "Maximale leeftijd (jaar), of null. Soft-uit kindertoestel: bij ontgroeid telt de attractie niet als gemist."
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "thrill_coaster",
+            "family_coaster",
+            "kiddie_coaster",
+            "spinning_coaster",
+            "drop_tower",
+            "pirate_ship",
+            "top_spin",
+            "teacups",
+            "carousel",
+            "wave_swinger",
+            "ferris_wheel",
+            "flat_spinner",
+            "water_ride",
+            "water_battle",
+            "dark_ride",
+            "story_ride",
+            "transport",
+            "kiddie_flat",
+            "playground",
+            "show",
+            "funhouse"
+          ],
+          "description": "Bewegingsmodel van de attractie. dark_ride is deprecated (gebruik story_ride); behouden voor backwards-compat lezen van bestaande data. Zie ADR-024."
+        },
+        "props": {
+          "type": "array",
+          "description": "Eigenschappen die WAAR zijn voor deze attractie. Stabiel-Engelse keys. ~81% volgt uit het type; rest per attractie checken. Zie ADR-015 en ADR-024.",
+          "items": {
+            "type": "string",
+            "enum": ["wet", "inversions", "spins", "swings", "dark", "scary"]
+          },
+          "uniqueItems": true
+        },
+        "intensity": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "Beleefde intensiteit (1–5). Niet afgeleid uit andere velden; handmatig getagd. 1=rustig deinen, 2=lichte deining, 3=stevige beuk, 4=hou je vast, 5=niet voor watjes. Verplicht bij nieuwe tagging. Zie ADR-024."
+        },
+        "height_intensity": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "Beleefde hoogte (1–5). Gescheiden van max_height_m: een gesloten gondel kan lager scoren dan een open coaster van dezelfde hoogte. 1=voeten op de grond, 2=omhoog maar je voelt je vast, 3=je ziet de hoogte, 4=hoogte is deel van de thrill, 5=hoogte ís de thrill. Verplicht bij nieuwe tagging. Zie ADR-024."
+        },
+        "theming": {
+          "type": "string",
+          "enum": ["none", "light", "medium", "high"],
+          "description": "Mate van wereld/verhaal/onderdompeling op de attractie. Vervangt de vroegere 'themed' prop. Zie ADR-024."
+        },
+        "top_speed_kmh": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "description": "Topsnelheid in km/u. Optioneel hulpveld voor tagger/admin; voedt de park-curation-agent bij het bepalen van intensity. Geen semantisch gewicht in score-berekening. Zie ADR-024."
+        },
+        "max_height_m": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "description": "Maximale hoogte in meters. Optioneel hulpveld; voedt de park-curation-agent bij het bepalen van height_intensity. Zie ADR-024."
+        },
+        "drop_m": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "description": "Vrije val in meters. Optioneel hulpveld. Zie ADR-024."
+        },
+        "inversions_count": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Aantal inversies (loopings, kurketrekkers, …). Optioneel hulpveld. Zie ADR-024."
+        },
+        "duration_s": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "description": "Rijtijd in seconden. Optioneel hulpveld. Zie ADR-024."
+        },
+        "g_force": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "description": "Maximale G-kracht. Optioneel hulpveld. Zie ADR-024."
+        },
+        "tag_source": {
+          "type": "string",
+          "enum": ["auto-v1", "web", "admin"],
+          "description": "Bron van de tagging: auto-v1 = automatisch gegenereerd door v1-agent, web = handmatig via webresearch, admin = handmatig via admin-UI."
+        },
+        "tag_confidence": {
+          "type": "string",
+          "enum": ["unverified", "low", "med", "high", "verified"],
+          "description": "Betrouwbaarheid van de tagging: unverified = nooit gecheckt, low/med/high = agent-inschatting, verified = door admin bevestigd."
+        },
+        "sources": {
+          "type": "array",
+          "description": "Bronnen van de TAGGING (parksite, RCDB, fanwiki, …). Mag leeg zijn. Vervangt het vroegere source_url (één string). Zie ADR-014.",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "park_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Officiële attractiepagina op de parksite. Apart van sources (dat de tagging-bronnen zijn). Zie ADR-014."
+        },
+        "image": {
+          "oneOf": [
+            { "$ref": "#/$defs/ImageRef" },
+            { "type": "null" }
+          ],
+          "description": "CC-gelicenseerde foto voor publieke weergave. Zodra url is ingevuld zijn alle andere velden verplicht. Zie ADR-014."
+        },
+        "admin_preview": {
+          "oneOf": [
+            { "$ref": "#/$defs/AdminPreview" },
+            { "type": "null" }
+          ],
+          "description": "Rechten-niet-gecheckte foto uitsluitend voor herkenning in de admin-UI. Wordt NOOIT publiek gerenderd. Zie ADR-014."
+        },
+        "activity": {
+          "type": "array",
+          "description": "Log van de laatste wijzigingen en verifications op deze attractie. Nieuwste vooraan; oudste rolt eruit bij push. Cap op 3 entries. Bestaande rides starten zonder dit veld (of []); geen backfill. Zie schema.md.",
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/$defs/ActivityEntry"
+          }
+        },
+        "rules_verified": {
+          "oneOf": [
+            { "$ref": "#/$defs/RulesVerified" },
+            { "type": "null" }
+          ],
+          "description": "Optioneel: tijdstip en bron waarop de toegangsregels (lengtes/leeftijden) zijn geverifieerd. Nieuw veld — backfill niet vereist."
+        }
+      }
+    },
+    "ImageRef": {
+      "type": "object",
+      "description": "CC-gelicenseerde afbeelding voor publieke weergave. Alle velden zijn verplicht zodra url aanwezig is. Zie ADR-014.",
+      "required": ["url", "license", "attribution", "source_page"],
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "Pad naar het lokale afbeeldingsbestand, bv. assets/photos/<slug>/<naam>.webp. Mag een cache-busting query-string bevatten (bv. ?t=...)."
+        },
+        "license": {
+          "type": "string",
+          "description": "SPDX-licentie-identifier of SPDX-uitdrukking, bv. CC-BY-SA-4.0 of CC0."
+        },
+        "attribution": {
+          "type": "string",
+          "description": "Naamsvermelding zoals vereist door de licentie, bv. 'Foto door X, via Wikimedia Commons'."
+        },
+        "source_page": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL van de pagina waar de afbeelding vandaan komt (bv. Wikimedia Commons-bestandspagina)."
+        }
+      }
+    },
+    "AdminPreview": {
+      "type": "object",
+      "description": "Rechten-niet-gecheckte foto uitsluitend voor herkenning in de admin-UI. Wordt NOOIT in de publieke render getoond. note moet letterlijk beginnen met 'rechten-niet-gecheckt' — code gebruikt dat als safeguard. Zie ADR-014.",
+      "required": ["url", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Externe URL van de preview-foto. Rechten zijn NIET gecheckt."
+        },
+        "source_page": {
+          "type": "string",
+          "format": "uri",
+          "description": "Optioneel: URL van de pagina waar de preview-URL vandaan komt."
+        },
+        "note": {
+          "type": "string",
+          "pattern": "^rechten-niet-gecheckt",
+          "description": "Waarschuwing die letterlijk moet beginnen met 'rechten-niet-gecheckt'. Code herkent dit patroon automatisch en houdt het veld buiten publieke renders."
+        }
+      }
+    },
+    "ActivityEntry": {
+      "description": "Eén entry in de activity-log. Twee soorten: wijziging (changes) of verification (verified: true). Cap op 3 entries per attractie; oudste rolt eruit bij push. at en by zijn altijd aanwezig.",
+      "oneOf": [
+        { "$ref": "#/$defs/ActivityEntryChange" },
+        { "$ref": "#/$defs/ActivityEntryVerify" }
+      ]
+    },
+    "ActivityEntryChange": {
+      "type": "object",
+      "description": "Wijziging-entry: bevat een diff van de velden die echt veranderden. Geproduceerd door agents en admins.",
+      "required": ["at", "by", "changes"],
+      "additionalProperties": false,
+      "properties": {
+        "at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO-8601 UTC tijdstip van de wijziging, bv. 2026-06-18T10:30:00Z."
+        },
+        "by": {
+          "type": "string",
+          "description": "Wie de wijziging heeft gemaakt: 'admin' of 'agent:<versie>' (bv. 'agent:web-v1')."
+        },
+        "changes": {
+          "type": "object",
+          "description": "Per gewijzigd veld een {from, to}-object met de hele oude en nieuwe waarde. Alleen velden die echt veranderden worden opgenomen.",
+          "additionalProperties": {
+            "$ref": "#/$defs/ActivityChange"
+          }
+        }
+      }
+    },
+    "ActivityEntryVerify": {
+      "type": "object",
+      "description": "Verify-entry: bevestiging door admin via de ✓-knop dat de tagging klopt. Agents produceren dit type nooit.",
+      "required": ["at", "by", "verified"],
+      "additionalProperties": false,
+      "properties": {
+        "at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO-8601 UTC tijdstip van de verificatie, bv. 2026-06-18T10:31:00Z."
+        },
+        "by": {
+          "type": "string",
+          "description": "Wie heeft geverifieerd: altijd 'admin'."
+        },
+        "verified": {
+          "type": "boolean",
+          "enum": [true],
+          "description": "Altijd true; de aanwezigheid van dit veld onderscheidt een verify-entry van een wijziging-entry."
+        }
+      }
+    },
+    "ActivityChange": {
+      "type": "object",
+      "description": "Per-veld diff voor één wijziging-entry. from en to bevatten de hele oude resp. nieuwe waarde (ook voor arrays en objecten).",
+      "required": ["from", "to"],
+      "additionalProperties": false,
+      "properties": {
+        "from": {
+          "description": "Oude waarde van het veld. Mag elk JSON-type zijn (string, number, array, object, null)."
+        },
+        "to": {
+          "description": "Nieuwe waarde van het veld. Mag elk JSON-type zijn (string, number, array, object, null)."
+        }
+      }
+    },
+    "RulesVerified": {
+      "type": "object",
+      "description": "Registratie van het moment en de bron waarop de toegangsregels (lengtes, leeftijden) zijn geverifieerd. Nieuw veld — backfill is niet vereist.",
+      "required": ["at", "by"],
+      "additionalProperties": false,
+      "properties": {
+        "at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO-8601 UTC tijdstip van de verificatie, bv. 2026-06-18T12:00:00Z."
+        },
+        "by": {
+          "type": "string",
+          "description": "Wie de regels heeft geverifieerd, bv. 'admin' of 'agent:web-v2'."
+        },
+        "source": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL van de officiële bron waarop de regels zijn gecontroleerd, bv. de attractiepagina van de parksite."
+        }
+      }
+    }
+  }
+}

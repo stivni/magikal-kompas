@@ -141,7 +141,7 @@
       "beg": 110,
       "zelf": 110,
       "max": null,
-      "type": "story_ride",
+      "type": "show",
       "props": [
         "dark",
         "scary",
@@ -225,7 +225,8 @@
       "type": "flat_spinner",
       "props": [
         "spins",
-        "swings"
+        "swings",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 3,
@@ -237,7 +238,7 @@
       ],
       "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/mambo/",
       "wikipedia_url": null,
-      "manufacturer": "Mack",
+      "manufacturer": "Mack Rides",
       "model": "Feria Swing",
       "admin_preview": {
         "url": "https://www.larecredes3cures.com/app/uploads/2024/03/mambo-2-scaled-1600x784-c-center.webp",
@@ -333,7 +334,8 @@
       "max": null,
       "type": "teacups",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 1,
@@ -475,7 +477,7 @@
       "beg": 100,
       "zelf": 120,
       "max": null,
-      "type": "family_coaster",
+      "type": "mine_train",
       "props": [],
       "intensity": 3,
       "height_intensity": 3,
@@ -542,9 +544,10 @@
       "beg": 100,
       "zelf": 120,
       "max": null,
-      "type": "flat_spinner",
+      "type": "octopus",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 2,
@@ -590,7 +593,7 @@
       "beg": 100,
       "zelf": 115,
       "max": null,
-      "type": "water_ride",
+      "type": "log_flume",
       "props": [
         "wet"
       ],
@@ -684,7 +687,7 @@
       "beg": 100,
       "zelf": 140,
       "max": null,
-      "type": "water_ride",
+      "type": "log_flume",
       "props": [
         "wet",
         "spins"
@@ -765,7 +768,7 @@
       "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/jeepo-dino/",
       "wikipedia_url": null,
       "manufacturer": "Zamperla",
-      "model": "Family Coaster",
+      "model": null,
       "admin_preview": {
         "url": "https://www.larecredes3cures.com/app/uploads/2024/05/attractions-et-manege-pour-les-enfants-dans-le-finistere-1600x784-c-center.webp",
         "source_page": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/jeepo-dino/",
@@ -939,8 +942,10 @@
       "beg": 85,
       "zelf": 140,
       "max": null,
-      "type": "kiddie_flat",
-      "props": [],
+      "type": "tilt_a_whirl",
+      "props": [
+        "nausea"
+      ],
       "intensity": 1,
       "height_intensity": 1,
       "tag_source": "web",
@@ -1003,7 +1008,7 @@
       ],
       "park_url": "https://www.larecredes3cures.com/parc-et-attractions/attractions-et-jeux/le-pen-draig/",
       "wikipedia_url": null,
-      "manufacturer": "Mack",
+      "manufacturer": "Mack Rides",
       "model": "Dino Carousel",
       "admin_preview": {
         "url": "https://www.larecredes3cures.com/app/uploads/2024/02/pein-draig-la-recre-des-3-cures-2-768x1024-1-1600x784-c-center.webp",
@@ -1042,7 +1047,7 @@
       "beg": 85,
       "zelf": 120,
       "max": null,
-      "type": "kiddie_flat",
+      "type": "flying_chairs",
       "props": [
         "spins"
       ],
@@ -1106,7 +1111,7 @@
       "max": null,
       "min_age_beg": 8,
       "min_age_zelf": 14,
-      "type": "transport",
+      "type": "karting",
       "props": [],
       "intensity": 2,
       "height_intensity": 1,
@@ -1152,7 +1157,7 @@
       "beg": 60,
       "zelf": 90,
       "max": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1198,7 +1203,7 @@
       "beg": 60,
       "zelf": 90,
       "max": null,
-      "type": "kiddie_flat",
+      "type": "kiddie_drop",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1254,7 +1259,7 @@
       "beg": 0,
       "zelf": 0,
       "max": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1348,7 +1353,7 @@
       "beg": 0,
       "zelf": 160,
       "max": null,
-      "type": "water_ride",
+      "type": "pedal_boat",
       "props": [
         "wet"
       ],
@@ -1396,7 +1401,7 @@
       "beg": 0,
       "zelf": 110,
       "max": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1493,7 +1498,7 @@
       "beg": 0,
       "zelf": 0,
       "max": null,
-      "type": "water_battle",
+      "type": "splash_battle",
       "props": [
         "wet"
       ],
@@ -1637,7 +1642,7 @@
       "beg": 0,
       "zelf": 0,
       "max": null,
-      "type": "show",
+      "type": "arcade",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,

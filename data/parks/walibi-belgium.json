@@ -5,7 +5,7 @@
   "meta": {
     "country": "BE",
     "site": "https://www.walibi.be",
-    "updated": "2026-06-18",
+    "updated": "2026-06-20",
     "tagging": "web-v1 (volledige verificatie tegen officiële site; low-gevallen markeren voor admin-review)"
   },
   "rides": [
@@ -18,7 +18,8 @@
       "type": "top_spin",
       "props": [
         "inversions",
-        "swings"
+        "swings",
+        "nausea"
       ],
       "intensity": 4,
       "height_intensity": 2,
@@ -153,7 +154,7 @@
       "beg": 130,
       "zelf": 130,
       "max": null,
-      "type": "thrill_coaster",
+      "type": "inverted_coaster",
       "props": [
         "inversions"
       ],
@@ -227,7 +228,7 @@
       "beg": 130,
       "zelf": 140,
       "max": null,
-      "type": "thrill_coaster",
+      "type": "launch_coaster",
       "props": [
         "inversions",
         "dark"
@@ -247,7 +248,7 @@
       "park_url": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/turbine",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Turbine_(Walibi_Belgium)",
       "manufacturer": "Schwarzkopf",
-      "model": "Shuttle Loop",
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.be/adobe/dynamicmedia/deliver/dm-aid--47cb6708-b135-432e-831c-9a80a257d6b4/turbine-dockworld-2025.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/turbine",
@@ -297,7 +298,7 @@
       "beg": 130,
       "zelf": 130,
       "max": 195,
-      "type": "thrill_coaster",
+      "type": "inverted_coaster",
       "props": [
         "inversions"
       ],
@@ -366,7 +367,7 @@
       "beg": 120,
       "zelf": 120,
       "max": null,
-      "type": "thrill_coaster",
+      "type": "wooden_coaster",
       "props": [],
       "intensity": 4,
       "height_intensity": 4,
@@ -383,7 +384,7 @@
       "park_url": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/loup-garou",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Weerwolf_(achtbaan)",
       "manufacturer": "Vekoma",
-      "model": "Wooden Coaster",
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.be/adobe/dynamicmedia/deliver/dm-aid--3a6eef87-0573-45bf-8459-1b64089e02aa/5-loup-garou.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.be/nl/ontdek-het-park/sensatie-attracties/loup-garou",
@@ -442,7 +443,7 @@
       "beg": 120,
       "zelf": 120,
       "max": null,
-      "type": "water_ride",
+      "type": "water_coaster",
       "props": [
         "wet"
       ],
@@ -563,9 +564,10 @@
       "beg": 105,
       "zelf": 120,
       "max": null,
-      "type": "funhouse",
+      "type": "madhouse",
       "props": [
-        "dark"
+        "dark",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 1,
@@ -621,7 +623,7 @@
       "beg": 105,
       "zelf": 140,
       "max": null,
-      "type": "water_ride",
+      "type": "rapids",
       "props": [
         "wet",
         "themed"
@@ -638,7 +640,7 @@
       "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/radja-river",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Radja_River",
       "manufacturer": "Intamin",
-      "model": "River Rapid",
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.be/adobe/dynamicmedia/deliver/dm-aid--b289e603-3f19-49fd-a560-c1352afe69fa/40-radja-river.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/radja-river",
@@ -650,8 +652,13 @@
           "by": "agent:web-v1",
           "changes": {
             "props": {
-              "from": ["wet"],
-              "to": ["wet", "themed"]
+              "from": [
+                "wet"
+              ],
+              "to": [
+                "wet",
+                "themed"
+              ]
             },
             "oms": {
               "from": "Wildwaterraftride waarbij je nat wordt.",
@@ -697,7 +704,7 @@
       "beg": 100,
       "zelf": 120,
       "max": null,
-      "type": "family_coaster",
+      "type": "mine_train",
       "props": [],
       "intensity": 3,
       "height_intensity": 3,
@@ -713,7 +720,7 @@
       "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/calamity-mine",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Calamity_Mine",
       "manufacturer": "Vekoma",
-      "model": "Mine Train",
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.be/adobe/dynamicmedia/deliver/dm-aid--7275c416-d78c-4cea-a1e3-936be059b2b8/17-calamity-mine2.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/calamity-mine",
@@ -784,7 +791,7 @@
       "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/tiki-waka",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Tiki_Waka",
       "manufacturer": "Gerstlauer",
-      "model": "Bobsled Coaster",
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.be/adobe/dynamicmedia/deliver/dm-aid--4bd472f7-8be2-4f83-b8fb-9f3d6f69e926/26-tiki-waka.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/tiki-waka",
@@ -796,7 +803,9 @@
           "by": "agent:web-v1",
           "changes": {
             "props": {
-              "from": ["spins"],
+              "from": [
+                "spins"
+              ],
               "to": []
             }
           }
@@ -899,13 +908,14 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "flat_spinner",
+      "type": "teacups",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 1,
-      "tag_source": "web",
+      "tag_source": "admin",
       "tag_confidence": "med",
       "sources": [
         "https://www.walibi.be/nl/ontdek-het-park/familieattracties/tous-en-boite"
@@ -947,7 +957,7 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "kiddie_flat",
+      "type": "kiddie_drop",
       "props": [],
       "intensity": 2,
       "height_intensity": 2,
@@ -999,7 +1009,7 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "water_ride",
+      "type": "log_flume",
       "props": [
         "wet",
         "dark"
@@ -1075,7 +1085,7 @@
       "beg": 90,
       "zelf": 105,
       "max": null,
-      "type": "drop_tower",
+      "type": "frisbee_pendulum",
       "props": [],
       "intensity": 3,
       "height_intensity": 3,
@@ -1121,7 +1131,7 @@
       "beg": 90,
       "zelf": 120,
       "max": null,
-      "type": "kiddie_flat",
+      "type": "flying_chairs",
       "props": [
         "swings"
       ],
@@ -1172,8 +1182,10 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "family_coaster",
-      "props": [],
+      "type": "top_spin",
+      "props": [
+        "nausea"
+      ],
       "intensity": 3,
       "height_intensity": 3,
       "top_speed_kmh": 65,
@@ -1188,7 +1200,7 @@
       "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/mecalodon",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Mecalodon",
       "manufacturer": "Gerstlauer",
-      "model": "Airtime Coaster",
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.be/adobe/dynamicmedia/deliver/dm-aid--f8e4bc6c-ea62-4579-a9b2-1d9d1f1db8cc/mecalodon-kv--2025-1920x1080px.jpg?preferwebp=true&quality=85",
         "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/mecalodon",
@@ -1251,7 +1263,8 @@
       "max_age": null,
       "type": "flat_spinner",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 1,
@@ -1302,7 +1315,8 @@
       "max_age": null,
       "type": "flat_spinner",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 4,
       "height_intensity": 2,
@@ -1354,7 +1368,8 @@
       "max_age": null,
       "type": "flat_spinner",
       "props": [
-        "swings"
+        "swings",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 2,
@@ -1527,7 +1542,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "story_ride",
+      "type": "shoot_ride",
       "props": [
         "dark"
       ],
@@ -1542,7 +1557,7 @@
       "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/challenge-of-tutankhamon",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Challenge_of_Tutankhamon",
       "manufacturer": "ETF Ride Systems",
-      "model": "Trackless Dark Ride",
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.be/adobe/dynamicmedia/deliver/dm-aid--1034ada9-88ea-4f60-b735-fd5f1558d1b9/25-cot.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/challenge-of-tutankhamon",
@@ -1593,7 +1608,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "story_ride",
+      "type": "shoot_ride",
       "props": [
         "dark",
         "spins"
@@ -1609,7 +1624,7 @@
       "park_url": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/popcorn-revenge",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Popcorn_Revenge",
       "manufacturer": "ETF Ride Systems",
-      "model": "Trackless Dark Ride",
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.be/adobe/dynamicmedia/deliver/dm-aid--f4a01027-87f4-40d4-b1d6-4d6b4368e87c/popcorn-revenge.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.be/nl/ontdek-het-park/familieattracties/popcorn-revenge",
@@ -1662,7 +1677,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1721,7 +1736,8 @@
       "type": "flat_spinner",
       "props": [
         "spins",
-        "swings"
+        "swings",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 2,
@@ -1889,7 +1905,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1938,8 +1954,10 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
-      "props": [],
+      "type": "tilt_a_whirl",
+      "props": [
+        "nausea"
+      ],
       "intensity": 1,
       "height_intensity": 1,
       "tag_source": "web",
@@ -2038,7 +2056,8 @@
       "max_age": null,
       "type": "teacups",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 1,
       "height_intensity": 1,
@@ -2087,7 +2106,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2246,7 +2265,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
+      "type": "animal_ride",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2299,7 +2318,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
+      "type": "flying_chairs",
       "props": [
         "spins"
       ],
@@ -2350,7 +2369,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2401,7 +2420,8 @@
       "max_age": null,
       "type": "teacups",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 1,
       "height_intensity": 1,

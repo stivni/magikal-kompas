@@ -4,7 +4,6 @@
  * Zie ADR-009 / ADR-020. */
 
 import type { Park, RideWithPark } from "./types"
-import { isClosed } from "./scoring"
 
 const modules = import.meta.glob<Park>("/data/parks/*.json", {
   eager: true,
@@ -29,15 +28,6 @@ PARK_DATA.forEach((p) => {
 
 export const ridesOf = (parkName: string): RideWithPark[] =>
   RIDES.filter((r) => r.park === parkName)
-
-/** Open rides voor een park — sluit permanent gesloten attracties uit
- * (zie ADR-023). Gebruikt door de publieke views voor matching/ranking. */
-export const openRidesOf = (parkName: string): RideWithPark[] =>
-  RIDES.filter((r) => r.park === parkName && !isClosed(r))
-
-/** Gesloten rides voor een park (zie ADR-023). */
-export const closedRidesOf = (parkName: string): RideWithPark[] =>
-  RIDES.filter((r) => r.park === parkName && isClosed(r))
 
 export function findPark(parkName: string): Park | null {
   return PARK_DATA.find((p) => p.park === parkName) || null

@@ -5,7 +5,7 @@
   "meta": {
     "country": "NL",
     "site": "https://www.efteling.com",
-    "updated": "2026-06-18",
+    "updated": "2026-06-20",
     "tagging": "web-v3 (type-correcties Danse Macabre/Villa Volta, props hersteld, hoogte-eisen Piraña/Sirocco gecorrigeerd; admin-review nodig voor low)"
   },
   "rides": [
@@ -61,8 +61,18 @@
           "by": "agent:web-v3",
           "changes": {
             "props": {
-              "from": ["dark", "inversions"],
-              "to": ["high", "fast", "dark", "inversions", "scary", "themed"]
+              "from": [
+                "dark",
+                "inversions"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "dark",
+                "inversions",
+                "scary",
+                "themed"
+              ]
             }
           }
         },
@@ -70,13 +80,34 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 5 },
-            "height_intensity": { "from": null, "to": 4 },
-            "top_speed_kmh": { "from": null, "to": 90 },
-            "max_height_m": { "from": null, "to": 30 },
-            "drop_m": { "from": null, "to": 37.5 },
-            "inversions_count": { "from": null, "to": 2 },
-            "duration_s": { "from": null, "to": 130 }
+            "intensity": {
+              "from": null,
+              "to": 5
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 90
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 30
+            },
+            "drop_m": {
+              "from": null,
+              "to": 37.5
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 2
+            },
+            "duration_s": {
+              "from": null,
+              "to": 130
+            }
           }
         },
         {
@@ -96,7 +127,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "family_coaster",
+      "type": "water_coaster",
       "props": [
         "high",
         "fast",
@@ -117,7 +148,7 @@
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/de-vliegende-hollander",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Vliegende_Hollander_(Efteling)",
-      "manufacturer": "KumbaK",
+      "manufacturer": "Kumbak",
       "model": null,
       "image": {
         "url": "assets/photos/efteling/vliegende-hollander.webp",
@@ -136,8 +167,17 @@
           "by": "agent:web-v3",
           "changes": {
             "props": {
-              "from": ["wet", "dark"],
-              "to": ["high", "fast", "wet", "dark", "themed"]
+              "from": [
+                "wet",
+                "dark"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "wet",
+                "dark",
+                "themed"
+              ]
             }
           }
         },
@@ -145,11 +185,26 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 4 },
-            "height_intensity": { "from": null, "to": 3 },
-            "top_speed_kmh": { "from": null, "to": 70 },
-            "max_height_m": { "from": null, "to": 22.5 },
-            "duration_s": { "from": null, "to": 225 }
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 70
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 22.5
+            },
+            "duration_s": {
+              "from": null,
+              "to": 225
+            }
           }
         },
         {
@@ -191,7 +246,7 @@
       "park_url": "https://www.efteling.com/nl/park/attracties/python",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Python_(Efteling)",
       "manufacturer": "Vekoma",
-      "model": "Double Loop Corkscrew",
+      "model": null,
       "image": {
         "url": "assets/photos/efteling/python.webp",
         "license": "CC-BY-SA-4.0",
@@ -209,8 +264,14 @@
           "by": "agent:web-v3",
           "changes": {
             "props": {
-              "from": ["inversions"],
-              "to": ["high", "fast", "inversions"]
+              "from": [
+                "inversions"
+              ],
+              "to": [
+                "high",
+                "fast",
+                "inversions"
+              ]
             }
           }
         },
@@ -218,13 +279,34 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 4 },
-            "height_intensity": { "from": null, "to": 4 },
-            "top_speed_kmh": { "from": null, "to": 75 },
-            "max_height_m": { "from": null, "to": 29 },
-            "inversions_count": { "from": null, "to": 4 },
-            "duration_s": { "from": null, "to": 128 },
-            "g_force": { "from": null, "to": 3.5 }
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 4
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 75
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 29
+            },
+            "inversions_count": {
+              "from": null,
+              "to": 4
+            },
+            "duration_s": {
+              "from": null,
+              "to": 128
+            },
+            "g_force": {
+              "from": null,
+              "to": 3.5
+            }
           }
         },
         {
@@ -283,8 +365,15 @@
           "by": "agent:web-v3",
           "changes": {
             "props": {
-              "from": ["dark"],
-              "to": ["fast", "dark", "scary", "themed"]
+              "from": [
+                "dark"
+              ],
+              "to": [
+                "fast",
+                "dark",
+                "scary",
+                "themed"
+              ]
             }
           }
         },
@@ -292,12 +381,30 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 4 },
-            "height_intensity": { "from": null, "to": 3 },
-            "top_speed_kmh": { "from": null, "to": 65 },
-            "max_height_m": { "from": null, "to": 20 },
-            "drop_m": { "from": null, "to": 19 },
-            "duration_s": { "from": null, "to": 101 }
+            "intensity": {
+              "from": null,
+              "to": 4
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 65
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 20
+            },
+            "drop_m": {
+              "from": null,
+              "to": 19
+            },
+            "duration_s": {
+              "from": null,
+              "to": 101
+            }
           }
         },
         {
@@ -317,7 +424,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "family_coaster",
+      "type": "wooden_coaster",
       "props": [
         "fast",
         "themed"
@@ -355,7 +462,10 @@
           "changes": {
             "props": {
               "from": [],
-              "to": ["fast", "themed"]
+              "to": [
+                "fast",
+                "themed"
+              ]
             }
           }
         },
@@ -363,11 +473,26 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 3 },
-            "height_intensity": { "from": null, "to": 3 },
-            "top_speed_kmh": { "from": null, "to": 75 },
-            "max_height_m": { "from": null, "to": 22 },
-            "drop_m": { "from": null, "to": 22 }
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 75
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 22
+            },
+            "drop_m": {
+              "from": null,
+              "to": 22
+            }
           }
         },
         {
@@ -422,11 +547,26 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 2 },
-            "height_intensity": { "from": null, "to": 2 },
-            "top_speed_kmh": { "from": null, "to": 36 },
-            "max_height_m": { "from": null, "to": 6 },
-            "duration_s": { "from": null, "to": 150 }
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 36
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 6
+            },
+            "duration_s": {
+              "from": null,
+              "to": 150
+            }
           }
         },
         {
@@ -483,8 +623,14 @@
           "by": "agent:web-v3",
           "changes": {
             "props": {
-              "from": ["swings"],
-              "to": ["high", "swings", "themed"]
+              "from": [
+                "swings"
+              ],
+              "to": [
+                "high",
+                "swings",
+                "themed"
+              ]
             }
           }
         },
@@ -492,10 +638,22 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 3 },
-            "height_intensity": { "from": null, "to": 3 },
-            "top_speed_kmh": { "from": null, "to": 54 },
-            "max_height_m": { "from": null, "to": 25 }
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 54
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 25
+            }
           }
         },
         {
@@ -515,7 +673,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "water_ride",
+      "type": "rapids",
       "props": [
         "wet",
         "spins",
@@ -551,10 +709,20 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v3",
           "changes": {
-            "beg": { "from": 0, "to": 100 },
+            "beg": {
+              "from": 0,
+              "to": 100
+            },
             "props": {
-              "from": ["wet", "spins"],
-              "to": ["wet", "spins", "themed"]
+              "from": [
+                "wet",
+                "spins"
+              ],
+              "to": [
+                "wet",
+                "spins",
+                "themed"
+              ]
             }
           }
         },
@@ -562,10 +730,22 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 2 },
-            "height_intensity": { "from": null, "to": 1 },
-            "top_speed_kmh": { "from": null, "to": 20 },
-            "duration_s": { "from": null, "to": 360 }
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 20
+            },
+            "duration_s": {
+              "from": null,
+              "to": 360
+            }
           }
         },
         {
@@ -584,15 +764,16 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "flat_spinner",
+      "type": "teacups",
       "props": [
         "spins",
         "dark",
-        "themed"
+        "themed",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 2,
-      "tag_source": "web",
+      "tag_source": "admin",
       "tag_confidence": "med",
       "sources": [
         "https://coasterpedia.net/wiki/Sirocco_(Efteling)",
@@ -618,10 +799,20 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v3",
           "changes": {
-            "zelf": { "from": 120, "to": 100 },
+            "zelf": {
+              "from": 120,
+              "to": 100
+            },
             "props": {
-              "from": ["spins", "dark"],
-              "to": ["spins", "dark", "themed"]
+              "from": [
+                "spins",
+                "dark"
+              ],
+              "to": [
+                "spins",
+                "dark",
+                "themed"
+              ]
             }
           }
         },
@@ -629,8 +820,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 3 },
-            "height_intensity": { "from": null, "to": 2 }
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
           }
         },
         {
@@ -682,22 +879,53 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v3",
           "changes": {
-            "type": { "from": "top_spin", "to": "story_ride" },
+            "type": {
+              "from": "top_spin",
+              "to": "story_ride"
+            },
             "oms": {
               "from": "Indoor spookspektakel in een drijvende balzaal vol duistere wendingen.",
               "to": "Intamin Dynamic Motion Stage: een dansend donker spektakel in een spookachtige balzaalomgeving."
             },
             "props": {
-              "from": ["dark", "swings", "spins", "scary"],
-              "to": ["dark", "spins", "scary", "themed"]
+              "from": [
+                "dark",
+                "swings",
+                "spins",
+                "scary"
+              ],
+              "to": [
+                "dark",
+                "spins",
+                "scary",
+                "themed"
+              ]
             },
-            "height_intensity": { "from": 2, "to": 3 },
-            "max_height_m": { "from": null, "to": 20 },
-            "drop_m": { "from": null, "to": 3 },
-            "duration_s": { "from": null, "to": 210 },
+            "height_intensity": {
+              "from": 2,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 20
+            },
+            "drop_m": {
+              "from": null,
+              "to": 3
+            },
+            "duration_s": {
+              "from": null,
+              "to": 210
+            },
             "sources": {
-              "from": ["https://darkridedatabase.com/rides/danse-macabre/", "https://www.efteling.com/nl/park/attracties/danse-macabre"],
-              "to": ["https://en.wikipedia.org/wiki/Danse_Macabre_(Efteling)", "https://www.efteling.com/nl/park/attracties/danse-macabre"]
+              "from": [
+                "https://darkridedatabase.com/rides/danse-macabre/",
+                "https://www.efteling.com/nl/park/attracties/danse-macabre"
+              ],
+              "to": [
+                "https://en.wikipedia.org/wiki/Danse_Macabre_(Efteling)",
+                "https://www.efteling.com/nl/park/attracties/danse-macabre"
+              ]
             }
           }
         },
@@ -705,8 +933,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 3 },
-            "height_intensity": { "from": null, "to": 2 }
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
           }
         },
         {
@@ -726,11 +960,12 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "drop_tower",
+      "type": "madhouse",
       "props": [
         "high",
         "scary",
-        "themed"
+        "themed",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 2,
@@ -760,11 +995,22 @@
           "changes": {
             "props": {
               "from": [],
-              "to": ["high", "scary", "themed"]
+              "to": [
+                "high",
+                "scary",
+                "themed"
+              ]
             },
             "sources": {
-              "from": ["https://www.efteling.com/en/press/drop-tower-attraction-hooghmoed-opens-at-efteling/", "https://blooloop.com/efteling-hooghmoed-drop-tower-opens/"],
-              "to": ["https://www.efteling.com/en/press/drop-tower-attraction-hooghmoed-opens-at-efteling/", "https://blooloop.com/efteling-hooghmoed-drop-tower-opens/", "https://www.efteling.com/nl/park/attracties/hooghmoed"]
+              "from": [
+                "https://www.efteling.com/en/press/drop-tower-attraction-hooghmoed-opens-at-efteling/",
+                "https://blooloop.com/efteling-hooghmoed-drop-tower-opens/"
+              ],
+              "to": [
+                "https://www.efteling.com/en/press/drop-tower-attraction-hooghmoed-opens-at-efteling/",
+                "https://blooloop.com/efteling-hooghmoed-drop-tower-opens/",
+                "https://www.efteling.com/nl/park/attracties/hooghmoed"
+              ]
             }
           }
         },
@@ -772,11 +1018,26 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 3 },
-            "height_intensity": { "from": null, "to": 2 },
-            "max_height_m": { "from": null, "to": 9.5 },
-            "drop_m": { "from": null, "to": 6 },
-            "duration_s": { "from": null, "to": 90 }
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 9.5
+            },
+            "drop_m": {
+              "from": null,
+              "to": 6
+            },
+            "duration_s": {
+              "from": null,
+              "to": 90
+            }
           }
         },
         {
@@ -824,10 +1085,22 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "type": { "from": "dark_ride", "to": "story_ride" },
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 },
-            "duration_s": { "from": null, "to": 420 }
+            "type": {
+              "from": "dark_ride",
+              "to": "story_ride"
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "duration_s": {
+              "from": null,
+              "to": 420
+            }
           }
         },
         {
@@ -872,8 +1145,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {
@@ -923,12 +1202,30 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "type": { "from": "dark_ride", "to": "story_ride" },
-            "intensity": { "from": null, "to": 2 },
-            "height_intensity": { "from": null, "to": 3 },
-            "max_height_m": { "from": null, "to": 13 },
-            "top_speed_kmh": { "from": null, "to": 18 },
-            "duration_s": { "from": null, "to": 360 }
+            "type": {
+              "from": "dark_ride",
+              "to": "story_ride"
+            },
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 13
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 18
+            },
+            "duration_s": {
+              "from": null,
+              "to": 360
+            }
           }
         },
         {
@@ -948,12 +1245,13 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "funhouse",
+      "type": "madhouse",
       "props": [
         "dark",
         "spins",
         "scary",
-        "themed"
+        "themed",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 2,
@@ -978,21 +1276,36 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v3",
           "changes": {
-            "type": { "from": "top_spin", "to": "funhouse" },
+            "type": {
+              "from": "top_spin",
+              "to": "funhouse"
+            },
             "oms": {
               "from": "Ronddraaiend spookhuis (madhouse) met het verhaal van Hugo van den Loonsche Duynen.",
               "to": "Vekoma madhouse met de illusie van 360° omwenteling door het verhaal van Hugo van den Loonsche Duynen."
             },
-            "beg": { "from": 0, "to": 100 },
-            "duration_s": { "from": null, "to": 600 }
+            "beg": {
+              "from": 0,
+              "to": 100
+            },
+            "duration_s": {
+              "from": null,
+              "to": 600
+            }
           }
         },
         {
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 3 },
-            "height_intensity": { "from": null, "to": 2 }
+            "intensity": {
+              "from": null,
+              "to": 3
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 2
+            }
           }
         },
         {
@@ -1041,10 +1354,22 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 3 },
-            "max_height_m": { "from": null, "to": 45 },
-            "duration_s": { "from": null, "to": 240 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            },
+            "max_height_m": {
+              "from": null,
+              "to": 45
+            },
+            "duration_s": {
+              "from": null,
+              "to": 240
+            }
           }
         },
         {
@@ -1090,8 +1415,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {
@@ -1138,10 +1469,22 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "type": { "from": "dark_ride", "to": "story_ride" },
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 },
-            "duration_s": { "from": null, "to": 375 }
+            "type": {
+              "from": "dark_ride",
+              "to": "story_ride"
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "duration_s": {
+              "from": null,
+              "to": 375
+            }
           }
         },
         {
@@ -1189,10 +1532,22 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "type": { "from": "dark_ride", "to": "story_ride" },
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 },
-            "duration_s": { "from": null, "to": 480 }
+            "type": {
+              "from": "dark_ride",
+              "to": "story_ride"
+            },
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "duration_s": {
+              "from": null,
+              "to": 480
+            }
           }
         },
         {
@@ -1237,8 +1592,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {
@@ -1284,8 +1645,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {
@@ -1305,7 +1672,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [
         "themed"
       ],
@@ -1330,8 +1697,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {
@@ -1376,8 +1749,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {
@@ -1420,8 +1799,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {
@@ -1440,7 +1825,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "wave_swinger",
+      "type": "walkthrough_decor",
       "props": [
         "high",
         "swings",
@@ -1468,11 +1853,23 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v3",
           "changes": {
-            "beg": { "from": 0, "to": 0 },
-            "zelf": { "from": 100, "to": 100 },
+            "beg": {
+              "from": 0,
+              "to": 0
+            },
+            "zelf": {
+              "from": 100,
+              "to": 100
+            },
             "props": {
-              "from": ["swings"],
-              "to": ["high", "swings", "themed"]
+              "from": [
+                "swings"
+              ],
+              "to": [
+                "high",
+                "swings",
+                "themed"
+              ]
             }
           }
         },
@@ -1480,8 +1877,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 2 },
-            "height_intensity": { "from": null, "to": 3 }
+            "intensity": {
+              "from": null,
+              "to": 2
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
           }
         },
         {
@@ -1501,7 +1904,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [
         "themed"
       ],
@@ -1526,8 +1929,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {
@@ -1572,8 +1981,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {
@@ -1593,7 +2008,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [
         "high",
         "themed"
@@ -1621,7 +2036,10 @@
           "changes": {
             "props": {
               "from": [],
-              "to": ["high", "themed"]
+              "to": [
+                "high",
+                "themed"
+              ]
             }
           }
         },
@@ -1629,8 +2047,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 3 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 3
+            }
           }
         },
         {
@@ -1674,8 +2098,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {
@@ -1694,7 +2124,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": 12,
-      "type": "kiddie_flat",
+      "type": "transport_train",
       "props": [
         "themed"
       ],
@@ -1719,8 +2149,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {
@@ -1739,7 +2175,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "water_ride",
+      "type": "slow_boat",
       "props": [
         "themed"
       ],
@@ -1767,10 +2203,22 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 },
-            "top_speed_kmh": { "from": null, "to": 3 },
-            "duration_s": { "from": null, "to": 1200 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            },
+            "top_speed_kmh": {
+              "from": null,
+              "to": 3
+            },
+            "duration_s": {
+              "from": null,
+              "to": 1200
+            }
           }
         },
         {
@@ -1790,7 +2238,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "show",
+      "type": "walkthrough_decor",
       "props": [
         "themed"
       ],
@@ -1815,8 +2263,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {
@@ -1835,7 +2289,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "show",
+      "type": "walkthrough_decor",
       "props": [
         "dark",
         "themed"
@@ -1861,8 +2315,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {
@@ -1882,7 +2342,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "show",
+      "type": "park_decor",
       "props": [
         "themed"
       ],
@@ -1907,8 +2367,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {
@@ -1950,8 +2416,14 @@
           "at": "2026-06-18T00:00:00Z",
           "by": "agent:web-v2",
           "changes": {
-            "intensity": { "from": null, "to": 1 },
-            "height_intensity": { "from": null, "to": 1 }
+            "intensity": {
+              "from": null,
+              "to": 1
+            },
+            "height_intensity": {
+              "from": null,
+              "to": 1
+            }
           }
         },
         {

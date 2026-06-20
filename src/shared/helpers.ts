@@ -1,7 +1,23 @@
 /* Magikal Kompas — kleine pure helpers (geen DOM, geen React). */
 
 import { AVA_PALETTE } from "./vocab"
-import type { Ride, RideWithPark } from "./types"
+import type { Member, Ride, RideWithPark } from "./types"
+
+/** Canonieke sorteervolgorde voor leden: oudst eerst (geboortejaar oplopend),
+ * ties op lengte aflopend, tot slot alfabetisch. Ontbrekende velden sorteren
+ * naar het einde. Wordt overal gebruikt waar we leden tonen — deelnemers-
+ * pagina, share-panel, pill-avatars — zodat de volgorde consistent is. */
+export function sortMembers<T extends Member>(people: readonly T[]): T[] {
+  return people.slice().sort((a, b) => {
+    const ay = a.birthYear ?? Number.POSITIVE_INFINITY
+    const by = b.birthYear ?? Number.POSITIVE_INFINITY
+    if (ay !== by) return ay - by
+    const ah = a.h ?? -Infinity
+    const bh = b.h ?? -Infinity
+    if (ah !== bh) return bh - ah
+    return a.name.localeCompare(b.name)
+  })
+}
 
 export function rid(r: Pick<RideWithPark, "park" | "att">): string {
   return r.park + "|" + r.att

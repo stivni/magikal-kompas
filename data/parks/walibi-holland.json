@@ -191,7 +191,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "thrill_coaster",
+      "type": "inverted_coaster",
       "props": [
         "inversions"
       ],
@@ -337,7 +337,8 @@
       "type": "top_spin",
       "props": [
         "inversions",
-        "swings"
+        "swings",
+        "nausea"
       ],
       "intensity": 4,
       "height_intensity": 3,
@@ -649,7 +650,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "thrill_coaster",
+      "type": "wooden_coaster",
       "props": [
         "inversions"
       ],
@@ -739,7 +740,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "thrill_coaster",
+      "type": "launch_coaster",
       "props": [
         "inversions",
         "dark",
@@ -761,7 +762,7 @@
       "park_url": "https://www.walibi.nl/nl/park/attracties/xpress-platform-13",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Xpress:_Platform_13",
       "manufacturer": "Vekoma",
-      "model": "LSM Coaster",
+      "model": null,
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--48e3b30a-dd78-4fae-882c-a25d5d37b9d5/attracties-xpress-taya-6.jpg?quality=85&preferwebp=true",
         "source_page": "https://www.walibi.nl/nl/park/attracties/xpress-platform-13",
@@ -851,7 +852,8 @@
       "type": "top_spin",
       "props": [
         "inversions",
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 4,
       "height_intensity": 3,
@@ -982,7 +984,8 @@
       "type": "flat_spinner",
       "props": [
         "spins",
-        "swings"
+        "swings",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 3,
@@ -1172,10 +1175,11 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "funhouse",
+      "type": "madhouse",
       "props": [
         "spins",
-        "dark"
+        "dark",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 1,
@@ -1252,7 +1256,8 @@
       "max_age": null,
       "type": "teacups",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 1,
@@ -1311,7 +1316,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
+      "type": "kiddie_drop",
       "props": [],
       "intensity": 1,
       "height_intensity": 2,
@@ -1364,7 +1369,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
+      "type": "flying_chairs",
       "props": [],
       "intensity": 1,
       "height_intensity": 2,
@@ -1413,7 +1418,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "wave_swinger",
+      "type": "star_flyer",
       "props": [
         "spins"
       ],
@@ -1468,7 +1473,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "water_ride",
+      "type": "rapids",
       "props": [
         "wet"
       ],
@@ -1538,7 +1543,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "water_ride",
+      "type": "rapids",
       "props": [
         "wet",
         "spins"
@@ -1590,7 +1595,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "water_battle",
+      "type": "splash_battle",
       "props": [
         "wet"
       ],
@@ -1641,9 +1646,10 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
+      "type": "tilt_a_whirl",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 1,
       "height_intensity": 2,
@@ -1706,7 +1712,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "arcade",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1765,7 +1771,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -1816,7 +1822,8 @@
       "max_age": null,
       "type": "flat_spinner",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 2,
@@ -1967,7 +1974,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "bumper_cars",
       "props": [],
       "intensity": 2,
       "height_intensity": 1,
@@ -2016,7 +2023,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2077,7 +2084,8 @@
       "max_age": null,
       "type": "teacups",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 2,
       "height_intensity": 1,
@@ -2126,7 +2134,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2232,7 +2240,8 @@
       "max_age": null,
       "type": "flat_spinner",
       "props": [
-        "spins"
+        "spins",
+        "nausea"
       ],
       "intensity": 3,
       "height_intensity": 2,
@@ -2285,7 +2294,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2334,7 +2343,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "transport",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 1,
@@ -2383,7 +2392,7 @@
       "min_age_beg": null,
       "min_age_zelf": null,
       "max_age": null,
-      "type": "kiddie_flat",
+      "type": "transport_train",
       "props": [],
       "intensity": 1,
       "height_intensity": 2,
@@ -2394,7 +2403,7 @@
       ],
       "park_url": "https://www.walibi.nl/nl/park/attracties/walibis-shuttle",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Walibi%27s_Shuttle",
-      "manufacturer": "SBF Visa",
+      "manufacturer": "SBF Visa Group",
       "model": "Flying Carpet",
       "admin_preview": {
         "url": "https://www.walibi.nl/adobe/dynamicmedia/deliver/dm-aid--e72783b9-eb17-41fc-9831-9d027a1ae0f8/walibi-play-land-26-10.jpg?preferwebp=true&quality=85",
