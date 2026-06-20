@@ -41,6 +41,7 @@
         "https://www.efteling.com/nl/park/attracties/baron-1898"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/baron-1898",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Baron_1898",
       "image": {
         "url": "assets/photos/efteling/baron-1898.webp?t=1781727603882",
         "license": "CC-BY-SA-4.0",
@@ -113,6 +114,7 @@
         "https://www.efteling.com/nl/park/attracties/de-vliegende-hollander"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/de-vliegende-hollander",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Vliegende_Hollander_(Efteling)",
       "image": {
         "url": "assets/photos/efteling/vliegende-hollander.webp",
         "license": "CC-BY-SA-4.0",
@@ -183,6 +185,7 @@
         "https://www.efteling.com/nl/park/attracties/python"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/python",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Python_(Efteling)",
       "image": {
         "url": "assets/photos/efteling/python.webp",
         "license": "CC-BY-SA-4.0",
@@ -254,6 +257,7 @@
         "https://www.efteling.com/nl/park/attracties/vogel-rok"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/vogel-rok",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Vogel_Rok",
       "image": {
         "url": "assets/photos/efteling/vogel-rok.webp",
         "license": "CC-BY-SA-4.0",
@@ -322,6 +326,7 @@
         "https://www.efteling.com/nl/park/attracties/joris-en-de-draak"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/joris-en-de-draak",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Joris_en_de_Draak",
       "image": {
         "url": "assets/photos/efteling/joris-en-de-draak.webp",
         "license": "CC-BY-SA-3.0",
@@ -388,6 +393,7 @@
         "https://www.efteling.com/nl/park/attracties/max-moritz"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/max-moritz",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Max_%26_Moritz_(Efteling)",
       "image": {
         "url": "assets/photos/efteling/max-en-moritz.webp",
         "license": "CC-BY-SA-4.0",
@@ -445,6 +451,7 @@
         "https://www.efteling.com/nl/park/attracties/halve-maen"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/halve-maen",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Halve_Maen_(Efteling)",
       "image": {
         "url": "assets/photos/efteling/halve-maen.webp?t=1781728247786",
         "license": "CC0",
@@ -511,6 +518,7 @@
         "https://www.efteling.com/nl/park/attracties/pirana"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/pirana",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Pira%C3%B1a",
       "image": {
         "url": "assets/photos/efteling/pirana.webp",
         "license": "CC-BY-SA-4.0",
@@ -575,6 +583,7 @@
         "https://www.efteling.com/nl/park/attracties/sirocco"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/sirocco",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Sirocco_(Efteling)",
       "image": {
         "url": "assets/photos/efteling/sirocco.webp",
         "license": "CC-BY-SA-4.0",
@@ -642,6 +651,7 @@
         "https://www.efteling.com/nl/park/attracties/danse-macabre"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/danse-macabre",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Danse_Macabre_(Efteling)",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/danse-macabre/1024x576-danse-macabre-keyvisual-buitenkant.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/danse-macabre",
@@ -715,6 +725,7 @@
         "https://www.efteling.com/nl/park/attracties/hooghmoed"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/hooghmoed",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Hooghmoed",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/hooghmoed/1024x576-hooghmoed-overzicht.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/hooghmoed",
@@ -778,6 +789,7 @@
         "https://www.efteling.com/nl/park/attracties/symbolica"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/symbolica",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Symbolica",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/symbolica/1024x576-koningszaal-symbolica-efteling.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/symbolica",
@@ -823,6 +835,7 @@
         "https://www.efteling.com/nl/park/attracties/sprookjesbos"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/sprookjesbos",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Sprookjesbos_(Efteling)",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/sprookjesbos/sprookjesbos-pagina/1600x900-sprookjesbos-gezin-bij-roodkapje.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/sprookjesbos",
@@ -871,6 +884,7 @@
         "https://www.efteling.com/nl/park/attracties/droomvlucht"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/droomvlucht",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Droomvlucht_(darkride)",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/droomvlucht/1024x576-droomvlucht-elfjes-zittend-op-tak.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/droomvlucht",
@@ -923,6 +937,7 @@
         "https://www.efteling.com/nl/park/attracties/villa-volta"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/villa-volta",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Villa_Volta",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/villa-volta/1024x576-efteling-villa-volta-hugo.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/villa-volta",
@@ -983,6 +998,7 @@
         "https://www.efteling.com/nl/park/attracties/pagode"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/pagode",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Pagode_(Efteling)",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/pagode/1600x900-pagode-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/pagode",
@@ -1029,6 +1045,7 @@
         "https://www.efteling.com/nl/park/attracties/archipel"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/archipel",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Archipel_(Efteling)",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/archipel/1024x576-archipel-paalvisser.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/archipel",
@@ -1074,6 +1091,7 @@
         "https://www.efteling.com/nl/park/attracties/carnaval-festival"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/carnaval-festival",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Carnaval_Festival",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/carnaval-festival-2019/1024x576-carnaval-festival-jokie.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/carnaval-festival",
@@ -1122,6 +1140,7 @@
         "https://www.efteling.com/nl/park/attracties/fata-morgana"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/fata-morgana",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Fata_Morgana_(Efteling)",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/fata-morgana/1024x576-fata-morgana-1.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/fata-morgana",
@@ -1167,6 +1186,7 @@
         "https://www.efteling.com/nl/park/attracties/nest"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/nest",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Nest!",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/nest/1024x576-speelbos-nest-gezin-op-het-vlonderpad.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/nest",
@@ -1211,6 +1231,7 @@
         "https://www.efteling.com/nl/park/attracties/fabula"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/fabula",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Fabula_(Efteling)",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/fabula/1024x576-fabula-rots.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/fabula",
@@ -1254,6 +1275,7 @@
         "https://www.efteling.com/nl/park/attracties/stoomtrein"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/stoomtrein",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Efteling_Stoomtrein_Maatschappij",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/stoomtrein/1600-900-stoomtrein-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/stoomtrein",
@@ -1297,6 +1319,7 @@
         "https://www.efteling.com/nl/park/attracties/stoomcarrousel"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/stoomcarrousel",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Stoomcarrousel_(Efteling)",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/stoomcarrousel/1024x576-carrouselpaleis-plein.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/stoomcarrousel",
@@ -1338,6 +1361,7 @@
         "https://www.efteling.com/nl/park/attracties/kleuterhof"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/kleuterhof",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/kleuterhof/1600x900-kleuterhof-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/kleuterhof",
@@ -1383,6 +1407,7 @@
         "https://www.efteling.com/nl/park/attracties/anton-pieck-plein"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/anton-pieck-plein",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Anton_Pieckplein",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/anton-pieckplein/1024x576-anton-pieckplein-zweefmolen-meisje.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/anton-pieck-plein",
@@ -1438,6 +1463,7 @@
         "https://www.efteling.com/nl/park/attracties/de-oude-tufferbaan"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/de-oude-tufferbaan",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Oude_Tufferbaan",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/de-oude-tufferbaan/1024x576-de-oude-tufferbaan-efteling-geel-voertuig.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/de-oude-tufferbaan",
@@ -1481,6 +1507,7 @@
         "https://www.efteling.com/nl/park/attracties/volk-van-laaf"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/volk-van-laaf",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Volk_van_Laaf",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/volk-van-laaf/1024x576-volk-van-laaf-leerhuys.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/volk-van-laaf",
@@ -1525,6 +1552,7 @@
         "https://www.efteling.com/nl/park/attracties/monorail"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/monorail",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Monorail_(Efteling)",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/monorail/1024x576-monorail-winter.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/monorail",
@@ -1577,6 +1605,7 @@
         "https://www.efteling.com/nl/park/attracties/kindervreugd"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/kindervreugd",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/kindervreugd/1600x900-kinder-vreugd-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/kindervreugd",
@@ -1619,6 +1648,7 @@
         "https://www.efteling.com/nl/park/attracties/kinderspoor"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/kinderspoor",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Kinderspoor",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/kinderspoor/1600x900-kinderspoor-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/kinderspoor",
@@ -1664,6 +1694,7 @@
         "https://www.efteling.com/nl/park/attracties/gondoletta"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/gondoletta",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Gondoletta",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/gondoletta/1024x576-gondoletta-1.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/gondoletta",
@@ -1709,6 +1740,7 @@
         "https://www.efteling.com/nl/park/attracties/efteling-museum"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/efteling-museum",
+      "wikipedia_url": null,
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/efteling-museum/1024x576-efteling-museum.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/efteling-museum",
@@ -1752,6 +1784,7 @@
         "https://www.efteling.com/nl/park/attracties/diorama"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/diorama",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Diorama_(Efteling)",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/diorama/1600x900-diorama-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/diorama",
@@ -1795,6 +1828,7 @@
         "https://www.efteling.com/nl/park/attracties/holle-bolle-gijs"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/holle-bolle-gijs",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Holle_Bolle_Gijs_(Efteling)",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/holle-bolle-gijs/1600x900-holle-bolle-gijs-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/holle-bolle-gijs",
@@ -1835,6 +1869,7 @@
         "https://www.efteling.com/nl/park/attracties/game-gallery"
       ],
       "park_url": "https://www.efteling.com/nl/park/attracties/game-gallery",
+      "wikipedia_url": "https://nl.wikipedia.org/wiki/Game_Gallery",
       "admin_preview": {
         "url": "https://www.efteling.com/nl/-/media/images/nieuw-park/park/attractions/game-gallery/1600x900-game-gallery-hero.jpg",
         "source_page": "https://www.efteling.com/nl/park/attracties/game-gallery",
