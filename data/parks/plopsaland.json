@@ -34,6 +34,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/the-ride-to-happiness-by-tomorrowland",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/The_Ride_to_Happiness",
+      "manufacturer": "Mack Rides",
+      "model": "Xtreme Spinning Coaster",
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_800/public/images/2025-09/PLB25_RideToHappiness_BestCoasterEurope.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/the-ride-to-happiness-by-tomorrowland",
@@ -117,6 +119,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/anubis-the-ride",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Anubis_The_Ride",
+      "manufacturer": "Gerstlauer",
+      "model": "Launch Coaster",
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_AnubisTheRide_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/anubis-the-ride",
@@ -202,6 +206,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/heidi-the-ride",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Heidi_The_Ride",
+      "manufacturer": "Great Coasters International",
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_HeidiTheRide_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/heidi-the-ride",
@@ -265,6 +271,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/nachtwacht-flyer",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Nachtwacht-Flyer",
+      "manufacturer": "Funtime",
+      "model": "Starflyer",
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_NachtwachtFlyer_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/nachtwacht-flyer",
@@ -328,6 +336,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-piratenboot",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DePiratenboot_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-piratenboot",
@@ -379,6 +389,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-grote-golf",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeGroteGolf_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-grote-golf",
@@ -449,6 +461,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/dinosplash",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/DinoSplash",
+      "manufacturer": "Mack Rides",
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DinoSplash_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/dinosplash",
@@ -537,6 +551,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/mega-mindy-jetski",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Mega_Mindy_Jetski",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_MegaMindyJetski_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/mega-mindy-jetski",
@@ -579,6 +595,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wienerwalz",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Wienerwalz_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wienerwalz",
@@ -622,6 +640,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wickies-wervelwind",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Wickie%27s_Wervelwind",
+      "manufacturer": "ART Engineering",
+      "model": "Wild Swing",
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-07/PDP_WickiesWervelwind_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wickies-wervelwind",
@@ -681,6 +701,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/scooter",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Scooter_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/scooter",
@@ -725,6 +747,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/supersplash",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/SuperSplash",
+      "manufacturer": "Mack Rides",
+      "model": "SuperSplash",
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Supersplash_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/supersplash",
@@ -778,6 +802,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/draconis",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Draconis",
+      "manufacturer": "Mack Rides",
+      "model": "Powered Coaster",
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-09/PDP_Draconis_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/draconis",
@@ -843,6 +869,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-bloemenmolen",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Bloemenmolen",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeBloemenmolen_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-bloemenmolen",
@@ -918,6 +946,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-valtoren",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeValtoren_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-valtoren",
@@ -967,6 +997,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-swingboom",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Swingboom",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeSwingboom_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-swingboom",
@@ -1008,6 +1040,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-waterlelies",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Waterlelies",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeWaterlelies_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-waterlelies",
@@ -1050,6 +1084,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/likeme-coaster",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/LikeMe_Coaster",
+      "manufacturer": "Zierer",
+      "model": "Tivoli Large",
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_%23LikeMeCoaster_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/likeme-coaster",
@@ -1103,6 +1139,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/k3-roller-skater",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/K3_Roller_Skater",
+      "manufacturer": "Vekoma",
+      "model": "Junior Coaster",
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_K3RollerSkater_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/k3-roller-skater",
@@ -1158,6 +1196,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dolle-busrit",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Dolle_Busrit",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeDolleBusrit_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dolle-busrit",
@@ -1220,6 +1260,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/storm-op-zee",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Storm_op_Zee_(Plopsaland_Belgium)",
+      "manufacturer": "Mack Rides",
+      "model": "Koggenfahrt",
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_StormOpZee_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/storm-op-zee",
@@ -1264,6 +1306,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-vliegende-fietsen",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Vliegende_Fietsen",
+      "manufacturer": "Zamperla",
+      "model": "Magic Bikes",
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeVliegendeFietsen_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-vliegende-fietsen",
@@ -1317,6 +1361,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-koffiekopjes",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeKoffiekopjes_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-koffiekopjes",
@@ -1358,6 +1404,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wickie-the-battle",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_WickieTheBattle_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/wickie-the-battle",
@@ -1397,6 +1445,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-glijbaan",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeGlijbaan_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-glijbaan",
@@ -1436,6 +1486,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/safari",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Safari_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/safari",
@@ -1477,6 +1529,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-konijntjes",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Konijntjes",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeKonijntjes_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-konijntjes",
@@ -1521,6 +1575,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-bos-van-plop",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Het_Bos_van_Plop",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-12/PDP_HetBosVanPlop_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-bos-van-plop",
@@ -1581,6 +1637,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/op-reis-met-bumba",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Op_Reis_met_Bumba",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_OpReisMetBumba_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/op-reis-met-bumba",
@@ -1635,6 +1693,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/balloon-race",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_BalloonRace_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/balloon-race",
@@ -1678,6 +1738,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-tractors",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Tractors",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeTraktors_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-tractors",
@@ -1732,6 +1794,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/bumballoon",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Bumballoon",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Bumballoon_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/bumballoon",
@@ -1773,6 +1837,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-kikkers",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Kikkers",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeKikkers_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-kikkers",
@@ -1812,6 +1878,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-eenden",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Eenden",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeEenden_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-eenden",
@@ -1853,6 +1921,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/carrousel",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Carrousel_(Plopsaland_Belgium)",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Carrousel_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/carrousel",
@@ -1894,6 +1964,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dierenmolen",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Dierenmolen",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeDierenmolen_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dierenmolen",
@@ -1938,6 +2010,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/tik-tak",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Tik_Tak_(Plopsaland_Belgium)",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_TikTak_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/tik-tak",
@@ -2000,6 +2074,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/rijschool-suikerbuik",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Rijschool_Suikerbuik",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2026-03/PLB26_RijschoolSuikerbuik_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/rijschool-suikerbuik",
@@ -2039,6 +2115,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-ballenbad",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_HetBallenbad_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-ballenbad",
@@ -2078,6 +2156,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-spinnenweb",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_HetSpinnenweb_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-spinnenweb",
@@ -2119,6 +2199,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-vlot",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_HetVlot_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/het-vlot",
@@ -2158,6 +2240,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-tuin-van-big",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeTuinVanBig_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-tuin-van-big",
@@ -2197,6 +2281,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/poppas-klimtoren",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_PoppasKlimtoren_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/poppas-klimtoren",
@@ -2238,6 +2324,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/waterfietsen",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/Waterfietsen_(Plopsaland_Belgium)",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Waterfietsen_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/waterfietsen",
@@ -2277,6 +2365,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/tumbis-ballenbad",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_TumbisBallenbad_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/tumbis-ballenbad",
@@ -2316,6 +2406,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/willies-speeltuin",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-04/PDP_WilliesSpeeltuin2_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/willies-speeltuin",
@@ -2355,6 +2447,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-doorloopweide",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeDoorloopweide_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-doorloopweide",
@@ -2394,6 +2488,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/big-betsy-hoeve",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Big_%26_Betsy_Hoeve",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_Big%26BetsyHoeve_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/big-betsy-hoeve",
@@ -2433,6 +2529,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/bumbas-speeltuin",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_BumbasSpeeltuin_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/bumbas-speeltuin",
@@ -2474,6 +2572,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-emmer",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeEmmer_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-emmer",
@@ -2513,6 +2613,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-hangbrug",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Hangbrug",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeHangbrug_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-hangbrug",
@@ -2552,6 +2654,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-klimboom",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeKlimboom_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-klimboom",
@@ -2591,6 +2695,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-ploptuin",
       "wikipedia_url": null,
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DePloptuin_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-ploptuin",
@@ -2632,6 +2738,8 @@
       ],
       "park_url": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dansende-fonteinen",
       "wikipedia_url": "https://nl.wikipedia.org/wiki/De_Dansende_Fonteinen",
+      "manufacturer": null,
+      "model": null,
       "admin_preview": {
         "url": "https://www.plopsa.com/sites/default/files/styles/io_1920/public/images/2025-03/PDP_DeDansendeFonteinen_Hero.jpg.webp",
         "source_page": "https://www.plopsa.com/nl/plopsaland-belgium/attracties/de-dansende-fonteinen",
